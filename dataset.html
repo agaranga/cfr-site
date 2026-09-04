@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFR Project - Набор</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .lang span { cursor: pointer; }
+  .crumbs { padding: 26px 0 0 0; font-size: 12.5px; color: var(--muted); }
+  .crumbs a { color: var(--forest-soft); font-weight: 600; text-decoration: none; }
+  .head { padding: 10px 0 14px 0; }
+  .body { display: grid; grid-template-columns: 1fr 300px; gap: 22px; align-items: start; }
+  .body .main { min-width: 0; }
+  .head .over { font: 700 10px/1 Inter, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .head h1 { font: 500 30px/1.2 Georgia, serif; margin: 0 0 8px 0; }
+  .head .meta { font-size: 14px; color: #566059; line-height: 1.6; }
+  .head .meta b { color: var(--ink); font-weight: 600; }
+  .side { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; font-size: 12.5px; color: var(--muted); line-height: 1.5; display: flex; flex-direction: column; gap: 10px; position: sticky; top: 70px; }
+  .side h2 { font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0; }
+  .side .kv { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; }
+  .side .kv span:nth-child(even) { color: var(--ink); }
+  .side .acts { display: flex; flex-direction: column; gap: 6px; }
+  .side .acts a { font-weight: 700; font-size: 13px; }
+  .st { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+  .st.local { background: #3e8a5e; } .st.online { background: var(--gold); } .st.closed { background: #c76743; }
+  section.block { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; margin: 0 0 14px 0; }
+  section.block h2 { font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px 0; }
+  .cols { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .cols th { text-align: left; font: 700 10.5px/1.5 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  .cols td { padding: 6px 8px; border-top: 1px solid var(--line); vertical-align: top; }
+  .cols td.k { font-family: ui-monospace, Consolas, monospace; font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .scroll { overflow-x: auto; }
+  .prev { border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+  .prev th { text-align: right; font: 700 10.5px/1.4 Inter, sans-serif; color: var(--muted); padding: 6px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; background: var(--paper); }
+  .prev td { text-align: right; padding: 5px 10px; border-top: 1px solid var(--line); white-space: nowrap; }
+  .prev td:first-child, .prev th:first-child { text-align: left; font-weight: 600; }
+  .prev td.st { color: var(--muted); font-style: italic; }
+  .more { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+  .cite { display: grid; grid-template-columns: 1fr auto; gap: 10px 14px; align-items: start; }
+  .cite .lbl { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink); font-weight: 600; margin-top: 4px; }
+  .cite pre { margin: 0; white-space: pre-wrap; font: 13px/1.55 Georgia, serif; color: #2f3834; background: var(--paper); padding: 12px 14px; border-radius: 6px; border: 1px solid var(--line); }
+  .cite button { background: var(--forest); color: var(--white); border: 0; border-radius: 6px; padding: 8px 12px; font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+  .cite .why { grid-column: 1 / -1; font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+  .method { font-size: 13px; line-height: 1.55; color: #2f3834; }
+  .empty { padding: 40px 0; text-align: center; color: var(--muted); }
+  @media (max-width: 800px) { .body { grid-template-columns: 1fr; } .side { position: static; } .cite { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./"><span class="mark">CFR</span><span class="word">CFR Project</span></a>
+  <nav class="topnav">
+    <a href="./" data-t="nav.overview">Обзор</a>
+    <a href="showcase.html" data-t="nav.showcase">Витрина</a>
+    <a href="coverage.html" data-t="nav.coverage">Покрытие</a>
+    <a href="constructor.html" data-t="nav.constructor">Конструктор</a>
+    <a class="on" href="datasets.html" data-t="nav.datasets">Исходные данные</a>
+    <a href="sources.html" data-t="nav.sources">Источники</a>
+    <a href="territory.html" data-t="nav.territory">Территории</a>
+  </nav>
+  <a class="account" href="mailto:cfr@cfrproject.com?subject=CFR%20Project" title="Личный кабинет появится позже; пока пишите нам"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="5" r="2.8"/><path d="M2.5 14c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/></svg><span data-t="nav.account">Личный кабинет</span></a>
+  <span class="lang" id="lang"><span class="on" data-lang="ru">RU</span><span data-lang="en">EN</span></span>
+</header>
+
+<div class="wrap" id="page"></div>
+
+<footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
+
+<script src="assets/datasets-data.js"></script>
+<script>
+(function () {
+  const L = window.DATASET_LABELS;
+  const число = (n) => n == null ? "" : n.toLocaleString("ru-RU");
+  const экр = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const T = {
+    ru: { "nav.overview": "Обзор", "nav.showcase": "Витрина", "nav.coverage": "Покрытие", "nav.constructor": "Конструктор", "nav.datasets": "Исходные данные", "nav.sources": "Источники", "nav.territory": "Территории", "nav.account": "Личный кабинет",
+      crumbs: "Исходные данные", over: "Набор исходных данных", notFound: "Такого набора нет.", back: "К списку наборов",
+      meta: (з) => `${L.форма.ru[з.form]} · ${число(з.rows ?? 0)} строк${з.cols ? ` × ${з.cols} колонок` : ""} · ${з.start ? (з.end && з.end !== з.start ? `${з.start}-${з.end}` : з.start) : "период не указан"} · ${L.темы.ru[з.topic]}`,
+      side: "Паспорт", territory: "Территория", universe: "Состав населения", layer: "Слой", layers: { reference: "справочный слой CFR", historical: "историческое", engineering: "инженерное" }, universes: { "source-defined-unresolved": "как определил источник", "present-de-facto": "наличное", "usual-resident": "постоянное", "legal-domicile": "по домицилию", "citizenship": "по гражданству", "register-membership": "по реестру" }, source: "Источник", country: "Страна", access: "Состояние", passport: "Файл", checksum: "Контрольная сумма", retrieved: "Загружено", version: "Версия набора", review: "Проверка", pkg: "Пакет",
+      status: { local: "скачано и проверено", online: "есть в сети, не скачано", closed: "закрытый доступ, смотрите на сайте источника" },
+      csv: "Скачать CSV", json: "Скачать JSON", site: "Сайт источника ↗", sourcesPage: "Источник в справочнике →",
+      columns: "Колонки", colKey: "Ключ", colLabel: "Подпись источника", colUnit: "Единица", preview: "Первые строки", more: (n) => `Показаны первые ${n} строк. Полные данные в CSV и JSON.`, blank: "пусто", cite: "Ссылка на данные", copy: "Скопировать", copied: "Скопировано",
+      citeSource: "Первоисточник. Указывается при любом использовании данных: этого требует лицензия первоисточника.", citeVia: "Путь получения. По желанию: так читатель найдёт ту же версию набора.", citeAuthor: "Автор расчёта.",
+      why: "CFR Project показывает, откуда данные и на каких условиях. Соблюдение лицензии первоисточника в собственных публикациях - ответственность пользователя.", method: "Как получено", otherTitle: "Название по-английски" },
+    en: { "nav.overview": "Overview", "nav.showcase": "Showcase", "nav.coverage": "Coverage", "nav.constructor": "Builder", "nav.datasets": "Source data", "nav.sources": "Sources", "nav.territory": "Territories", "nav.account": "Account",
+      crumbs: "Source data", over: "Source dataset", notFound: "No such dataset.", back: "Back to the list",
+      meta: (з) => `${L.форма.en[з.form]} · ${число(з.rows ?? 0)} rows${з.cols ? ` × ${з.cols} columns` : ""} · ${з.start ? (з.end && з.end !== з.start ? `${з.start}-${з.end}` : з.start) : "period not stated"} · ${L.темы.en[з.topic]}`,
+      side: "Passport", territory: "Territory", universe: "Population universe", layer: "Layer", layers: { reference: "CFR reference layer", historical: "historical", engineering: "engineering" }, universes: { "source-defined-unresolved": "source-defined", "present-de-facto": "present", "usual-resident": "usual residents", "legal-domicile": "legal domicile", "citizenship": "citizenship", "register-membership": "register" }, source: "Source", country: "Country", access: "Status", passport: "File", checksum: "Checksum", retrieved: "Retrieved", version: "Dataset version", review: "Review", pkg: "Package",
+      status: { local: "downloaded and verified", online: "online, not downloaded", closed: "closed access, see the source site" },
+      csv: "Download CSV", json: "Download JSON", site: "Source site ↗", sourcesPage: "Source in the directory →",
+      columns: "Columns", colKey: "Key", colLabel: "Source label", colUnit: "Unit", preview: "First rows", more: (n) => `First ${n} rows shown. Full data in CSV and JSON.`, blank: "blank", cite: "Data reference", copy: "Copy", copied: "Copied",
+      citeSource: "Original source. Required with any use of the data: the source licence demands attribution.", citeVia: "Access path. Optional: lets a reader find the same dataset version.", citeAuthor: "Author of the estimate.",
+      why: "CFR Project shows where the data come from and under what terms. Complying with the source licence in your own publications is the user's responsibility.", method: "How it was obtained", otherTitle: "Russian title" },
+  };
+  const состояние = { lang: "ru", id: "" };
+  const t = () => T[состояние.lang];
+  function изАдреса() { const h = location.hash.replace(/^#/, ""); for (const ч of h.split("&")) { const [k, v = ""] = ч.split("="); if (k === "lang") состояние.lang = v === "en" ? "en" : "ru"; else if (ч && !ч.includes("=")) состояние.id = decodeURIComponent(ч); else if (k === "id") состояние.id = decodeURIComponent(v); } }
+  function вАдрес() { history.replaceState(null, "", "#" + encodeURIComponent(состояние.id) + (состояние.lang === "en" ? "&lang=en" : "")); }
+  function язык() {
+    document.documentElement.lang = состояние.lang;
+    for (const el of document.querySelectorAll("[data-t]")) { const v = t()[el.dataset.t]; if (typeof v === "string") el.textContent = v; }
+    for (const s of document.querySelectorAll("#lang span")) s.classList.toggle("on", s.dataset.lang === состояние.lang);
+  }
+  function страница() {
+    язык();
+    const з = window.DATASETS.find((d) => d.id === состояние.id || d.id === "dataset:" + состояние.id);
+    const узел = document.getElementById("page");
+    if (!з) { узел.innerHTML = `<div class="empty">${t().notFound} <a href="datasets.html">${t().back}</a></div>`; document.title = "CFR Project"; return; }
+    const название = (состояние.lang === "en" ? (з.titleEn || з.titleRu) : (з.titleRu || з.titleEn)) || з.id;
+    const другое = состояние.lang === "en" ? з.titleRu : з.titleEn;
+    document.title = "CFR Project - " + название;
+    const страна = з.countries.includes("ww") && з.countryCount ? (состояние.lang === "en" ? `${з.countryCount} countries` : `${з.countryCount} стран`) : з.countries.map((c) => L.страны[состояние.lang][c]).join(", ");
+    const ссылка = состояние.lang === "en" ? з.citeEn : з.citeRu;
+    const колонки = з.columns.map((c) => `<tr><td class="k">${экр(c.key)}</td><td>${экр(c.label)}</td><td>${экр(c.unit || "")}</td></tr>`).join("");
+    const шапка = з.columns.map((c) => `<th title="${экр(c.label)}">${экр(c.key)}</th>`).join("");
+    const строки = з.preview.map((r) => `<tr>${r.map((v) => v.startsWith("· ") ? `<td class="st">${экр(v.slice(2))}</td>` : `<td>${экр(v)}</td>`).join("")}</tr>`).join("");
+    узел.innerHTML = `
+      <div class="crumbs"><a href="datasets.html${состояние.lang === "en" ? "#lang=en" : ""}">${t().crumbs}</a> · ${экр(страна)}</div>
+      <div class="head">
+        <div class="over">${t().over}</div>
+        <h1>${экр(название)}</h1>
+        <div class="meta">${t().meta(з)}${другое ? `<br><span style="color:var(--muted)">${t().otherTitle}: ${экр(другое)}</span>` : ""}</div>
+      </div>
+      <div class="body">
+      <div class="main">
+      ${з.columns.length ? `<section class="block"><h2>${t().columns} (${з.columns.length})</h2><table class="cols"><thead><tr><th>${t().colKey}</th><th>${t().colLabel}</th><th>${t().colUnit}</th></tr></thead><tbody>${колонки}</tbody></table></section>` : ""}
+      ${з.preview.length ? `<section class="block"><h2>${t().preview}</h2><div class="scroll"><table class="prev"><thead><tr>${шапка}</tr></thead><tbody>${строки}</tbody></table></div><div class="more">${t().more(з.preview.length)}</div></section>` : ""}
+      <section class="block"><h2>${t().cite}</h2><div class="cite">
+        ${з.layer === "engineering" ? `<div class="lbl">${t().citeAuthor}</div><pre>${экр(ссылка.author)}</pre><button type="button" data-copy="author">${t().copy}</button>` : ""}
+        <div class="lbl">${t().citeSource}</div><pre>${экр(ссылка.source || "-")}</pre><button type="button" data-copy="source">${t().copy}</button>
+        <div class="lbl">${t().citeVia}</div><pre>${экр(ссылка.via)}</pre><button type="button" data-copy="via">${t().copy}</button>
+        <div class="why">${t().why}</div>
+      </div></section>
+      ${з.method ? `<section class="block"><h2>${t().method}</h2><div class="method">${экр(з.method)}${з.code ? `<br><span style="color:var(--muted)">${экр(з.code)}</span>` : ""}</div></section>` : ""}
+      </div>
+        <aside class="side">
+          <h2>${t().side}</h2>
+          <div class="kv">
+            <span>${t().source}</span><span>${з.sources.length ? з.sources.map((s) => экр(s)).join("<br>") : "-"}</span>
+            <span>${t().country}</span><span>${экр(страна)}</span>
+            ${з.territory ? `<span>${t().territory}</span><span><a href="territory.html#country=${з.territory.country}${состояние.lang === "en" ? "&lang=en" : ""}">${экр(состояние.lang === "en" ? з.territory.versionEn : з.territory.versionRu)}</a></span><span>${t().universe}</span><span>${экр(t().universes[з.territory.universe] ?? з.territory.universe)}</span>` : ""}
+            ${з.layer === "reference" ? `<span>${t().layer}</span><span>${t().layers[з.layer]}</span>` : ""}
+            <span>${t().access}</span><span><span class="st ${з.access}"></span>${t().status[з.access]}</span>
+            ${з.artifact.path ? `<span>${t().passport}</span><span>${экр(з.artifact.path.split("/").pop())}${з.artifact.bytes ? `, ${число(з.artifact.bytes)} B` : ""}</span>` : ""}
+            ${з.artifact.checksum ? `<span>${t().checksum}</span><span>${экр(з.artifact.checksum)}</span>` : ""}
+            ${з.artifact.retrievedOn ? `<span>${t().retrieved}</span><span>${экр(з.artifact.retrievedOn)}</span>` : ""}
+            ${з.version ? `<span>${t().version}</span><span>${экр(з.version)}</span>` : ""}
+            ${з.review ? `<span>${t().review}</span><span>${экр(з.review)}</span>` : ""}
+          </div>
+          <div class="acts">
+            <a href="data/${encodeURIComponent(з.id.replace(/^dataset:/, "").replace(/[^A-Za-z0-9._-]+/g, "-"))}.csv">${t().csv}</a>
+            <a href="data/${encodeURIComponent(з.id.replace(/^dataset:/, "").replace(/[^A-Za-z0-9._-]+/g, "-"))}.json">${t().json}</a>
+            ${з.canonical ? `<a href="${экр(з.canonical)}" target="_blank" rel="noopener">${t().site}</a>` : ""}
+            ${з.sources.length ? `<a href="sources.html#q=${encodeURIComponent(з.sources[0].split(/[:,(]/)[0].trim().slice(0, 40))}">${t().sourcesPage}</a>` : ""}
+          </div>
+        </aside>
+      </div>`;
+    for (const кнопка of document.querySelectorAll("[data-copy]")) кнопка.addEventListener("click", async () => { try { await navigator.clipboard.writeText(ссылка[кнопка.dataset.copy]); кнопка.textContent = t().copied; setTimeout(() => kнопкаТекст(кнопка), 1500); } catch { /* буфер недоступен */ } });
+    function kнопкаТекст(к) { к.textContent = t().copy; }
+    вАдрес();
+  }
+  document.getElementById("lang").addEventListener("click", (e) => { const s = e.target.closest("[data-lang]"); if (!s) return; состояние.lang = s.dataset.lang; страница(); });
+  window.addEventListener("hashchange", () => { изАдреса(); страница(); });
+  изАдреса();
+  страница();
+})();
+</script>
+
+</body>
+</html>

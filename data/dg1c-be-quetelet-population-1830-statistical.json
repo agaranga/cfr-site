@@ -1,0 +1,96 @@
+{
+ "id": "dataset:dg1c-be-quetelet-population-1830-statistical",
+ "title": {
+  "ru": "Бельгия: Таблица населения Кетле (1830)",
+  "en": "Belgium: Quetelet population table (1830)"
+ },
+ "source": [
+  "Recherches sur la reproduction et la mortalité de l'homme aux différents âges, et sur la population de la Belgique"
+ ],
+ "sourceOf": "package:dg1c-source-native-demography",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Recherches sur la reproduction et la mortalité de l'homme aux différents âges, et sur la population de la Belgique. https://archive.org/details/recherchessurlar00quet",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор dg1c-be-quetelet-population-1830-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-be-quetelet-population-1830-statistical",
+   "author": "CFR Project (2026). Бельгия: Таблица населения Кетле (1830). Cliometric Figures Repository, справочный набор dg1c-be-quetelet-population-1830-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-be-quetelet-population-1830-statistical"
+  },
+  "en": {
+   "source": "Recherches sur la reproduction et la mortalité de l'homme aux différents âges, et sur la population de la Belgique. https://archive.org/details/recherchessurlar00quet",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset dg1c-be-quetelet-population-1830-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-be-quetelet-population-1830-statistical",
+   "author": "CFR Project (2026). Belgium: Quetelet population table (1830). Cliometric Figures Repository, reference dataset dg1c-be-quetelet-population-1830-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-be-quetelet-population-1830-statistical"
+  }
+ },
+ "columns": [
+  "observation",
+  "period_start",
+  "period_end",
+  "concept",
+  "value",
+  "unit",
+  "literal_state",
+  "territory_version",
+  "population_universe",
+  "reference_time",
+  "source",
+  "locator"
+ ],
+ "rows": [
+  {
+   "observation": "observation:dg1c:bel-population-quetelet-1830-royaume-cities-subtotal",
+   "period_start": "1830-01-01",
+   "period_end": "1830-01-01",
+   "concept": "population",
+   "value": 998118,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:quetelet-population-1830:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:quetelet-1832-population-belgium",
+   "locator": "printed p.5 / PDF p.15, national table and footnote; exact row/cell: Royaume / population des villes"
+  },
+  {
+   "observation": "observation:dg1c:bel-population-quetelet-1830-royaume-rural-communes-subtotal",
+   "period_start": "1830-01-01",
+   "period_end": "1830-01-01",
+   "concept": "population",
+   "value": 3066091,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:quetelet-population-1830:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:quetelet-1832-population-belgium",
+   "locator": "printed p.5 / PDF p.15, national table and footnote; exact row/cell: Royaume / population des communes rurales"
+  },
+  {
+   "observation": "observation:dg1c:bel-population-quetelet-1830-royaume-total-author-corrected",
+   "period_start": "1830-01-01",
+   "period_end": "1830-01-01",
+   "concept": "population",
+   "value": 4074712,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:quetelet-population-1830:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:quetelet-1832-population-belgium",
+   "locator": "printed p.5 / PDF p.15, national table and footnote; exact row/cell: footnote 1 / Il faudrait plutot 4,074,712 ames"
+  },
+  {
+   "observation": "observation:dg1c:bel-population-quetelet-1830-royaume-total-printed",
+   "period_start": "1830-01-01",
+   "period_end": "1830-01-01",
+   "concept": "population",
+   "value": 4064209,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:quetelet-population-1830:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:quetelet-1832-population-belgium",
+   "locator": "printed p.5 / PDF p.15, national table and footnote; exact row/cell: Royaume / population totale"
+  }
+ ]
+}

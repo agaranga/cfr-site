@@ -1,0 +1,7 @@
+﻿id,label_en,label_ru,temporarilyAbsent,temporaryVisitors,foreignCitizens,armedForces,institutionalPopulation
+population-universe:present-de-facto,Population present,Наличное население,excluded,included,included,source-defined,source-defined
+population-universe:usual-resident,Usual residents,Постоянное население,included,excluded,included,source-defined,source-defined
+population-universe:legal-domicile,Population by legal domicile,Население по домицилию,source-defined,excluded,source-defined,source-defined,source-defined
+population-universe:citizenship,Population by citizenship,Население по гражданству,source-defined,source-defined,excluded,source-defined,source-defined
+population-universe:register-membership,Register population,Население по реестру,source-defined,source-defined,source-defined,source-defined,source-defined
+population-universe:source-defined-unresolved,Source-defined (unresolved),Как определил источник (не раскрыто),unresolved,unresolved,unresolved,unresolved,unresolved

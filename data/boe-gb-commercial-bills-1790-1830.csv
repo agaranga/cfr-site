@@ -1,0 +1,9 @@
+year,geography,bill_scope,stock_gbp_millions,source_series,source_cell,source_value_kind
+1790,Great Britain,inland-commercial-bills,100,newmarch-combined,B6,literal-source-estimate
+1815,Great Britain,inland-commercial-bills,119.25,newmarch-combined,B31,exact-source-formula
+1828,Great Britain,inland-commercial-bills,80.9,newmarch-combined,B44,literal-source-estimate
+1828,Great Britain,foreign-commercial-bills,13.5,newmarch-combined,C44,literal-source-estimate
+1829,Great Britain,inland-commercial-bills,78.9,newmarch-combined,B45,literal-source-estimate
+1829,Great Britain,foreign-commercial-bills,13.2,newmarch-combined,C45,literal-source-estimate
+1830,Great Britain,inland-commercial-bills,74,newmarch-combined,B46,literal-source-estimate
+1830,Great Britain,foreign-commercial-bills,12.3,newmarch-combined,C46,literal-source-estimate

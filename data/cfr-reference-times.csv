@@ -1,0 +1,10 @@
+﻿id,label_en,label_ru,appliesTo
+reference-time:census-moment,Census moment,Момент переписи,stock
+reference-time:end-of-period,End of period,Конец периода,stock
+reference-time:event-interval-total,Event total over an interval,Сумма событий за интервал,flow
+reference-time:event-period-average,Average annual events,Среднегодовое число событий,flow
+reference-time:mid-period,Mid-period,Середина периода,stock
+reference-time:period-average,Period average,Среднее за период,exposure
+reference-time:source-year-event-interval-unresolved,"Event year, endpoints unresolved",Год событий без точных границ,flow
+reference-time:start-of-period,Start of period,Начало периода,stock
+reference-time:year-only-unresolved,Year only (instant unresolved),Только год (момент не установлен),mixed

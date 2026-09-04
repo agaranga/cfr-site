@@ -1,0 +1,9396 @@
+{
+ "id": "dataset:nl-hna-employment-v1",
+ "title": {
+  "ru": "Занятость Нидерландов по секторам и полу, реперные годы",
+  "en": "Netherlands employment by sector and sex, benchmark years"
+ },
+ "source": [
+  "Historical National Accounts of the Netherlands: spreadsheet table suite"
+ ],
+ "sourceOf": "EconEvidence/Generated/netherlands/hna-employment.v1.json",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Лицензия: Public scholarly download; reuse status not asserted.",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор nl-hna-employment-v1, версия 1.0.0, загружено 2026-09-04. https://cfrproject.com/ru/datasets/nl-hna-employment-v1",
+   "author": "CFR Project (2026). Занятость Нидерландов по секторам и полу, реперные годы 1807-1909. Cliometric Figures Repository, инженерный набор nl-hna-employment-v1, версия 1.0.0. https://cfrproject.com/ru/datasets/nl-hna-employment-v1"
+  },
+  "en": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Licence: Public scholarly download; reuse status not asserted.",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset nl-hna-employment-v1, version 1.0.0, retrieved 2026-09-04. https://cfrproject.com/en/datasets/nl-hna-employment-v1",
+   "author": "CFR Project (2026). Netherlands employment by sector and sex, benchmark years 1807-1909. Cliometric Figures Repository, engineering dataset nl-hna-employment-v1, version 1.0.0. https://cfrproject.com/en/datasets/nl-hna-employment-v1"
+  }
+ },
+ "columns": [
+  "sourceRow",
+  "code",
+  "label",
+  "rowType",
+  "block",
+  "year",
+  "value",
+  "state"
+ ],
+ "rows": [
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 9017,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 11578,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 14405,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 18721,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 24794,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 31010,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 10524,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 13212,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 16801,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 22476,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 28252,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 1054,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 1193,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 1920,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 2318,
+   "state": ""
+  },
+  {
+   "sourceRow": 7,
+   "code": "I",
+   "label": "ceramics and glass",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 2758,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 555,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 1645,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 1671,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 10398,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 9877,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 10066,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 1597,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 1660,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 9973,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 8786,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 9064,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 48,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 11,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 425,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 1091,
+   "state": ""
+  },
+  {
+   "sourceRow": 8,
+   "code": "II",
+   "label": "diamond cutting",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 1002,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 1769,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 5248,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 5677,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 9819,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 13749,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 20210,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 5181,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 5634,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 9756,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 13602,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 19706,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 67,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 43,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 63,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 147,
+   "state": ""
+  },
+  {
+   "sourceRow": 9,
+   "code": "III",
+   "label": "printing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 504,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 58224,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 82935,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 91004,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 123680,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 140405,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 162164,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 82671,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 90725,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 123339,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 139892,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 161645,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 264,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 279,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 341,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 513,
+   "state": ""
+  },
+  {
+   "sourceRow": 10,
+   "code": "IV",
+   "label": "building & contruction",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 519,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 3858,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 4581,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 4689,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 6158,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 8089,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 12336,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 4169,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 4385,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 5123,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 6478,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 9726,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 412,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 304,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 1035,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 1611,
+   "state": ""
+  },
+  {
+   "sourceRow": 11,
+   "code": "V",
+   "label": "chemicals",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 2610,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 12461,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 26221,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 29690,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 35730,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 38508,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 47370,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 25731,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 28863,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 35221,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 37657,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 46213,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 490,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 827,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 509,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 851,
+   "state": ""
+  },
+  {
+   "sourceRow": 12,
+   "code": "VI",
+   "label": "woodworking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 1157,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 34825,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 70728,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 71572,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 77299,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 92700,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 109888,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 29485,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 32282,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 34109,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 36857,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 39997,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 41243,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 39290,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 43190,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 55843,
+   "state": ""
+  },
+  {
+   "sourceRow": 13,
+   "code": "VII",
+   "label": "clothing & cleaning",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 69891,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 546,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 778,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 937,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 1091,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 546,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 877,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 723,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 889,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 1031,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 518,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 820,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 55,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 48,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 60,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 28,
+   "state": ""
+  },
+  {
+   "sourceRow": 14,
+   "code": "VIII",
+   "label": "applied art",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 57,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 22290,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 31750,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 31041,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 37199,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 39581,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 36783,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 31260,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 30586,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 36570,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 38206,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 34971,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 490,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 455,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 629,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 1375,
+   "state": ""
+  },
+  {
+   "sourceRow": 15,
+   "code": "IX",
+   "label": "leather",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 1812,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 1810,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 2509,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 2258,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 15159,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 16462,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 23428,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 2216,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 2212,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 13072,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 14943,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 20795,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 293,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 46,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 2087,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 1519,
+   "state": ""
+  },
+  {
+   "sourceRow": 16,
+   "code": "X",
+   "label": "mining",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 2633,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 12845,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 44729,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 49976,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 67055,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 89571,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 117441,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 44161,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 49515,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 66453,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 88335,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 114843,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 568,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 461,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 602,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 1236,
+   "state": ""
+  },
+  {
+   "sourceRow": 17,
+   "code": "XI-XIII",
+   "label": "metal & shipbuilding",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 2598,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 2573,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 3984,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 4207,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 5700,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 6942,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 10351,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 3583,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 3736,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 5050,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 6002,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 8718,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 401,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 471,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 650,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 940,
+   "state": ""
+  },
+  {
+   "sourceRow": 18,
+   "code": "XIV",
+   "label": "paper",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 1633,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 39516,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 44898,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 45545,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 44375,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 49198,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 60098,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 32321,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 33076,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 33569,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 34596,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 40224,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 12577,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 12469,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 10806,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 14602,
+   "state": ""
+  },
+  {
+   "sourceRow": 19,
+   "code": "XV",
+   "label": "textile",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 19874,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 0,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 82,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 370,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 2665,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 4460,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 9478,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 82,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 370,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 2662,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 4449,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 9457,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 0,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 0,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 3,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 11,
+   "state": ""
+  },
+  {
+   "sourceRow": 20,
+   "code": "XVI",
+   "label": "utilities",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 21,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 27401,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 57684,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 62438,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 92761,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 117229,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 137556,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 55421,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 60756,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 89393,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 112115,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 130274,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 2263,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 1682,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 3368,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 5114,
+   "state": ""
+  },
+  {
+   "sourceRow": 21,
+   "code": "XVII",
+   "label": "food & stimulants",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 7282,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 367388,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 494526,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 523526,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 616612,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 659832,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 676119,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 322020,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 348739,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 446781,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 487011,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 500019,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 172506,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 174787,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 169831,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 172821,
+   "state": ""
+  },
+  {
+   "sourceRow": 22,
+   "code": "XVIII",
+   "label": "agriculture",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 176100,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 7145,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 11476,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 12604,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 16836,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 21842,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 23570,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 11426,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 12565,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 16773,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 21290,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 23510,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 50,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 39,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 63,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 552,
+   "state": ""
+  },
+  {
+   "sourceRow": 23,
+   "code": "XIX",
+   "label": "fishing",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 60,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 62061,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 86814,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 92349,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 139041,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 183958,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 224292,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 66055,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 72435,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 109132,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 144738,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 178174,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 20759,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 19914,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 29909,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 39220,
+   "state": ""
+  },
+  {
+   "sourceRow": 24,
+   "code": "XX",
+   "label": "trade",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 46118,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 14372,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 13329,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 12764,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 19374,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 24756,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 31951,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 9380,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 9490,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 14645,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 17343,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 19870,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 3949,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 3274,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 4729,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 7413,
+   "state": ""
+  },
+  {
+   "sourceRow": 25,
+   "code": "XXI-A",
+   "label": "catering industry",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 12081,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 26822,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 40561,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 42848,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 40877,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 43273,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 50648,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 40232,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 42484,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 40455,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 42813,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 50142,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 329,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 364,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 422,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 460,
+   "state": ""
+  },
+  {
+   "sourceRow": 26,
+   "code": "XXI-B",
+   "label": "shipping",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 506,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 12467,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 36973,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 40130,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 63674,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 77308,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 107022,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 35573,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 39188,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 61689,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 75182,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 103486,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 1400,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 942,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 1985,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 2126,
+   "state": ""
+  },
+  {
+   "sourceRow": 27,
+   "code": "XXI-C",
+   "label": "other transport",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 3536,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 1307,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 1521,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 4362,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 5840,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 9923,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 1219,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 1483,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 4335,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 5793,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 9488,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 88,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 38,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 27,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 47,
+   "state": ""
+  },
+  {
+   "sourceRow": 28,
+   "code": "XXII",
+   "label": "banking",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 435,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 831,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 789,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 2082,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 4118,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 8051,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 823,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 788,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 2063,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 4044,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 7606,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 8,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 1,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 19,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 74,
+   "state": ""
+  },
+  {
+   "sourceRow": 29,
+   "code": "XXIII",
+   "label": "insurance",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 445,
+   "state": ""
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 1020,
+   "state": ""
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 30,
+   "code": "XXII-XXIII",
+   "label": "financial sector",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 9320,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 16540,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 17791,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 26362,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 27048,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 31097,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 16472,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 17743,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 26156,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 26741,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 30608,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 68,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 48,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 206,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 307,
+   "state": ""
+  },
+  {
+   "sourceRow": 31,
+   "code": "XXIV-A",
+   "label": "public administration",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 489,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 23690,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 25915,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 28673,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 33953,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 33887,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 40278,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 25915,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 28673,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 33953,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 33887,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 40277,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 0,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 0,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 0,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 0,
+   "state": ""
+  },
+  {
+   "sourceRow": 32,
+   "code": "XXIV-B",
+   "label": "military",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 1,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 3812,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 6005,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 5873,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 12358,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 15391,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 25570,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 4306,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 4296,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 5580,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 5807,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 7710,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 1699,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 1577,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 6778,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 9584,
+   "state": ""
+  },
+  {
+   "sourceRow": 33,
+   "code": "XXIV-C",
+   "label": "medical service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 17860,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 2863,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 5379,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 4954,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 11685,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 11178,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 16513,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 4983,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 4766,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 10101,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 10411,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 15047,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 396,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 188,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 1584,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 767,
+   "state": ""
+  },
+  {
+   "sourceRow": 34,
+   "code": "XXIV-D",
+   "label": "other professions",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 1466,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 6234,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 8520,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 9422,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 24892,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 33883,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 47740,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 6792,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 7483,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 16091,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 19715,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 24139,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 1728,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 1939,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 8801,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 14168,
+   "state": ""
+  },
+  {
+   "sourceRow": 35,
+   "code": "XXV",
+   "label": "education",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 23601,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 102176,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 114268,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 113690,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 168637,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 197469,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 214029,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 12515,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 13103,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 11458,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 7888,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 8631,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 101753,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 100587,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 157179,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 189581,
+   "state": ""
+  },
+  {
+   "sourceRow": 36,
+   "code": "XXVI",
+   "label": "domestic service",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 205398,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 6283,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 14557,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 17756,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 24988,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 27684,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 22140,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 14215,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 17246,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 24453,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 27607,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 22110,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 342,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 510,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 535,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 77,
+   "state": ""
+  },
+  {
+   "sourceRow": 37,
+   "code": "XXVII",
+   "label": "labourers",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 30,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 2807,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 4413,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 4497,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 6479,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 7378,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 7726,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1849,
+   "value": 4203,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1859,
+   "value": 4372,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1889,
+   "value": 5579,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1899,
+   "value": 6718,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "male",
+   "year": 1909,
+   "value": 7286,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1849,
+   "value": 210,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1859,
+   "value": 125,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1889,
+   "value": 900,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1899,
+   "value": 660,
+   "state": ""
+  },
+  {
+   "sourceRow": 38,
+   "code": "XXVIII",
+   "label": "religion",
+   "rowType": "sector",
+   "block": "female",
+   "year": 1909,
+   "value": 440,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 876150,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 1270764,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 1344667,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 1760022,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 2026956,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 2325725,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 905254,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 982755,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 1311366,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 1501900,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 1722808,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 365510,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 361912,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 448656,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 525056,
+   "state": ""
+  },
+  {
+   "sourceRow": 40,
+   "code": "",
+   "label": "TOTAL",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 602917,
+   "state": ""
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 2163092,
+   "state": ""
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 3081118,
+   "state": ""
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 3308969,
+   "state": ""
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 4511415,
+   "state": ""
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 5103979,
+   "state": ""
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 5898429,
+   "state": ""
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 42,
+   "code": "",
+   "label": "population",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 374533,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 506002,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 536130,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 633448,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 681674,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 699689,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 333446,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 361304,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 463554,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 508301,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 523529,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 172556,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 174826,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 169894,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 173373,
+   "state": ""
+  },
+  {
+   "sourceRow": 45,
+   "code": "",
+   "label": "primary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 176160,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 227690,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 389350,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 415480,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 547810,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 652111,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 789056,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 329125,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 357901,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 482122,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 564912,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 674705,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 60225,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 57579,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 65688,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 87199,
+   "state": ""
+  },
+  {
+   "sourceRow": 46,
+   "code": "",
+   "label": "secondary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 114351,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 267644,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 360855,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 375301,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 553776,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 665487,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 814840,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 228468,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 246304,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 341237,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 401080,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 502464,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 132387,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 128997,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 212539,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 264407,
+   "state": ""
+  },
+  {
+   "sourceRow": 47,
+   "code": "",
+   "label": "tertiary",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 312376,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 374533,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 506002,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 536130,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 633448,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 681674,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 699689,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 333446,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 361304,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 463554,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 508301,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 523529,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 172556,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 174826,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 169894,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 173373,
+   "state": ""
+  },
+  {
+   "sourceRow": 50,
+   "code": "",
+   "label": "Agriculture and fishing",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 176160,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 227690,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 389350,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 415480,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 547810,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 652111,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 789056,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 329125,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 357901,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 482122,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 564912,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 674705,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 60225,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 57579,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 65688,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 87199,
+   "state": ""
+  },
+  {
+   "sourceRow": 52,
+   "code": "",
+   "label": "Industry",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 114351,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 58224,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 82935,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 91004,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 123680,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 140405,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 162164,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 82671,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 90725,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 123339,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 139892,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 161645,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 264,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 279,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 341,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 513,
+   "state": ""
+  },
+  {
+   "sourceRow": 53,
+   "code": "",
+   "label": "building & construction",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 519,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 34825,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 70728,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 71572,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 77299,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 92700,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 109888,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 29485,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 32282,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 34109,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 36857,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 39997,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 41243,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 39290,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 43190,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 55843,
+   "state": ""
+  },
+  {
+   "sourceRow": 54,
+   "code": "",
+   "label": "clothing & cleaning",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 69891,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 39516,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 44898,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 45545,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 44375,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 49198,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 60098,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 32321,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 33076,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 33569,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 34596,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 40224,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 12577,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 12469,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 10806,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 14602,
+   "state": ""
+  },
+  {
+   "sourceRow": 55,
+   "code": "",
+   "label": "textile",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 19874,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 1810,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 2509,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 2258,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 15159,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 16462,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 23428,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 2216,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 2212,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 13072,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 14943,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 20795,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 293,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 46,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 2087,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 1519,
+   "state": ""
+  },
+  {
+   "sourceRow": 56,
+   "code": "",
+   "label": "mining",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 2633,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 12845,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 44729,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 49976,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 67055,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 89571,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 117441,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 44161,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 49515,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 66453,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 88335,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 114843,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 568,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 461,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 602,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 1236,
+   "state": ""
+  },
+  {
+   "sourceRow": 57,
+   "code": "",
+   "label": "metal & shipbuilding",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 2598,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 27401,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 57684,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 62438,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 92761,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 117229,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 137556,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 55421,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 60756,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 89393,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 112115,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 130274,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 2263,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 1682,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 3368,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 5114,
+   "state": ""
+  },
+  {
+   "sourceRow": 58,
+   "code": "",
+   "label": "food & stimulants",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 7282,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 53069,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 85867,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 92687,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 127481,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 146546,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 178481,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 82850,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 89335,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 122187,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 138174,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 166927,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 3017,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 3352,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 5294,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 8372,
+   "state": ""
+  },
+  {
+   "sourceRow": 59,
+   "code": "",
+   "label": "other",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 11554,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 267644,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 360855,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 375301,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 553776,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 665487,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 814840,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 228468,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 246304,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 341237,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 401080,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 502464,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 132387,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 128997,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 212539,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 264407,
+   "state": ""
+  },
+  {
+   "sourceRow": 61,
+   "code": "",
+   "label": "Services",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 312376,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 101350,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 164348,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 175327,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 243592,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 304539,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 381962,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 141860,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 154107,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 211276,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 262733,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 331802,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 22488,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 21220,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 32316,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 41806,
+   "state": ""
+  },
+  {
+   "sourceRow": 62,
+   "code": "",
+   "label": "distributive",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 50160,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 3883,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 7517,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 7264,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 18129,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 21136,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 34487,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 7025,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 7037,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 16499,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 20248,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 32141,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 492,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 227,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 1630,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 888,
+   "state": ""
+  },
+  {
+   "sourceRow": 63,
+   "code": "",
+   "label": "producer",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 2346,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 45863,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 61393,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 66256,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 104044,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 117587,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 152411,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 57688,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 62567,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 87359,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 92868,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 110020,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 3705,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 3689,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 16685,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 24719,
+   "state": ""
+  },
+  {
+   "sourceRow": 64,
+   "code": "",
+   "label": "social",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 42391,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 116548,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 127597,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 126454,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 188011,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 222225,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 245980,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 21895,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 22593,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 26103,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 25231,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 28501,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 105702,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 103861,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 161908,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 196994,
+   "state": ""
+  },
+  {
+   "sourceRow": 65,
+   "code": "",
+   "label": "private",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 217479,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1807,
+   "value": 869867,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1849,
+   "value": 1256207,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1859,
+   "value": 1326911,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1889,
+   "value": 1735034,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1899,
+   "value": 1999272,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "totalEmployment",
+   "year": 1909,
+   "value": 2303585,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1849,
+   "value": 891039,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1859,
+   "value": 965509,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1889,
+   "value": 1286913,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1899,
+   "value": 1474293,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "male",
+   "year": 1909,
+   "value": 1700698,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1807,
+   "value": null,
+   "state": "blank"
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1849,
+   "value": 365168,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1859,
+   "value": 361402,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1889,
+   "value": 448121,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1899,
+   "value": 524979,
+   "state": ""
+  },
+  {
+   "sourceRow": 67,
+   "code": "",
+   "label": "Total",
+   "rowType": "source-total-or-aggregate",
+   "block": "female",
+   "year": 1909,
+   "value": 602887,
+   "state": ""
+  }
+ ]
+}

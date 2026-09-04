@@ -1,0 +1,4 @@
+financial_year,geography,period_end,total_receipts_gbp_mn,customs_gbp_mn,excise_gbp_mn,stamps_gbp_mn,customs_excise_stamp_total_gbp_mn,land_assessed_tax_gbp_mn,household_income_property_tax_gbp_mn,other_receipts_gbp_mn,source_sheet,source_cells
+1798/99,Great Britain,10th October,31.783,7.056,11.862,2.447,21.365,6.446,1.671,2.301,A27. Central govt borrowing,A122:AA122
+1799/00,Great Britain,Bridge: Qtr ending 5th Jan 1800,9.674,2.395,3.241,0.763,6.399,1.600,1.020,0.655,A27. Central govt borrowing,A123:AA123
+1800/01,Great Britain,5th January,31.585,6.785,10.594,2.621,20.000,5.093,4.513,1.979,A27. Central govt borrowing,A124:AA124

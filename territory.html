@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFR Project - Территории</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .head { padding: 44px 0 10px 0; }
+  .head .over { font: 700 10px/1 Inter, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .head h1 { font: 500 34px/1.15 Georgia, serif; margin: 0 0 12px 0; }
+  .lead { font-size: 15px; color: #566059; max-width: 50em; line-height: 1.6; margin: 0 0 10px 0; }
+  .lang span { cursor: pointer; }
+  .kpi { display: flex; flex-wrap: wrap; gap: 26px; margin: 16px 0 6px 0; }
+  .kpi div { font-size: 12.5px; color: var(--muted); }
+  .kpi b { display: block; font: 500 26px/1.1 Georgia, serif; color: var(--ink); }
+  .switches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 16px 0 8px 0; }
+  .switch { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .switch h3 { margin: 0 0 6px 0; font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--forest-soft); }
+  .switch p { margin: 0; font-size: 13.5px; line-height: 1.5; color: #3c453f; }
+  h2.sec { font: 500 24px/1.2 Georgia, serif; margin: 30px 0 6px 0; }
+  .sub { font-size: 13.5px; color: var(--muted); margin: 0 0 12px 0; max-width: 50em; line-height: 1.5; }
+  a.in { color: var(--forest-soft); text-decoration: none; border-bottom: 1px dotted rgba(39,89,73,.5); }
+  a.in:hover { border-bottom-style: solid; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px 0; }
+  .chip { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 12.5px; font-weight: 600; color: #3c453f; cursor: pointer; }
+  .chip small { font-weight: 500; color: var(--muted); margin-left: 5px; font-variant-numeric: tabular-nums; }
+  .chip.on { background: var(--forest); color: var(--white); border-color: var(--forest); } .chip.on small { color: rgba(255,253,248,.7); }
+  table.ov { width: 100%; border-collapse: collapse; background: var(--white); border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+  .ov th { text-align: left; font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 9px 10px; border-bottom: 1px solid var(--line); background: var(--paper); white-space: nowrap; }
+  .ov td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  .ov tr.row { cursor: pointer; } .ov tr.row:hover td { background: var(--paper); } .ov tr.row.on td { background: #eaf0ec; }
+  .ov td.n { text-align: right; } .ov th.n { text-align: right; }
+  .ov td.name { font-weight: 600; }
+  .ov td.st { color: var(--muted); white-space: nowrap; }
+  .country { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px 16px 20px; margin: 14px 0 16px 0; }
+  .country h3 { margin: 0 0 4px 0; font: 500 20px/1.2 Georgia, serif; }
+  .country .meta { font-size: 12.5px; color: var(--muted); margin-bottom: 12px; }
+  .axis { position: relative; height: 22px; margin: 6px 0 2px 0; border-bottom: 1px solid var(--line); }
+  .axis span { position: absolute; top: 4px; transform: translateX(-50%); font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .events { position: relative; height: 118px; margin: 0 0 8px 0; }
+  .ev { position: absolute; top: 0; width: 1px; height: 100%; }
+  .ev i { position: absolute; left: -1px; top: 0; width: 2px; height: 100%; background: var(--clay); opacity: .7; }
+  .ev b { position: absolute; left: 4px; top: 2px; font-size: 10.5px; font-weight: 700; color: var(--clay); white-space: nowrap; }
+  .ev em { position: absolute; left: 4px; top: 16px; width: 140px; font-style: normal; font-size: 10.5px; line-height: 1.25; color: #3c453f; }
+  .ev em a { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(60,69,63,.5); }
+  .ev.s1 b { top: 56px; } .ev.s1 em { top: 70px; } .ev.s2 b { top: 110px; } .ev.s2 em { top: 124px; } .ev.s3 b { top: 164px; } .ev.s3 em { top: 178px; }
+  .lanes { display: flex; flex-direction: column; gap: 5px; }
+  .lane { display: grid; grid-template-columns: 270px 1fr; gap: 12px; align-items: center; min-height: 22px; }
+  .lane .lbl { font-size: 12.5px; line-height: 1.25; color: var(--ink); }
+  .lane .lbl small { display: block; color: var(--muted); font-size: 11px; }
+  .lane .track { position: relative; height: 18px; }
+  .bar { position: absolute; top: 3px; height: 12px; border-radius: 3px; background: var(--forest-soft); opacity: .85; }
+  .bar.legal { background: var(--forest); } .bar.effective-administration { background: #5b8a6e; } .bar.statistical-reporting { background: var(--gold); } .bar.retrospective-analytical { background: #9a8bb8; }
+  .bar.target { background: transparent; border: 1.5px dashed var(--muted); opacity: .9; top: 2px; height: 13px; }
+  .bar .obs { position: absolute; right: 4px; top: -1px; font-size: 10px; color: var(--white); font-weight: 700; text-decoration: none; }
+  .bar.statistical-reporting .obs { color: var(--ink); }
+  .bar[data-tip]:hover::after { content: attr(data-tip); position: absolute; left: 0; bottom: calc(100% + 6px); background: var(--ink); color: var(--white); font-size: 12px; line-height: 1.35; padding: 7px 10px; border-radius: 5px; width: max-content; max-width: 380px; white-space: normal; z-index: 5; }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 8px 0 0 0; font-size: 11.5px; color: var(--muted); }
+  .legend i { display: inline-block; width: 18px; height: 9px; border-radius: 2px; vertical-align: -1px; margin-right: 5px; }
+  .legend i.target { background: transparent; border: 1.5px dashed var(--muted); height: 8px; }
+  .cross, .tbl { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 13px; background: var(--white); border: 1px solid var(--line); }
+  .cross th, .tbl th { text-align: left; font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 8px 9px; border-bottom: 1px solid var(--line); background: var(--paper); }
+  .cross td, .tbl td { padding: 8px 9px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .cross td.st { white-space: nowrap; color: var(--muted); } .cross td.st b { color: var(--clay); font-weight: 600; }
+  .tbl td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .gloss { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .term { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+  .term h4 { margin: 0 0 4px 0; font-size: 14px; font-weight: 600; }
+  .term p { margin: 0; font-size: 13px; color: #3c453f; line-height: 1.45; }
+  .term .rules { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 5px; }
+  .term .rules span { font-size: 11px; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .term .rules span.in { color: var(--forest); border-color: var(--forest-soft); } .term .rules span.out { color: var(--clay); border-color: var(--clay); }
+  .term .n { float: right; font-size: 11.5px; color: var(--muted); } .term .n a { color: var(--forest-soft); text-decoration: none; }
+  .honest { border-left: 3px solid var(--gold); padding: 10px 14px; background: var(--white); margin: 12px 0 0 0; font-size: 13.5px; line-height: 1.5; color: #3c453f; }
+  details.ids { margin-top: 10px; font-size: 12px; color: var(--muted); } details.ids code { font-size: 11px; }
+  .hint { font-size: 13px; color: var(--muted); margin: 10px 0 0 0; }
+  @media (max-width: 800px) { .switches, .gloss { grid-template-columns: 1fr; } .lane { grid-template-columns: 1fr; gap: 2px; } .ev em { width: 110px; } .ov { display: block; overflow-x: auto; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./"><span class="mark">CFR</span><span class="word">CFR Project</span></a>
+  <nav class="topnav">
+    <a href="./">Обзор</a>
+    <a href="showcase.html">Витрина</a>
+    <a href="coverage.html">Покрытие</a>
+    <a href="constructor.html">Конструктор</a>
+    <a href="datasets.html">Исходные данные</a>
+    <a href="sources.html">Источники</a>
+    <a class="on" href="territory.html">Территории</a>
+  </nav>
+  <a class="account" href="mailto:cfr@cfrproject.com?subject=CFR%20Project" title="Личный кабинет появится позже; пока пишите нам"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="5" r="2.8"/><path d="M2.5 14c.6-3 2.7-4.5 5.5-4.5s4.9 1.5 5.5 4.5"/></svg><span>Личный кабинет</span></a>
+  <span class="lang" id="lang"><span class="on" data-lang="ru">RU</span><span data-lang="en">EN</span></span>
+</header>
+
+<div class="wrap" id="page"></div>
+
+<footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
+
+<script src="assets/territory-data.js"></script>
+<script>
+  const D = window.TERRITORY;
+  const состояние = { lang: "ru", country: "" };
+  const T = {
+    ru: {
+      over: "Справочник · территории и определения", h1: "Территории и определения населения",
+      lead1: "Одно и то же слово «Франция» в 1801, 1861 и 1872 году означает разную землю: без Савойи и Ниццы до 1860, с Эльзасом до 1871. Бельгия до 1830 живёт внутри Нидерландов, Люксембург до 1890 связан с ними личной унией. Число людей зависит ещё и от того, кого считали и когда.",
+      lead2: "CFR хранит три переключателя у каждого исходного наблюдения ровно так, как их задал источник, ничего не пересчитывает и не сглаживает: переход от старой границы к нынешней записан как определение, а не как число, пока его численная форма не доказана и не принята отдельно. Выберите страну: всё на этой странице ведёт к источникам и наборам внутри CFR.",
+      kpi: { countries: "страны", versions: "версий территории", events: "событий границ", crosswalks: "переходов описано", observations: "исходных наблюдений" },
+      sw: [["Территория", "Какая земля стоит за числом: правовая граница, фактическое управление или область конкретной таблицы источника."], ["Состав населения", "Кого считали: наличное, постоянное, по домицилию, по гражданству, по реестру; или как написал источник, если правило не раскрыто."], ["Момент учёта", "Когда: момент переписи, начало или конец периода, среднее за период, сумма событий за интервал."]],
+      pick: "Страны", all: "Все страны", ovCols: ["Страна", "Период версий", "Версий", "Событий", "Переходов", "Наблюдений", "Источников", "Числовые переходы"], numYes: "есть", numNo: "нет: описаны, числа не дают",
+      pickHint: "Нажмите на страну в таблице или на плашку выше: откроются её лента границ, версии территории, переходы и таблицы источников.",
+      countrySub: "Лента событий границ и версии территории на оси 1795-1913. Сплошные полосы - области источников, пунктир - целевая композиция 1900 года. Число на полосе - сколько исходных наблюдений на ней сидит; названия ведут к источникам.",
+      versions: (n) => `${n} ${склон(n, "версия", "версии", "версий")} территории`, obs: (n) => `${n} ${склон(n, "наблюдение", "наблюдения", "наблюдений")}`, evs: (n) => `${n} ${склон(n, "событие границ", "события границ", "событий границ")}`,
+      basis: "основание", role: "роль", period: "применимость", status: { partial: "поддержка частичная", unresolved: "не установлено", complete: "полная" }, srcs: "источники",
+      legend: [["legal", "правовое"], ["effective-administration", "фактическое управление"], ["statistical-reporting", "область таблицы источника"], ["retrospective-analytical", "ретроспективная реконструкция"], ["target", "целевая композиция 1900"]],
+      cross: "Что это значит для чисел", crossSub: "Каждая область источника сопоставлена с тремя ветвями территории 1900 года: правовой, фактической и статистической. Сопоставление описывает состав и направление, но числа не даёт: доля населения, которую нельзя отнести к целевой территории, неизвестна.",
+      crossCols: ["Область источника", "Что измерено", "Годы", "Переходов", "Состояние", "Опора"], crossState: (c) => /unavailable/.test(c.numerical) ? "описан, числа не даёт" : c.numerical, unmatched: "неучтённая доля неизвестна",
+      crossAll: (n) => `Всего ${n} переходов; численной формы пока нет ни у одного. Это не пробел в данных, а честное состояние: пересчёт появится только вместе с доказательством, отдельным инженерным набором с собственной ссылкой.`,
+      data: "Таблицы источников", dataSub: "Исходные демографические наблюдения выбранной страны: что измерено, за какие годы, на какой версии территории и откуда. Ряды целиком - в разделе «Исходные данные», тема «Население».",
+      dataCols: ["Что измерено", "Годы", "Наблюдений", "Территория источника", "Состав", "Источник"], toData: "Открыть в исходных данных →",
+      gloss: "Словарь определений", glossSub: "Шесть составов населения и девять моментов учёта - контролируемый словарь CFR. У каждого исходного наблюдения стоит ровно одно значение из каждого списка.",
+      universes: "Состав населения", times: "Момент учёта", rule: { included: "включены", excluded: "исключены", "source-defined": "как в источнике", unresolved: "не установлено" },
+      ruleNames: { temporarilyAbsent: "временно отсутствующие", temporaryVisitors: "приезжие", foreignCitizens: "иностранцы", armedForces: "военные", institutionalPopulation: "в учреждениях" },
+      applies: { stock: "запас", flow: "поток", exposure: "экспозиция", mixed: "смешанный" }, used: (n) => `${n} набл.`, ids: "Идентификаторы реестра", noSource: "источник не привязан",
+    },
+    en: {
+      over: "Reference · territories and definitions", h1: "Territories and population definitions",
+      lead1: "The same word “France” in 1801, 1861 and 1872 means different land: without Savoy and Nice before 1860, with Alsace until 1871. Belgium before 1830 lives inside the Netherlands, Luxembourg is tied to them by personal union until 1890. A population count also depends on who was counted and when.",
+      lead2: "CFR keeps three switches on every source observation exactly as the source set them, and recalculates or smooths nothing: a bridge from an old border to the present one is recorded as a definition, not as a number, until its numerical form is proven and admitted separately. Pick a country: everything on this page leads to sources and datasets inside CFR.",
+      kpi: { countries: "countries", versions: "territory versions", events: "boundary events", crosswalks: "crosswalks described", observations: "source observations" },
+      sw: [["Territory", "Which land stands behind the number: the legal border, effective administration, or the domain of one source table."], ["Population universe", "Who was counted: present, usual residents, legal domicile, citizenship, register; or as the source wrote it when the rule is not disclosed."], ["Reference time", "When: census moment, start or end of a period, period average, event total over an interval."]],
+      pick: "Countries", all: "All countries", ovCols: ["Country", "Version span", "Versions", "Events", "Crosswalks", "Observations", "Sources", "Numerical crosswalks"], numYes: "yes", numNo: "none: described, no numbers",
+      pickHint: "Click a country in the table or a chip above: its boundary timeline, territory versions, crosswalks and source tables open.",
+      countrySub: "Boundary events and territory versions on a 1795-1913 axis. Solid bars are source domains, dashed bars the 1900 target composition. The number on a bar is how many source observations sit on it; names lead to sources.",
+      versions: (n) => `${n} territory version${n === 1 ? "" : "s"}`, obs: (n) => `${n} observation${n === 1 ? "" : "s"}`, evs: (n) => `${n} boundary event${n === 1 ? "" : "s"}`,
+      basis: "basis", role: "role", period: "applicability", status: { partial: "partial support", unresolved: "unresolved", complete: "complete" }, srcs: "sources",
+      legend: [["legal", "legal"], ["effective-administration", "effective administration"], ["statistical-reporting", "source table domain"], ["retrospective-analytical", "retrospective reconstruction"], ["target", "target composition 1900"]],
+      cross: "What it means for the numbers", crossSub: "Each source domain is compared with three branches of the 1900 territory: legal, effective and statistical. The comparison describes composition and direction but yields no number: the share of population that cannot be attributed to the target territory is unknown.",
+      crossCols: ["Source domain", "Measured", "Years", "Crosswalks", "State", "Support"], crossState: (c) => /unavailable/.test(c.numerical) ? "described, no number yet" : c.numerical, unmatched: "unmatched share unknown",
+      crossAll: (n) => `${n} crosswalks in total; none has a numerical form yet. That is not a gap in the data but an honest state: a recalculation will appear only with its proof, as a separate engineering dataset with its own reference.`,
+      data: "Source tables", dataSub: "Source demographic observations of the selected country: what is measured, for which years, on which territory version and from where. Full series live in Source data under the topic Population.",
+      dataCols: ["Measured", "Years", "Observations", "Source territory", "Universe", "Source"], toData: "Open in source data →",
+      gloss: "Glossary of definitions", glossSub: "Six population universes and nine reference times form the controlled vocabulary of CFR. Every source observation carries exactly one value from each list.",
+      universes: "Population universe", times: "Reference time", rule: { included: "included", excluded: "excluded", "source-defined": "as in source", unresolved: "unresolved" },
+      ruleNames: { temporarilyAbsent: "temporarily absent", temporaryVisitors: "visitors", foreignCitizens: "foreign citizens", armedForces: "armed forces", institutionalPopulation: "institutions" },
+      applies: { stock: "stock", flow: "flow", exposure: "exposure", mixed: "mixed" }, used: (n) => `${n} obs.`, ids: "Registry identifiers", noSource: "no source attached",
+    },
+  };
+  const склон = (n, a, b, c) => { const m = n % 100, k = n % 10; if (m > 10 && m < 20) return c; if (k === 1) return a; if (k > 1 && k < 5) return b; return c; };
+  const t = () => T[состояние.lang];
+  const L = (o) => o[состояние.lang] ?? o.en ?? o.ru;
+  const экр = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const X0 = 1795, X1 = 1914, px = (y) => ((y - X0) / (X1 - X0) * 100);
+  const версия = (id) => D.versions.find((v) => v.id === id);
+  const langQ = () => (состояние.lang === "en" ? "&lang=en" : "");
+  const срцСсылка = (s) => `sources.html#q=${encodeURIComponent(String(s.title).split(/[:,(]/)[0].trim().slice(0, 40))}${langQ()}`;
+  const срцКоротко = (s) => { const x = String(s.title); return x.length > 44 ? x.slice(0, 42) + "…" : x; };
+  const ссылкиИсточников = (arr) => arr.length ? arr.map((s) => `<a class="in" href="${срцСсылка(s)}" title="${экр(s.title)}">${экр(срцКоротко(s))}</a>`).join(", ") : `<span style="color:var(--muted)">${t().noSource}</span>`;
+  const данныеСсылка = (c) => `datasets.html#topic=population&countries=${c.code}${langQ()}`;
+
+  function обзор() {
+    const chips = [`<span class="chip ${!состояние.country ? "on" : ""}" data-c="">${t().all}</span>`]
+      .concat(D.countries.map((c) => `<span class="chip ${состояние.country === c.id ? "on" : ""}" data-c="${c.id}">${экр(L(c))}<small>${c.events}</small></span>`)).join("");
+    const rows = D.countries.map((c) => `<tr class="row ${состояние.country === c.id ? "on" : ""}" data-c="${c.id}"><td class="name">${экр(L(c))}</td><td>${c.from}-${c.to}</td><td class="n">${c.versions}</td><td class="n">${c.events}</td><td class="n">${c.crosswalks}</td><td class="n">${c.observations}</td><td class="n">${c.sources}</td><td class="st">${c.numerical ? t().numYes : t().numNo}</td></tr>`).join("");
+    return `<h2 class="sec">${t().pick}</h2><div class="chips">${chips}</div>
+      <table class="ov"><thead><tr>${t().ovCols.map((h, i) => `<th class="${i >= 2 && i <= 6 ? "n" : ""}">${h}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table>
+      ${состояние.country ? "" : `<p class="hint">${t().pickHint}</p>`}`;
+  }
+
+  function страна(c) {
+    const события = D.events.filter((e) => e.country === c.id);
+    const версии = D.versions.filter((v) => v.country === c.id);
+    const источники = версии.filter((v) => v.role !== "retrospective-target"), цели = версии.filter((v) => v.role === "retrospective-target");
+    const ось = [1800, 1820, 1840, 1860, 1880, 1900].map((y) => `<span style="left:${px(y)}%">${y}</span>`).join("");
+    const лента = события.map((e) => { const s = e.sources[0]; const текст = экр(L(e)); return `<div class="ev" data-year="${e.year}" style="left:${px(e.year)}%"><i></i><b>${e.year}</b><em>${s ? `<a href="${срцСсылка(s)}" title="${экр(s.title)}">${текст}</a>` : текст}</em></div>`; }).join("");
+    const полоса = (v) => {
+      const from = Math.max(v.from, X0), to = v.open || !v.to ? X1 : Math.min(v.to, X1);
+      const tip = `${экр(L(v))}. ${t().basis}: ${экр(L(D.labels.basis[v.basis] ?? { ru: v.basis, en: v.basis }))}; ${t().role}: ${экр(L(D.labels.role[v.role] ?? { ru: v.role, en: v.role }))}; ${t().period}: ${v.from}-${v.open ? "…" : v.to ?? "…"}; ${t().status[v.status] ?? v.status}${v.observations ? "; " + t().obs(v.observations) : ""}. ${t().srcs}: ${экр(v.sources.map((s) => s.title).join("; ") || t().noSource)}`;
+      const имя = v.sources[0] ? `<a class="in" href="${срцСсылка(v.sources[0])}" title="${экр(v.sources.map((s) => s.title).join("; "))}">${экр(L(v))}</a>` : экр(L(v));
+      return `<div class="lane"><div class="lbl">${имя}<small>${v.from}-${v.open ? "…" : v.to ?? "…"} · ${экр(L(D.labels.basis[v.basis] ?? { ru: v.basis, en: v.basis }))}</small></div>
+        <div class="track"><div class="bar ${v.role === "retrospective-target" ? "target" : v.basis}" style="left:${px(from)}%;width:${Math.max(0.6, px(to) - px(from))}%" data-tip="${tip}">${v.observations ? `<a class="obs" href="${данныеСсылка(c)}">${v.observations}</a>` : ""}</div></div></div>`;
+    };
+    return `<section class="country" id="${c.id}">
+      <h3>${экр(L(c))}</h3>
+      <div class="meta">${t().versions(версии.length)} · ${t().evs(события.length)} · ${t().obs(c.observations)}</div>
+      <p class="sub" style="margin-bottom:8px">${t().countrySub}</p>
+      <div class="axis">${ось}</div>
+      <div class="events">${лента}</div>
+      <div class="lanes">${источники.map(полоса).join("")}${цели.map(полоса).join("")}</div>
+      <div class="legend">${t().legend.map(([k2, n]) => `<span><i class="${k2 === "target" ? "target" : "bar " + k2}" style="position:static;opacity:.85"></i>${n}</span>`).join("")}</div>
+      <details class="ids"><summary>${t().ids}</summary>${версии.map((v) => `<div><code>${экр(v.id)}</code> ${v.missingEn ? "· " + экр(v.missingEn) : ""}</div>`).join("")}</details>
+    </section>`;
+  }
+
+  function переходы(c) {
+    const свои = D.crosswalks.filter((x) => x.country === c.id);
+    const поИсточнику = new Map();
+    for (const x of свои) { if (!поИсточнику.has(x.from)) поИсточнику.set(x.from, []); поИсточнику.get(x.from).push(x); }
+    const строки = [...поИсточнику].map(([from, xs]) => {
+      const v = версия(from);
+      const понятия = [...new Set(xs.flatMap((x) => x.concepts.map((p) => L(p))))].join(", ");
+      const годы = xs[0].from_y && xs[0].to_y ? `${xs[0].from_y}-${xs[0].to_y - 1}` : "";
+      const опора = []; for (const x of xs) for (const s of x.sources) if (!опора.some((o) => o.id === s.id)) опора.push(s);
+      return `<tr><td>${v && v.sources[0] ? `<a class="in" href="${срцСсылка(v.sources[0])}">${экр(L(v))}</a>` : экр(v ? L(v) : from)}</td><td>${экр(понятия)}</td><td>${годы}</td><td>${xs.length}</td><td class="st"><b>${экр(t().crossState(xs[0]))}</b> · ${t().unmatched}</td><td>${ссылкиИсточников(опора)}</td></tr>`;
+    }).join("");
+    return `<h2 class="sec">${t().cross}</h2><p class="sub">${t().crossSub}</p>
+      <table class="cross"><thead><tr>${t().crossCols.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${строки}</tbody></table>
+      <div class="honest">${t().crossAll(D.crosswalks.length)}</div>`;
+  }
+
+  function таблицы(c) {
+    const свои = D.tables.filter((x) => x.country === c.id).sort((a, b) => (a.from ?? 0) - (b.from ?? 0));
+    const u = (key) => { const x = D.universes.find((q) => q.key === key); return x ? (состояние.lang === "en" ? x.en : x.ru) : key; };
+    const rows = свои.map((x) => { const v = версия(x.version); return `<tr><td>${экр(L(x.concept))}</td><td class="n">${x.from ?? ""}${x.to && x.to !== x.from ? "-" + x.to : ""}</td><td class="n">${x.n}</td><td>${v ? экр(L(v)) : экр(x.version)}</td><td>${экр(u(x.universe))}</td><td>${x.source ? `<a class="in" href="${срцСсылка(x.source)}" title="${экр(x.source.title)}">${экр(срцКоротко(x.source))}</a>` : t().noSource}</td></tr>`; }).join("");
+    return `<h2 class="sec">${t().data}</h2><p class="sub">${t().dataSub}</p>
+      <table class="tbl"><thead><tr>${t().dataCols.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table>
+      <p class="hint"><a class="in" href="${данныеСсылка(c)}">${t().toData}</a></p>`;
+  }
+
+  function словарь() {
+    const счёт = (key) => Object.values(D.observations).reduce((a, o) => a + (o.universes[key] ?? 0), 0);
+    const u = D.universes.map((x) => `<div class="term"><span class="n">${счёт(x.key) ? `<a href="datasets.html#topic=population${langQ()}">${t().used(счёт(x.key))}</a>` : ""}</span><h4>${экр(состояние.lang === "en" ? x.en : x.ru)}</h4><p>${экр(состояние.lang === "en" ? x.ene : x.rue)}</p>
+      <div class="rules">${Object.entries(x.rules).map(([k, v]) => `<span class="${v === "included" ? "in" : v === "excluded" ? "out" : ""}">${t().ruleNames[k]}: ${t().rule[v] ?? v}</span>`).join("")}</div></div>`).join("");
+    const r = D.referenceTimes.map((x) => `<div class="term"><span class="n">${t().applies[x.appliesTo] ?? x.appliesTo}</span><h4>${экр(состояние.lang === "en" ? x.en : x.ru)}</h4><p>${экр(состояние.lang === "en" ? x.ene : x.rue)}</p></div>`).join("");
+    return `<h2 class="sec">${t().gloss}</h2><p class="sub">${t().glossSub}</p>
+      <h3 style="font:600 14px Inter,sans-serif;margin:14px 0 8px 0">${t().universes}</h3><div class="gloss">${u}</div>
+      <h3 style="font:600 14px Inter,sans-serif;margin:18px 0 8px 0">${t().times}</h3><div class="gloss">${r}</div>`;
+  }
+
+  function рисуй() {
+    document.documentElement.lang = состояние.lang;
+    document.title = состояние.lang === "en" ? "CFR Project - Territories" : "CFR Project - Территории";
+    for (const s of document.querySelectorAll("#lang span")) s.classList.toggle("on", s.dataset.lang === состояние.lang);
+    const nav = { ru: ["Обзор", "Витрина", "Покрытие", "Конструктор", "Исходные данные", "Источники", "Территории"], en: ["Overview", "Showcase", "Coverage", "Builder", "Source data", "Sources", "Territories"] }[состояние.lang];
+    document.querySelectorAll(".topnav a").forEach((a, i) => { if (nav[i]) a.textContent = nav[i]; });
+    const acc = document.querySelector(".account span"); if (acc) acc.textContent = состояние.lang === "en" ? "Account" : "Личный кабинет";
+    const k = D.counts; const c = D.countries.find((x) => x.id === состояние.country);
+    document.getElementById("page").innerHTML = `
+      <div class="head"><div class="over">${t().over}</div><h1>${t().h1}</h1><p class="lead">${t().lead1}</p><p class="lead">${t().lead2}</p></div>
+      <div class="kpi"><div><b>${D.countries.length}</b>${t().kpi.countries}</div><div><b>${k.versions}</b>${t().kpi.versions}</div><div><b>${k.events}</b>${t().kpi.events}</div><div><b>${k.crosswalks}</b>${t().kpi.crosswalks}</div><div><b>${k.observations}</b>${t().kpi.observations}</div></div>
+      <div class="switches">${t().sw.map(([h, p]) => `<div class="switch"><h3>${h}</h3><p>${p}</p></div>`).join("")}</div>
+      ${обзор()}
+      ${c ? страна(c) + переходы(c) + таблицы(c) : ""}
+      ${словарь()}`;
+    for (const лента of document.querySelectorAll(".events")) {
+      const W = лента.clientWidth; const правые = [-1e9, -1e9, -1e9, -1e9]; let полокЗанято = 0;
+      for (const ev of [...лента.querySelectorAll(".ev")].sort((a, b) => Number(a.dataset.year) - Number(b.dataset.year))) {
+        const x = parseFloat(ev.style.left) / 100 * W;
+        let s = правые.findIndex((r) => r <= x - 6); if (s < 0) s = 3;
+        правые[s] = x + 152; ev.classList.add("s" + s); полокЗанято = Math.max(полокЗанято, s + 1);
+      }
+      лента.style.height = (полокЗанято * 54 + 10) + "px";
+    }
+    for (const el of document.querySelectorAll("[data-c]")) el.addEventListener("click", () => { состояние.country = el.dataset.c; пишиХэш(); рисуй(); if (состояние.country) { const el = document.getElementById(состояние.country); if (el) window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY - 64); } });
+  }
+  function пишиХэш() { const части = []; if (состояние.country) части.push("country=" + состояние.country); if (состояние.lang === "en") части.push("lang=en"); history.replaceState(null, "", "#" + части.join("&")); }
+  function читайХэш() { const h = location.hash.slice(1); const m = /lang=(en|ru)/.exec(h); состояние.lang = m ? m[1] : "ru"; const c = /country=([a-z]+)/.exec(h); состояние.country = c && D.countries.some((x) => x.id === c[1]) ? c[1] : ""; }
+  document.getElementById("lang").addEventListener("click", (e) => { const s = e.target.closest("[data-lang]"); if (!s) return; состояние.lang = s.dataset.lang; пишиХэш(); рисуй(); });
+  window.addEventListener("hashchange", () => { читайХэш(); рисуй(); });
+  читайХэш(); рисуй();
+</script>
+</body>
+</html>

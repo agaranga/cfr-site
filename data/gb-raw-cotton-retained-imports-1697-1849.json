@@ -1,0 +1,196 @@
+{
+ "id": "dataset:gb-raw-cotton-retained-imports-1697-1849",
+ "title": {
+  "ru": "Импорт хлопка-сырца в Великобританию",
+  "en": "Great Britain retained raw-cotton imports"
+ },
+ "source": [
+  "Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850"
+ ],
+ "sourceOf": "Data/cotton/gb-raw-cotton-retained-imports-1697-1849.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Stephen Broadberry, Bishnupriya Gupta. Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850 (2005). Global Economic History Network. https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/GEHNConferences/conf6/Conf6-BroadberryGupta.pdf. Лицензия: source terms; local research copy",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор gb-raw-cotton-retained-imports-1697-1849, версия 1.0.0, загружено 2026-07-17. https://cfrproject.com/ru/datasets/gb-raw-cotton-retained-imports-1697-1849",
+   "author": "CFR Project (2026). Импорт хлопка-сырца в Великобританию, 1697–1849. Cliometric Figures Repository, инженерный набор gb-raw-cotton-retained-imports-1697-1849, версия 1.0.0. https://cfrproject.com/ru/datasets/gb-raw-cotton-retained-imports-1697-1849"
+  },
+  "en": {
+   "source": "Stephen Broadberry, Bishnupriya Gupta. Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850 (2005). Global Economic History Network. https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/GEHNConferences/conf6/Conf6-BroadberryGupta.pdf. Licence: source terms; local research copy",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset gb-raw-cotton-retained-imports-1697-1849, version 1.0.0, retrieved 2026-07-17. https://cfrproject.com/en/datasets/gb-raw-cotton-retained-imports-1697-1849",
+   "author": "CFR Project (2026). Great Britain retained raw-cotton imports, 1697–1849. Cliometric Figures Repository, engineering dataset gb-raw-cotton-retained-imports-1697-1849, version 1.0.0. https://cfrproject.com/en/datasets/gb-raw-cotton-retained-imports-1697-1849"
+  }
+ },
+ "columns": [
+  "period_start",
+  "period_end",
+  "geography",
+  "quantity_definition",
+  "annual_average_million_lb",
+  "underlying_source",
+  "underlying_locator",
+  "source_table"
+ ],
+ "rows": [
+  {
+   "period_start": "1697",
+   "period_end": "1699",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "1.1",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1700",
+   "period_end": "1709",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "1.1",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1710",
+   "period_end": "1719",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "1.3",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1720",
+   "period_end": "1729",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "1.5",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1730",
+   "period_end": "1739",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "1.7",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1740",
+   "period_end": "1749",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "2.1",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1750",
+   "period_end": "1759",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "2.8",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1760",
+   "period_end": "1769",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "3.5",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1770",
+   "period_end": "1779",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "4.8",
+   "underlying_source": "Wadsworth and Mann 1931",
+   "underlying_locator": "Appendix G",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1780",
+   "period_end": "1789",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "15.5",
+   "underlying_source": "Baines 1835",
+   "underlying_locator": "page 347",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1790",
+   "period_end": "1799",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "28.6",
+   "underlying_source": "Baines 1835",
+   "underlying_locator": "page 347",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1800",
+   "period_end": "1809",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "59.6",
+   "underlying_source": "Baines 1835",
+   "underlying_locator": "page 347",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1810",
+   "period_end": "1819",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "93.4",
+   "underlying_source": "Ellison 1886",
+   "underlying_locator": "Table 1",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1820",
+   "period_end": "1829",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "166.5",
+   "underlying_source": "Ellison 1886",
+   "underlying_locator": "Table 1",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1830",
+   "period_end": "1839",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "320.7",
+   "underlying_source": "Ellison 1886",
+   "underlying_locator": "Table 1",
+   "source_table": "Table 1"
+  },
+  {
+   "period_start": "1840",
+   "period_end": "1849",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-cotton-consumption-measured-by-retained-imports",
+   "annual_average_million_lb": "526.3",
+   "underlying_source": "Ellison 1886",
+   "underlying_locator": "Table 1",
+   "source_table": "Table 1"
+  }
+ ]
+}

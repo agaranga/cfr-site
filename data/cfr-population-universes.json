@@ -1,0 +1,96 @@
+{
+ "id": "dataset:cfr-population-universes",
+ "title": {
+  "ru": "Составы населения (словарь)",
+  "en": "Population universes (vocabulary)"
+ },
+ "source": [
+  "CFR Project: эпистемический реестр (DG1B, DG1D)"
+ ],
+ "sourceOf": "CFR epistemic registry",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор cfr-population-universes, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-population-universes",
+   "author": "CFR Project (2026). Составы населения (словарь). Cliometric Figures Repository, справочный набор cfr-population-universes, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-population-universes"
+  },
+  "en": {
+   "source": "",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset cfr-population-universes, version 1.0.0. https://cfrproject.com/en/datasets/cfr-population-universes",
+   "author": "CFR Project (2026). Population universes (vocabulary). Cliometric Figures Repository, reference dataset cfr-population-universes, version 1.0.0. https://cfrproject.com/en/datasets/cfr-population-universes"
+  }
+ },
+ "columns": [
+  "id",
+  "label_en",
+  "label_ru",
+  "temporarilyAbsent",
+  "temporaryVisitors",
+  "foreignCitizens",
+  "armedForces",
+  "institutionalPopulation"
+ ],
+ "rows": [
+  {
+   "id": "population-universe:present-de-facto",
+   "label_en": "Population present",
+   "label_ru": "Наличное население",
+   "temporarilyAbsent": "excluded",
+   "temporaryVisitors": "included",
+   "foreignCitizens": "included",
+   "armedForces": "source-defined",
+   "institutionalPopulation": "source-defined"
+  },
+  {
+   "id": "population-universe:usual-resident",
+   "label_en": "Usual residents",
+   "label_ru": "Постоянное население",
+   "temporarilyAbsent": "included",
+   "temporaryVisitors": "excluded",
+   "foreignCitizens": "included",
+   "armedForces": "source-defined",
+   "institutionalPopulation": "source-defined"
+  },
+  {
+   "id": "population-universe:legal-domicile",
+   "label_en": "Population by legal domicile",
+   "label_ru": "Население по домицилию",
+   "temporarilyAbsent": "source-defined",
+   "temporaryVisitors": "excluded",
+   "foreignCitizens": "source-defined",
+   "armedForces": "source-defined",
+   "institutionalPopulation": "source-defined"
+  },
+  {
+   "id": "population-universe:citizenship",
+   "label_en": "Population by citizenship",
+   "label_ru": "Население по гражданству",
+   "temporarilyAbsent": "source-defined",
+   "temporaryVisitors": "source-defined",
+   "foreignCitizens": "excluded",
+   "armedForces": "source-defined",
+   "institutionalPopulation": "source-defined"
+  },
+  {
+   "id": "population-universe:register-membership",
+   "label_en": "Register population",
+   "label_ru": "Население по реестру",
+   "temporarilyAbsent": "source-defined",
+   "temporaryVisitors": "source-defined",
+   "foreignCitizens": "source-defined",
+   "armedForces": "source-defined",
+   "institutionalPopulation": "source-defined"
+  },
+  {
+   "id": "population-universe:source-defined-unresolved",
+   "label_en": "Source-defined (unresolved)",
+   "label_ru": "Как определил источник (не раскрыто)",
+   "temporarilyAbsent": "unresolved",
+   "temporaryVisitors": "unresolved",
+   "foreignCitizens": "unresolved",
+   "armedForces": "unresolved",
+   "institutionalPopulation": "unresolved"
+  }
+ ]
+}

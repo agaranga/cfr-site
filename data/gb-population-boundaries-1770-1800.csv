@@ -1,0 +1,5 @@
+series,year,persons,geography,source_worksheet,role
+broadberry-2015,1770,7983549.164019807,Great Britain,A2,active-boundary
+broadberry-2015,1800,10614056.38657113,Great Britain,A2,active-boundary
+bottom-up,1770,8398252.614550664,Great Britain,A18,competing-reconstruction
+bottom-up,1800,10819429.158864543,Great Britain,A18,competing-reconstruction

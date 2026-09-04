@@ -1,0 +1,13 @@
+﻿id,country,year,date,relation,dimension,label_en,label_ru,sources
+boundary-event:netherlands:kingdom-holland-1806,netherlands,1806,1806-06-05,regime-change,administration,Kingdom of Holland replaces the Batavian Republic,Королевство Голландия вместо Батавской республики,source:nl-na-regime-inventory-2-01-01-01
+boundary-event:netherlands:french-annexation-1810,netherlands,1810,1810-07-09,annexation,sovereignty,Annexation by the French Empire,Присоединение к Французской империи,source:nl-na-regime-inventory-2-01-01-01
+boundary-event:netherlands:restoration-1813,netherlands,1813,1813-11-21,restoration,sovereignty,End of French rule,Конец французского владычества,source:nl-na-regime-inventory-2-01-01-01
+boundary-event:netherlands:union-1815,netherlands,1815,1815-03-16,merge,territorial-composition,United Kingdom of the Netherlands: with Belgium and Luxembourg,Соединённое королевство Нидерландов: с Бельгией и Люксембургом,source:nl-na-treaty-inventory-2-05-02
+boundary-event:france:post-empire-1815,france,1815,1815,redefinition,territorial-composition,Post-Empire borders (Congress of Vienna),Границы после Империи (Венский конгресс),
+boundary-event:netherlands:belgian-separation-1830,netherlands,1830,1830-10-04,separation,administration,De facto separation of Belgium,Фактическое отделение Бельгии,source:nl-na-treaty-inventory-2-05-02
+boundary-event:belgium:revolution-1830,belgium,1830,1830-10-04,separation,administration,Revolution: separation from the Netherlands,Революция: отделение от Нидерландов,source:quetelet-1832-population-belgium; source:treaty-belgium-netherlands-1839
+boundary-event:netherlands:treaty-1839,netherlands,1839,1839-04-19,separation,territorial-composition,Treaty of 1839: Limburg and Luxembourg partitioned,Договор 1839: раздел Лимбурга и Люксембурга,source:nl-na-treaty-inventory-2-05-02
+boundary-event:belgium:treaty-1839,belgium,1839,1839-06-08,transfer,territorial-composition,Treaty of London: borders with the Netherlands settled,Лондонский договор: границы с Нидерландами закреплены,source:treaty-belgium-netherlands-1839
+boundary-event:france:turin-1860,france,1860,1860-06-11,transfer,territorial-composition,Union of Savoy and Nice with France,Присоединение Савойи и Ниццы,source:france-sardinia-treaty-turin-1860
+boundary-event:france:frankfurt-1871,france,1871,1871-05-10,transfer,territorial-composition,Loss of Alsace-Lorraine (Treaty of Frankfurt),Утрата Эльзаса и Лотарингии (Франкфуртский мир),source:sgf-annuaire-france-1899
+boundary-event:netherlands:luxembourg-personal-union-1890,netherlands,1890,1890-11-23,redefinition,sovereignty,End of the personal union with Luxembourg,Конец личной унии с Люксембургом,source:nl-na-treaty-inventory-2-05-02

@@ -1,0 +1,169 @@
+{
+ "id": "dataset:cfr-boundary-events",
+ "title": {
+  "ru": "События границ",
+  "en": "Boundary events"
+ },
+ "source": [
+  "CFR Project: эпистемический реестр (DG1B, DG1D)"
+ ],
+ "sourceOf": "CFR epistemic registry",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор cfr-boundary-events, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-boundary-events",
+   "author": "CFR Project (2026). События границ. Cliometric Figures Repository, справочный набор cfr-boundary-events, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-boundary-events"
+  },
+  "en": {
+   "source": "",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset cfr-boundary-events, version 1.0.0. https://cfrproject.com/en/datasets/cfr-boundary-events",
+   "author": "CFR Project (2026). Boundary events. Cliometric Figures Repository, reference dataset cfr-boundary-events, version 1.0.0. https://cfrproject.com/en/datasets/cfr-boundary-events"
+  }
+ },
+ "columns": [
+  "id",
+  "country",
+  "year",
+  "date",
+  "relation",
+  "dimension",
+  "label_en",
+  "label_ru",
+  "sources"
+ ],
+ "rows": [
+  {
+   "id": "boundary-event:netherlands:kingdom-holland-1806",
+   "country": "netherlands",
+   "year": 1806,
+   "date": "1806-06-05",
+   "relation": "regime-change",
+   "dimension": "administration",
+   "label_en": "Kingdom of Holland replaces the Batavian Republic",
+   "label_ru": "Королевство Голландия вместо Батавской республики",
+   "sources": "source:nl-na-regime-inventory-2-01-01-01"
+  },
+  {
+   "id": "boundary-event:netherlands:french-annexation-1810",
+   "country": "netherlands",
+   "year": 1810,
+   "date": "1810-07-09",
+   "relation": "annexation",
+   "dimension": "sovereignty",
+   "label_en": "Annexation by the French Empire",
+   "label_ru": "Присоединение к Французской империи",
+   "sources": "source:nl-na-regime-inventory-2-01-01-01"
+  },
+  {
+   "id": "boundary-event:netherlands:restoration-1813",
+   "country": "netherlands",
+   "year": 1813,
+   "date": "1813-11-21",
+   "relation": "restoration",
+   "dimension": "sovereignty",
+   "label_en": "End of French rule",
+   "label_ru": "Конец французского владычества",
+   "sources": "source:nl-na-regime-inventory-2-01-01-01"
+  },
+  {
+   "id": "boundary-event:netherlands:union-1815",
+   "country": "netherlands",
+   "year": 1815,
+   "date": "1815-03-16",
+   "relation": "merge",
+   "dimension": "territorial-composition",
+   "label_en": "United Kingdom of the Netherlands: with Belgium and Luxembourg",
+   "label_ru": "Соединённое королевство Нидерландов: с Бельгией и Люксембургом",
+   "sources": "source:nl-na-treaty-inventory-2-05-02"
+  },
+  {
+   "id": "boundary-event:france:post-empire-1815",
+   "country": "france",
+   "year": 1815,
+   "date": "1815",
+   "relation": "redefinition",
+   "dimension": "territorial-composition",
+   "label_en": "Post-Empire borders (Congress of Vienna)",
+   "label_ru": "Границы после Империи (Венский конгресс)",
+   "sources": ""
+  },
+  {
+   "id": "boundary-event:netherlands:belgian-separation-1830",
+   "country": "netherlands",
+   "year": 1830,
+   "date": "1830-10-04",
+   "relation": "separation",
+   "dimension": "administration",
+   "label_en": "De facto separation of Belgium",
+   "label_ru": "Фактическое отделение Бельгии",
+   "sources": "source:nl-na-treaty-inventory-2-05-02"
+  },
+  {
+   "id": "boundary-event:belgium:revolution-1830",
+   "country": "belgium",
+   "year": 1830,
+   "date": "1830-10-04",
+   "relation": "separation",
+   "dimension": "administration",
+   "label_en": "Revolution: separation from the Netherlands",
+   "label_ru": "Революция: отделение от Нидерландов",
+   "sources": "source:quetelet-1832-population-belgium; source:treaty-belgium-netherlands-1839"
+  },
+  {
+   "id": "boundary-event:netherlands:treaty-1839",
+   "country": "netherlands",
+   "year": 1839,
+   "date": "1839-04-19",
+   "relation": "separation",
+   "dimension": "territorial-composition",
+   "label_en": "Treaty of 1839: Limburg and Luxembourg partitioned",
+   "label_ru": "Договор 1839: раздел Лимбурга и Люксембурга",
+   "sources": "source:nl-na-treaty-inventory-2-05-02"
+  },
+  {
+   "id": "boundary-event:belgium:treaty-1839",
+   "country": "belgium",
+   "year": 1839,
+   "date": "1839-06-08",
+   "relation": "transfer",
+   "dimension": "territorial-composition",
+   "label_en": "Treaty of London: borders with the Netherlands settled",
+   "label_ru": "Лондонский договор: границы с Нидерландами закреплены",
+   "sources": "source:treaty-belgium-netherlands-1839"
+  },
+  {
+   "id": "boundary-event:france:turin-1860",
+   "country": "france",
+   "year": 1860,
+   "date": "1860-06-11",
+   "relation": "transfer",
+   "dimension": "territorial-composition",
+   "label_en": "Union of Savoy and Nice with France",
+   "label_ru": "Присоединение Савойи и Ниццы",
+   "sources": "source:france-sardinia-treaty-turin-1860"
+  },
+  {
+   "id": "boundary-event:france:frankfurt-1871",
+   "country": "france",
+   "year": 1871,
+   "date": "1871-05-10",
+   "relation": "transfer",
+   "dimension": "territorial-composition",
+   "label_en": "Loss of Alsace-Lorraine (Treaty of Frankfurt)",
+   "label_ru": "Утрата Эльзаса и Лотарингии (Франкфуртский мир)",
+   "sources": "source:sgf-annuaire-france-1899"
+  },
+  {
+   "id": "boundary-event:netherlands:luxembourg-personal-union-1890",
+   "country": "netherlands",
+   "year": 1890,
+   "date": "1890-11-23",
+   "relation": "redefinition",
+   "dimension": "sovereignty",
+   "label_en": "End of the personal union with Luxembourg",
+   "label_ru": "Конец личной унии с Люксембургом",
+   "sources": "source:nl-na-treaty-inventory-2-05-02"
+  }
+ ]
+}

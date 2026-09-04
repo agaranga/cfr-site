@@ -1,0 +1,222 @@
+{
+ "id": "dataset:baines-1835-cotton-labor-capital-comparators",
+ "title": {
+  "ru": "",
+  "en": "Baines cotton labor and capital comparators"
+ },
+ "source": [
+  "History of the Cotton Manufacture in Great Britain"
+ ],
+ "sourceOf": "Data/cotton/baines-1835-labor-capital.csv",
+ "version": "1.2.0",
+ "citation": {
+  "ru": {
+   "source": "Edward Baines. History of the Cotton Manufacture in Great Britain (1835). H. Fisher, R. Fisher, and P. Jackson. https://archive.org/details/cottonmanufact00bain. Лицензия: public domain",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор baines-1835-cotton-labor-capital-comparators, версия 1.2.0, загружено 2026-08-10. https://cfrproject.com/ru/datasets/baines-1835-cotton-labor-capital-comparators",
+   "author": "CFR Project (2026). Baines cotton labor and capital comparators. Cliometric Figures Repository, инженерный набор baines-1835-cotton-labor-capital-comparators, версия 1.2.0. https://cfrproject.com/ru/datasets/baines-1835-cotton-labor-capital-comparators"
+  },
+  "en": {
+   "source": "Edward Baines. History of the Cotton Manufacture in Great Britain (1835). H. Fisher, R. Fisher, and P. Jackson. https://archive.org/details/cottonmanufact00bain. Licence: public domain",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset baines-1835-cotton-labor-capital-comparators, version 1.2.0, retrieved 2026-08-10. https://cfrproject.com/en/datasets/baines-1835-cotton-labor-capital-comparators",
+   "author": "CFR Project (2026). Baines cotton labor and capital comparators. Cliometric Figures Repository, engineering dataset baines-1835-cotton-labor-capital-comparators, version 1.2.0. https://cfrproject.com/en/datasets/baines-1835-cotton-labor-capital-comparators"
+  }
+ },
+ "columns": [
+  "record_id",
+  "source_id",
+  "period_start",
+  "period_end",
+  "geography",
+  "quantity_definition",
+  "value",
+  "unit",
+  "status",
+  "calculation",
+  "source_locator",
+  "notes"
+ ],
+ "rows": [
+  {
+   "record_id": "spinning-doubling-operatives-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833",
+   "period_end": "1833",
+   "geography": "United Kingdom",
+   "quantity_definition": "persons engaged in cotton spinning and doubling",
+   "value": "180000",
+   "unit": "persons",
+   "status": "author-estimate",
+   "calculation": "237000 mill operatives minus about 57000 power-loom weavers",
+   "source_locator": "Baines 1835 pages 412 and 414",
+   "notes": "not paid hours and not the 1824-1828 target"
+  },
+  {
+   "record_id": "factory-return-all-workers-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "workers in 151 complete cotton-factory returns",
+   "value": "48645",
+   "unit": "persons",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "151 complete regional returns out of 300 received"
+  },
+  {
+   "record_id": "factory-return-all-hours-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "reported hours worked in 151 complete cotton-factory returns",
+   "value": "13362204.8",
+   "unit": "reported-person-hours-in-month",
+   "status": "source-reported",
+   "calculation": "sum of printed departments",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "paid-time convention not stated"
+  },
+  {
+   "record_id": "factory-cleaning-spreading-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "cleaning and spreading workers and reported hours",
+   "value": "353660.5",
+   "unit": "reported-person-hours-in-month",
+   "status": "source-reported",
+   "calculation": "1282 workers",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "regional late comparator"
+  },
+  {
+   "record_id": "factory-carding-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "carding drawing and roving workers and reported hours",
+   "value": "2591188.7",
+   "unit": "reported-person-hours-in-month",
+   "status": "source-reported",
+   "calculation": "9397 workers",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "regional late comparator"
+  },
+  {
+   "record_id": "factory-mule-spinning-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "mule spinning piecing and scavenging workers and reported hours",
+   "value": "4291208.6",
+   "unit": "reported-person-hours-in-month",
+   "status": "source-reported",
+   "calculation": "15605 workers",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "regional late comparator"
+  },
+  {
+   "record_id": "factory-throstle-spinning-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "throstle spinning workers and reported hours",
+   "value": "501621.5",
+   "unit": "reported-person-hours-in-month",
+   "status": "source-reported",
+   "calculation": "1846 workers",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "regional late comparator"
+  },
+  {
+   "record_id": "factory-reeling-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "reeling workers and reported hours",
+   "value": "906261.8",
+   "unit": "reported-person-hours-in-month",
+   "status": "source-reported",
+   "calculation": "3316 workers",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "finishing inclusion must be explicit"
+  },
+  {
+   "record_id": "factory-raw-to-yarn-subtotal-hours-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833-04",
+   "period_end": "1833-05",
+   "geography": "Lancashire Cheshire and Derbyshire",
+   "quantity_definition": "preparation spinning and reeling reported hours subtotal",
+   "value": "8643941.1",
+   "unit": "reported-person-hours-in-month",
+   "status": "curator-derived",
+   "calculation": "sum of five raw-to-yarn department rows",
+   "source_locator": "Baines 1835 pages 369-372 Table II",
+   "notes": "31446 workers; weaving engineers and roller covering excluded"
+  },
+  {
+   "record_id": "spinning-machinery-value-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833",
+   "period_end": "1833",
+   "geography": "United Kingdom",
+   "quantity_definition": "spinning machinery cost valuation excluding buildings and land",
+   "value": "10800000",
+   "unit": "current-gbp",
+   "status": "author-estimate",
+   "calculation": "180000 persons multiplied by 60 pounds per person",
+   "source_locator": "Baines 1835 pages 414-415",
+   "notes": "not net stock and date transfer is unavailable"
+  },
+  {
+   "record_id": "spinning-fixed-capital-combined-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833",
+   "period_end": "1833",
+   "geography": "United Kingdom",
+   "quantity_definition": "fixed capital in cotton spinning including mills machines and apparatus",
+   "value": "7000000",
+   "unit": "current-gbp",
+   "status": "author-estimate",
+   "calculation": "Kennedy estimate reported by Baines",
+   "source_locator": "Baines 1835 pages 413-414",
+   "notes": "combined equipment and structures with greater uncertainty than output estimate"
+  },
+  {
+   "record_id": "spinning-mills-machinery-burn-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833",
+   "period_end": "1833",
+   "geography": "United Kingdom",
+   "quantity_definition": "mills and machinery combined",
+   "value": "8166375",
+   "unit": "current-gbp",
+   "status": "author-estimate",
+   "calculation": "9333000 spindles multiplied by 17 shillings 6 pence",
+   "source_locator": "Baines 1835 pages 413-414",
+   "notes": "not a bound and not net stock"
+  },
+  {
+   "record_id": "spinning-mills-machinery-hoole-1833",
+   "source_id": "source:baines-1835-cotton-manufacture",
+   "period_start": "1833",
+   "period_end": "1833",
+   "geography": "United Kingdom",
+   "quantity_definition": "mills and machinery combined",
+   "value": "17200000",
+   "unit": "current-gbp",
+   "status": "author-estimate",
+   "calculation": "100000 pounds per 1000 workers",
+   "source_locator": "Baines 1835 pages 414-415",
+   "notes": "not a bound and not net stock"
+  }
+ ]
+}

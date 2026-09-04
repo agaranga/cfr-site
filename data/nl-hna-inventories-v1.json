@@ -1,0 +1,946 @@
+{
+ "id": "dataset:nl-hna-inventories-v1",
+ "title": {
+  "ru": "Изменение запасов и амортизация Нидерландов",
+  "en": "Netherlands inventory changes and depreciation"
+ },
+ "source": [
+  "Historical National Accounts of the Netherlands: spreadsheet table suite"
+ ],
+ "sourceOf": "EconEvidence/Generated/netherlands/hna-inventories.v1.json",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Лицензия: Public scholarly download; reuse status not asserted.",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор nl-hna-inventories-v1, версия 1.0.0, загружено 2026-09-04. https://cfrproject.com/ru/datasets/nl-hna-inventories-v1",
+   "author": "CFR Project (2026). Изменение запасов и амортизация Нидерландов, 1800-1913. Cliometric Figures Repository, инженерный набор nl-hna-inventories-v1, версия 1.0.0. https://cfrproject.com/ru/datasets/nl-hna-inventories-v1"
+  },
+  "en": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Licence: Public scholarly download; reuse status not asserted.",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset nl-hna-inventories-v1, version 1.0.0, retrieved 2026-09-04. https://cfrproject.com/en/datasets/nl-hna-inventories-v1",
+   "author": "CFR Project (2026). Netherlands inventory changes and depreciation, 1800-1913. Cliometric Figures Repository, engineering dataset nl-hna-inventories-v1, version 1.0.0. https://cfrproject.com/en/datasets/nl-hna-inventories-v1"
+  }
+ },
+ "columns": [
+  "year",
+  "changesInInventoriesAndWorkInProgressCurrentPrices",
+  "changesInInventoriesAndWorkInProgressConstant1913Prices",
+  "implicitChangesInInventoriesAndWorkInProgressDeflator",
+  "depreciationConstant1913Prices",
+  "depreciationCurrentPrices"
+ ],
+ "rows": [
+  {
+   "year": 1800,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 11.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 9.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 121.64948453608248,
+   "depreciationConstant1913Prices": 41.9,
+   "depreciationCurrentPrices": 28.9429718875502
+  },
+  {
+   "year": 1801,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 0.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 0.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 200,
+   "depreciationConstant1913Prices": 41.9,
+   "depreciationCurrentPrices": 30.131274900398406
+  },
+  {
+   "year": 1802,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 2.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 1.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 116.66666666666667,
+   "depreciationConstant1913Prices": 41.9,
+   "depreciationCurrentPrices": 26.806102362204726
+  },
+  {
+   "year": 1803,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 14.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 12.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 116.8,
+   "depreciationConstant1913Prices": 42,
+   "depreciationCurrentPrices": 28.662721893491128
+  },
+  {
+   "year": 1804,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -6.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -5.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 115.25423728813557,
+   "depreciationConstant1913Prices": 42,
+   "depreciationCurrentPrices": 30.805293005671082
+  },
+  {
+   "year": 1805,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 3.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 2.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 129.16666666666669,
+   "depreciationConstant1913Prices": 42,
+   "depreciationCurrentPrices": 30.86842105263158
+  },
+  {
+   "year": 1806,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 17.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 14.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 118.24324324324324,
+   "depreciationConstant1913Prices": 42.1,
+   "depreciationCurrentPrices": 31.083177570093458
+  },
+  {
+   "year": 1807,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 9.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 8.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 109.63855421686746,
+   "depreciationConstant1913Prices": 42.1,
+   "depreciationCurrentPrices": 31.633149171270723
+  },
+  {
+   "year": 1808,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 10.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 10,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 107,
+   "depreciationConstant1913Prices": 42.2,
+   "depreciationCurrentPrices": 32.88415094339623
+  },
+  {
+   "year": 1809,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -55.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -52.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 107.10172744721689,
+   "depreciationConstant1913Prices": 42.3,
+   "depreciationCurrentPrices": 35.31328545780969
+  },
+  {
+   "year": 1810,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -47.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -44,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 108.86363636363636,
+   "depreciationConstant1913Prices": 42.3,
+   "depreciationCurrentPrices": 34.10489236790607
+  },
+  {
+   "year": 1811,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -82.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -76.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 107.67230169050714,
+   "depreciationConstant1913Prices": 42.4,
+   "depreciationCurrentPrices": 31.862230919765164
+  },
+  {
+   "year": 1812,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -69.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -60.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 114.7107438016529,
+   "depreciationConstant1913Prices": 42.4,
+   "depreciationCurrentPrices": 31.59051383399209
+  },
+  {
+   "year": 1813,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -23.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -23.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 100.43290043290042,
+   "depreciationConstant1913Prices": 42.5,
+   "depreciationCurrentPrices": 30.512820512820507
+  },
+  {
+   "year": 1814,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 8.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 9.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 89.01098901098901,
+   "depreciationConstant1913Prices": 42.5,
+   "depreciationCurrentPrices": 29.307465618860512
+  },
+  {
+   "year": 1815,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 30.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 34.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 88.33819241982508,
+   "depreciationConstant1913Prices": 42.6,
+   "depreciationCurrentPrices": 26.875706214689266
+  },
+  {
+   "year": 1816,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 19.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 18,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 108.33333333333333,
+   "depreciationConstant1913Prices": 42.8,
+   "depreciationCurrentPrices": 25.124914675767915
+  },
+  {
+   "year": 1817,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 30.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 25.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 119.8443579766537,
+   "depreciationConstant1913Prices": 43,
+   "depreciationCurrentPrices": 26.445350734094617
+  },
+  {
+   "year": 1818,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 9.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 8.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 111.23595505617978,
+   "depreciationConstant1913Prices": 43.2,
+   "depreciationCurrentPrices": 28.303448275862074
+  },
+  {
+   "year": 1819,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 24.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 26.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 94.63601532567048,
+   "depreciationConstant1913Prices": 43.4,
+   "depreciationCurrentPrices": 28.83672787979966
+  },
+  {
+   "year": 1820,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 42.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 51.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 83.13953488372093,
+   "depreciationConstant1913Prices": 43.7,
+   "depreciationCurrentPrices": 28.497035881435263
+  },
+  {
+   "year": 1821,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 28.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 38,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 73.94736842105264,
+   "depreciationConstant1913Prices": 43.9,
+   "depreciationCurrentPrices": 27.730048465266556
+  },
+  {
+   "year": 1822,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 22.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 31.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 71.06109324758843,
+   "depreciationConstant1913Prices": 44.2,
+   "depreciationCurrentPrices": 27.18435582822086
+  },
+  {
+   "year": 1823,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 10.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 14.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 74.30555555555554,
+   "depreciationConstant1913Prices": 44.5,
+   "depreciationCurrentPrices": 26.726726726726728
+  },
+  {
+   "year": 1824,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -14.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -20.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 70.3883495145631,
+   "depreciationConstant1913Prices": 44.8,
+   "depreciationCurrentPrices": 26.920179372197307
+  },
+  {
+   "year": 1825,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -21.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -26.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 81.13207547169812,
+   "depreciationConstant1913Prices": 45.1,
+   "depreciationCurrentPrices": 29.521293375394325
+  },
+  {
+   "year": 1826,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -32.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -42.2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 76.06635071090048,
+   "depreciationConstant1913Prices": 45.5,
+   "depreciationCurrentPrices": 30.466960352422916
+  },
+  {
+   "year": 1827,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 6.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 8.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 79.31034482758622,
+   "depreciationConstant1913Prices": 45.8,
+   "depreciationCurrentPrices": 28.947774480712162
+  },
+  {
+   "year": 1828,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 5.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 7.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 77.02702702702703,
+   "depreciationConstant1913Prices": 46.1,
+   "depreciationCurrentPrices": 28.11479820627802
+  },
+  {
+   "year": 1829,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 28.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 35.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 80.56338028169014,
+   "depreciationConstant1913Prices": 46.5,
+   "depreciationCurrentPrices": 27.147017045454543
+  },
+  {
+   "year": 1830,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 2.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 3.2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 87.5,
+   "depreciationConstant1913Prices": 46.9,
+   "depreciationCurrentPrices": 26.722877697841728
+  },
+  {
+   "year": 1831,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 17.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 19.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 90.4040404040404,
+   "depreciationConstant1913Prices": 47.3,
+   "depreciationCurrentPrices": 25.310814606741573
+  },
+  {
+   "year": 1832,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -3.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -3.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 84.61538461538461,
+   "depreciationConstant1913Prices": 47.7,
+   "depreciationCurrentPrices": 25.198758620689656
+  },
+  {
+   "year": 1833,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 20.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 28.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 70.87719298245614,
+   "depreciationConstant1913Prices": 48,
+   "depreciationCurrentPrices": 25.001438848920863
+  },
+  {
+   "year": 1834,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 25.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 37.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 68.07387862796834,
+   "depreciationConstant1913Prices": 48.4,
+   "depreciationCurrentPrices": 26.603076923076923
+  },
+  {
+   "year": 1835,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 27.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 38.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 71.3917525773196,
+   "depreciationConstant1913Prices": 48.8,
+   "depreciationCurrentPrices": 27.76903765690376
+  },
+  {
+   "year": 1836,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 2.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 3.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 77.14285714285715,
+   "depreciationConstant1913Prices": 49.2,
+   "depreciationCurrentPrices": 28.27510094212652
+  },
+  {
+   "year": 1837,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 4.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 6.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 75.3846153846154,
+   "depreciationConstant1913Prices": 49.5,
+   "depreciationCurrentPrices": 31.786421499292786
+  },
+  {
+   "year": 1838,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 8.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 10.2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 82.3529411764706,
+   "depreciationConstant1913Prices": 49.9,
+   "depreciationCurrentPrices": 31.17926023778071
+  },
+  {
+   "year": 1839,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 7.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 87.77777777777777,
+   "depreciationConstant1913Prices": 50.3,
+   "depreciationCurrentPrices": 31.089608636977058
+  },
+  {
+   "year": 1840,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 6.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 7.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 86.48648648648648,
+   "depreciationConstant1913Prices": 50.8,
+   "depreciationCurrentPrices": 31.109599027946533
+  },
+  {
+   "year": 1841,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -1.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -2.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 80.95238095238095,
+   "depreciationConstant1913Prices": 51.3,
+   "depreciationCurrentPrices": 31.549174078780172
+  },
+  {
+   "year": 1842,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 27,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 32.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 82.82208588957054,
+   "depreciationConstant1913Prices": 51.6,
+   "depreciationCurrentPrices": 30.745
+  },
+  {
+   "year": 1843,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 25.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 33.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 76.64670658682635,
+   "depreciationConstant1913Prices": 52,
+   "depreciationCurrentPrices": 28.996026490066225
+  },
+  {
+   "year": 1844,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 17.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 23.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 73.41772151898734,
+   "depreciationConstant1913Prices": 52.4,
+   "depreciationCurrentPrices": 28.844036697247706
+  },
+  {
+   "year": 1845,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -18.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -21.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 83.41013824884793,
+   "depreciationConstant1913Prices": 52.9,
+   "depreciationCurrentPrices": 31.22849872773537
+  },
+  {
+   "year": 1846,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -46.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -48.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 94.8559670781893,
+   "depreciationConstant1913Prices": 53.3,
+   "depreciationCurrentPrices": 34.1005376344086
+  },
+  {
+   "year": 1847,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -54.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -51.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 104.83558994197293,
+   "depreciationConstant1913Prices": 53.7,
+   "depreciationCurrentPrices": 35.27737226277373
+  },
+  {
+   "year": 1848,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 4.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 6.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 76.5625,
+   "depreciationConstant1913Prices": 54.1,
+   "depreciationCurrentPrices": 35.083923705722064
+  },
+  {
+   "year": 1849,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 33.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 46.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 72.5321888412017,
+   "depreciationConstant1913Prices": 54.5,
+   "depreciationCurrentPrices": 32.81642189586115
+  },
+  {
+   "year": 1850,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 27.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 36.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 74.86338797814207,
+   "depreciationConstant1913Prices": 54.8,
+   "depreciationCurrentPrices": 30.861052631578943
+  },
+  {
+   "year": 1851,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 1.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 1.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 72.22222222222221,
+   "depreciationConstant1913Prices": 55.3,
+   "depreciationCurrentPrices": 30.81822916666666
+  },
+  {
+   "year": 1852,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 6.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 8.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 77.38095238095238,
+   "depreciationConstant1913Prices": 56.2,
+   "depreciationCurrentPrices": 33.140839694656485
+  },
+  {
+   "year": 1853,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 8.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 10.2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 80.3921568627451,
+   "depreciationConstant1913Prices": 56.6,
+   "depreciationCurrentPrices": 37.661596958174904
+  },
+  {
+   "year": 1854,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 43.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 51.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 84.99025341130604,
+   "depreciationConstant1913Prices": 57.2,
+   "depreciationCurrentPrices": 41.19761904761905
+  },
+  {
+   "year": 1855,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 7.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 8.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 86.74698795180721,
+   "depreciationConstant1913Prices": 58,
+   "depreciationCurrentPrices": 42.52886836027714
+  },
+  {
+   "year": 1856,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -3.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 102.56410256410258,
+   "depreciationConstant1913Prices": 58.7,
+   "depreciationCurrentPrices": 41.15522222222223
+  },
+  {
+   "year": 1857,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -20.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -20.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 99.5145631067961,
+   "depreciationConstant1913Prices": 59.5,
+   "depreciationCurrentPrices": 42.5
+  },
+  {
+   "year": 1858,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -43.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -48.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 90.89026915113871,
+   "depreciationConstant1913Prices": 60,
+   "depreciationCurrentPrices": 40
+  },
+  {
+   "year": 1859,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -21.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -24.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 89.75409836065573,
+   "depreciationConstant1913Prices": 60.2,
+   "depreciationCurrentPrices": 37.408877284595306
+  },
+  {
+   "year": 1860,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -12.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -13.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 91.11111111111111,
+   "depreciationConstant1913Prices": 60.5,
+   "depreciationCurrentPrices": 37.92857142857143
+  },
+  {
+   "year": 1861,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 39.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 44.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 87.08240534521158,
+   "depreciationConstant1913Prices": 61.1,
+   "depreciationCurrentPrices": 39.870901194353976
+  },
+  {
+   "year": 1862,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 58.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 65.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 89.16030534351145,
+   "depreciationConstant1913Prices": 61.8,
+   "depreciationCurrentPrices": 40.88012422360248
+  },
+  {
+   "year": 1863,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 22.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 24.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 92.5925925925926,
+   "depreciationConstant1913Prices": 63.1,
+   "depreciationCurrentPrices": 43.40844827586207
+  },
+  {
+   "year": 1864,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -16.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -18.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 91.25683060109289,
+   "depreciationConstant1913Prices": 64.5,
+   "depreciationCurrentPrices": 45.80434782608696
+  },
+  {
+   "year": 1865,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -29.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -31.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 92.76729559748428,
+   "depreciationConstant1913Prices": 65.1,
+   "depreciationCurrentPrices": 43.5622429906542
+  },
+  {
+   "year": 1866,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 53.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 62.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 86.03531300160515,
+   "depreciationConstant1913Prices": 66,
+   "depreciationCurrentPrices": 43.2741116751269
+  },
+  {
+   "year": 1867,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 6.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 88.57142857142858,
+   "depreciationConstant1913Prices": 66.8,
+   "depreciationCurrentPrices": 44.024604569420035
+  },
+  {
+   "year": 1868,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 35.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 39.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 88.41309823677581,
+   "depreciationConstant1913Prices": 67.3,
+   "depreciationCurrentPrices": 44.61246458923513
+  },
+  {
+   "year": 1869,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -13.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -16,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 85.625,
+   "depreciationConstant1913Prices": 67.9,
+   "depreciationCurrentPrices": 45.205987488829315
+  },
+  {
+   "year": 1870,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 24,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 29.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 82.4742268041237,
+   "depreciationConstant1913Prices": 68.9,
+   "depreciationCurrentPrices": 48.02286392405063
+  },
+  {
+   "year": 1871,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 9.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 11.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 88.2882882882883,
+   "depreciationConstant1913Prices": 69.4,
+   "depreciationCurrentPrices": 47.23965665236052
+  },
+  {
+   "year": 1872,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -0.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -0.2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 150,
+   "depreciationConstant1913Prices": 70.5,
+   "depreciationCurrentPrices": 54.33733624454148
+  },
+  {
+   "year": 1873,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -2.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -2.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 109.52380952380952,
+   "depreciationConstant1913Prices": 72.5,
+   "depreciationCurrentPrices": 73.02271088680607
+  },
+  {
+   "year": 1874,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 54.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 56,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 97.85714285714285,
+   "depreciationConstant1913Prices": 73.9,
+   "depreciationCurrentPrices": 80.28715670436189
+  },
+  {
+   "year": 1875,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 27,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 26.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 103.44827586206895,
+   "depreciationConstant1913Prices": 75.2,
+   "depreciationCurrentPrices": 65.57524613220816
+  },
+  {
+   "year": 1876,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 9.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 9.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 100,
+   "depreciationConstant1913Prices": 76.6,
+   "depreciationCurrentPrices": 64.73968897903987
+  },
+  {
+   "year": 1877,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -24.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -24.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 98.36734693877551,
+   "depreciationConstant1913Prices": 78.4,
+   "depreciationCurrentPrices": 64.92920962199312
+  },
+  {
+   "year": 1878,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 47.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 50.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 93.63817097415507,
+   "depreciationConstant1913Prices": 81.1,
+   "depreciationCurrentPrices": 63.826158192090396
+  },
+  {
+   "year": 1879,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -1.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -1.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 94.44444444444444,
+   "depreciationConstant1913Prices": 84.5,
+   "depreciationCurrentPrices": 63.606218905472645
+  },
+  {
+   "year": 1880,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 27.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 30.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 89.90228013029316,
+   "depreciationConstant1913Prices": 87.2,
+   "depreciationCurrentPrices": 66.53971078976639
+  },
+  {
+   "year": 1881,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -6.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 92.85714285714286,
+   "depreciationConstant1913Prices": 89.7,
+   "depreciationCurrentPrices": 68.31179220779221
+  },
+  {
+   "year": 1882,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 7.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 8.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 93.82716049382715,
+   "depreciationConstant1913Prices": 91.2,
+   "depreciationCurrentPrices": 67.55353293413174
+  },
+  {
+   "year": 1883,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 1.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 90,
+   "depreciationConstant1913Prices": 93,
+   "depreciationCurrentPrices": 68.52883625128733
+  },
+  {
+   "year": 1884,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 7.8,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 89.74358974358975,
+   "depreciationConstant1913Prices": 95,
+   "depreciationCurrentPrices": 69.70906282183317
+  },
+  {
+   "year": 1885,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 13.9,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 17.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 79.88505747126437,
+   "depreciationConstant1913Prices": 97.4,
+   "depreciationCurrentPrices": 70.3385945945946
+  },
+  {
+   "year": 1886,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -22.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -29.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 74.91638795986621,
+   "depreciationConstant1913Prices": 99.4,
+   "depreciationCurrentPrices": 70.03766166580444
+  },
+  {
+   "year": 1887,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 44.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 60.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 73.43234323432343,
+   "depreciationConstant1913Prices": 101.3,
+   "depreciationCurrentPrices": 71.22833894500563
+  },
+  {
+   "year": 1888,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 5.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 8.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 69.1358024691358,
+   "depreciationConstant1913Prices": 103.5,
+   "depreciationCurrentPrices": 74.63119834710744
+  },
+  {
+   "year": 1889,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 50,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 68.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 73.42143906020559,
+   "depreciationConstant1913Prices": 105.8,
+   "depreciationCurrentPrices": 77.71982232093282
+  },
+  {
+   "year": 1890,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 23.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 31.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 75.88424437299035,
+   "depreciationConstant1913Prices": 108.7,
+   "depreciationCurrentPrices": 83.19670958512161
+  },
+  {
+   "year": 1891,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 30.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 42.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 71.22641509433963,
+   "depreciationConstant1913Prices": 112.2,
+   "depreciationCurrentPrices": 92.11481481481482
+  },
+  {
+   "year": 1892,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 17.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 24.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 72.42798353909465,
+   "depreciationConstant1913Prices": 114.5,
+   "depreciationCurrentPrices": 90.41911021233568
+  },
+  {
+   "year": 1893,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -21.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -30.2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 69.86754966887418,
+   "depreciationConstant1913Prices": 115.7,
+   "depreciationCurrentPrices": 86.0227434982152
+  },
+  {
+   "year": 1894,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -34.8,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -50.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 68.36935166994105,
+   "depreciationConstant1913Prices": 117.3,
+   "depreciationCurrentPrices": 84.96388467374811
+  },
+  {
+   "year": 1895,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 28.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 42.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 65.73426573426573,
+   "depreciationConstant1913Prices": 119.2,
+   "depreciationCurrentPrices": 88.5809095452274
+  },
+  {
+   "year": 1896,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 17.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 24.2,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 71.48760330578513,
+   "depreciationConstant1913Prices": 121.3,
+   "depreciationCurrentPrices": 96.46931931931931
+  },
+  {
+   "year": 1897,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -16.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -23.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 71.42857142857142,
+   "depreciationConstant1913Prices": 123.8,
+   "depreciationCurrentPrices": 107.72731503024663
+  },
+  {
+   "year": 1898,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -22.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -28.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 78.397212543554,
+   "depreciationConstant1913Prices": 125.5,
+   "depreciationCurrentPrices": 109.76187183033655
+  },
+  {
+   "year": 1899,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 5.1,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 6.5,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 78.46153846153847,
+   "depreciationConstant1913Prices": 128.1,
+   "depreciationCurrentPrices": 114.67511999999999
+  },
+  {
+   "year": 1900,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -45.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -53.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 85.07462686567165,
+   "depreciationConstant1913Prices": 131.4,
+   "depreciationCurrentPrices": 121.52837680031142
+  },
+  {
+   "year": 1901,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 0.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 0.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 100,
+   "depreciationConstant1913Prices": 135.1,
+   "depreciationCurrentPrices": 122.69019683519876
+  },
+  {
+   "year": 1902,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 42.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 54,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 78.33333333333333,
+   "depreciationConstant1913Prices": 140.6,
+   "depreciationCurrentPrices": 119.28946069792032
+  },
+  {
+   "year": 1903,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 45.7,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 53.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 85.1024208566108,
+   "depreciationConstant1913Prices": 145.3,
+   "depreciationCurrentPrices": 126.54220735785954
+  },
+  {
+   "year": 1904,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 16.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 18.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 88.58695652173914,
+   "depreciationConstant1913Prices": 148.9,
+   "depreciationCurrentPrices": 129.12904564315355
+  },
+  {
+   "year": 1905,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": -33.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": -36.4,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 91.20879120879121,
+   "depreciationConstant1913Prices": 153.6,
+   "depreciationCurrentPrices": 129.4562100302928
+  },
+  {
+   "year": 1906,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 10.4,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 12,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 86.66666666666667,
+   "depreciationConstant1913Prices": 158.5,
+   "depreciationCurrentPrices": 139.91436100131753
+  },
+  {
+   "year": 1907,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 64.5,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 71,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 90.84507042253522,
+   "depreciationConstant1913Prices": 163.9,
+   "depreciationCurrentPrices": 148.19598754756137
+  },
+  {
+   "year": 1908,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 71,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 80.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 88.4184308841843,
+   "depreciationConstant1913Prices": 170.3,
+   "depreciationCurrentPrices": 155.56872623574145
+  },
+  {
+   "year": 1909,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 11.3,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 13.1,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 86.25954198473283,
+   "depreciationConstant1913Prices": 175.7,
+   "depreciationCurrentPrices": 153.05373599003738
+  },
+  {
+   "year": 1910,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 44.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 50.7,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 87.96844181459565,
+   "depreciationConstant1913Prices": 180.4,
+   "depreciationCurrentPrices": 156.0505487985761
+  },
+  {
+   "year": 1911,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 63,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 68.3,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 92.24011713030748,
+   "depreciationConstant1913Prices": 184.8,
+   "depreciationCurrentPrices": 165.53408151210868
+  },
+  {
+   "year": 1912,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 20.2,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 19.9,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 101.50753768844221,
+   "depreciationConstant1913Prices": 191.5,
+   "depreciationCurrentPrices": 177.25363881401614
+  },
+  {
+   "year": 1913,
+   "changesInInventoriesAndWorkInProgressCurrentPrices": 24.6,
+   "changesInInventoriesAndWorkInProgressConstant1913Prices": 24.6,
+   "implicitChangesInInventoriesAndWorkInProgressDeflator": 100,
+   "depreciationConstant1913Prices": 199.2,
+   "depreciationCurrentPrices": 199.2
+  }
+ ]
+}

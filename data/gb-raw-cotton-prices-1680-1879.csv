@@ -1,0 +1,21 @@
+period_start,period_end,geography,cotton_quality,nominal_price_d_per_lb,observation_basis,source_table,source_branch
+1680,1689,Britain,west-indian-cotton,7,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1690,1699,Britain,west-indian-cotton,7,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1700,1709,Britain,west-indian-cotton,7,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1710,1719,Britain,west-indian-cotton,9,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1720,1729,Britain,west-indian-cotton,10,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1730,1739,Britain,west-indian-cotton,10,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1740,1749,Britain,west-indian-cotton,10,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1750,1759,Britain,west-indian-cotton,16,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1760,1769,Britain,west-indian-cotton,16,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1770,1779,Britain,west-indian-cotton,16,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Wadsworth-and-Mann-1931-Appendix-H
+1780,1789,Britain,west-indian-cotton,23,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Mitchell-1988-759-760
+1790,1799,Britain,west-indian-cotton,24,mean-of-quoted-range-incomplete-annual-observations-decadal-average,Table 11,Mitchell-1988-759-760
+1800,1809,Britain,upland-or-middling-american-cotton,17,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760
+1810,1819,Britain,upland-or-middling-american-cotton,19,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760
+1820,1829,Britain,upland-or-middling-american-cotton,16,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760
+1830,1839,Britain,upland-or-middling-american-cotton,8,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760
+1840,1849,Britain,upland-or-middling-american-cotton,5,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760
+1850,1859,Britain,upland-or-middling-american-cotton,6,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760
+1860,1869,Britain,upland-or-middling-american-cotton,15,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760
+1870,1879,Britain,upland-or-middling-american-cotton,8,annual-average-prices-decadal-average,Table 11,Mitchell-1988-759-760

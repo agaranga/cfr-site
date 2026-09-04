@@ -1,0 +1,166 @@
+{
+ "id": "dataset:dg1c-be-annuaire-births-1840-1873-statistical",
+ "title": {
+  "ru": "Бельгия: Таблица рождений ежегодника 1874 (1840-1873)",
+  "en": "Belgium: Annuaire 1874 birth table domain (1840-1873)"
+ },
+ "source": [
+  "Annuaire statistique de la Belgique, cinquième année—1874"
+ ],
+ "sourceOf": "package:dg1c-source-native-demography",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Annuaire statistique de la Belgique, cinquième année—1874. https://wiki.statbel.fgov.be/wiki/Brochure_1874_fr",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор dg1c-be-annuaire-births-1840-1873-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-be-annuaire-births-1840-1873-statistical",
+   "author": "CFR Project (2026). Бельгия: Таблица рождений ежегодника 1874 (1840-1873). Cliometric Figures Repository, справочный набор dg1c-be-annuaire-births-1840-1873-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-be-annuaire-births-1840-1873-statistical"
+  },
+  "en": {
+   "source": "Annuaire statistique de la Belgique, cinquième année—1874. https://wiki.statbel.fgov.be/wiki/Brochure_1874_fr",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset dg1c-be-annuaire-births-1840-1873-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-be-annuaire-births-1840-1873-statistical",
+   "author": "CFR Project (2026). Belgium: Annuaire 1874 birth table domain (1840-1873). Cliometric Figures Repository, reference dataset dg1c-be-annuaire-births-1840-1873-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-be-annuaire-births-1840-1873-statistical"
+  }
+ },
+ "columns": [
+  "observation",
+  "period_start",
+  "period_end",
+  "concept",
+  "value",
+  "unit",
+  "literal_state",
+  "territory_version",
+  "population_universe",
+  "reference_time",
+  "source",
+  "locator"
+ ],
+ "rows": [
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1840",
+   "period_start": "1840",
+   "period_end": "1840",
+   "concept": "live-birth",
+   "value": 138142,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / 1840"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1841-1850-average",
+   "period_start": "1841",
+   "period_end": "1850",
+   "concept": "live-birth",
+   "value": 129968,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / Moyenne de 1841 a 1850"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1851-1860-average",
+   "period_start": "1851",
+   "period_end": "1860",
+   "concept": "live-birth",
+   "value": 137119,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / Moyenne de 1851 a 1860"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1861-1870-average",
+   "period_start": "1861",
+   "period_end": "1870",
+   "concept": "live-birth",
+   "value": 155513,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / Moyenne de 1861 a 1870"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1865",
+   "period_start": "1865",
+   "period_end": "1865",
+   "concept": "live-birth",
+   "value": 156323,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / 1865"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1870",
+   "period_start": "1870",
+   "period_end": "1870",
+   "concept": "live-birth",
+   "value": 164572,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / 1870"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1871",
+   "period_start": "1871",
+   "period_end": "1871",
+   "concept": "live-birth",
+   "value": 158760,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / 1871"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1872",
+   "period_start": "1872",
+   "period_end": "1872",
+   "concept": "live-birth",
+   "value": 167377,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / 1872"
+  },
+  {
+   "observation": "observation:dg1c:bel-births-annuaire-1840-1873-le-royaume-total-1873",
+   "period_start": "1873",
+   "period_end": "1873",
+   "concept": "live-birth",
+   "value": 170708,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:belgium-statbel-annuaire-1874",
+   "locator": "printed p.39 / PDF p.41; exact row/cell: Le royaume / Total / 1873"
+  }
+ ]
+}

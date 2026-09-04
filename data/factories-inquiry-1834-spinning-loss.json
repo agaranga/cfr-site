@@ -1,0 +1,180 @@
+{
+ "id": "dataset:factories-inquiry-1834-spinning-loss",
+ "title": {
+  "ru": "",
+  "en": "Factories Inquiry historical cotton-spinning loss opinions"
+ },
+ "source": [
+  "Factories Inquiry Commission, Supplementary Report, Part I"
+ ],
+ "sourceOf": "Data/cotton/factories-inquiry-1834-spinning-loss.csv",
+ "version": "1.2.0",
+ "citation": {
+  "ru": {
+   "source": "Great Britain Factories Inquiry Commission. Factories Inquiry Commission, Supplementary Report, Part I (1834). House of Commons. https://www.digitale-sammlungen.de/view/bsb10213320. Лицензия: public domain",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор factories-inquiry-1834-spinning-loss, версия 1.2.0, загружено 2026-08-11. https://cfrproject.com/ru/datasets/factories-inquiry-1834-spinning-loss",
+   "author": "CFR Project (2026). Factories Inquiry historical cotton-spinning loss opinions. Cliometric Figures Repository, инженерный набор factories-inquiry-1834-spinning-loss, версия 1.2.0. https://cfrproject.com/ru/datasets/factories-inquiry-1834-spinning-loss"
+  },
+  "en": {
+   "source": "Great Britain Factories Inquiry Commission. Factories Inquiry Commission, Supplementary Report, Part I (1834). House of Commons. https://www.digitale-sammlungen.de/view/bsb10213320. Licence: public domain",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset factories-inquiry-1834-spinning-loss, version 1.2.0, retrieved 2026-08-11. https://cfrproject.com/en/datasets/factories-inquiry-1834-spinning-loss",
+   "author": "CFR Project (2026). Factories Inquiry historical cotton-spinning loss opinions. Cliometric Figures Repository, engineering dataset factories-inquiry-1834-spinning-loss, version 1.2.0. https://cfrproject.com/en/datasets/factories-inquiry-1834-spinning-loss"
+  }
+ },
+ "columns": [
+  "record_id",
+  "source_id",
+  "period_start",
+  "period_end",
+  "geography",
+  "quantity_definition",
+  "value",
+  "unit",
+  "status",
+  "calculation",
+  "source_locator",
+  "notes"
+ ],
+ "rows": [
+  {
+   "record_id": "great-britain-raw-cotton-consumed-spinning-1832",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton consumed in spinning",
+   "value": "277260490",
+   "unit": "pounds-raw-cotton-per-year",
+   "status": "reported-author-input",
+   "calculation": "\"literal value attributed to Burn's Commercial Glance\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"Comparator year only; report is not an independent mill census\""
+  },
+  {
+   "record_id": "scotland-raw-cotton-consumed-spinning-1832",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "Scotland",
+   "quantity_definition": "raw cotton consumed in spinning",
+   "value": "27327120",
+   "unit": "pounds-raw-cotton-per-year",
+   "status": "reported-author-input",
+   "calculation": "\"literal value\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"Used by the report to derive England consumption\""
+  },
+  {
+   "record_id": "england-raw-cotton-consumed-spinning-1832",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "England",
+   "quantity_definition": "raw cotton consumed in spinning",
+   "value": "249933370",
+   "unit": "pounds-raw-cotton-per-year",
+   "status": "within-source-arithmetic",
+   "calculation": "\"277260490-27327120\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"Report's England calculation\""
+  },
+  {
+   "record_id": "kennedy-spinning-loss-oz-per-lb",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "not stated",
+   "quantity_definition": "Kennedy estimate of net cotton loss in spinning",
+   "value": "1.5",
+   "unit": "ounces-loss-per-pound-raw-cotton",
+   "status": "reported-author-estimate",
+   "calculation": "\"literal value\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"Applied by the report to its 1832 calculation and adopted as generally considered correct; opinion date"
+  },
+  {
+   "record_id": "kennedy-spinning-loss-fraction",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "not stated",
+   "quantity_definition": "Kennedy estimate of net cotton loss in spinning",
+   "value": "0.09375",
+   "unit": "fraction-of-raw-cotton-weight",
+   "status": "within-source-normalization",
+   "calculation": "\"1.5/16\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"EconEvidence normalization of the report-adopted opinion; not a measured national rate; opinion date"
+  },
+  {
+   "record_id": "montgomery-spinning-loss-oz-per-lb",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "not stated",
+   "quantity_definition": "Montgomery estimate of net cotton loss in spinning",
+   "value": "1.125",
+   "unit": "ounces-loss-per-pound-raw-cotton",
+   "status": "reported-author-estimate",
+   "calculation": "\"literal value\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"Alternative quoted by the report but not adopted in its 1832 calculation; opinion date"
+  },
+  {
+   "record_id": "montgomery-spinning-loss-fraction",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "not stated",
+   "quantity_definition": "Montgomery estimate of net cotton loss in spinning",
+   "value": "0.0703125",
+   "unit": "fraction-of-raw-cotton-weight",
+   "status": "within-source-normalization",
+   "calculation": "\"1.125/16\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"EconEvidence conditional alternative derived from a quoted opinion; not a measured national rate; opinion date"
+  },
+  {
+   "record_id": "burn-spinning-loss-oz-per-lb",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "not stated",
+   "quantity_definition": "Burn estimate of net cotton loss in spinning",
+   "value": "1.75",
+   "unit": "ounces-loss-per-pound-raw-cotton",
+   "status": "reported-author-estimate",
+   "calculation": "\"literal value\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"Alternative quoted by the report but not adopted in its 1832 calculation; opinion date"
+  },
+  {
+   "record_id": "burn-spinning-loss-fraction",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "not stated",
+   "quantity_definition": "Burn estimate of net cotton loss in spinning",
+   "value": "0.109375",
+   "unit": "fraction-of-raw-cotton-weight",
+   "status": "within-source-normalization",
+   "calculation": "\"1.75/16\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"EconEvidence conditional alternative derived from a quoted opinion; not a measured national rate; opinion date"
+  },
+  {
+   "record_id": "england-yarn-output-kennedy-loss-1832",
+   "source_id": "source:factories-inquiry-1834-supplementary-report",
+   "period_start": "1832",
+   "period_end": "1832",
+   "geography": "England",
+   "quantity_definition": "yarn weight after adopted Kennedy loss",
+   "value": "226502117",
+   "unit": "pounds-yarn-per-year",
+   "status": "reported-within-source-result",
+   "calculation": "\"249933370-23431253\"",
+   "source_locator": "Part I printed p. 137 BSB canvas 181",
+   "notes": "\"Report's own result; rounding follows printed calculation\""
+  }
+ ]
+}

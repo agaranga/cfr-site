@@ -1,0 +1,82 @@
+{
+ "id": "dataset:dg1c-be-quetelet-marriages-1803-1829-statistical",
+ "title": {
+  "ru": "Бельгия: Ретроспективная таблица браков Кетле (1803-1829)",
+  "en": "Belgium: Quetelet retrospective marriage table (1803-1829)"
+ },
+ "source": [
+  "Recherches sur la reproduction et la mortalité de l'homme aux différents âges, et sur la population de la Belgique"
+ ],
+ "sourceOf": "package:dg1c-source-native-demography",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Recherches sur la reproduction et la mortalité de l'homme aux différents âges, et sur la population de la Belgique. https://archive.org/details/recherchessurlar00quet",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор dg1c-be-quetelet-marriages-1803-1829-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-be-quetelet-marriages-1803-1829-statistical",
+   "author": "CFR Project (2026). Бельгия: Ретроспективная таблица браков Кетле (1803-1829). Cliometric Figures Repository, справочный набор dg1c-be-quetelet-marriages-1803-1829-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-be-quetelet-marriages-1803-1829-statistical"
+  },
+  "en": {
+   "source": "Recherches sur la reproduction et la mortalité de l'homme aux différents âges, et sur la population de la Belgique. https://archive.org/details/recherchessurlar00quet",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset dg1c-be-quetelet-marriages-1803-1829-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-be-quetelet-marriages-1803-1829-statistical",
+   "author": "CFR Project (2026). Belgium: Quetelet retrospective marriage table (1803-1829). Cliometric Figures Repository, reference dataset dg1c-be-quetelet-marriages-1803-1829-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-be-quetelet-marriages-1803-1829-statistical"
+  }
+ },
+ "columns": [
+  "observation",
+  "period_start",
+  "period_end",
+  "concept",
+  "value",
+  "unit",
+  "literal_state",
+  "territory_version",
+  "population_universe",
+  "reference_time",
+  "source",
+  "locator"
+ ],
+ "rows": [
+  {
+   "observation": "observation:dg1c:bel-marriages-quetelet-1803-1829-le-royaume-1803-1813-average",
+   "period_start": "1803",
+   "period_end": "1813",
+   "concept": "marriage",
+   "value": 24479,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:quetelet-marriages-1803-1829:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:quetelet-1832-population-belgium",
+   "locator": "printed p.23 / PDF p.33; exact row/cell: Le royaume / Nombre moyen des mariages de 1803 a 1813"
+  },
+  {
+   "observation": "observation:dg1c:bel-marriages-quetelet-1803-1829-le-royaume-1815-1824-average",
+   "period_start": "1815",
+   "period_end": "1824",
+   "concept": "marriage",
+   "value": 25966,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:quetelet-marriages-1803-1829:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:quetelet-1832-population-belgium",
+   "locator": "printed p.23 / PDF p.33; exact row/cell: Le royaume / Nombre moyen des mariages de 1815 a 1824"
+  },
+  {
+   "observation": "observation:dg1c:bel-marriages-quetelet-1803-1829-le-royaume-1825-1829-average",
+   "period_start": "1825",
+   "period_end": "1829",
+   "concept": "marriage",
+   "value": 28076,
+   "unit": "events",
+   "literal_state": "",
+   "territory_version": "territory-version:belgium:quetelet-marriages-1803-1829:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:quetelet-1832-population-belgium",
+   "locator": "printed p.23 / PDF p.33; exact row/cell: Le royaume / Nombre moyen des mariages de 1825 a 1829"
+  }
+ ]
+}

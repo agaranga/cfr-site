@@ -1,0 +1,10 @@
+observation_id,location,period_start,period_end,technology,pay_basis,role,worker_group,lower_shillings_week,upper_shillings_week,bound,observation_count,evidence_status,source_locator
+lumford-wage-distribution-sample-1788,Bakewell,1788,1788,water-frame,weekly-time-rate,,mixed,,,distribution-sample,5331,author-distribution,Tertzakian-2025-figure-6-page-15
+lumford-wage-distribution-sample-1796,Bakewell,1796,1796,water-frame,weekly-time-rate,,mixed,,,distribution-sample,3602,author-distribution,Tertzakian-2025-figure-6-page-15
+wirksworth-children-1795,Wirksworth,1795,1795,water-frame,weekly-time-rate,spinning-operative,children-age-8-14,1,5,closed-range,,contemporary-report,Tertzakian-2025-page-15-Eden-volume-2-page-130
+wirksworth-women-1795,Wirksworth,1795,1795,water-frame,weekly-time-rate,spinning-operative,adult-women,3,5,closed-range,,contemporary-report,Tertzakian-2025-page-15-Eden-volume-2-page-130
+wirksworth-overseers-1795,Wirksworth,1795,1795,water-frame,weekly-time-rate,overseer,adult-unspecified,12,12,point,,contemporary-report,Tertzakian-2025-page-15-Eden-volume-2-page-130
+quarry-bank-spinners-1789-1791,Styal,1789,1791,water-frame,weekly-time-rate,spinning-operative,mostly-piecers,1,8,closed-range,,wage-book-transcription,Tertzakian-2025-page-17-MCL-C5-1-15-1
+quarry-bank-frame-cleaners-1789-1791,Styal,1789,1791,water-frame,weekly-time-rate,frame-cleaner,adult-men,8,10,closed-range,,wage-book-transcription,Tertzakian-2025-page-17-MCL-C5-1-15-1
+quarry-bank-overseers-1789-1791,Styal,1789,1791,water-frame,weekly-time-rate,overseer,adult-men,10,,greater-than,,wage-book-transcription,Tertzakian-2025-page-17-MCL-C5-1-15-1
+lumford-adult-women-1786-1796,Bakewell,1786,1796,water-frame,weekly-time-rate,spinning-operative,adult-women,5,6,inferred-plateau,,author-inference,Tertzakian-2025-page-15

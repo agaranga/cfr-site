@@ -1,0 +1,209 @@
+{
+ "id": "dataset:hansard-1839-gb-yarn-exports-1824-1828",
+ "title": {
+  "ru": "",
+  "en": "Great Britain cotton-yarn exports"
+ },
+ "source": [
+  "Corn Laws",
+  "Corn Laws - Adjourned Debate, Fourth Night"
+ ],
+ "sourceOf": "Data/cotton/hansard-1839-yarn-exports.csv",
+ "version": "1.2.0",
+ "citation": {
+  "ru": {
+   "source": "UK Parliament, Edward Cayley. Corn Laws (1839). House of Commons Hansard. https://api.parliament.uk/historic-hansard/commons/1839/mar/12/corn-laws. Лицензия: UK Parliamentary material; public historic-Hansard access",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор hansard-1839-gb-yarn-exports-1824-1828, версия 1.2.0, загружено 2026-08-10. https://cfrproject.com/ru/datasets/hansard-1839-gb-yarn-exports-1824-1828",
+   "author": "CFR Project (2026). Great Britain cotton-yarn exports, 1824–1828. Cliometric Figures Repository, инженерный набор hansard-1839-gb-yarn-exports-1824-1828, версия 1.2.0. https://cfrproject.com/ru/datasets/hansard-1839-gb-yarn-exports-1824-1828"
+  },
+  "en": {
+   "source": "UK Parliament, Edward Cayley. Corn Laws (1839). House of Commons Hansard. https://api.parliament.uk/historic-hansard/commons/1839/mar/12/corn-laws. Licence: UK Parliamentary material; public historic-Hansard access",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset hansard-1839-gb-yarn-exports-1824-1828, version 1.2.0, retrieved 2026-08-10. https://cfrproject.com/en/datasets/hansard-1839-gb-yarn-exports-1824-1828",
+   "author": "CFR Project (2026). Great Britain cotton-yarn exports, 1824–1828. Cliometric Figures Repository, engineering dataset hansard-1839-gb-yarn-exports-1824-1828, version 1.2.0. https://cfrproject.com/en/datasets/hansard-1839-gb-yarn-exports-1824-1828"
+  }
+ },
+ "columns": [
+  "record_id",
+  "source_id",
+  "period_start",
+  "period_end",
+  "geography",
+  "quantity_definition",
+  "value",
+  "unit",
+  "status",
+  "calculation",
+  "source_locator",
+  "notes"
+ ],
+ "rows": [
+  {
+   "record_id": "yarn-destination-subtotal-1824",
+   "source_id": "source:hansard-1839-yarn-exports",
+   "period_start": "1824",
+   "period_end": "1824",
+   "geography": "Great Britain",
+   "quantity_definition": "cotton yarn export subtotal for five printed destination groups",
+   "value": "33605510",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "sum of five printed destination columns",
+   "source_locator": "HC Deb 12 March 1839 vol 46 cols 400-401",
+   "notes": "equals the later aggregate in this year"
+  },
+  {
+   "record_id": "yarn-destination-subtotal-1825",
+   "source_id": "source:hansard-1839-yarn-exports",
+   "period_start": "1825",
+   "period_end": "1825",
+   "geography": "Great Britain",
+   "quantity_definition": "cotton yarn export subtotal for five printed destination groups",
+   "value": "32641604",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "sum of five printed destination columns",
+   "source_locator": "HC Deb 12 March 1839 vol 46 cols 400-401",
+   "notes": "equals the later aggregate in this year"
+  },
+  {
+   "record_id": "yarn-destination-subtotal-1826",
+   "source_id": "source:hansard-1839-yarn-exports",
+   "period_start": "1826",
+   "period_end": "1826",
+   "geography": "Great Britain",
+   "quantity_definition": "cotton yarn export subtotal for five printed destination groups",
+   "value": "42179521",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "sum of five printed destination columns",
+   "source_locator": "HC Deb 12 March 1839 vol 46 cols 400-401",
+   "notes": "equals the later aggregate in this year"
+  },
+  {
+   "record_id": "yarn-destination-subtotal-1827",
+   "source_id": "source:hansard-1839-yarn-exports",
+   "period_start": "1827",
+   "period_end": "1827",
+   "geography": "Great Britain",
+   "quantity_definition": "cotton yarn export subtotal for five printed destination groups",
+   "value": "43346632",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "sum of five printed destination columns",
+   "source_locator": "HC Deb 12 March 1839 vol 46 cols 400-401",
+   "notes": "omits 1532142 pounds present in the later all-foreign aggregate"
+  },
+  {
+   "record_id": "yarn-destination-subtotal-1828",
+   "source_id": "source:hansard-1839-yarn-exports",
+   "period_start": "1828",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "cotton yarn export subtotal for five printed destination groups",
+   "value": "43242882",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "sum of five printed destination columns",
+   "source_locator": "HC Deb 12 March 1839 vol 46 cols 400-401",
+   "notes": "omits 7262869 pounds present in the full total printed at c409 of the same debate"
+  },
+  {
+   "record_id": "yarn-destination-subtotal-five-year-mean",
+   "source_id": "source:hansard-1839-yarn-exports",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "cotton yarn export annual mean for five printed destination groups",
+   "value": "39003229.8",
+   "unit": "pounds-yarn-per-year",
+   "status": "curator-derived",
+   "calculation": "arithmetic mean of five annual destination subtotals",
+   "source_locator": "derived from HC Deb 12 March 1839 cols 400-401",
+   "notes": "known incomplete after comparison with the all-foreign aggregate"
+  },
+  {
+   "record_id": "yarn-export-gb-1824",
+   "source_id": "source:hansard-1839-gb-yarn-exports",
+   "period_start": "1824",
+   "period_end": "1824",
+   "geography": "Great Britain",
+   "quantity_definition": "direct cotton yarn exported to all foreign countries",
+   "value": "33605510",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 15 March 1839 vol 46 cols 782-784 row 1824",
+   "notes": "table does not state calendar-year versus customs-year convention"
+  },
+  {
+   "record_id": "yarn-export-gb-1825",
+   "source_id": "source:hansard-1839-gb-yarn-exports",
+   "period_start": "1825",
+   "period_end": "1825",
+   "geography": "Great Britain",
+   "quantity_definition": "direct cotton yarn exported to all foreign countries",
+   "value": "32641604",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 15 March 1839 vol 46 cols 782-784 row 1825",
+   "notes": "table does not state calendar-year versus customs-year convention"
+  },
+  {
+   "record_id": "yarn-export-gb-1826",
+   "source_id": "source:hansard-1839-gb-yarn-exports",
+   "period_start": "1826",
+   "period_end": "1826",
+   "geography": "Great Britain",
+   "quantity_definition": "direct cotton yarn exported to all foreign countries",
+   "value": "42179521",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 15 March 1839 vol 46 cols 782-784 row 1826",
+   "notes": "table does not state calendar-year versus customs-year convention"
+  },
+  {
+   "record_id": "yarn-export-gb-1827",
+   "source_id": "source:hansard-1839-gb-yarn-exports",
+   "period_start": "1827",
+   "period_end": "1827",
+   "geography": "Great Britain",
+   "quantity_definition": "direct cotton yarn exported to all foreign countries",
+   "value": "44878774",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 15 March 1839 vol 46 cols 782-784 row 1827",
+   "notes": "table does not state calendar-year versus customs-year convention"
+  },
+  {
+   "record_id": "yarn-export-gb-1828",
+   "source_id": "source:hansard-1839-gb-yarn-exports",
+   "period_start": "1828",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "direct cotton yarn exported to all foreign countries",
+   "value": "50505751",
+   "unit": "pounds-yarn-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 15 March 1839 vol 46 cols 782-784 row 1828",
+   "notes": "table does not state calendar-year versus customs-year convention"
+  },
+  {
+   "record_id": "yarn-export-gb-five-year-mean",
+   "source_id": "source:hansard-1839-gb-yarn-exports",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "direct cotton yarn exported to all foreign countries annual mean",
+   "value": "40762232",
+   "unit": "pounds-yarn-per-year",
+   "status": "curator-derived",
+   "calculation": "arithmetic mean of 1824 through 1828 aggregate totals",
+   "source_locator": "derived from HC Deb 15 March 1839 cols 782-784",
+   "notes": "compatible target quantity with timing uncertainty retained"
+  }
+ ]
+}

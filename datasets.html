@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFR Project - Исходные данные</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .wrap.wide { max-width: 1240px; }
+  .head { padding: 44px 0 14px 0; }
+  .head .over { font: 700 10px/1 Inter, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .head h1 { font: 500 34px/1.15 Georgia, serif; margin: 0 0 10px 0; }
+  .head p { font-size: 15px; color: #566059; max-width: 46em; line-height: 1.6; margin: 0; }
+  .lang span { cursor: pointer; }
+
+  .filters { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px 14px 18px; margin: 18px 0 14px 0; }
+  .bar { position: sticky; top: 56px; z-index: 20; display: none; grid-template-columns: 1fr auto auto; gap: 12px; align-items: center; margin: 0 0 10px 0; padding: 8px 12px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 18px -14px rgba(24,35,31,.5); }
+  .bar.show { display: grid; }
+  .bar .search { padding: 7px 10px; font-size: 13.5px; }
+  .bar .n { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  .bar .n b { color: var(--ink); font-weight: 600; }
+  .bar button { background: none; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 12.5px; font-weight: 700; color: var(--forest-soft); cursor: pointer; white-space: nowrap; }
+  .filters .row1 { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; }
+  .search { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); font-size: 14px; font-family: inherit; }
+  .search:focus { outline: 2px solid rgba(23,61,50,.25); border-color: var(--forest); }
+  .filters .sort { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  .filters .sort select { padding: 7px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); font-family: inherit; font-size: 13px; color: var(--ink); }
+  .facets { display: flex; flex-direction: column; gap: 7px; margin-top: 12px; }
+  .facet { display: grid; grid-template-columns: 72px 1fr; gap: 10px; align-items: baseline; position: relative; }
+  .facet .lbl { font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding-top: 4px; }
+  .facet .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .chip { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 12px; font-weight: 600; color: #3c453f; cursor: pointer; user-select: none; }
+  .chip small { display: inline-block; min-width: 3ch; text-align: right; font-weight: 500; color: var(--muted); margin-left: 4px; font-variant-numeric: tabular-nums; }
+  .chip.on { background: var(--forest); color: var(--white); border-color: var(--forest); }
+  .chip.on small { color: rgba(255,253,248,.7); }
+  .chip.zero { opacity: .45; }
+  .chip.more { background: transparent; border-style: dashed; color: var(--forest-soft); }
+  .chip.more.open { border-style: solid; }
+  .pop { position: absolute; left: 82px; top: calc(100% + 6px); z-index: 30; width: min(560px, calc(100% - 82px)); background: var(--white); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 14px 34px -18px rgba(24,35,31,.55); padding: 12px; }
+  .pop[hidden] { display: none; }
+  .pop .search { padding: 7px 10px; font-size: 13px; }
+  .pop .groups { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; margin-top: 10px; max-height: 300px; overflow: auto; }
+  .pop .group h4 { margin: 0 0 4px 0; font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; align-items: baseline; }
+  .pop .group h4 span { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--forest-soft); cursor: pointer; font-size: 11px; }
+  .pop label { display: flex; align-items: center; gap: 8px; padding: 4px 4px; border-radius: 4px; font-size: 13px; cursor: pointer; }
+  .pop label:hover { background: var(--paper); }
+  .pop label small { margin-left: auto; min-width: 3ch; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .pop label.zero { opacity: .5; }
+  .pop label.hide { display: none; }
+  .pop .foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--line); font-size: 12.5px; color: var(--muted); }
+  .pop .foot button { background: var(--forest); color: var(--white); border: 0; border-radius: 6px; padding: 6px 12px; font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer; }
+  .tokens { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+  .tokens:empty { display: none; }
+  .token { display: inline-flex; align-items: center; gap: 7px; padding: 5px 10px; border-radius: 5px; background: var(--paper-deep); font-size: 12.5px; font-weight: 600; }
+  .token i { font-style: normal; font-weight: 500; color: var(--muted); }
+  .token b { font-weight: 400; color: var(--muted); cursor: pointer; }
+  .token.reset { background: transparent; border: 1px dashed var(--line); cursor: pointer; font-weight: 500; color: var(--muted); }
+  .count { margin-top: 10px; font-size: 12.5px; color: var(--muted); display: flex; gap: 18px; }
+  .count b { color: var(--ink); font-weight: 600; }
+
+  /* Реестр: вертикальная таблица. Узкие колонки сжаты до содержимого, название и источник растут. */
+  .reg { width: 100%; border-collapse: collapse; background: var(--white); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-bottom: 60px; table-layout: auto; }
+  .reg th { text-align: left; font: 700 10.5px/1.5 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 10px 9px; border-bottom: 1px solid var(--line); background: var(--paper); white-space: nowrap; }
+  .reg th.sortable { cursor: pointer; user-select: none; }
+  .reg th.sortable:hover { color: var(--ink); }
+  .reg th .dir { display: inline-block; width: 1ch; margin-left: 4px; color: var(--forest-soft); }
+  .reg td { padding: 10px 9px; border-top: 1px solid var(--line); font-size: 13.5px; vertical-align: top; }
+  .reg tr.row:first-child td { border-top: 0; }
+  .reg td.n { width: auto; min-width: 280px; }
+  .reg td.n .t { font: 500 16px/1.3 Georgia, serif; }
+  .reg td.n .t a { color: var(--ink); text-decoration: none; }
+  .reg td.n .t a:hover { text-decoration: underline; }
+  .reg td.n .loc { font-size: 12px; color: var(--muted); margin-top: 3px; }
+  .reg td.n .acts { display: flex; gap: 14px; margin-top: 6px; font-size: 12.5px; }
+  .reg td.n .acts button { background: none; border: 0; padding: 0; font: inherit; font-size: 12.5px; font-weight: 700; color: var(--forest-soft); cursor: pointer; }
+  .reg td.n .acts a { font-weight: 700; }
+  .reg td.c { white-space: nowrap; color: #3c453f; width: 1%; font-size: 13px; }
+  .reg td.c.topic { white-space: normal; max-width: 120px; line-height: 1.3; }
+  .reg td.p { white-space: nowrap; font-variant-numeric: tabular-nums; width: 1%; }
+  .reg td.s { color: var(--muted); font-size: 12.5px; width: 27%; min-width: 220px; line-height: 1.45; }
+  .ref { display: inline-block; margin-left: 8px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--forest-soft); color: var(--forest-soft); font-size: 10.5px; font-weight: 700; vertical-align: 2px; cursor: help; }
+  .st { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 0; position: relative; cursor: help; }
+  .st.local { background: #3e8a5e; } .st.online { background: var(--gold); } .st.closed { background: #c76743; }
+  .st::after { content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 7px); transform: translateX(-50%); background: var(--ink); color: var(--white); font-size: 12px; line-height: 1.35; padding: 6px 9px; border-radius: 5px; white-space: normal; width: max-content; max-width: 260px; text-align: left; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 5; }
+  .st:hover::after { opacity: 1; }
+  .reg td.s a { color: var(--forest-soft); font-weight: 600; text-decoration: none; }
+  .reg td.s a:hover { text-decoration: underline; }
+  .reg tr.details td { background: var(--paper); border-top: 0; padding: 4px 12px 14px 12px; }
+  .det { display: grid; grid-template-columns: 1fr 240px; gap: 18px; }
+  .det .cols { font-size: 13px; color: #2f3834; line-height: 1.55; }
+  .det .cols b { font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px; }
+  .det .kv { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: 12.5px; color: var(--muted); align-content: start; }
+  .det .kv span:nth-child(even) { color: var(--ink); }
+  .det .acts { grid-column: 1 / -1; display: flex; gap: 18px; font-size: 13px; }
+  .det .acts a { font-weight: 700; }
+  .empty { padding: 40px 12px; text-align: center; color: var(--muted); font-size: 14px; }
+  .empty a { font-weight: 700; }
+  @media (max-width: 800px) {
+    .reg thead { display: none; }
+    .reg tr.row { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+    .reg tr.row td { border-top: 0; padding: 4px 12px; }
+    .reg tr.row td.n { grid-column: 1 / -1; padding-top: 12px; }
+    .reg tr.row td.s { grid-column: 1 / -1; max-width: none; padding-bottom: 12px; }
+    .det { grid-template-columns: 1fr; }
+    .facet { grid-template-columns: 1fr; } .pop { left: 0; width: 100%; } .pop .groups { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./"><span class="mark">CFR</span><span class="word">CFR Project</span></a>
+  <nav class="topnav" id="nav">
+    <a href="./" data-t="nav.overview">Обзор</a>
+    <a href="showcase.html" data-t="nav.showcase">Витрина</a>
+    <a href="coverage.html" data-t="nav.coverage">Покрытие</a>
+    <a href="constructor.html" data-t="nav.constructor">Конструктор</a>
+    <a class="on" href="datasets.html" data-t="nav.datasets">Исходные данные</a>
+    <a href="sources.html" data-t="nav.sources">Источники</a>
+    <a href="territory.html" data-t="nav.territory">Территории</a>
+  </nav>
+  <a class="account" href="mailto:cfr@cfrproject.com?subject=CFR%20Project" title="Личный кабинет появится позже; пока пишите нам"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="5" r="2.8"/><path d="M2.5 14c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/></svg><span data-t="nav.account">Личный кабинет</span></a>
+  <span class="lang" id="lang"><span class="on" data-lang="ru">RU</span><span data-lang="en">EN</span></span>
+</header>
+
+<div class="wrap wide">
+  <div class="head">
+    <div class="over" data-t="over">Опубликованные таблицы</div>
+    <h1 data-t="h1">Исходные данные</h1>
+    <p data-t="intro">Каждая таблица базы как в источнике, ячейка в ячейку: откуда взята, какую страну и годы описывает, сколько в ней строк и колонок. Откройте набор, чтобы увидеть колонки, строки и паспорт источника.</p>
+  </div>
+
+  <section class="filters">
+    <div class="row1">
+      <input class="search" id="q" type="search" autocomplete="off">
+      <label class="sort"><span data-t="sort">Сортировка</span>
+        <select id="sort">
+          <option value="title" data-t="sort.title">по названию</option>
+          <option value="country" data-t="sort.country">по стране</option>
+          <option value="topic" data-t="sort.topic">по теме</option>
+          <option value="start" data-t="sort.start">по началу периода</option>
+          <option value="rows" data-t="sort.rows">по числу строк</option>
+        </select>
+      </label>
+    </div>
+    <div class="facets">
+      <div class="facet"><span class="lbl" data-t="f.countries">Страна</span><div class="chips" data-facet="countries"></div><div class="pop" data-pop="countries" hidden></div></div>
+      <div class="facet"><span class="lbl" data-t="f.topic">Тема</span><div class="chips" data-facet="topic"></div><div class="pop" data-pop="topic" hidden></div></div>
+      <div class="facet"><span class="lbl" data-t="f.era">Период</span><div class="chips" data-facet="era"></div></div>
+      <div class="facet"><span class="lbl" data-t="f.form">Форма</span><div class="chips" data-facet="form"></div></div>
+    </div>
+    <div class="tokens" id="tokens"></div>
+    <div class="count" id="count"></div>
+  </section>
+
+  <div class="bar" id="bar"><input class="search" id="q2" type="search" autocomplete="off"><span class="n" id="count2"></span><button type="button" id="tofilters" data-t="tofilters">Фильтры ↑</button></div>
+
+  <table class="reg" id="reg">
+    <thead><tr>
+      <th class="sortable" data-sort="title"><span data-t="col.title">Набор</span><span class="dir"></span></th>
+      <th class="sortable" data-sort="country"><span data-t="col.country">Страна</span><span class="dir"></span></th>
+      <th class="sortable" data-sort="topic"><span data-t="col.topic">Тема</span><span class="dir"></span></th>
+      <th class="sortable" data-sort="start"><span data-t="col.period">Период</span><span class="dir"></span></th>
+      <th data-t="col.source">Источник</th>
+    </tr></thead>
+    <tbody id="list"></tbody>
+  </table>
+</div>
+
+<footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
+
+<script src="assets/datasets-data.js"></script>
+<script>
+(function () {
+  const L = window.DATASET_LABELS;
+  // Инженерный слой на этой странице не показывается: здесь только исходные данные, как в источнике.
+  const D = window.DATASETS.filter((з) => з.layer !== "engineering");
+  const число = (n) => n == null ? "" : n.toLocaleString("ru-RU");
+  const склонRu = (n, а, б, в) => { const m = n % 100, d = n % 10; return число(n) + " " + (m > 10 && m < 20 ? в : d === 1 ? а : d > 1 && d < 5 ? б : в); };
+  const экр = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const T = {
+    ru: { "nav.overview": "Обзор", "nav.showcase": "Витрина", "nav.coverage": "Покрытие", "nav.constructor": "Конструктор", "nav.datasets": "Исходные данные", "nav.sources": "Источники", "nav.territory": "Территории", "nav.account": "Личный кабинет",
+      over: "Опубликованные таблицы", h1: "Исходные данные", intro: "Каждая таблица базы как в источнике, ячейка в ячейку: откуда взята, какую страну и годы описывает, сколько в ней строк и колонок. Откройте набор, чтобы увидеть колонки, строки и паспорт источника.",
+      search: "Название, источник, единицы: перепись, торговля, INSEE, гульдены…", search2: "Поиск по данным…", sort: "Сортировка", "sort.title": "по названию", "sort.country": "по стране", "sort.topic": "по теме", "sort.start": "по началу периода", "sort.rows": "по числу строк",
+      "f.countries": "Страна", "f.topic": "Тема", "f.era": "Период", "f.form": "Форма", tofilters: "Фильтры ↑", "col.title": "Набор", "col.country": "Страна", "col.topic": "Тема", "col.period": "Период", "col.source": "Источник",
+      more: "Подробнее", less: "Свернуть", open: "Открыть набор →", csv: "Скачать CSV", json: "Скачать JSON", cite: "Ссылка на данные", citeLabel: "Первоисточник (указывается при любом использовании)", site: "Сайт источника ↗", shown: "Показано", of: "из", rows: "строк данных", inside: "Что внутри", period: "период", periodNone: "не указан", idLabel: "Идентификатор набора", otherTitle: "Название по-английски",
+      source: "Источник", pkg: "Пакет", review: "Проверка", noReview: "не указана", seePassport: "см. паспорт", srcPassport: "источник в паспорте", empty: "По этим условиям ничего не нашли.", write: "Напишите, что ищете", emptyTail: ": найдём и обработаем в первую очередь.",
+      more_n: (n) => `Ещё ${n} ▾`, all: (s) => `Все ${s} ▾`, find: (s) => `Найти: ${s}…`, chosen: (n) => `Выбрано: ${n}`, none: "Ничего не выбрано: показываем все", done: "Готово", selAll: "выбрать все", unselAll: "снять все", reset: "Сбросить всё", searchTok: "поиск", srcTok: "Источник",
+      picker: { countries: "страны", topic: "темы" }, groups: { countries: [["Европа", ["gb", "fr", "nl", "be"]], ["Сравнительные", ["ww", "xx"]]], topic: [["Люди и труд", ["population", "wages"]], ["Хозяйство", ["macro-history", "capital", "cotton", "trade", "money-credit"]], ["Государство и прочее", ["public-finance", "other"]]] },
+      eras: { pre1800: "до 1800", e1800: "1800-1849", e1850: "1850-1899", e1900: "1900-1949", e1950: "1950 и позже", none: "период не указан" },
+      ref: "CFR", refTip: "Справочный слой CFR: наши собственные таблицы (территории, словари), автор - CFR Project", status: { local: "Материалы источника скачаны и проверены: длина и контрольная сумма совпадают с паспортом", online: "Материалы есть в сети, но ещё не скачаны в базу", closed: "Скачать нельзя: платный или закрытый доступ, смотрите на сайте источника" },
+      countries: (n) => склонRu(n, "страна", "страны", "стран"), rowsN: (n) => склонRu(n, "строка", "строки", "строк"), colsN: (n) => склонRu(n, "колонка", "колонки", "колонок"), literal: "как в источнике, ячейка в ячейку" },
+    en: { "nav.overview": "Overview", "nav.showcase": "Showcase", "nav.coverage": "Coverage", "nav.constructor": "Builder", "nav.datasets": "Source data", "nav.sources": "Sources", "nav.territory": "Territories", "nav.account": "Account",
+      over: "Published tables", h1: "Source data", intro: "Every table in the base as it stands in the source, cell for cell: where it comes from, which country and years it covers, how many rows and columns it has. Open a dataset to see its columns, rows and source passport.",
+      search: "Title, source, units: census, trade, INSEE, guilders…", search2: "Search datasets…", sort: "Sort", "sort.title": "by title", "sort.country": "by country", "sort.topic": "by topic", "sort.start": "by start year", "sort.rows": "by row count",
+      "f.countries": "Country", "f.topic": "Topic", "f.era": "Period", "f.form": "Form", tofilters: "Filters ↑", "col.title": "Dataset", "col.country": "Country", "col.topic": "Topic", "col.period": "Period", "col.source": "Source",
+      more: "Details", less: "Collapse", open: "Open dataset →", csv: "Download CSV", json: "Download JSON", cite: "Data reference", citeLabel: "Original source (attribution required with any use)", site: "Source site ↗", shown: "Showing", of: "of", rows: "data rows", inside: "What is inside", period: "period", periodNone: "not stated", idLabel: "Dataset identifier", otherTitle: "Russian title",
+      source: "Source", pkg: "Package", review: "Review", noReview: "not stated", seePassport: "see passport", srcPassport: "source in passport", empty: "Nothing matches these conditions.", write: "Tell us what you need", emptyTail: ": we will find and process it first.",
+      more_n: (n) => `${n} more ▾`, all: (s) => `All ${s} ▾`, find: (s) => `Find ${s}…`, chosen: (n) => `Selected: ${n}`, none: "Nothing selected: showing all", done: "Done", selAll: "select all", unselAll: "clear all", reset: "Reset all", searchTok: "search", srcTok: "Source",
+      picker: { countries: "countries", topic: "topics" }, groups: { countries: [["Europe", ["gb", "fr", "nl", "be"]], ["Comparative", ["ww", "xx"]]], topic: [["People and labour", ["population", "wages"]], ["Economy", ["macro-history", "capital", "cotton", "trade", "money-credit"]], ["State and other", ["public-finance", "other"]]] },
+      eras: { pre1800: "before 1800", e1800: "1800-1849", e1850: "1850-1899", e1900: "1900-1949", e1950: "1950 and later", none: "period not stated" },
+      ref: "CFR", refTip: "CFR reference layer: our own tables (territories, vocabularies), authored by CFR Project", status: { local: "Source materials downloaded and verified: length and checksum match the passport", online: "Materials exist online but are not yet downloaded into the base", closed: "Cannot be downloaded: paid or closed access, see the source site" },
+      countries: (n) => `${n} ${n === 1 ? "country" : "countries"}`, rowsN: (n) => `${число(n)} ${n === 1 ? "row" : "rows"}`, colsN: (n) => `${число(n)} ${n === 1 ? "column" : "columns"}`, literal: "as in the source, cell for cell" },
+  };
+
+  const состояние = { lang: "ru", q: "", sort: "title", dir: 1, source: "", countries: new Set(), topic: new Set(), era: new Set(), form: new Set() };
+  const t = () => T[состояние.lang];
+  const открыт = { countries: false, topic: false };
+  const поискПикера = { countries: "", topic: "" };
+  const эпохи = (з) => {
+    if (!з.start) return ["none"];
+    const out = [];
+    for (const [k, a, b] of [["pre1800", 0, 1799], ["e1800", 1800, 1849], ["e1850", 1850, 1899], ["e1900", 1900, 1949], ["e1950", 1950, 9999]]) if (з.start <= b && (з.end ?? з.start) >= a) out.push(k);
+    return out;
+  };
+  for (const з of D) з.era = эпохи(з);
+  const заголовок = (з) => (состояние.lang === "en" ? (з.titleEn || з.titleRu) : (з.titleRu || з.titleEn)) || з.id.replace(/^dataset:/, "");
+  const страна = (з) => з.countries.includes("ww") && з.countryCount ? t().countries(з.countryCount) : з.countries.map((c) => L.страны[состояние.lang][c]).join(", ");
+  const темаИмя = (з) => L.темы[состояние.lang][з.topic];
+  const ФАСЕТЫ = {
+    countries: { подписи: () => L.страны[состояние.lang], порядок: Object.keys(L.страны.ru), инлайн: 5, много: true },
+    topic: { подписи: () => L.темы[состояние.lang], порядок: Object.keys(L.темы.ru), инлайн: 5 },
+    era: { подписи: () => t().eras, порядок: ["pre1800", "e1800", "e1850", "e1900", "e1950", "none"], много: true },
+    form: { подписи: () => L.форма[состояние.lang], порядок: Object.keys(L.форма.ru) },
+  };
+
+  function изАдреса() {
+    const h = location.hash.replace(/^#/, "");
+    if (!h) return;
+    for (const часть of h.split("&")) {
+      const [k, v = ""] = часть.split("=");
+      const знач = decodeURIComponent(v);
+      if (k === "q") состояние.q = знач;
+      else if (k === "sort") состояние.sort = знач;
+      else if (k === "dir") состояние.dir = знач === "-1" ? -1 : 1;
+      else if (k === "source") состояние.source = знач;
+      else if (k === "lang") состояние.lang = знач === "en" ? "en" : "ru";
+      else if (состояние[k] instanceof Set) состояние[k] = new Set(знач.split(",").filter(Boolean));
+    }
+  }
+  function вАдрес() {
+    const части = [];
+    if (состояние.lang !== "ru") части.push("lang=en");
+    if (состояние.q) части.push("q=" + encodeURIComponent(состояние.q));
+    if (состояние.sort !== "title" || состояние.dir !== 1) части.push("sort=" + состояние.sort + (состояние.dir === -1 ? "&dir=-1" : ""));
+    if (состояние.source) части.push("source=" + encodeURIComponent(состояние.source));
+    for (const k of Object.keys(ФАСЕТЫ)) if (состояние[k].size) части.push(k + "=" + [...состояние[k]].join(","));
+    history.replaceState(null, "", части.length ? "#" + части.join("&") : location.pathname);
+  }
+  const значения = (з, k) => ФАСЕТЫ[k].много ? з[k] : [з[k]];
+  function подходит(з, кроме) {
+    for (const k of Object.keys(ФАСЕТЫ)) {
+      if (k === кроме || состояние[k].size === 0) continue;
+      if (!значения(з, k).some((v) => состояние[k].has(v))) return false;
+    }
+    if (состояние.source && !з.sourceIds.includes(состояние.source) && !з.sources.some((s) => s.toLowerCase().includes(состояние.source.toLowerCase()))) return false;
+    if (состояние.q) {
+      const стог = [з.titleRu, з.titleEn, з.id, страна(з), темаИмя(з), з.sources.join(" "), з.form].join(" ").toLowerCase();
+      for (const слово of состояние.q.toLowerCase().split(/\s+/).filter(Boolean)) if (!стог.includes(слово)) return false;
+    }
+    return true;
+  }
+  function сравнение(a, b) {
+    const d = состояние.dir, loc = состояние.lang;
+    const имя = (x, y) => заголовок(x).localeCompare(заголовок(y), loc);
+    switch (состояние.sort) {
+      case "country": return d * (страна(a).localeCompare(страна(b), loc) || имя(a, b));
+      case "topic": return d * (темаИмя(a).localeCompare(темаИмя(b), loc) || имя(a, b));
+      case "start": return d * (((a.start ?? 9999) - (b.start ?? 9999)) || имя(a, b));
+      case "rows": return d * (((b.rows ?? 0) - (a.rows ?? 0)) || имя(a, b));
+      default: return d * имя(a, b);
+    }
+  }
+
+  function счётчики(k) { const счёт = {}; for (const з of D) if (подходит(з, k)) for (const v of значения(з, k)) счёт[v] = (счёт[v] ?? 0) + 1; return счёт; }
+  const всего = {};
+  for (const k of Object.keys(ФАСЕТЫ)) { всего[k] = {}; for (const з of D) for (const v of значения(з, k)) всего[k][v] = (всего[k][v] ?? 0) + 1; }
+  for (const [k, ф] of Object.entries(ФАСЕТЫ)) if (k !== "era") ф.порядок = ф.порядок.filter((v) => ф.подписи()[v]).sort((a, b) => (всего[k][b] ?? 0) - (всего[k][a] ?? 0) || ф.порядок.indexOf(a) - ф.порядок.indexOf(b));
+
+  const чип = (k, v, счёт) => `<span class="chip${состояние[k].has(v) ? " on" : ""}${(счёт[v] ?? 0) === 0 ? " zero" : ""}" data-k="${k}" data-v="${v}">${экр(ФАСЕТЫ[k].подписи()[v])}<small>${счёт[v] ?? 0}</small></span>`;
+  function фасеты() {
+    for (const [k, ф] of Object.entries(ФАСЕТЫ)) {
+      const счёт = счётчики(k);
+      const узел = document.querySelector(`.chips[data-facet="${k}"]`);
+      if (!ф.инлайн) { узел.innerHTML = ф.порядок.filter((v) => ф.подписи()[v]).map((v) => чип(k, v, счёт)).join(""); continue; }
+      const частые = ф.порядок.slice(0, ф.инлайн);
+      const показать = ф.порядок.filter((v) => частые.includes(v) || состояние[k].has(v));
+      const скрыто = ф.порядок.filter((v) => ф.подписи()[v] && !показать.includes(v)).length;
+      узел.innerHTML = показать.map((v) => чип(k, v, счёт)).join("") + `<span class="chip more${открыт[k] ? " open" : ""}" data-pop-toggle="${k}">${скрыто > 0 ? t().more_n(скрыто) : t().all(t().picker[k])}</span>`;
+      пикер(k, счёт);
+    }
+  }
+  function пикер(k, счёт) {
+    const ф = ФАСЕТЫ[k];
+    const узел = document.querySelector(`.pop[data-pop="${k}"]`);
+    узел.hidden = !открыт[k];
+    if (!открыт[k]) return;
+    const иск = поискПикера[k].toLowerCase();
+    const группы = t().groups[k].map(([имя, зн]) => {
+      const упор = [...зн].sort((a, b) => (всего[k][b] ?? 0) - (всего[k][a] ?? 0));
+      const пункты = упор.filter((v) => ф.подписи()[v]).map((v) => `<label class="${(счёт[v] ?? 0) === 0 ? "zero" : ""}${иск && !ф.подписи()[v].toLowerCase().includes(иск) ? " hide" : ""}"><input type="checkbox" data-k="${k}" data-v="${v}"${состояние[k].has(v) ? " checked" : ""}> ${экр(ф.подписи()[v])}<small>${счёт[v] ?? 0}</small></label>`).join("");
+      const все = зн.every((v) => состояние[k].has(v));
+      return `<div class="group"><h4>${экр(имя)}<span data-group="${k}" data-values="${зн.join(",")}" data-mode="${все ? "off" : "on"}">${все ? t().unselAll : t().selAll}</span></h4>${пункты}</div>`;
+    }).join("");
+    узел.innerHTML = `<input class="search" data-pop-search="${k}" placeholder="${экр(t().find(t().picker[k]))}" value="${экр(поискПикера[k])}" autocomplete="off"><div class="groups">${группы}</div><div class="foot"><span>${состояние[k].size ? t().chosen(состояние[k].size) : t().none}</span><button type="button" data-pop-close="${k}">${t().done}</button></div>`;
+  }
+  function токены() {
+    const части = [];
+    if (состояние.q) части.push({ k: "q", v: "", текст: `«${состояние.q}»`, имя: t().searchTok });
+    if (состояние.source) части.push({ k: "source", v: "", текст: состояние.source.replace(/^source:/, ""), имя: t().srcTok });
+    for (const k of Object.keys(ФАСЕТЫ)) for (const v of состояние[k]) части.push({ k, v, текст: ФАСЕТЫ[k].подписи()[v], имя: t()["f." + k] });
+    document.getElementById("tokens").innerHTML = части.map((т) => `<span class="token"><i>${экр(т.имя)}:</i> ${экр(т.текст)} <b data-k="${т.k}" data-v="${экр(т.v)}" title="×">×</b></span>`).join("") + (части.length ? `<span class="token reset" id="reset">${t().reset}</span>` : "");
+  }
+  const период = (з) => з.start ? (з.end && з.end !== з.start ? `${з.start}-${з.end}` : String(з.start)) : t().periodNone;
+  function строка(з) {
+    const значок = `<span class="st ${з.access}" data-tip="${экр(t().status[з.access])}"></span>`;
+    const источник = значок + (з.sources.length ? з.sources.map((s) => `<a href="sources.html#q=${encodeURIComponent(s.split(/[:,(]/)[0].trim().slice(0, 40))}" title="${экр(s)}">${экр(s.length > 64 ? s.slice(0, 62) + "…" : s)}</a>`).join("<br>") : `<span>${t().srcPassport}</span>`);
+    return `<tr class="row" data-id="${экр(з.id)}">
+      <td class="n"><div class="t"><a href="dataset.html#${encodeURIComponent(з.id)}${состояние.lang === "en" ? "&lang=en" : ""}">${экр(заголовок(з))}</a>${з.layer === "reference" ? `<span class="ref" title="${t().refTip}">${t().ref}</span>` : ""}</div><div class="loc">${экр(L.форма[состояние.lang][з.form])} · ${t().rowsN(з.rows ?? 0)}${з.cols ? ` × ${t().colsN(з.cols)}` : ""}</div><div class="acts"><button type="button" class="more">${t().more}</button><a href="dataset.html#${encodeURIComponent(з.id)}${состояние.lang === "en" ? "&lang=en" : ""}">${t().open}</a></div></td>
+      <td class="c">${экр(страна(з))}</td>
+      <td class="c topic">${экр(темаИмя(з))}</td>
+      <td class="p">${период(з)}</td>
+      <td class="s">${источник}</td>
+    </tr>`;
+  }
+  function детали(з) {
+    const другое = состояние.lang === "en" ? (з.titleRu ? `<br>${t().otherTitle}: ${экр(з.titleRu)}` : "") : (з.titleEn ? `<br>${t().otherTitle}: ${экр(з.titleEn)}` : "");
+    return `<tr class="details" data-for="${экр(з.id)}"><td colspan="5"><div class="det">
+      <div class="cols"><b>${t().inside}</b>${t().rowsN(з.rows ?? 0)}${з.cols ? `, ${t().colsN(з.cols)}` : ""}; ${экр(L.форма[состояние.lang][з.form].toLowerCase())}, ${t().period} ${период(з)}; ${t().literal}.<br>${t().idLabel}: <code>${экр(з.id.replace(/^dataset:/, ""))}</code>${другое}</div>
+      <div class="kv"><span>${t().source}</span><span>${з.sources.length ? з.sources.map((s) => экр(s)).join("<br>") : t().seePassport}</span><span>${t().pkg}</span><span>${экр(з.package.replace(/^package:/, ""))}</span><span>${t().review}</span><span>${экр(з.review || t().noReview)}</span></div>
+      <div class="cols" style="grid-column:1/-1"><b>${t().citeLabel}</b>${экр((состояние.lang === "en" ? з.citeEn : з.citeRu).source || "-")}</div>
+      <div class="acts"><a href="data/${encodeURIComponent(з.id.replace(/^dataset:/, "").replace(/[^A-Za-z0-9._-]+/g, "-"))}.csv">${t().csv}</a><a href="data/${encodeURIComponent(з.id.replace(/^dataset:/, "").replace(/[^A-Za-z0-9._-]+/g, "-"))}.json">${t().json}</a><a href="${з.canonical ? экр(з.canonical) : "#"}" target="_blank" rel="noopener">${t().site}</a></div>
+    </div></td></tr>`;
+  }
+  function заголовки() {
+    for (const th of document.querySelectorAll("th.sortable")) th.querySelector(".dir").textContent = th.dataset.sort === состояние.sort ? (состояние.dir === 1 ? "▲" : "▼") : "";
+    document.getElementById("sort").value = ["title", "country", "topic", "start", "rows"].includes(состояние.sort) ? состояние.sort : "title";
+  }
+  function язык() {
+    document.documentElement.lang = состояние.lang;
+    for (const el of document.querySelectorAll("[data-t]")) { const v = t()[el.dataset.t]; if (typeof v === "string") el.textContent = v; }
+    document.title = "CFR Project - " + t().h1;
+    document.getElementById("q").placeholder = t().search;
+    document.getElementById("q2").placeholder = t().search2;
+    for (const s of document.querySelectorAll("#lang span")) s.classList.toggle("on", s.dataset.lang === состояние.lang);
+  }
+  function список() {
+    const найдено = D.filter((з) => подходит(з, null)).sort(сравнение);
+    const строк = найдено.reduce((s, з) => s + (з.rows ?? 0), 0);
+    document.getElementById("count").innerHTML = `<span>${t().shown} <b>${найдено.length}</b> ${t().of} ${D.length}</span><span>${t().rows} <b>${число(строк)}</b></span>`;
+    document.getElementById("count2").innerHTML = `<b>${найдено.length}</b> ${t().of} ${D.length}`;
+    document.getElementById("list").innerHTML = найдено.length ? найдено.map(строка).join("") : `<tr><td colspan="5" class="empty">${t().empty} <a href="mailto:hello@cfrproject.com">${t().write}</a>${t().emptyTail}</td></tr>`;
+    заголовки();
+  }
+  function всё() { язык(); фасеты(); токены(); список(); вАдрес(); }
+
+  document.getElementById("lang").addEventListener("click", (e) => { const s = e.target.closest("[data-lang]"); if (!s) return; состояние.lang = s.dataset.lang; всё(); });
+  document.querySelector(".facets").addEventListener("click", (e) => {
+    const кнопка = e.target.closest("[data-pop-toggle]");
+    if (кнопка) { const k = кнопка.dataset.popToggle; открыт[k] = !открыт[k]; for (const д of Object.keys(открыт)) if (д !== k) открыт[д] = false; фасеты(); if (открыт[k]) document.querySelector(`.pop[data-pop="${k}"] .search`).focus(); return; }
+    if (e.target.closest("[data-pop-close]")) { открыт[e.target.closest("[data-pop-close]").dataset.popClose] = false; фасеты(); return; }
+    const группа = e.target.closest("[data-group]");
+    if (группа) { const k = группа.dataset.group; for (const v of группа.dataset.values.split(",")) { if (группа.dataset.mode === "on") состояние[k].add(v); else состояние[k].delete(v); } всё(); return; }
+    const ч = e.target.closest(".chip[data-k]"); if (!ч) return;
+    const { k, v } = ч.dataset; if (состояние[k].has(v)) состояние[k].delete(v); else состояние[k].add(v); всё();
+  });
+  document.querySelector(".facets").addEventListener("change", (e) => { const ф = e.target.closest("input[type=checkbox][data-k]"); if (!ф) return; const { k, v } = ф.dataset; if (ф.checked) состояние[k].add(v); else состояние[k].delete(v); всё(); });
+  document.querySelector(".facets").addEventListener("input", (e) => { const и = e.target.closest("[data-pop-search]"); if (!и) return; поискПикера[и.dataset.popSearch] = и.value.trim(); for (const м of и.closest(".pop").querySelectorAll("label")) м.classList.toggle("hide", Boolean(и.value.trim()) && !м.textContent.toLowerCase().includes(и.value.trim().toLowerCase())); });
+  document.addEventListener("click", (e) => { if (e.target.closest(".pop") || e.target.closest("[data-pop-toggle]")) return; let з = false; for (const k of Object.keys(открыт)) if (открыт[k]) { открыт[k] = false; з = true; } if (з) фасеты(); });
+  document.getElementById("tokens").addEventListener("click", (e) => {
+    if (e.target.id === "reset") { for (const k of Object.keys(ФАСЕТЫ)) состояние[k].clear(); состояние.q = ""; состояние.source = ""; document.getElementById("q").value = ""; document.getElementById("q2").value = ""; всё(); return; }
+    const b = e.target.closest("b[data-k]"); if (!b) return;
+    if (b.dataset.k === "q") { состояние.q = ""; document.getElementById("q").value = ""; document.getElementById("q2").value = ""; } else if (b.dataset.k === "source") состояние.source = ""; else состояние[b.dataset.k].delete(b.dataset.v);
+    всё();
+  });
+  document.getElementById("q").addEventListener("input", (e) => { состояние.q = e.target.value.trim(); document.getElementById("q2").value = e.target.value; всё(); });
+  document.getElementById("q2").addEventListener("input", (e) => { состояние.q = e.target.value.trim(); document.getElementById("q").value = e.target.value; всё(); });
+  document.getElementById("sort").addEventListener("change", (e) => { состояние.sort = e.target.value; состояние.dir = 1; всё(); });
+  document.querySelector("#reg thead").addEventListener("click", (e) => { const th = e.target.closest("th.sortable"); if (!th) return; if (состояние.sort === th.dataset.sort) состояние.dir = -состояние.dir; else { состояние.sort = th.dataset.sort; состояние.dir = 1; } всё(); });
+  document.getElementById("tofilters").addEventListener("click", () => document.querySelector(".filters").scrollIntoView({ behavior: "smooth", block: "start" }));
+  new IntersectionObserver(([з]) => document.getElementById("bar").classList.toggle("show", !з.isIntersecting && з.boundingClientRect.top < 0), { rootMargin: "-56px 0px 0px 0px" }).observe(document.querySelector(".filters"));
+  document.getElementById("list").addEventListener("click", (e) => {
+    const кнопка = e.target.closest("button.more"); if (!кнопка) return;
+    const tr = кнопка.closest("tr.row"); const id = tr.dataset.id;
+    if (tr.nextElementSibling && tr.nextElementSibling.classList.contains("details")) { tr.nextElementSibling.remove(); кнопка.textContent = t().more; return; }
+    tr.insertAdjacentHTML("afterend", детали(D.find((з) => з.id === id))); кнопка.textContent = t().less;
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") { let з = false; for (const k of Object.keys(открыт)) if (открыт[k]) { открыт[k] = false; з = true; } if (з) фасеты(); } if (e.key === "/" && document.activeElement.tagName !== "INPUT") { e.preventDefault(); document.getElementById("q").focus(); } });
+
+  изАдреса();
+  document.getElementById("q").value = состояние.q;
+  всё();
+})();
+</script>
+
+</body>
+</html>

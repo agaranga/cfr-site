@@ -1,0 +1,110 @@
+{
+ "id": "dataset:cotton-spindleage-1784-1845",
+ "title": {
+  "ru": "Число хлопкопрядильных веретён",
+  "en": "Cotton spindleage"
+ },
+ "source": [
+  "After the great inventions: technological change in UK cotton spinning, 1780-1835"
+ ],
+ "sourceOf": "Data/cotton/uk-cotton-spindleage-1784-1845.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Peter Maw, Peter Solar, Aidan Kane, John S. Lyons. After the great inventions: technological change in UK cotton spinning, 1780-1835 (2022). The Economic History Review / Wiley. https://eprints.whiterose.ac.uk/id/eprint/175067/. Лицензия: CC-BY-NC-ND-4.0",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор cotton-spindleage-1784-1845, версия 1.0.0, загружено 2026-07-17. https://cfrproject.com/ru/datasets/cotton-spindleage-1784-1845",
+   "author": "CFR Project (2026). Число хлопкопрядильных веретён, 1784–1845. Cliometric Figures Repository, инженерный набор cotton-spindleage-1784-1845, версия 1.0.0. https://cfrproject.com/ru/datasets/cotton-spindleage-1784-1845"
+  },
+  "en": {
+   "source": "Peter Maw, Peter Solar, Aidan Kane, John S. Lyons. After the great inventions: technological change in UK cotton spinning, 1780-1835 (2022). The Economic History Review / Wiley. https://eprints.whiterose.ac.uk/id/eprint/175067/. Licence: CC-BY-NC-ND-4.0",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset cotton-spindleage-1784-1845, version 1.0.0, retrieved 2026-07-17. https://cfrproject.com/en/datasets/cotton-spindleage-1784-1845",
+   "author": "CFR Project (2026). Cotton spindleage, 1784–1845. Cliometric Figures Repository, engineering dataset cotton-spindleage-1784-1845, version 1.0.0. https://cfrproject.com/en/datasets/cotton-spindleage-1784-1845"
+  }
+ },
+ "columns": [
+  "year",
+  "source_geography",
+  "jenny_spindles_thousands",
+  "mule_spindles_thousands",
+  "water_frame_spindles_thousands",
+  "throstle_spindles_thousands",
+  "undifferentiated_continuous_spindles_thousands",
+  "total_spindles_thousands",
+  "reported_jenny_percent",
+  "reported_mule_percent",
+  "reported_continuous_percent",
+  "source_scope"
+ ],
+ "rows": [
+  {
+   "year": "1784",
+   "source_geography": "England",
+   "jenny_spindles_thousands": "283",
+   "mule_spindles_thousands": "4",
+   "water_frame_spindles_thousands": "60",
+   "throstle_spindles_thousands": "0",
+   "undifferentiated_continuous_spindles_thousands": "",
+   "total_spindles_thousands": "347",
+   "reported_jenny_percent": "82",
+   "reported_mule_percent": "1",
+   "reported_continuous_percent": "17",
+   "source_scope": "Arkwright estimate"
+  },
+  {
+   "year": "1787",
+   "source_geography": "Britain",
+   "jenny_spindles_thousands": "1605",
+   "mule_spindles_thousands": "50",
+   "water_frame_spindles_thousands": "286",
+   "throstle_spindles_thousands": "0",
+   "undifferentiated_continuous_spindles_thousands": "",
+   "total_spindles_thousands": "1941",
+   "reported_jenny_percent": "83",
+   "reported_mule_percent": "3",
+   "reported_continuous_percent": "15",
+   "source_scope": "Colquhoun estimate"
+  },
+  {
+   "year": "1789",
+   "source_geography": "Britain",
+   "jenny_spindles_thousands": "1400",
+   "mule_spindles_thousands": "700",
+   "water_frame_spindles_thousands": "310",
+   "throstle_spindles_thousands": "0",
+   "undifferentiated_continuous_spindles_thousands": "",
+   "total_spindles_thousands": "2410",
+   "reported_jenny_percent": "58",
+   "reported_mule_percent": "29",
+   "reported_continuous_percent": "13",
+   "source_scope": "Colquhoun estimate"
+  },
+  {
+   "year": "1811",
+   "source_geography": "England and Scotland",
+   "jenny_spindles_thousands": "156",
+   "mule_spindles_thousands": "4200",
+   "water_frame_spindles_thousands": "",
+   "throstle_spindles_thousands": "",
+   "undifferentiated_continuous_spindles_thousands": "311",
+   "total_spindles_thousands": "4667",
+   "reported_jenny_percent": "3",
+   "reported_mule_percent": "90",
+   "reported_continuous_percent": "7",
+   "source_scope": "Crompton survey"
+  },
+  {
+   "year": "1845",
+   "source_geography": "England Scotland and Ireland",
+   "jenny_spindles_thousands": "0",
+   "mule_spindles_thousands": "13000",
+   "water_frame_spindles_thousands": "0",
+   "throstle_spindles_thousands": "4500",
+   "undifferentiated_continuous_spindles_thousands": "",
+   "total_spindles_thousands": "17500",
+   "reported_jenny_percent": "0",
+   "reported_mule_percent": "74",
+   "reported_continuous_percent": "26",
+   "source_scope": "du Fay estimate"
+  }
+ ]
+}

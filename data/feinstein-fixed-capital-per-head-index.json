@@ -1,0 +1,82 @@
+{
+ "id": "dataset:feinstein-fixed-capital-per-head-index",
+ "title": {
+  "ru": "Индексы капитала на душу населения по Feinstein",
+  "en": "Feinstein fixed-capital-per-head indices"
+ },
+ "source": [
+  "Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850",
+  "National Statistics, 1760-1920"
+ ],
+ "sourceOf": "Data/capital/gb-feinstein-fixed-capital-per-head-1760-1850.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Stephen Broadberry, Bishnupriya Gupta. Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850 (2005). Global Economic History Network. https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/GEHNConferences/conf6/Conf6-BroadberryGupta.pdf. Лицензия: source terms; local research copy",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор feinstein-fixed-capital-per-head-index, версия 1.0.0, загружено 2026-07-16. https://cfrproject.com/ru/datasets/feinstein-fixed-capital-per-head-index",
+   "author": "CFR Project (2026). Индексы капитала на душу населения по Feinstein. Cliometric Figures Repository, инженерный набор feinstein-fixed-capital-per-head-index, версия 1.0.0. https://cfrproject.com/ru/datasets/feinstein-fixed-capital-per-head-index"
+  },
+  "en": {
+   "source": "Stephen Broadberry, Bishnupriya Gupta. Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850 (2005). Global Economic History Network. https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/GEHNConferences/conf6/Conf6-BroadberryGupta.pdf. Licence: source terms; local research copy",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset feinstein-fixed-capital-per-head-index, version 1.0.0, retrieved 2026-07-16. https://cfrproject.com/en/datasets/feinstein-fixed-capital-per-head-index",
+   "author": "CFR Project (2026). Feinstein fixed-capital-per-head indices. Cliometric Figures Repository, engineering dataset feinstein-fixed-capital-per-head-index, version 1.0.0. https://cfrproject.com/en/datasets/feinstein-fixed-capital-per-head-index"
+  }
+ },
+ "columns": [
+  "year",
+  "total_net_fixed_capital_per_head_index",
+  "plant_equipment_machinery_per_head_index"
+ ],
+ "rows": [
+  {
+   "year": "1760",
+   "total_net_fixed_capital_per_head_index": "63.4",
+   "plant_equipment_machinery_per_head_index": "36.3"
+  },
+  {
+   "year": "1770",
+   "total_net_fixed_capital_per_head_index": "62.6",
+   "plant_equipment_machinery_per_head_index": "36.6"
+  },
+  {
+   "year": "1780",
+   "total_net_fixed_capital_per_head_index": "62.9",
+   "plant_equipment_machinery_per_head_index": "39.0"
+  },
+  {
+   "year": "1790",
+   "total_net_fixed_capital_per_head_index": "64.8",
+   "plant_equipment_machinery_per_head_index": "43.9"
+  },
+  {
+   "year": "1800",
+   "total_net_fixed_capital_per_head_index": "67.8",
+   "plant_equipment_machinery_per_head_index": "47.1"
+  },
+  {
+   "year": "1810",
+   "total_net_fixed_capital_per_head_index": "69.1",
+   "plant_equipment_machinery_per_head_index": "50.6"
+  },
+  {
+   "year": "1820",
+   "total_net_fixed_capital_per_head_index": "69.9",
+   "plant_equipment_machinery_per_head_index": "52.4"
+  },
+  {
+   "year": "1830",
+   "total_net_fixed_capital_per_head_index": "74.1",
+   "plant_equipment_machinery_per_head_index": "64.5"
+  },
+  {
+   "year": "1840",
+   "total_net_fixed_capital_per_head_index": "85.2",
+   "plant_equipment_machinery_per_head_index": "82.1"
+  },
+  {
+   "year": "1850",
+   "total_net_fixed_capital_per_head_index": "100.0",
+   "plant_equipment_machinery_per_head_index": "100.0"
+  }
+ ]
+}

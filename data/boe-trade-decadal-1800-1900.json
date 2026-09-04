@@ -1,0 +1,134 @@
+{
+ "id": "dataset:boe-trade-decadal-1800-1900",
+ "title": {
+  "ru": "Внешняя торговля Великобритании по десятилетиям",
+  "en": "Great Britain foreign trade by decade"
+ },
+ "source": [
+  "A Millennium of Macroeconomic Data for the UK"
+ ],
+ "sourceOf": "Data/trade/derived/boe-millennium-trade-decadal-1800-1900.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Лицензия: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор boe-trade-decadal-1800-1900, версия 1.0.0, загружено 2026-07-07. https://cfrproject.com/ru/datasets/boe-trade-decadal-1800-1900",
+   "author": "CFR Project (2026). Внешняя торговля Великобритании по десятилетиям. Cliometric Figures Repository, инженерный набор boe-trade-decadal-1800-1900, версия 1.0.0. https://cfrproject.com/ru/datasets/boe-trade-decadal-1800-1900"
+  },
+  "en": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Licence: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset boe-trade-decadal-1800-1900, version 1.0.0, retrieved 2026-07-07. https://cfrproject.com/en/datasets/boe-trade-decadal-1800-1900",
+   "author": "CFR Project (2026). Great Britain foreign trade by decade, 1800–1900. Cliometric Figures Repository, engineering dataset boe-trade-decadal-1800-1900, version 1.0.0. https://cfrproject.com/en/datasets/boe-trade-decadal-1800-1900"
+  }
+ },
+ "columns": [
+  "\"year\"",
+  "\"export-prices\"",
+  "\"export-volumes\"",
+  "\"import-prices\"",
+  "\"import-volumes\"",
+  "\"terms-of-trade\"",
+  "\"trade-deficit\""
+ ],
+ "rows": [
+  {
+   "\"year\"": "\"1800\"",
+   "\"export-prices\"": "\"6.294856228594553\"",
+   "\"export-volumes\"": "\"1028.047220080351\"",
+   "\"import-prices\"": "\"5.781970867330859\"",
+   "\"import-volumes\"": "\"1036.6367201215546\"",
+   "\"terms-of-trade\"": "\"108.87042451496227\"",
+   "\"trade-deficit\"": ""
+  },
+  {
+   "\"year\"": "\"1810\"",
+   "\"export-prices\"": "\"5.73581869496739\"",
+   "\"export-volumes\"": "\"1309.9873895223718\"",
+   "\"import-prices\"": "\"6.082638679792259\"",
+   "\"import-volumes\"": "\"1270.30210747026\"",
+   "\"terms-of-trade\"": "\"94.29819847795538\"",
+   "\"trade-deficit\"": ""
+  },
+  {
+   "\"year\"": "\"1820\"",
+   "\"export-prices\"": "\"4.205355174155132\"",
+   "\"export-volumes\"": "\"1533.0758656836197\"",
+   "\"import-prices\"": "\"4.291940565401604\"",
+   "\"import-volumes\"": "\"1279.5647719541294\"",
+   "\"terms-of-trade\"": "\"97.98260507276224\"",
+   "\"trade-deficit\"": "\"6.399999999999999\""
+  },
+  {
+   "\"year\"": "\"1830\"",
+   "\"export-prices\"": "\"2.8851693375973464\"",
+   "\"export-volumes\"": "\"2096.1081526382227\"",
+   "\"import-prices\"": "\"2.992254714622019\"",
+   "\"import-volumes\"": "\"1892.909869254456\"",
+   "\"terms-of-trade\"": "\"96.42124794719558\"",
+   "\"trade-deficit\"": "\"1.0999999999999943\""
+  },
+  {
+   "\"year\"": "\"1840\"",
+   "\"export-prices\"": "\"2.4789379338773476\"",
+   "\"export-volumes\"": "\"3412.1113293754884\"",
+   "\"import-prices\"": "\"3.4223711517626274\"",
+   "\"import-volumes\"": "\"2700.128416850862\"",
+   "\"terms-of-trade\"": "\"72.43334588653886\"",
+   "\"trade-deficit\"": "\"-8.90000000000002\""
+  },
+  {
+   "\"year\"": "\"1850\"",
+   "\"export-prices\"": "\"1.9671078269291733\"",
+   "\"export-volumes\"": "\"5840.612036962814\"",
+   "\"import-prices\"": "\"2.561181925838566\"",
+   "\"import-volumes\"": "\"4074.8674280412492\"",
+   "\"terms-of-trade\"": "\"76.80468954914693\"",
+   "\"trade-deficit\"": "\"5.0\""
+  },
+  {
+   "\"year\"": "\"1860\"",
+   "\"export-prices\"": "\"2.235360531582949\"",
+   "\"export-volumes\"": "\"10168.498772830735\"",
+   "\"import-prices\"": "\"3.3028410113076325\"",
+   "\"import-volumes\"": "\"6457.748380771254\"",
+   "\"terms-of-trade\"": "\"67.67993142660973\"",
+   "\"trade-deficit\"": "\"3.5\""
+  },
+  {
+   "\"year\"": "\"1870\"",
+   "\"export-prices\"": "\"2.3482526079363146\"",
+   "\"export-volumes\"": "\"14320.01394892974\"",
+   "\"import-prices\"": "\"3.2775687593674845\"",
+   "\"import-volumes\"": "\"9376.425050683154\"",
+   "\"terms-of-trade\"": "\"71.64617374463526\"",
+   "\"trade-deficit\"": "\"22.0\""
+  },
+  {
+   "\"year\"": "\"1880\"",
+   "\"export-prices\"": "\"1.9899272821613578\"",
+   "\"export-volumes\"": "\"20008.78661357306\"",
+   "\"import-prices\"": "\"2.825148780863803\"",
+   "\"import-volumes\"": "\"14635.160793394341\"",
+   "\"terms-of-trade\"": "\"70.4361942153336\"",
+   "\"trade-deficit\"": "\"-23.0\""
+  },
+  {
+   "\"year\"": "\"1890\"",
+   "\"export-prices\"": "\"1.724529194216709\"",
+   "\"export-volumes\"": "\"25959.11204440688\"",
+   "\"import-prices\"": "\"2.2883250784424334\"",
+   "\"import-volumes\"": "\"18554.407243150792\"",
+   "\"terms-of-trade\"": "\"75.36207204400012\"",
+   "\"trade-deficit\"": "\"14.0\""
+  },
+  {
+   "\"year\"": "\"1900\"",
+   "\"export-prices\"": "\"1.7498713184462258\"",
+   "\"export-volumes\"": "\"27528.428641549865\"",
+   "\"import-prices\"": "\"2.158750424071412\"",
+   "\"import-volumes\"": "\"25053.41084970896\"",
+   "\"terms-of-trade\"": "\"81.059454531384\"",
+   "\"trade-deficit\"": "\"-68.0\""
+  }
+ ]
+}

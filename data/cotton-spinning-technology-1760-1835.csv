@@ -1,0 +1,10 @@
+technology_id,era,spindles_per_machine,spinners_per_machine,spindles_per_spinner,operatives_per_machine,hanks_per_spindle_day,yarn_count,output_machine_hanks_day,output_machine_lb_day,output_operative_hanks_day,change_factor_since_1760,source_table
+hand-spinning,1760s,1,1,1,1,8,16,8,0.5,8,,Table 3
+spinning-jenny,1770s,16,1,16,1,1.6,16,25.6,1.6,25.6,3.2,Table 3
+water-frame,1770s,48,1,48,1.5,1.6,24,76.8,3.2,51.2,6.4,Table 3
+hand-mule,1770s,48,1,48,1.5,1.25,40,60,1.5,40,5,Table 3
+spinning-jenny,1790s,93,1,93,1.5,1.2,16,111.6,7,74.4,9.3,Table 3
+water-frame,1790s,69,1,69,1.5,2,24,138,5.8,92,11.5,Table 3
+hand-mule,1790s,169,1,169,1.5,1.25,40,211.25,5.3,140.8,17.6,Table 3
+throstle,early-1830s,142,0.67,213,0.84,4.5,24,639,26.6,760.7,95.1,Table 3
+power-assisted-mule,early-1830s,298,0.5,596,1.08,3,40,894,22.4,827.8,103.5,Table 3

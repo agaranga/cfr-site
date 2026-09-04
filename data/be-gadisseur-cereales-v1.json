@@ -1,0 +1,509 @@
+{
+ "id": "dataset:be-gadisseur-cereales-v1",
+ "title": {
+  "ru": "Производство зерновых в Бельгии: стоимость и индекс",
+  "en": "Belgium cereal output value and index"
+ },
+ "source": [
+  "Contribution à l'étude de la production agricole en Belgique de 1846 à 1913"
+ ],
+ "sourceOf": "EconEvidence/Generated/belgium/gadisseur-cereales.v1.json",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "J. Gadisseur. Contribution à l'étude de la production agricole en Belgique de 1846 à 1913 (1973). Revue belge d'histoire contemporaine. https://www.journalbelgianhistory.be/en/system/files/article_pdf/BTNG-RBHC%2C%204%2C%201973%2C%201-2%2C%20pp%201-52.pdf. Лицензия: journal open access; reuse terms not stated",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор be-gadisseur-cereales-v1, версия 1.0.0, загружено 2026-09-01. https://cfrproject.com/ru/datasets/be-gadisseur-cereales-v1",
+   "author": "CFR Project (2026). Производство зерновых в Бельгии: стоимость и индекс, 1846-1913. Cliometric Figures Repository, инженерный набор be-gadisseur-cereales-v1, версия 1.0.0. https://cfrproject.com/ru/datasets/be-gadisseur-cereales-v1"
+  },
+  "en": {
+   "source": "J. Gadisseur. Contribution à l'étude de la production agricole en Belgique de 1846 à 1913 (1973). Revue belge d'histoire contemporaine. https://www.journalbelgianhistory.be/en/system/files/article_pdf/BTNG-RBHC%2C%204%2C%201973%2C%201-2%2C%20pp%201-52.pdf. Licence: journal open access; reuse terms not stated",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset be-gadisseur-cereales-v1, version 1.0.0, retrieved 2026-09-01. https://cfrproject.com/en/datasets/be-gadisseur-cereales-v1",
+   "author": "CFR Project (2026). Belgium cereal output value and index, 1846-1913. Cliometric Figures Repository, engineering dataset be-gadisseur-cereales-v1, version 1.0.0. https://cfrproject.com/en/datasets/be-gadisseur-cereales-v1"
+  }
+ },
+ "columns": [
+  "year",
+  "sourcePanel",
+  "annees",
+  "valeur1000F42",
+  "indice1880"
+ ],
+ "rows": [
+  {
+   "year": 1846,
+   "sourcePanel": "left",
+   "annees": 1846,
+   "valeur1000F42": 194406,
+   "indice1880": 70.18
+  },
+  {
+   "year": 1847,
+   "sourcePanel": "left",
+   "annees": 1847,
+   "valeur1000F42": 222569,
+   "indice1880": 80.35
+  },
+  {
+   "year": 1848,
+   "sourcePanel": "left",
+   "annees": 1848,
+   "valeur1000F42": 225850,
+   "indice1880": 81.53
+  },
+  {
+   "year": 1849,
+   "sourcePanel": "left",
+   "annees": 1849,
+   "valeur1000F42": 228428,
+   "indice1880": 82.46
+  },
+  {
+   "year": 1850,
+   "sourcePanel": "left",
+   "annees": 1850,
+   "valeur1000F42": 231599,
+   "indice1880": 83.61
+  },
+  {
+   "year": 1851,
+   "sourcePanel": "left",
+   "annees": 1851,
+   "valeur1000F42": 234957,
+   "indice1880": 84.82
+  },
+  {
+   "year": 1852,
+   "sourcePanel": "left",
+   "annees": 1852,
+   "valeur1000F42": 232864,
+   "indice1880": 84.07
+  },
+  {
+   "year": 1853,
+   "sourcePanel": "left",
+   "annees": 1853,
+   "valeur1000F42": 211047,
+   "indice1880": 76.19
+  },
+  {
+   "year": 1854,
+   "sourcePanel": "left",
+   "annees": 1854,
+   "valeur1000F42": 288434,
+   "indice1880": 103.41
+  },
+  {
+   "year": 1855,
+   "sourcePanel": "left",
+   "annees": 1855,
+   "valeur1000F42": 216128,
+   "indice1880": 78.02
+  },
+  {
+   "year": 1856,
+   "sourcePanel": "left",
+   "annees": 1856,
+   "valeur1000F42": 279520,
+   "indice1880": 100.91
+  },
+  {
+   "year": 1857,
+   "sourcePanel": "left",
+   "annees": 1857,
+   "valeur1000F42": 292119,
+   "indice1880": 105.46
+  },
+  {
+   "year": 1858,
+   "sourcePanel": "left",
+   "annees": 1858,
+   "valeur1000F42": 265286,
+   "indice1880": 95.77
+  },
+  {
+   "year": 1859,
+   "sourcePanel": "left",
+   "annees": 1859,
+   "valeur1000F42": 207683,
+   "indice1880": 75.04
+  },
+  {
+   "year": 1860,
+   "sourcePanel": "left",
+   "annees": 1860,
+   "valeur1000F42": 270814,
+   "indice1880": 97.77
+  },
+  {
+   "year": 1861,
+   "sourcePanel": "left",
+   "annees": 1861,
+   "valeur1000F42": 237701,
+   "indice1880": 85.81
+  },
+  {
+   "year": 1862,
+   "sourcePanel": "left",
+   "annees": 1862,
+   "valeur1000F42": 235291,
+   "indice1880": 84.94
+  },
+  {
+   "year": 1863,
+   "sourcePanel": "left",
+   "annees": 1863,
+   "valeur1000F42": 273104,
+   "indice1880": 98.59
+  },
+  {
+   "year": 1864,
+   "sourcePanel": "left",
+   "annees": 1864,
+   "valeur1000F42": 287283,
+   "indice1880": 103.71
+  },
+  {
+   "year": 1865,
+   "sourcePanel": "left",
+   "annees": 1865,
+   "valeur1000F42": 261650,
+   "indice1880": 94.46
+  },
+  {
+   "year": 1866,
+   "sourcePanel": "left",
+   "annees": 1866,
+   "valeur1000F42": 257905,
+   "indice1880": 93.11
+  },
+  {
+   "year": 1867,
+   "sourcePanel": "left",
+   "annees": 1867,
+   "valeur1000F42": 240229,
+   "indice1880": 86.72
+  },
+  {
+   "year": 1868,
+   "sourcePanel": "left",
+   "annees": 1868,
+   "valeur1000F42": 294640,
+   "indice1880": 106.36
+  },
+  {
+   "year": 1869,
+   "sourcePanel": "left",
+   "annees": 1869,
+   "valeur1000F42": 266729,
+   "indice1880": 96.29
+  },
+  {
+   "year": 1870,
+   "sourcePanel": "left",
+   "annees": 1870,
+   "valeur1000F42": 262438,
+   "indice1880": 94.74
+  },
+  {
+   "year": 1871,
+   "sourcePanel": "left",
+   "annees": 1871,
+   "valeur1000F42": 196676,
+   "indice1880": 71
+  },
+  {
+   "year": 1872,
+   "sourcePanel": "left",
+   "annees": 1872,
+   "valeur1000F42": 286379,
+   "indice1880": 103.39
+  },
+  {
+   "year": 1873,
+   "sourcePanel": "left",
+   "annees": 1873,
+   "valeur1000F42": 215084,
+   "indice1880": 77.64
+  },
+  {
+   "year": 1874,
+   "sourcePanel": "left",
+   "annees": 1874,
+   "valeur1000F42": 303118,
+   "indice1880": 109.43
+  },
+  {
+   "year": 1875,
+   "sourcePanel": "left",
+   "annees": 1875,
+   "valeur1000F42": 247837,
+   "indice1880": 89.47
+  },
+  {
+   "year": 1876,
+   "sourcePanel": "left",
+   "annees": 1876,
+   "valeur1000F42": 245879,
+   "indice1880": 88.76
+  },
+  {
+   "year": 1877,
+   "sourcePanel": "left",
+   "annees": 1877,
+   "valeur1000F42": 255939,
+   "indice1880": 92.4
+  },
+  {
+   "year": 1878,
+   "sourcePanel": "left",
+   "annees": 1878,
+   "valeur1000F42": 253481,
+   "indice1880": 91.51
+  },
+  {
+   "year": 1879,
+   "sourcePanel": "left",
+   "annees": 1879,
+   "valeur1000F42": 217825,
+   "indice1880": 78.64
+  },
+  {
+   "year": 1880,
+   "sourcePanel": "right",
+   "annees": 1880,
+   "valeur1000F42": 277001,
+   "indice1880": 100
+  },
+  {
+   "year": 1881,
+   "sourcePanel": "right",
+   "annees": 1881,
+   "valeur1000F42": 233464,
+   "indice1880": 84.28
+  },
+  {
+   "year": 1882,
+   "sourcePanel": "right",
+   "annees": 1882,
+   "valeur1000F42": 265882,
+   "indice1880": 95.99
+  },
+  {
+   "year": 1883,
+   "sourcePanel": "right",
+   "annees": 1883,
+   "valeur1000F42": 154142,
+   "indice1880": 91.75
+  },
+  {
+   "year": 1884,
+   "sourcePanel": "right",
+   "annees": 1884,
+   "valeur1000F42": 259433,
+   "indice1880": 93.66
+  },
+  {
+   "year": 1885,
+   "sourcePanel": "right",
+   "annees": 1885,
+   "valeur1000F42": 261414,
+   "indice1880": 94.37
+  },
+  {
+   "year": 1886,
+   "sourcePanel": "right",
+   "annees": 1886,
+   "valeur1000F42": 244049,
+   "indice1880": 88.1
+  },
+  {
+   "year": 1887,
+   "sourcePanel": "right",
+   "annees": 1887,
+   "valeur1000F42": 267019,
+   "indice1880": 96.4
+  },
+  {
+   "year": 1888,
+   "sourcePanel": "right",
+   "annees": 1888,
+   "valeur1000F42": 208758,
+   "indice1880": 75.36
+  },
+  {
+   "year": 1889,
+   "sourcePanel": "right",
+   "annees": 1889,
+   "valeur1000F42": 233338,
+   "indice1880": 84.24
+  },
+  {
+   "year": 1890,
+   "sourcePanel": "right",
+   "annees": 1890,
+   "valeur1000F42": 260655,
+   "indice1880": 94.1
+  },
+  {
+   "year": 1891,
+   "sourcePanel": "right",
+   "annees": 1891,
+   "valeur1000F42": 204532,
+   "indice1880": 73.84
+  },
+  {
+   "year": 1892,
+   "sourcePanel": "right",
+   "annees": 1892,
+   "valeur1000F42": 268484,
+   "indice1880": 96.93
+  },
+  {
+   "year": 1893,
+   "sourcePanel": "right",
+   "annees": 1893,
+   "valeur1000F42": 234190,
+   "indice1880": 84.54
+  },
+  {
+   "year": 1894,
+   "sourcePanel": "right",
+   "annees": 1894,
+   "valeur1000F42": 242784,
+   "indice1880": 87.64
+  },
+  {
+   "year": 1895,
+   "sourcePanel": "right",
+   "annees": 1895,
+   "valeur1000F42": 244134,
+   "indice1880": 88.13
+  },
+  {
+   "year": 1896,
+   "sourcePanel": "right",
+   "annees": 1896,
+   "valeur1000F42": 253069,
+   "indice1880": 91.36
+  },
+  {
+   "year": 1897,
+   "sourcePanel": "right",
+   "annees": 1897,
+   "valeur1000F42": 219973,
+   "indice1880": 79.41
+  },
+  {
+   "year": 1898,
+   "sourcePanel": "right",
+   "annees": 1898,
+   "valeur1000F42": 232775,
+   "indice1880": 84.03
+  },
+  {
+   "year": 1899,
+   "sourcePanel": "right",
+   "annees": 1899,
+   "valeur1000F42": 204952,
+   "indice1880": 73.99
+  },
+  {
+   "year": 1900,
+   "sourcePanel": "right",
+   "annees": 1900,
+   "valeur1000F42": 243849,
+   "indice1880": 88.03
+  },
+  {
+   "year": 1901,
+   "sourcePanel": "right",
+   "annees": 1901,
+   "valeur1000F42": 251244,
+   "indice1880": 90.7
+  },
+  {
+   "year": 1902,
+   "sourcePanel": "right",
+   "annees": 1902,
+   "valeur1000F42": 261217,
+   "indice1880": 94.3
+  },
+  {
+   "year": 1903,
+   "sourcePanel": "right",
+   "annees": 1903,
+   "valeur1000F42": 237662,
+   "indice1880": 85.8
+  },
+  {
+   "year": 1904,
+   "sourcePanel": "right",
+   "annees": 1904,
+   "valeur1000F42": 251187,
+   "indice1880": 90.68
+  },
+  {
+   "year": 1905,
+   "sourcePanel": "right",
+   "annees": 1905,
+   "valeur1000F42": 234837,
+   "indice1880": 84.78
+  },
+  {
+   "year": 1906,
+   "sourcePanel": "right",
+   "annees": 1906,
+   "valeur1000F42": 234179,
+   "indice1880": 84.54
+  },
+  {
+   "year": 1907,
+   "sourcePanel": "right",
+   "annees": 1907,
+   "valeur1000F42": 276188,
+   "indice1880": 99.7
+  },
+  {
+   "year": 1908,
+   "sourcePanel": "right",
+   "annees": 1908,
+   "valeur1000F42": 244458,
+   "indice1880": 88.25
+  },
+  {
+   "year": 1909,
+   "sourcePanel": "right",
+   "annees": 1909,
+   "valeur1000F42": 259394,
+   "indice1880": 93.64
+  },
+  {
+   "year": 1910,
+   "sourcePanel": "right",
+   "annees": 1910,
+   "valeur1000F42": 250881,
+   "indice1880": 90.57
+  },
+  {
+   "year": 1911,
+   "sourcePanel": "right",
+   "annees": 1911,
+   "valeur1000F42": 274891,
+   "indice1880": 99.24
+  },
+  {
+   "year": 1912,
+   "sourcePanel": "right",
+   "annees": 1912,
+   "valeur1000F42": 255027,
+   "indice1880": 92.07
+  },
+  {
+   "year": 1913,
+   "sourcePanel": "right",
+   "annees": 1913,
+   "valeur1000F42": 256309,
+   "indice1880": 92.53
+  }
+ ]
+}

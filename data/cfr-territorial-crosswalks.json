@@ -1,0 +1,366 @@
+{
+ "id": "dataset:cfr-territorial-crosswalks",
+ "title": {
+  "ru": "Переходы между версиями территорий",
+  "en": "Territorial crosswalks"
+ },
+ "source": [
+  "CFR Project: эпистемический реестр (DG1B, DG1D)"
+ ],
+ "sourceOf": "CFR epistemic registry",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор cfr-territorial-crosswalks, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-territorial-crosswalks",
+   "author": "CFR Project (2026). Переходы между версиями территорий. Cliometric Figures Repository, справочный набор cfr-territorial-crosswalks, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-territorial-crosswalks"
+  },
+  "en": {
+   "source": "",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset cfr-territorial-crosswalks, version 1.0.0. https://cfrproject.com/en/datasets/cfr-territorial-crosswalks",
+   "author": "CFR Project (2026). Territorial crosswalks. Cliometric Figures Repository, reference dataset cfr-territorial-crosswalks, version 1.0.0. https://cfrproject.com/en/datasets/cfr-territorial-crosswalks"
+  }
+ },
+ "columns": [
+  "id",
+  "country",
+  "from",
+  "to",
+  "completeness",
+  "unmatched",
+  "numerical",
+  "uncertainty"
+ ],
+ "rows": [
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-annuaire-births-1840-1873-statistical:to:territory-version-belgium-european-composition-1900-effective-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "to": "territory-version:belgium:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-annuaire-births-1840-1873-statistical:to:territory-version-belgium-european-composition-1900-legal-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "to": "territory-version:belgium:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-annuaire-births-1840-1873-statistical:to:territory-version-belgium-european-composition-1900-statistical-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:annuaire-births-1840-1873:statistical",
+   "to": "territory-version:belgium:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-quetelet-marriages-1803-1829-statistical:to:territory-version-belgium-european-composition-1900-effective-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:quetelet-marriages-1803-1829:statistical",
+   "to": "territory-version:belgium:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-quetelet-marriages-1803-1829-statistical:to:territory-version-belgium-european-composition-1900-legal-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:quetelet-marriages-1803-1829:statistical",
+   "to": "territory-version:belgium:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-quetelet-marriages-1803-1829-statistical:to:territory-version-belgium-european-composition-1900-statistical-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:quetelet-marriages-1803-1829:statistical",
+   "to": "territory-version:belgium:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-quetelet-population-1830-statistical:to:territory-version-belgium-european-composition-1900-effective-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:quetelet-population-1830:statistical",
+   "to": "territory-version:belgium:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-quetelet-population-1830-statistical:to:territory-version-belgium-european-composition-1900-legal-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:quetelet-population-1830:statistical",
+   "to": "territory-version:belgium:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-belgium-quetelet-population-1830-statistical:to:territory-version-belgium-european-composition-1900-statistical-target",
+   "country": "belgium",
+   "from": "territory-version:belgium:quetelet-population-1830:statistical",
+   "to": "territory-version:belgium:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-annuaire-table34-1881-1898-statistical:to:territory-version-france-european-composition-1900-effective-target",
+   "country": "france",
+   "from": "territory-version:france:annuaire-table34:1881-1898:statistical",
+   "to": "territory-version:france:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-annuaire-table34-1881-1898-statistical:to:territory-version-france-european-composition-1900-legal-target",
+   "country": "france",
+   "from": "territory-version:france:annuaire-table34:1881-1898:statistical",
+   "to": "territory-version:france:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-annuaire-table34-1881-1898-statistical:to:territory-version-france-european-composition-1900-statistical-target",
+   "country": "france",
+   "from": "territory-version:france:annuaire-table34:1881-1898:statistical",
+   "to": "territory-version:france:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-sgf-t86-population-1801-1836-statistical:to:territory-version-france-european-composition-1900-effective-target",
+   "country": "france",
+   "from": "territory-version:france:sgf-t86-population:1801-1836:statistical",
+   "to": "territory-version:france:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-sgf-t86-population-1801-1836-statistical:to:territory-version-france-european-composition-1900-legal-target",
+   "country": "france",
+   "from": "territory-version:france:sgf-t86-population:1801-1836:statistical",
+   "to": "territory-version:france:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-sgf-t86-population-1801-1836-statistical:to:territory-version-france-european-composition-1900-statistical-target",
+   "country": "france",
+   "from": "territory-version:france:sgf-t86-population:1801-1836:statistical",
+   "to": "territory-version:france:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-sgf-t87-births-1800-1820-statistical:to:territory-version-france-european-composition-1900-effective-target",
+   "country": "france",
+   "from": "territory-version:france:sgf-t87-births:1800-1820:statistical",
+   "to": "territory-version:france:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-sgf-t87-births-1800-1820-statistical:to:territory-version-france-european-composition-1900-legal-target",
+   "country": "france",
+   "from": "territory-version:france:sgf-t87-births:1800-1820:statistical",
+   "to": "territory-version:france:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-france-sgf-t87-births-1800-1820-statistical:to:territory-version-france-european-composition-1900-statistical-target",
+   "country": "france",
+   "from": "territory-version:france:sgf-t87-births:1800-1820:statistical",
+   "to": "territory-version:france:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1804-1830-statistical:to:territory-version-netherlands-european-composition-1900-effective-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1804-1830:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1804-1830-statistical:to:territory-version-netherlands-european-composition-1900-legal-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1804-1830:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1804-1830-statistical:to:territory-version-netherlands-european-composition-1900-statistical-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1804-1830:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1831-1839-statistical:to:territory-version-netherlands-european-composition-1900-effective-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1831-1839-statistical:to:territory-version-netherlands-european-composition-1900-legal-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1831-1839-statistical:to:territory-version-netherlands-european-composition-1900-statistical-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1840-1875-statistical:to:territory-version-netherlands-european-composition-1900-effective-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1840-1875:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1840-1875-statistical:to:territory-version-netherlands-european-composition-1900-legal-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1840-1875:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-cbs-table2-1840-1875-statistical:to:territory-version-netherlands-european-composition-1900-statistical-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:cbs-table2:1840-1875:statistical",
+   "to": "territory-version:netherlands:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-hna-current-northern-1800-1913-retrospective:to:territory-version-netherlands-european-composition-1900-effective-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:hna-current-northern:1800-1913:retrospective",
+   "to": "territory-version:netherlands:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-hna-current-northern-1800-1913-retrospective:to:territory-version-netherlands-european-composition-1900-legal-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:hna-current-northern:1800-1913:retrospective",
+   "to": "territory-version:netherlands:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-hna-current-northern-1800-1913-retrospective:to:territory-version-netherlands-european-composition-1900-statistical-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:hna-current-northern:1800-1913:retrospective",
+   "to": "territory-version:netherlands:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-paping-current-territory-1800-1849-retrospective:to:territory-version-netherlands-european-composition-1900-effective-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:paping-current-territory:1800-1849:retrospective",
+   "to": "territory-version:netherlands:european-composition-1900:effective-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-paping-current-territory-1800-1849-retrospective:to:territory-version-netherlands-european-composition-1900-legal-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:paping-current-territory:1800-1849:retrospective",
+   "to": "territory-version:netherlands:european-composition-1900:legal-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  },
+  {
+   "id": "territorial-crosswalk:dg1d:territory-version-netherlands-paping-current-territory-1800-1849-retrospective:to:territory-version-netherlands-european-composition-1900-statistical-target",
+   "country": "netherlands",
+   "from": "territory-version:netherlands:paping-current-territory:1800-1849:retrospective",
+   "to": "territory-version:netherlands:european-composition-1900:statistical-target",
+   "completeness": "partial",
+   "unmatched": "unknown",
+   "numerical": "unavailable",
+   "uncertainty": "qualitative-unknown"
+  }
+ ]
+}

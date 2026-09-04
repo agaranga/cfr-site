@@ -1,0 +1,455 @@
+{
+ "id": "dataset:pre-phase7b:federico-tena-france-current-prices-csv",
+ "title": {
+  "ru": "",
+  "en": "France foreign trade at current prices"
+ },
+ "source": [
+  "World Trade Historical Database: France, 1800-1938"
+ ],
+ "sourceOf": "Data/country-atlas/france/raw/federico-tena-france-current-prices.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Giovanni Federico, Antonio Tena-Junguito. World Trade Historical Database: France, 1800-1938 (2018). Universidad Carlos III de Madrid. https://doi.org/10.21950/NDVSTW. Лицензия: CC-BY-4.0",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор pre-phase7b:federico-tena-france-current-prices-csv, версия 1.0.0, загружено 2026-08-13. https://cfrproject.com/ru/datasets/pre-phase7b:federico-tena-france-current-prices-csv",
+   "author": "CFR Project (2026). France foreign trade at current prices, 1800–1938. Cliometric Figures Repository, инженерный набор pre-phase7b:federico-tena-france-current-prices-csv, версия 1.0.0. https://cfrproject.com/ru/datasets/pre-phase7b:federico-tena-france-current-prices-csv"
+  },
+  "en": {
+   "source": "Giovanni Federico, Antonio Tena-Junguito. World Trade Historical Database: France, 1800-1938 (2018). Universidad Carlos III de Madrid. https://doi.org/10.21950/NDVSTW. Licence: CC-BY-4.0",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset pre-phase7b:federico-tena-france-current-prices-csv, version 1.0.0, retrieved 2026-08-13. https://cfrproject.com/en/datasets/pre-phase7b:federico-tena-france-current-prices-csv",
+   "author": "CFR Project (2026). France foreign trade at current prices, 1800–1938. Cliometric Figures Repository, engineering dataset pre-phase7b:federico-tena-france-current-prices-csv, version 1.0.0. https://cfrproject.com/en/datasets/pre-phase7b:federico-tena-france-current-prices-csv"
+  }
+ },
+ "columns": [
+  "France"
+ ],
+ "rows": [
+  {
+   "France": ""
+  },
+  {
+   "France": ""
+  },
+  {
+   "France": ""
+  },
+  {
+   "France": "1800"
+  },
+  {
+   "France": "1801"
+  },
+  {
+   "France": "1802"
+  },
+  {
+   "France": "1803"
+  },
+  {
+   "France": "1804"
+  },
+  {
+   "France": "1805"
+  },
+  {
+   "France": "1806"
+  },
+  {
+   "France": "1807"
+  },
+  {
+   "France": "1808"
+  },
+  {
+   "France": "1809"
+  },
+  {
+   "France": "1810"
+  },
+  {
+   "France": "1811"
+  },
+  {
+   "France": "1812"
+  },
+  {
+   "France": "1813"
+  },
+  {
+   "France": "1814"
+  },
+  {
+   "France": "1815"
+  },
+  {
+   "France": "1816"
+  },
+  {
+   "France": "1817"
+  },
+  {
+   "France": "1818"
+  },
+  {
+   "France": "1819"
+  },
+  {
+   "France": "1820"
+  },
+  {
+   "France": "1821"
+  },
+  {
+   "France": "1822"
+  },
+  {
+   "France": "1823"
+  },
+  {
+   "France": "1824"
+  },
+  {
+   "France": "1825"
+  },
+  {
+   "France": "1826"
+  },
+  {
+   "France": "1827"
+  },
+  {
+   "France": "1828"
+  },
+  {
+   "France": "1829"
+  },
+  {
+   "France": "1830"
+  },
+  {
+   "France": "1831"
+  },
+  {
+   "France": "1832"
+  },
+  {
+   "France": "1833"
+  },
+  {
+   "France": "1834"
+  },
+  {
+   "France": "1835"
+  },
+  {
+   "France": "1836"
+  },
+  {
+   "France": "1837"
+  },
+  {
+   "France": "1838"
+  },
+  {
+   "France": "1839"
+  },
+  {
+   "France": "1840"
+  },
+  {
+   "France": "1841"
+  },
+  {
+   "France": "1842"
+  },
+  {
+   "France": "1843"
+  },
+  {
+   "France": "1844"
+  },
+  {
+   "France": "1845"
+  },
+  {
+   "France": "1846"
+  },
+  {
+   "France": "1847"
+  },
+  {
+   "France": "1848"
+  },
+  {
+   "France": "1849"
+  },
+  {
+   "France": "1850"
+  },
+  {
+   "France": "1851"
+  },
+  {
+   "France": "1852"
+  },
+  {
+   "France": "1853"
+  },
+  {
+   "France": "1854"
+  },
+  {
+   "France": "1855"
+  },
+  {
+   "France": "1856"
+  },
+  {
+   "France": "1857"
+  },
+  {
+   "France": "1858"
+  },
+  {
+   "France": "1859"
+  },
+  {
+   "France": "1860"
+  },
+  {
+   "France": "1861"
+  },
+  {
+   "France": "1862"
+  },
+  {
+   "France": "1863"
+  },
+  {
+   "France": "1864"
+  },
+  {
+   "France": "1865"
+  },
+  {
+   "France": "1866"
+  },
+  {
+   "France": "1867"
+  },
+  {
+   "France": "1868"
+  },
+  {
+   "France": "1869"
+  },
+  {
+   "France": "1870"
+  },
+  {
+   "France": "1871"
+  },
+  {
+   "France": "1872"
+  },
+  {
+   "France": "1873"
+  },
+  {
+   "France": "1874"
+  },
+  {
+   "France": "1875"
+  },
+  {
+   "France": "1876"
+  },
+  {
+   "France": "1877"
+  },
+  {
+   "France": "1878"
+  },
+  {
+   "France": "1879"
+  },
+  {
+   "France": "1880"
+  },
+  {
+   "France": "1881"
+  },
+  {
+   "France": "1882"
+  },
+  {
+   "France": "1883"
+  },
+  {
+   "France": "1884"
+  },
+  {
+   "France": "1885"
+  },
+  {
+   "France": "1886"
+  },
+  {
+   "France": "1887"
+  },
+  {
+   "France": "1888"
+  },
+  {
+   "France": "1889"
+  },
+  {
+   "France": "1890"
+  },
+  {
+   "France": "1891"
+  },
+  {
+   "France": "1892"
+  },
+  {
+   "France": "1893"
+  },
+  {
+   "France": "1894"
+  },
+  {
+   "France": "1895"
+  },
+  {
+   "France": "1896"
+  },
+  {
+   "France": "1897"
+  },
+  {
+   "France": "1898"
+  },
+  {
+   "France": "1899"
+  },
+  {
+   "France": "1900"
+  },
+  {
+   "France": "1901"
+  },
+  {
+   "France": "1902"
+  },
+  {
+   "France": "1903"
+  },
+  {
+   "France": "1904"
+  },
+  {
+   "France": "1905"
+  },
+  {
+   "France": "1906"
+  },
+  {
+   "France": "1907"
+  },
+  {
+   "France": "1908"
+  },
+  {
+   "France": "1909"
+  },
+  {
+   "France": "1910"
+  },
+  {
+   "France": "1911"
+  },
+  {
+   "France": "1912"
+  },
+  {
+   "France": "1913"
+  },
+  {
+   "France": "1914"
+  },
+  {
+   "France": "1915"
+  },
+  {
+   "France": "1916"
+  },
+  {
+   "France": "1917"
+  },
+  {
+   "France": "1918"
+  },
+  {
+   "France": "1919"
+  },
+  {
+   "France": "1920"
+  },
+  {
+   "France": "1921"
+  },
+  {
+   "France": "1922"
+  },
+  {
+   "France": "1923"
+  },
+  {
+   "France": "1924"
+  },
+  {
+   "France": "1925"
+  },
+  {
+   "France": "1926"
+  },
+  {
+   "France": "1927"
+  },
+  {
+   "France": "1928"
+  },
+  {
+   "France": "1929"
+  },
+  {
+   "France": "1930"
+  },
+  {
+   "France": "1931"
+  },
+  {
+   "France": "1932"
+  },
+  {
+   "France": "1933"
+  },
+  {
+   "France": "1934"
+  },
+  {
+   "France": "1935"
+  },
+  {
+   "France": "1936"
+  },
+  {
+   "France": "1937"
+  },
+  {
+   "France": "1938"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "id": "dataset:boe-gb-direct-tax-fy-1798-1801",
+ "title": {
+  "ru": "Налоги и государственные поступления",
+  "en": "Direct taxation and government receipts"
+ },
+ "source": [
+  "A Millennium of Macroeconomic Data for the UK"
+ ],
+ "sourceOf": "Data/money/gb-central-government-direct-tax-fy-1798-1801.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Лицензия: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор boe-gb-direct-tax-fy-1798-1801, версия 1.0.0, загружено 2026-07-17. https://cfrproject.com/ru/datasets/boe-gb-direct-tax-fy-1798-1801",
+   "author": "CFR Project (2026). Налоги и государственные поступления, 1798–1801. Cliometric Figures Repository, инженерный набор boe-gb-direct-tax-fy-1798-1801, версия 1.0.0. https://cfrproject.com/ru/datasets/boe-gb-direct-tax-fy-1798-1801"
+  },
+  "en": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Licence: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset boe-gb-direct-tax-fy-1798-1801, version 1.0.0, retrieved 2026-07-17. https://cfrproject.com/en/datasets/boe-gb-direct-tax-fy-1798-1801",
+   "author": "CFR Project (2026). Direct taxation and government receipts, 1798–1801. Cliometric Figures Repository, engineering dataset boe-gb-direct-tax-fy-1798-1801, version 1.0.0. https://cfrproject.com/en/datasets/boe-gb-direct-tax-fy-1798-1801"
+  }
+ },
+ "columns": [
+  "financial_year",
+  "geography",
+  "period_end",
+  "total_receipts_gbp_mn",
+  "customs_gbp_mn",
+  "excise_gbp_mn",
+  "stamps_gbp_mn",
+  "customs_excise_stamp_total_gbp_mn",
+  "land_assessed_tax_gbp_mn",
+  "household_income_property_tax_gbp_mn",
+  "other_receipts_gbp_mn",
+  "source_sheet",
+  "source_cells"
+ ],
+ "rows": [
+  {
+   "financial_year": "1798/99",
+   "geography": "Great Britain",
+   "period_end": "10th October",
+   "total_receipts_gbp_mn": "31.783",
+   "customs_gbp_mn": "7.056",
+   "excise_gbp_mn": "11.862",
+   "stamps_gbp_mn": "2.447",
+   "customs_excise_stamp_total_gbp_mn": "21.365",
+   "land_assessed_tax_gbp_mn": "6.446",
+   "household_income_property_tax_gbp_mn": "1.671",
+   "other_receipts_gbp_mn": "2.301",
+   "source_sheet": "A27. Central govt borrowing",
+   "source_cells": "A122:AA122"
+  },
+  {
+   "financial_year": "1799/00",
+   "geography": "Great Britain",
+   "period_end": "Bridge: Qtr ending 5th Jan 1800",
+   "total_receipts_gbp_mn": "9.674",
+   "customs_gbp_mn": "2.395",
+   "excise_gbp_mn": "3.241",
+   "stamps_gbp_mn": "0.763",
+   "customs_excise_stamp_total_gbp_mn": "6.399",
+   "land_assessed_tax_gbp_mn": "1.600",
+   "household_income_property_tax_gbp_mn": "1.020",
+   "other_receipts_gbp_mn": "0.655",
+   "source_sheet": "A27. Central govt borrowing",
+   "source_cells": "A123:AA123"
+  },
+  {
+   "financial_year": "1800/01",
+   "geography": "Great Britain",
+   "period_end": "5th January",
+   "total_receipts_gbp_mn": "31.585",
+   "customs_gbp_mn": "6.785",
+   "excise_gbp_mn": "10.594",
+   "stamps_gbp_mn": "2.621",
+   "customs_excise_stamp_total_gbp_mn": "20.000",
+   "land_assessed_tax_gbp_mn": "5.093",
+   "household_income_property_tax_gbp_mn": "4.513",
+   "other_receipts_gbp_mn": "1.979",
+   "source_sheet": "A27. Central govt borrowing",
+   "source_cells": "A124:AA124"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+period_start,period_end,geography,price_basis,yarn_18s_weft_d_per_lb,yarn_40s_warp_d_per_lb,yarn_100s_twist_d_per_lb,source_table,source_branch
+1780,1784,England,Feinstein-general-price-index-constant-1825-1829,47,168,,Table 9,Harley-1998-55-59
+1785,1789,England,Feinstein-general-price-index-constant-1825-1829,47,142,761,Table 9,Harley-1998-55-59
+1790,1794,England,Feinstein-general-price-index-constant-1825-1829,36,97,318,Table 9,Harley-1998-55-59
+1795,1799,England,Feinstein-general-price-index-constant-1825-1829,36,77,112,Table 9,Harley-1998-55-59
+1800,1804,England,Feinstein-general-price-index-constant-1825-1829,27,55,80,Table 9,Harley-1998-55-59
+1805,1809,England,Feinstein-general-price-index-constant-1825-1829,19,39,66,Table 9,Harley-1998-55-59
+1810,1814,England,Feinstein-general-price-index-constant-1825-1829,15,30,50,Table 9,Harley-1998-55-59
+1815,1819,England,Feinstein-general-price-index-constant-1825-1829,15,30,62,Table 9,Harley-1998-55-59
+1820,1824,England,Feinstein-general-price-index-constant-1825-1829,11,22,51,Table 9,Harley-1998-55-59
+1825,1829,England,Feinstein-general-price-index-constant-1825-1829,10,20,52,Table 9,Harley-1998-55-59

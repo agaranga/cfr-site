@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFR Project - Конструктор данных</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .head { padding: 44px 0 18px 0; }
+  .head h1 { font: 500 34px/1.15 Georgia, serif; margin: 0 0 8px 0; }
+  .head p { font-size: 15px; color: #566059; max-width: 46em; line-height: 1.6; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cell { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+  .cell h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px 0; }
+  .cell label { display: flex; gap: 8px; align-items: center; padding: 5px 0; font-size: 13.5px; }
+  .range { display: flex; gap: 14px; align-items: center; margin-bottom: 10px; }
+  .range label { display: flex; align-items: center; gap: 7px; font-size: 13.5px; padding: 0; }
+  .range input { width: 62px; padding: 7px 8px; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); font-size: 13.5px; text-align: center; font-family: inherit; }
+  .give { margin: 22px 0 10px 0; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; }
+  .give h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px 0; }
+  .give label { display: flex; gap: 9px; align-items: flex-start; padding: 6px 0; font-size: 14px; line-height: 1.45; }
+  .mail { margin: 18px 0 60px 0; display: flex; align-items: center; gap: 14px; }
+  .btn { display: inline-block; padding: 13px 26px; background: var(--gold); color: var(--forest); border-radius: 4px; font-size: 14px; font-weight: 700; border: 0; }
+  .note { font-size: 13px; color: var(--muted); max-width: 34em; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./"><span class="mark">CFR</span><span class="word">CFR Project</span></a>
+  <nav class="topnav">
+    <a href="./">Обзор</a>
+    <a href="showcase.html">Витрина</a>
+    <a href="coverage.html">Покрытие</a>
+    <a class="on" href="constructor.html">Конструктор</a>
+    <a href="datasets.html">Исходные данные</a>
+    <a href="sources.html">Источники</a>
+    <a href="territory.html">Территории</a>
+  </nav>
+  <a class="account" href="mailto:cfr@cfrproject.com?subject=CFR%20Project" title="Личный кабинет появится позже; пока пишите нам"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="5" r="2.8"/><path d="M2.5 14c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/></svg>Личный кабинет</a>
+  <span class="lang"><span class="on">RU</span><span>EN</span></span>
+</header>
+
+<div class="wrap">
+  <div class="head">
+    <h1>Конструктор данных</h1>
+    <p>Соберите набор под свою задачу: страны, периоды, показатели. Готовая выгрузка придёт на вашу электронную почту ссылкой для скачивания.</p>
+  </div>
+
+  <div class="grid">
+    <div class="cell picker"><h4>Страны</h4>
+      <input class="search" placeholder="Начните вводить: Фран.., Нидер..">
+      <div class="groups">
+        <span class="chip on">Западная Европа</span><span class="chip">Бенилюкс</span>
+        <span class="chip">Скандинавия</span><span class="chip">Средиземноморье</span><span class="chip">Все страны</span>
+      </div>
+      <div class="tokens">
+        <span class="token">Британия <b>×</b></span>
+        <span class="token">Франция <b>×</b></span>
+        <span class="token">Нидерланды <b>×</b></span>
+        <span class="token">Бельгия <b>×</b></span>
+      </div>
+      <div class="count">Выбрано 4 из 47. Группа добавляет свои страны разом; страна может входить в несколько групп и учитывается один раз.</div>
+    </div>
+    <div class="cell picker"><h4>Показатели</h4>
+      <input class="search" placeholder="Начните вводить: насел.., зарп..">
+      <div class="groups">
+        <span class="chip on">Население</span><span class="chip">Цены и зарплаты</span>
+        <span class="chip">Производство</span><span class="chip">Торговля</span><span class="chip">Все показатели</span>
+      </div>
+      <div class="tokens">
+        <span class="token">Численность населения <b>×</b></span>
+        <span class="token">Рождения, смерти, браки <b>×</b></span>
+        <span class="token">Дома и домохозяйства <b>×</b></span>
+      </div>
+      <div class="count">Выбрано 3 из 31. Население и движение населения - по странам и годам, как в источниках.</div>
+    </div>
+    <div class="cell picker"><h4>Период</h4>
+      <div class="range">
+        <label>с <input value="1801"></label>
+        <label>по <input value="1871"></label>
+        <span style="font-size:12px;color:var(--muted)">данные есть с 1086 по 2016</span>
+      </div>
+      <svg viewBox="0 0 420 30" width="100%" role="img" aria-label="шкала периода">
+        <line x1="10" y1="15" x2="410" y2="15" stroke="#d8d2c4" stroke-width="4" stroke-linecap="round"/>
+        <line x1="318" y1="15" x2="348" y2="15" stroke="#173d32" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="318" cy="15" r="7" fill="#fffdf8" stroke="#173d32" stroke-width="2.2"/>
+        <circle cx="348" cy="15" r="7" fill="#fffdf8" stroke="#173d32" stroke-width="2.2"/>
+        <text x="10" y="29" font-size="9" fill="#68716b">1086</text>
+        <text x="392" y="29" font-size="9" fill="#68716b">2016</text>
+      </svg>
+      <div class="groups">
+        <span class="chip">Средневековье</span><span class="chip">XVI-XVIII века</span>
+        <span class="chip on">XIX век</span><span class="chip">Межвоенье</span><span class="chip">Всё время</span>
+      </div>
+    </div>
+    <div class="cell"><h4>Территория и состав населения</h4>
+      <label><input type="radio" name="terr" checked> Как в источнике: у каждой строки своя версия территории, состав и момент учёта</label>
+      <label><input type="radio" name="terr" disabled> В границах 1900 года: недоступно, переходы описаны без чисел</label>
+      <label><input type="checkbox" checked> Добавить колонки территории, состава и момента учёта в выгрузку</label>
+      <div class="count"><a href="territory.html" style="color:var(--forest-soft)">Что такое версии территории и составы населения →</a></div>
+    </div>
+    <div class="cell"><h4>Тип данных</h4>
+      <label><input type="radio" name="t" checked> Историческое и инженерное</label>
+      <label><input type="radio" name="t"> Только историческое</label>
+      <label><input type="radio" name="t"> Только инженерное</label>
+    </div>
+  </div>
+
+  <div class="give">
+    <h4>Что получить</h4>
+    <label><input type="checkbox" checked> Перечень источников - где опубликован оригинальный материал</label>
+    <label><input type="checkbox"> Файлы оригинальных данных (только источники с разрешающим правовым режимом)</label>
+    <label><input type="checkbox" checked> Наши обработанные данные (единый вид, с ярлыком слоя и точностью)</label>
+  </div>
+
+  <div class="mail">
+    <a class="btn" href="mailto:cfr@cfrproject.com?subject=CFR%20Project%3A%20заявка%20на%20выгрузку&body=Страны%2C%20показатели%2C%20период%3A%20" style="display:inline-block;text-decoration:none">Сформировать выгрузку</a>
+    <span class="note">Ссылка на готовый пакет будет отправлена на вашу электронную почту. Для отправки требуется вход в личный кабинет.</span>
+  </div>
+</div>
+
+<footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
+
+</body>
+</html>

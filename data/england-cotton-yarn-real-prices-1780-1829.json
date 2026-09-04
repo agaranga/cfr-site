@@ -1,0 +1,147 @@
+{
+ "id": "dataset:england-cotton-yarn-real-prices-1780-1829",
+ "title": {
+  "ru": "Реальные цены на хлопковую пряжу",
+  "en": "Real cotton-yarn prices in England"
+ },
+ "source": [
+  "Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850"
+ ],
+ "sourceOf": "Data/cotton/england-cotton-yarn-real-prices-1780-1829.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Stephen Broadberry, Bishnupriya Gupta. Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850 (2005). Global Economic History Network. https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/GEHNConferences/conf6/Conf6-BroadberryGupta.pdf. Лицензия: source terms; local research copy",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор england-cotton-yarn-real-prices-1780-1829, версия 1.0.0, загружено 2026-07-17. https://cfrproject.com/ru/datasets/england-cotton-yarn-real-prices-1780-1829",
+   "author": "CFR Project (2026). Реальные цены на хлопковую пряжу, 1780–1829. Cliometric Figures Repository, инженерный набор england-cotton-yarn-real-prices-1780-1829, версия 1.0.0. https://cfrproject.com/ru/datasets/england-cotton-yarn-real-prices-1780-1829"
+  },
+  "en": {
+   "source": "Stephen Broadberry, Bishnupriya Gupta. Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850 (2005). Global Economic History Network. https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/GEHNConferences/conf6/Conf6-BroadberryGupta.pdf. Licence: source terms; local research copy",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset england-cotton-yarn-real-prices-1780-1829, version 1.0.0, retrieved 2026-07-17. https://cfrproject.com/en/datasets/england-cotton-yarn-real-prices-1780-1829",
+   "author": "CFR Project (2026). Real cotton-yarn prices in England, 1780–1829. Cliometric Figures Repository, engineering dataset england-cotton-yarn-real-prices-1780-1829, version 1.0.0. https://cfrproject.com/en/datasets/england-cotton-yarn-real-prices-1780-1829"
+  }
+ },
+ "columns": [
+  "period_start",
+  "period_end",
+  "geography",
+  "price_basis",
+  "yarn_18s_weft_d_per_lb",
+  "yarn_40s_warp_d_per_lb",
+  "yarn_100s_twist_d_per_lb",
+  "source_table",
+  "source_branch"
+ ],
+ "rows": [
+  {
+   "period_start": "1780",
+   "period_end": "1784",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "47",
+   "yarn_40s_warp_d_per_lb": "168",
+   "yarn_100s_twist_d_per_lb": "",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1785",
+   "period_end": "1789",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "47",
+   "yarn_40s_warp_d_per_lb": "142",
+   "yarn_100s_twist_d_per_lb": "761",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1790",
+   "period_end": "1794",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "36",
+   "yarn_40s_warp_d_per_lb": "97",
+   "yarn_100s_twist_d_per_lb": "318",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1795",
+   "period_end": "1799",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "36",
+   "yarn_40s_warp_d_per_lb": "77",
+   "yarn_100s_twist_d_per_lb": "112",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1800",
+   "period_end": "1804",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "27",
+   "yarn_40s_warp_d_per_lb": "55",
+   "yarn_100s_twist_d_per_lb": "80",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1805",
+   "period_end": "1809",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "19",
+   "yarn_40s_warp_d_per_lb": "39",
+   "yarn_100s_twist_d_per_lb": "66",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1810",
+   "period_end": "1814",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "15",
+   "yarn_40s_warp_d_per_lb": "30",
+   "yarn_100s_twist_d_per_lb": "50",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1815",
+   "period_end": "1819",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "15",
+   "yarn_40s_warp_d_per_lb": "30",
+   "yarn_100s_twist_d_per_lb": "62",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1820",
+   "period_end": "1824",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "11",
+   "yarn_40s_warp_d_per_lb": "22",
+   "yarn_100s_twist_d_per_lb": "51",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  },
+  {
+   "period_start": "1825",
+   "period_end": "1829",
+   "geography": "England",
+   "price_basis": "Feinstein-general-price-index-constant-1825-1829",
+   "yarn_18s_weft_d_per_lb": "10",
+   "yarn_40s_warp_d_per_lb": "20",
+   "yarn_100s_twist_d_per_lb": "52",
+   "source_table": "Table 9",
+   "source_branch": "Harley-1998-55-59"
+  }
+ ]
+}

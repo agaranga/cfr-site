@@ -1,0 +1,107 @@
+{
+ "id": "dataset:boe-gb-commercial-bills-1790-1830",
+ "title": {
+  "ru": "Коммерческие векселя Великобритании",
+  "en": "Great Britain commercial bills"
+ },
+ "source": [
+  "A Millennium of Macroeconomic Data for the UK"
+ ],
+ "sourceOf": "Data/trade/derived/boe-great-britain-commercial-bills-1790-1830.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Лицензия: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор boe-gb-commercial-bills-1790-1830, версия 1.0.0, загружено 2026-07-17. https://cfrproject.com/ru/datasets/boe-gb-commercial-bills-1790-1830",
+   "author": "CFR Project (2026). Коммерческие векселя Великобритании, 1790–1830. Cliometric Figures Repository, инженерный набор boe-gb-commercial-bills-1790-1830, версия 1.0.0. https://cfrproject.com/ru/datasets/boe-gb-commercial-bills-1790-1830"
+  },
+  "en": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Licence: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset boe-gb-commercial-bills-1790-1830, version 1.0.0, retrieved 2026-07-17. https://cfrproject.com/en/datasets/boe-gb-commercial-bills-1790-1830",
+   "author": "CFR Project (2026). Great Britain commercial bills, 1790–1830. Cliometric Figures Repository, engineering dataset boe-gb-commercial-bills-1790-1830, version 1.0.0. https://cfrproject.com/en/datasets/boe-gb-commercial-bills-1790-1830"
+  }
+ },
+ "columns": [
+  "year",
+  "geography",
+  "bill_scope",
+  "stock_gbp_millions",
+  "source_series",
+  "source_cell",
+  "source_value_kind"
+ ],
+ "rows": [
+  {
+   "year": "1790",
+   "geography": "Great Britain",
+   "bill_scope": "inland-commercial-bills",
+   "stock_gbp_millions": "100",
+   "source_series": "newmarch-combined",
+   "source_cell": "B6",
+   "source_value_kind": "literal-source-estimate"
+  },
+  {
+   "year": "1815",
+   "geography": "Great Britain",
+   "bill_scope": "inland-commercial-bills",
+   "stock_gbp_millions": "119.25",
+   "source_series": "newmarch-combined",
+   "source_cell": "B31",
+   "source_value_kind": "exact-source-formula"
+  },
+  {
+   "year": "1828",
+   "geography": "Great Britain",
+   "bill_scope": "inland-commercial-bills",
+   "stock_gbp_millions": "80.9",
+   "source_series": "newmarch-combined",
+   "source_cell": "B44",
+   "source_value_kind": "literal-source-estimate"
+  },
+  {
+   "year": "1828",
+   "geography": "Great Britain",
+   "bill_scope": "foreign-commercial-bills",
+   "stock_gbp_millions": "13.5",
+   "source_series": "newmarch-combined",
+   "source_cell": "C44",
+   "source_value_kind": "literal-source-estimate"
+  },
+  {
+   "year": "1829",
+   "geography": "Great Britain",
+   "bill_scope": "inland-commercial-bills",
+   "stock_gbp_millions": "78.9",
+   "source_series": "newmarch-combined",
+   "source_cell": "B45",
+   "source_value_kind": "literal-source-estimate"
+  },
+  {
+   "year": "1829",
+   "geography": "Great Britain",
+   "bill_scope": "foreign-commercial-bills",
+   "stock_gbp_millions": "13.2",
+   "source_series": "newmarch-combined",
+   "source_cell": "C45",
+   "source_value_kind": "literal-source-estimate"
+  },
+  {
+   "year": "1830",
+   "geography": "Great Britain",
+   "bill_scope": "inland-commercial-bills",
+   "stock_gbp_millions": "74",
+   "source_series": "newmarch-combined",
+   "source_cell": "B46",
+   "source_value_kind": "literal-source-estimate"
+  },
+  {
+   "year": "1830",
+   "geography": "Great Britain",
+   "bill_scope": "foreign-commercial-bills",
+   "stock_gbp_millions": "12.3",
+   "source_series": "newmarch-combined",
+   "source_cell": "C46",
+   "source_value_kind": "literal-source-estimate"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+year,source_geography,jenny_spindles_thousands,mule_spindles_thousands,water_frame_spindles_thousands,throstle_spindles_thousands,undifferentiated_continuous_spindles_thousands,total_spindles_thousands,reported_jenny_percent,reported_mule_percent,reported_continuous_percent,source_scope
+1784,England,283,4,60,0,,347,82,1,17,Arkwright estimate
+1787,Britain,1605,50,286,0,,1941,83,3,15,Colquhoun estimate
+1789,Britain,1400,700,310,0,,2410,58,29,13,Colquhoun estimate
+1811,England and Scotland,156,4200,,,311,4667,3,90,7,Crompton survey
+1845,England Scotland and Ireland,0,13000,0,4500,,17500,0,74,26,du Fay estimate

@@ -1,0 +1,1061 @@
+{
+ "id": "dataset:nl-hna-gfcf-v1",
+ "title": {
+  "ru": "Валовое накопление основного капитала Нидерландов по типам активов",
+  "en": "Netherlands gross fixed capital formation by asset type"
+ },
+ "source": [
+  "Historical National Accounts of the Netherlands: spreadsheet table suite"
+ ],
+ "sourceOf": "EconEvidence/Generated/netherlands/hna-gfcf.v1.json",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Лицензия: Public scholarly download; reuse status not asserted.",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор nl-hna-gfcf-v1, версия 1.0.0, загружено 2026-09-04. https://cfrproject.com/ru/datasets/nl-hna-gfcf-v1",
+   "author": "CFR Project (2026). Валовое накопление основного капитала Нидерландов по типам активов, 1800-1913. Cliometric Figures Repository, инженерный набор nl-hna-gfcf-v1, версия 1.0.0. https://cfrproject.com/ru/datasets/nl-hna-gfcf-v1"
+  },
+  "en": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Licence: Public scholarly download; reuse status not asserted.",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset nl-hna-gfcf-v1, version 1.0.0, retrieved 2026-09-04. https://cfrproject.com/en/datasets/nl-hna-gfcf-v1",
+   "author": "CFR Project (2026). Netherlands gross fixed capital formation by asset type, 1800-1913. Cliometric Figures Repository, engineering dataset nl-hna-gfcf-v1, version 1.0.0. https://cfrproject.com/en/datasets/nl-hna-gfcf-v1"
+  }
+ },
+ "columns": [
+  "year",
+  "machineryAndTransportEquipmentCurrentPrices",
+  "otherNonResidentialCapitalGoodsCurrentPrices",
+  "residentialDwellingsCurrentPrices",
+  "totalGfcfCurrentPrices",
+  "implicitTotalGfcfDeflator",
+  "totalGfcfConstant1913Prices"
+ ],
+ "rows": [
+  {
+   "year": 1800,
+   "machineryAndTransportEquipmentCurrentPrices": 6200,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 7632,
+   "residentialDwellingsCurrentPrices": 18786,
+   "totalGfcfCurrentPrices": 32617,
+   "implicitTotalGfcfDeflator": 66.91490234695551,
+   "totalGfcfConstant1913Prices": 48744
+  },
+  {
+   "year": 1801,
+   "machineryAndTransportEquipmentCurrentPrices": 6050,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8330,
+   "residentialDwellingsCurrentPrices": 19769,
+   "totalGfcfCurrentPrices": 34149,
+   "implicitTotalGfcfDeflator": 69.31555230787967,
+   "totalGfcfConstant1913Prices": 49266
+  },
+  {
+   "year": 1802,
+   "machineryAndTransportEquipmentCurrentPrices": 5100,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 7430,
+   "residentialDwellingsCurrentPrices": 17491,
+   "totalGfcfCurrentPrices": 30022,
+   "implicitTotalGfcfDeflator": 60.7818921709554,
+   "totalGfcfConstant1913Prices": 49393
+  },
+  {
+   "year": 1803,
+   "machineryAndTransportEquipmentCurrentPrices": 4685,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8388,
+   "residentialDwellingsCurrentPrices": 19330,
+   "totalGfcfCurrentPrices": 32403,
+   "implicitTotalGfcfDeflator": 66.24077519062902,
+   "totalGfcfConstant1913Prices": 48917
+  },
+  {
+   "year": 1804,
+   "machineryAndTransportEquipmentCurrentPrices": 4439,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10229,
+   "residentialDwellingsCurrentPrices": 20950,
+   "totalGfcfCurrentPrices": 35618,
+   "implicitTotalGfcfDeflator": 70.23168687764961,
+   "totalGfcfConstant1913Prices": 50715
+  },
+  {
+   "year": 1805,
+   "machineryAndTransportEquipmentCurrentPrices": 5076,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9573,
+   "residentialDwellingsCurrentPrices": 21016,
+   "totalGfcfCurrentPrices": 35665,
+   "implicitTotalGfcfDeflator": 69.58481289265228,
+   "totalGfcfConstant1913Prices": 51254
+  },
+  {
+   "year": 1806,
+   "machineryAndTransportEquipmentCurrentPrices": 5049,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9477,
+   "residentialDwellingsCurrentPrices": 21006,
+   "totalGfcfCurrentPrices": 35532,
+   "implicitTotalGfcfDeflator": 69.0424374319913,
+   "totalGfcfConstant1913Prices": 51464
+  },
+  {
+   "year": 1807,
+   "machineryAndTransportEquipmentCurrentPrices": 4420,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10351,
+   "residentialDwellingsCurrentPrices": 21566,
+   "totalGfcfCurrentPrices": 36338,
+   "implicitTotalGfcfDeflator": 69.96822951766632,
+   "totalGfcfConstant1913Prices": 51935
+  },
+  {
+   "year": 1808,
+   "machineryAndTransportEquipmentCurrentPrices": 5196,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10157,
+   "residentialDwellingsCurrentPrices": 22004,
+   "totalGfcfCurrentPrices": 37356,
+   "implicitTotalGfcfDeflator": 74.14405652700316,
+   "totalGfcfConstant1913Prices": 50383
+  },
+  {
+   "year": 1809,
+   "machineryAndTransportEquipmentCurrentPrices": 4671,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 13628,
+   "residentialDwellingsCurrentPrices": 20816,
+   "totalGfcfCurrentPrices": 39116,
+   "implicitTotalGfcfDeflator": 74.13247417795887,
+   "totalGfcfConstant1913Prices": 52765
+  },
+  {
+   "year": 1810,
+   "machineryAndTransportEquipmentCurrentPrices": 4450,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8562,
+   "residentialDwellingsCurrentPrices": 19623,
+   "totalGfcfCurrentPrices": 32635,
+   "implicitTotalGfcfDeflator": 67.8017160783662,
+   "totalGfcfConstant1913Prices": 48133
+  },
+  {
+   "year": 1811,
+   "machineryAndTransportEquipmentCurrentPrices": 3682,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9071,
+   "residentialDwellingsCurrentPrices": 19085,
+   "totalGfcfCurrentPrices": 31838,
+   "implicitTotalGfcfDeflator": 66.92310926136125,
+   "totalGfcfConstant1913Prices": 47574
+  },
+  {
+   "year": 1812,
+   "machineryAndTransportEquipmentCurrentPrices": 3711,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8242,
+   "residentialDwellingsCurrentPrices": 18602,
+   "totalGfcfCurrentPrices": 30554,
+   "implicitTotalGfcfDeflator": 65.22639455201417,
+   "totalGfcfConstant1913Prices": 46843
+  },
+  {
+   "year": 1813,
+   "machineryAndTransportEquipmentCurrentPrices": 3597,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 7971,
+   "residentialDwellingsCurrentPrices": 18006,
+   "totalGfcfCurrentPrices": 29574,
+   "implicitTotalGfcfDeflator": 63.24636441402909,
+   "totalGfcfConstant1913Prices": 46760
+  },
+  {
+   "year": 1814,
+   "machineryAndTransportEquipmentCurrentPrices": 6438,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 7295,
+   "residentialDwellingsCurrentPrices": 17092,
+   "totalGfcfCurrentPrices": 30825,
+   "implicitTotalGfcfDeflator": 62.96213080599698,
+   "totalGfcfConstant1913Prices": 48958
+  },
+  {
+   "year": 1815,
+   "machineryAndTransportEquipmentCurrentPrices": 6303,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 7477,
+   "residentialDwellingsCurrentPrices": 17124,
+   "totalGfcfCurrentPrices": 30905,
+   "implicitTotalGfcfDeflator": 60.54224538170705,
+   "totalGfcfConstant1913Prices": 51047
+  },
+  {
+   "year": 1816,
+   "machineryAndTransportEquipmentCurrentPrices": 5714,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9696,
+   "residentialDwellingsCurrentPrices": 16829,
+   "totalGfcfCurrentPrices": 32239,
+   "implicitTotalGfcfDeflator": 57.16844289184828,
+   "totalGfcfConstant1913Prices": 56393
+  },
+  {
+   "year": 1817,
+   "machineryAndTransportEquipmentCurrentPrices": 7313,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10858,
+   "residentialDwellingsCurrentPrices": 18273,
+   "totalGfcfCurrentPrices": 36444,
+   "implicitTotalGfcfDeflator": 61.19590952596846,
+   "totalGfcfConstant1913Prices": 59553
+  },
+  {
+   "year": 1818,
+   "machineryAndTransportEquipmentCurrentPrices": 8409,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10219,
+   "residentialDwellingsCurrentPrices": 19800,
+   "totalGfcfCurrentPrices": 38428,
+   "implicitTotalGfcfDeflator": 65.26716260742552,
+   "totalGfcfConstant1913Prices": 58878
+  },
+  {
+   "year": 1819,
+   "machineryAndTransportEquipmentCurrentPrices": 7813,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10131,
+   "residentialDwellingsCurrentPrices": 18555,
+   "totalGfcfCurrentPrices": 36499,
+   "implicitTotalGfcfDeflator": 63.23677189091791,
+   "totalGfcfConstant1913Prices": 57718
+  },
+  {
+   "year": 1820,
+   "machineryAndTransportEquipmentCurrentPrices": 7820,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 12105,
+   "residentialDwellingsCurrentPrices": 18177,
+   "totalGfcfCurrentPrices": 38102,
+   "implicitTotalGfcfDeflator": 61.56406527710454,
+   "totalGfcfConstant1913Prices": 61890
+  },
+  {
+   "year": 1821,
+   "machineryAndTransportEquipmentCurrentPrices": 7301,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9920,
+   "residentialDwellingsCurrentPrices": 17471,
+   "totalGfcfCurrentPrices": 34692,
+   "implicitTotalGfcfDeflator": 58.160237388724035,
+   "totalGfcfConstant1913Prices": 59649
+  },
+  {
+   "year": 1822,
+   "machineryAndTransportEquipmentCurrentPrices": 7227,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 11137,
+   "residentialDwellingsCurrentPrices": 17385,
+   "totalGfcfCurrentPrices": 35749,
+   "implicitTotalGfcfDeflator": 56.7976358812221,
+   "totalGfcfConstant1913Prices": 62941
+  },
+  {
+   "year": 1823,
+   "machineryAndTransportEquipmentCurrentPrices": 7493,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 11050,
+   "residentialDwellingsCurrentPrices": 18013,
+   "totalGfcfCurrentPrices": 36556,
+   "implicitTotalGfcfDeflator": 56.94968063561302,
+   "totalGfcfConstant1913Prices": 64190
+  },
+  {
+   "year": 1824,
+   "machineryAndTransportEquipmentCurrentPrices": 8173,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 11257,
+   "residentialDwellingsCurrentPrices": 18194,
+   "totalGfcfCurrentPrices": 37624,
+   "implicitTotalGfcfDeflator": 58.269448187210585,
+   "totalGfcfConstant1913Prices": 64569
+  },
+  {
+   "year": 1825,
+   "machineryAndTransportEquipmentCurrentPrices": 7616,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9521,
+   "residentialDwellingsCurrentPrices": 20916,
+   "totalGfcfCurrentPrices": 38053,
+   "implicitTotalGfcfDeflator": 64.24398973527823,
+   "totalGfcfConstant1913Prices": 59232
+  },
+  {
+   "year": 1826,
+   "machineryAndTransportEquipmentCurrentPrices": 7211,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 11349,
+   "residentialDwellingsCurrentPrices": 20470,
+   "totalGfcfCurrentPrices": 39031,
+   "implicitTotalGfcfDeflator": 61.35502633026802,
+   "totalGfcfConstant1913Prices": 63615
+  },
+  {
+   "year": 1827,
+   "machineryAndTransportEquipmentCurrentPrices": 7742,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9951,
+   "residentialDwellingsCurrentPrices": 19747,
+   "totalGfcfCurrentPrices": 37440,
+   "implicitTotalGfcfDeflator": 58.83462191212521,
+   "totalGfcfConstant1913Prices": 63636
+  },
+  {
+   "year": 1828,
+   "machineryAndTransportEquipmentCurrentPrices": 7333,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8623,
+   "residentialDwellingsCurrentPrices": 19750,
+   "totalGfcfCurrentPrices": 35706,
+   "implicitTotalGfcfDeflator": 56.571129806549735,
+   "totalGfcfConstant1913Prices": 63117
+  },
+  {
+   "year": 1829,
+   "machineryAndTransportEquipmentCurrentPrices": 7871,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8953,
+   "residentialDwellingsCurrentPrices": 20017,
+   "totalGfcfCurrentPrices": 36841,
+   "implicitTotalGfcfDeflator": 55.03338661249122,
+   "totalGfcfConstant1913Prices": 66943
+  },
+  {
+   "year": 1830,
+   "machineryAndTransportEquipmentCurrentPrices": 8349,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8739,
+   "residentialDwellingsCurrentPrices": 19930,
+   "totalGfcfCurrentPrices": 37018,
+   "implicitTotalGfcfDeflator": 57.22368217653424,
+   "totalGfcfConstant1913Prices": 64690
+  },
+  {
+   "year": 1831,
+   "machineryAndTransportEquipmentCurrentPrices": 7448,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8873,
+   "residentialDwellingsCurrentPrices": 19680,
+   "totalGfcfCurrentPrices": 36001,
+   "implicitTotalGfcfDeflator": 53.32375507302189,
+   "totalGfcfConstant1913Prices": 67514
+  },
+  {
+   "year": 1832,
+   "machineryAndTransportEquipmentCurrentPrices": 7949,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9494,
+   "residentialDwellingsCurrentPrices": 19629,
+   "totalGfcfCurrentPrices": 37071,
+   "implicitTotalGfcfDeflator": 53.796255986068786,
+   "totalGfcfConstant1913Prices": 68910
+  },
+  {
+   "year": 1833,
+   "machineryAndTransportEquipmentCurrentPrices": 8345,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8290,
+   "residentialDwellingsCurrentPrices": 18870,
+   "totalGfcfCurrentPrices": 35504,
+   "implicitTotalGfcfDeflator": 53.70605675561203,
+   "totalGfcfConstant1913Prices": 66108
+  },
+  {
+   "year": 1834,
+   "machineryAndTransportEquipmentCurrentPrices": 8801,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9781,
+   "residentialDwellingsCurrentPrices": 19530,
+   "totalGfcfCurrentPrices": 38112,
+   "implicitTotalGfcfDeflator": 55.92451833482516,
+   "totalGfcfConstant1913Prices": 68149
+  },
+  {
+   "year": 1835,
+   "machineryAndTransportEquipmentCurrentPrices": 11588,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9669,
+   "residentialDwellingsCurrentPrices": 20678,
+   "totalGfcfCurrentPrices": 41935,
+   "implicitTotalGfcfDeflator": 60.12962246024577,
+   "totalGfcfConstant1913Prices": 69741
+  },
+  {
+   "year": 1836,
+   "machineryAndTransportEquipmentCurrentPrices": 13149,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10466,
+   "residentialDwellingsCurrentPrices": 22476,
+   "totalGfcfCurrentPrices": 46091,
+   "implicitTotalGfcfDeflator": 63.403260196712296,
+   "totalGfcfConstant1913Prices": 72695
+  },
+  {
+   "year": 1837,
+   "machineryAndTransportEquipmentCurrentPrices": 14347,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8771,
+   "residentialDwellingsCurrentPrices": 22773,
+   "totalGfcfCurrentPrices": 45891,
+   "implicitTotalGfcfDeflator": 66.2561540793786,
+   "totalGfcfConstant1913Prices": 69263
+  },
+  {
+   "year": 1838,
+   "machineryAndTransportEquipmentCurrentPrices": 14591,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10606,
+   "residentialDwellingsCurrentPrices": 22528,
+   "totalGfcfCurrentPrices": 47725,
+   "implicitTotalGfcfDeflator": 63.74978293683128,
+   "totalGfcfConstant1913Prices": 74863
+  },
+  {
+   "year": 1839,
+   "machineryAndTransportEquipmentCurrentPrices": 15597,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9431,
+   "residentialDwellingsCurrentPrices": 22276,
+   "totalGfcfCurrentPrices": 47304,
+   "implicitTotalGfcfDeflator": 64.13492956600729,
+   "totalGfcfConstant1913Prices": 73757
+  },
+  {
+   "year": 1840,
+   "machineryAndTransportEquipmentCurrentPrices": 13462,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 13802,
+   "residentialDwellingsCurrentPrices": 21599,
+   "totalGfcfCurrentPrices": 48863,
+   "implicitTotalGfcfDeflator": 60.174626240732984,
+   "totalGfcfConstant1913Prices": 81202
+  },
+  {
+   "year": 1841,
+   "machineryAndTransportEquipmentCurrentPrices": 12220,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 11172,
+   "residentialDwellingsCurrentPrices": 23295,
+   "totalGfcfCurrentPrices": 46687,
+   "implicitTotalGfcfDeflator": 61.15506536375782,
+   "totalGfcfConstant1913Prices": 76342
+  },
+  {
+   "year": 1842,
+   "machineryAndTransportEquipmentCurrentPrices": 9891,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10725,
+   "residentialDwellingsCurrentPrices": 19708,
+   "totalGfcfCurrentPrices": 40324,
+   "implicitTotalGfcfDeflator": 59.05423018906609,
+   "totalGfcfConstant1913Prices": 68283
+  },
+  {
+   "year": 1843,
+   "machineryAndTransportEquipmentCurrentPrices": 9371,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 12770,
+   "residentialDwellingsCurrentPrices": 18726,
+   "totalGfcfCurrentPrices": 40867,
+   "implicitTotalGfcfDeflator": 57.18703646693347,
+   "totalGfcfConstant1913Prices": 71462
+  },
+  {
+   "year": 1844,
+   "machineryAndTransportEquipmentCurrentPrices": 8359,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 11962,
+   "residentialDwellingsCurrentPrices": 20274,
+   "totalGfcfCurrentPrices": 40596,
+   "implicitTotalGfcfDeflator": 57.446085922907116,
+   "totalGfcfConstant1913Prices": 70668
+  },
+  {
+   "year": 1845,
+   "machineryAndTransportEquipmentCurrentPrices": 10066,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 13005,
+   "residentialDwellingsCurrentPrices": 22629,
+   "totalGfcfCurrentPrices": 45700,
+   "implicitTotalGfcfDeflator": 62.49059906195731,
+   "totalGfcfConstant1913Prices": 73131
+  },
+  {
+   "year": 1846,
+   "machineryAndTransportEquipmentCurrentPrices": 10961,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 11406,
+   "residentialDwellingsCurrentPrices": 22079,
+   "totalGfcfCurrentPrices": 44446,
+   "implicitTotalGfcfDeflator": 64.41729350551472,
+   "totalGfcfConstant1913Prices": 68997
+  },
+  {
+   "year": 1847,
+   "machineryAndTransportEquipmentCurrentPrices": 11374,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 14499,
+   "residentialDwellingsCurrentPrices": 23144,
+   "totalGfcfCurrentPrices": 49017,
+   "implicitTotalGfcfDeflator": 63.40400212135715,
+   "totalGfcfConstant1913Prices": 77309
+  },
+  {
+   "year": 1848,
+   "machineryAndTransportEquipmentCurrentPrices": 11336,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 10193,
+   "residentialDwellingsCurrentPrices": 20654,
+   "totalGfcfCurrentPrices": 42183,
+   "implicitTotalGfcfDeflator": 61.3856631450275,
+   "totalGfcfConstant1913Prices": 68718
+  },
+  {
+   "year": 1849,
+   "machineryAndTransportEquipmentCurrentPrices": 11280,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9162,
+   "residentialDwellingsCurrentPrices": 20724,
+   "totalGfcfCurrentPrices": 41167,
+   "implicitTotalGfcfDeflator": 58.07821449733359,
+   "totalGfcfConstant1913Prices": 70882
+  },
+  {
+   "year": 1850,
+   "machineryAndTransportEquipmentCurrentPrices": 10913,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 9371,
+   "residentialDwellingsCurrentPrices": 21221,
+   "totalGfcfCurrentPrices": 41505,
+   "implicitTotalGfcfDeflator": 58.092825350614454,
+   "totalGfcfConstant1913Prices": 71446
+  },
+  {
+   "year": 1851,
+   "machineryAndTransportEquipmentCurrentPrices": 11871,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 8787,
+   "residentialDwellingsCurrentPrices": 20427,
+   "totalGfcfCurrentPrices": 41085,
+   "implicitTotalGfcfDeflator": 57.278886906089674,
+   "totalGfcfConstant1913Prices": 71728
+  },
+  {
+   "year": 1852,
+   "machineryAndTransportEquipmentCurrentPrices": 13877,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 24972,
+   "residentialDwellingsCurrentPrices": 21432,
+   "totalGfcfCurrentPrices": 60281,
+   "implicitTotalGfcfDeflator": 61.02489345116976,
+   "totalGfcfConstant1913Prices": 98781
+  },
+  {
+   "year": 1853,
+   "machineryAndTransportEquipmentCurrentPrices": 19057,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 15644,
+   "residentialDwellingsCurrentPrices": 21607,
+   "totalGfcfCurrentPrices": 56308,
+   "implicitTotalGfcfDeflator": 73.60715312818635,
+   "totalGfcfConstant1913Prices": 76498
+  },
+  {
+   "year": 1854,
+   "machineryAndTransportEquipmentCurrentPrices": 21127,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 16333,
+   "residentialDwellingsCurrentPrices": 21380,
+   "totalGfcfCurrentPrices": 58840,
+   "implicitTotalGfcfDeflator": 74.80580240792301,
+   "totalGfcfConstant1913Prices": 78657
+  },
+  {
+   "year": 1855,
+   "machineryAndTransportEquipmentCurrentPrices": 20242,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 15116,
+   "residentialDwellingsCurrentPrices": 21919,
+   "totalGfcfCurrentPrices": 57277,
+   "implicitTotalGfcfDeflator": 71.93434140460162,
+   "totalGfcfConstant1913Prices": 79624
+  },
+  {
+   "year": 1856,
+   "machineryAndTransportEquipmentCurrentPrices": 22155,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 15910,
+   "residentialDwellingsCurrentPrices": 22637,
+   "totalGfcfCurrentPrices": 60702,
+   "implicitTotalGfcfDeflator": 71.05300121734246,
+   "totalGfcfConstant1913Prices": 85432
+  },
+  {
+   "year": 1857,
+   "machineryAndTransportEquipmentCurrentPrices": 21524,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 13566,
+   "residentialDwellingsCurrentPrices": 21743,
+   "totalGfcfCurrentPrices": 56833,
+   "implicitTotalGfcfDeflator": 71.98059678808451,
+   "totalGfcfConstant1913Prices": 78956
+  },
+  {
+   "year": 1858,
+   "machineryAndTransportEquipmentCurrentPrices": 15993,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 15551,
+   "residentialDwellingsCurrentPrices": 22744,
+   "totalGfcfCurrentPrices": 54288,
+   "implicitTotalGfcfDeflator": 67.9772607748366,
+   "totalGfcfConstant1913Prices": 79862
+  },
+  {
+   "year": 1859,
+   "machineryAndTransportEquipmentCurrentPrices": 14913,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 15304,
+   "residentialDwellingsCurrentPrices": 22766,
+   "totalGfcfCurrentPrices": 52983,
+   "implicitTotalGfcfDeflator": 67.64765966139782,
+   "totalGfcfConstant1913Prices": 78322
+  },
+  {
+   "year": 1860,
+   "machineryAndTransportEquipmentCurrentPrices": 13416,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 21038,
+   "residentialDwellingsCurrentPrices": 23970,
+   "totalGfcfCurrentPrices": 58425,
+   "implicitTotalGfcfDeflator": 67.43888080892029,
+   "totalGfcfConstant1913Prices": 86634
+  },
+  {
+   "year": 1861,
+   "machineryAndTransportEquipmentCurrentPrices": 14309,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 19481,
+   "residentialDwellingsCurrentPrices": 26089,
+   "totalGfcfCurrentPrices": 59879,
+   "implicitTotalGfcfDeflator": 68.08764668425361,
+   "totalGfcfConstant1913Prices": 87944
+  },
+  {
+   "year": 1862,
+   "machineryAndTransportEquipmentCurrentPrices": 17849,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 20331,
+   "residentialDwellingsCurrentPrices": 26081,
+   "totalGfcfCurrentPrices": 64262,
+   "implicitTotalGfcfDeflator": 70.10374507729063,
+   "totalGfcfConstant1913Prices": 91667
+  },
+  {
+   "year": 1863,
+   "machineryAndTransportEquipmentCurrentPrices": 16597,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 24269,
+   "residentialDwellingsCurrentPrices": 26529,
+   "totalGfcfCurrentPrices": 67394,
+   "implicitTotalGfcfDeflator": 69.10645802998297,
+   "totalGfcfConstant1913Prices": 97522
+  },
+  {
+   "year": 1864,
+   "machineryAndTransportEquipmentCurrentPrices": 18659,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 26734,
+   "residentialDwellingsCurrentPrices": 27691,
+   "totalGfcfCurrentPrices": 73084,
+   "implicitTotalGfcfDeflator": 72.70086643389338,
+   "totalGfcfConstant1913Prices": 100527
+  },
+  {
+   "year": 1865,
+   "machineryAndTransportEquipmentCurrentPrices": 18853,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 30867,
+   "residentialDwellingsCurrentPrices": 28209,
+   "totalGfcfCurrentPrices": 77929,
+   "implicitTotalGfcfDeflator": 71.3792408587968,
+   "totalGfcfConstant1913Prices": 109176
+  },
+  {
+   "year": 1866,
+   "machineryAndTransportEquipmentCurrentPrices": 20477,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 34724,
+   "residentialDwellingsCurrentPrices": 27017,
+   "totalGfcfCurrentPrices": 82217,
+   "implicitTotalGfcfDeflator": 69.37089724767546,
+   "totalGfcfConstant1913Prices": 118518
+  },
+  {
+   "year": 1867,
+   "machineryAndTransportEquipmentCurrentPrices": 18359,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 33605,
+   "residentialDwellingsCurrentPrices": 26976,
+   "totalGfcfCurrentPrices": 78940,
+   "implicitTotalGfcfDeflator": 68.63571944041108,
+   "totalGfcfConstant1913Prices": 115013
+  },
+  {
+   "year": 1868,
+   "machineryAndTransportEquipmentCurrentPrices": 15421,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 31987,
+   "residentialDwellingsCurrentPrices": 28539,
+   "totalGfcfCurrentPrices": 75947,
+   "implicitTotalGfcfDeflator": 68.68183544647218,
+   "totalGfcfConstant1913Prices": 110578
+  },
+  {
+   "year": 1869,
+   "machineryAndTransportEquipmentCurrentPrices": 15989,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 33988,
+   "residentialDwellingsCurrentPrices": 31183,
+   "totalGfcfCurrentPrices": 81160,
+   "implicitTotalGfcfDeflator": 68.98779368263574,
+   "totalGfcfConstant1913Prices": 117644
+  },
+  {
+   "year": 1870,
+   "machineryAndTransportEquipmentCurrentPrices": 17134,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 39601,
+   "residentialDwellingsCurrentPrices": 30936,
+   "totalGfcfCurrentPrices": 87671,
+   "implicitTotalGfcfDeflator": 70.36082887915121,
+   "totalGfcfConstant1913Prices": 124602
+  },
+  {
+   "year": 1871,
+   "machineryAndTransportEquipmentCurrentPrices": 18958,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 32905,
+   "residentialDwellingsCurrentPrices": 34388,
+   "totalGfcfCurrentPrices": 86251,
+   "implicitTotalGfcfDeflator": 70.37393624399279,
+   "totalGfcfConstant1913Prices": 122561
+  },
+  {
+   "year": 1872,
+   "machineryAndTransportEquipmentCurrentPrices": 24199,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 44720,
+   "residentialDwellingsCurrentPrices": 36888,
+   "totalGfcfCurrentPrices": 105807,
+   "implicitTotalGfcfDeflator": 78.06387829333255,
+   "totalGfcfConstant1913Prices": 135539
+  },
+  {
+   "year": 1873,
+   "machineryAndTransportEquipmentCurrentPrices": 33653,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 39543,
+   "residentialDwellingsCurrentPrices": 32192,
+   "totalGfcfCurrentPrices": 105389,
+   "implicitTotalGfcfDeflator": 93.64331855379722,
+   "totalGfcfConstant1913Prices": 112543
+  },
+  {
+   "year": 1874,
+   "machineryAndTransportEquipmentCurrentPrices": 29171,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 38326,
+   "residentialDwellingsCurrentPrices": 32118,
+   "totalGfcfCurrentPrices": 99615,
+   "implicitTotalGfcfDeflator": 94.36276831555614,
+   "totalGfcfConstant1913Prices": 105566
+  },
+  {
+   "year": 1875,
+   "machineryAndTransportEquipmentCurrentPrices": 23079,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 39107,
+   "residentialDwellingsCurrentPrices": 41569,
+   "totalGfcfCurrentPrices": 103755,
+   "implicitTotalGfcfDeflator": 82.2010600454758,
+   "totalGfcfConstant1913Prices": 126221
+  },
+  {
+   "year": 1876,
+   "machineryAndTransportEquipmentCurrentPrices": 27313,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 42425,
+   "residentialDwellingsCurrentPrices": 45837,
+   "totalGfcfCurrentPrices": 115575,
+   "implicitTotalGfcfDeflator": 83.96294950962586,
+   "totalGfcfConstant1913Prices": 137650
+  },
+  {
+   "year": 1877,
+   "machineryAndTransportEquipmentCurrentPrices": 27182,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 56650,
+   "residentialDwellingsCurrentPrices": 50703,
+   "totalGfcfCurrentPrices": 134535,
+   "implicitTotalGfcfDeflator": 83.69050655353244,
+   "totalGfcfConstant1913Prices": 160753
+  },
+  {
+   "year": 1878,
+   "machineryAndTransportEquipmentCurrentPrices": 24052,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 46185,
+   "residentialDwellingsCurrentPrices": 41895,
+   "totalGfcfCurrentPrices": 112132,
+   "implicitTotalGfcfDeflator": 80.04168689147131,
+   "totalGfcfConstant1913Prices": 140092
+  },
+  {
+   "year": 1879,
+   "machineryAndTransportEquipmentCurrentPrices": 27386,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 45713,
+   "residentialDwellingsCurrentPrices": 53403,
+   "totalGfcfCurrentPrices": 126502,
+   "implicitTotalGfcfDeflator": 77.43993143766643,
+   "totalGfcfConstant1913Prices": 163355
+  },
+  {
+   "year": 1880,
+   "machineryAndTransportEquipmentCurrentPrices": 26934,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 46084,
+   "residentialDwellingsCurrentPrices": 51513,
+   "totalGfcfCurrentPrices": 124532,
+   "implicitTotalGfcfDeflator": 78.10685031171991,
+   "totalGfcfConstant1913Prices": 159438
+  },
+  {
+   "year": 1881,
+   "machineryAndTransportEquipmentCurrentPrices": 26333,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 53960,
+   "residentialDwellingsCurrentPrices": 56784,
+   "totalGfcfCurrentPrices": 137077,
+   "implicitTotalGfcfDeflator": 78.32658122246539,
+   "totalGfcfConstant1913Prices": 175007
+  },
+  {
+   "year": 1882,
+   "machineryAndTransportEquipmentCurrentPrices": 34946,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 42017,
+   "residentialDwellingsCurrentPrices": 57875,
+   "totalGfcfCurrentPrices": 134837,
+   "implicitTotalGfcfDeflator": 79.25667295608575,
+   "totalGfcfConstant1913Prices": 170127
+  },
+  {
+   "year": 1883,
+   "machineryAndTransportEquipmentCurrentPrices": 45119,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 47099,
+   "residentialDwellingsCurrentPrices": 57606,
+   "totalGfcfCurrentPrices": 149824,
+   "implicitTotalGfcfDeflator": 79.5780595199524,
+   "totalGfcfConstant1913Prices": 188273
+  },
+  {
+   "year": 1884,
+   "machineryAndTransportEquipmentCurrentPrices": 38640,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 48501,
+   "residentialDwellingsCurrentPrices": 52431,
+   "totalGfcfCurrentPrices": 139572,
+   "implicitTotalGfcfDeflator": 78.33685994757786,
+   "totalGfcfConstant1913Prices": 178169
+  },
+  {
+   "year": 1885,
+   "machineryAndTransportEquipmentCurrentPrices": 28356,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 45913,
+   "residentialDwellingsCurrentPrices": 54243,
+   "totalGfcfCurrentPrices": 128511,
+   "implicitTotalGfcfDeflator": 75.51608031637647,
+   "totalGfcfConstant1913Prices": 170177
+  },
+  {
+   "year": 1886,
+   "machineryAndTransportEquipmentCurrentPrices": 28113,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 49414,
+   "residentialDwellingsCurrentPrices": 61389,
+   "totalGfcfCurrentPrices": 138916,
+   "implicitTotalGfcfDeflator": 73.78120999994688,
+   "totalGfcfConstant1913Prices": 188281
+  },
+  {
+   "year": 1887,
+   "machineryAndTransportEquipmentCurrentPrices": 24406,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 43713,
+   "residentialDwellingsCurrentPrices": 55351,
+   "totalGfcfCurrentPrices": 123470,
+   "implicitTotalGfcfDeflator": 73.392259544798,
+   "totalGfcfConstant1913Prices": 168233
+  },
+  {
+   "year": 1888,
+   "machineryAndTransportEquipmentCurrentPrices": 29751,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 46423,
+   "residentialDwellingsCurrentPrices": 69986,
+   "totalGfcfCurrentPrices": 146160,
+   "implicitTotalGfcfDeflator": 75.72036927667776,
+   "totalGfcfConstant1913Prices": 193026
+  },
+  {
+   "year": 1889,
+   "machineryAndTransportEquipmentCurrentPrices": 33333,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 37919,
+   "residentialDwellingsCurrentPrices": 60669,
+   "totalGfcfCurrentPrices": 131921,
+   "implicitTotalGfcfDeflator": 77.89107613098261,
+   "totalGfcfConstant1913Prices": 169366
+  },
+  {
+   "year": 1890,
+   "machineryAndTransportEquipmentCurrentPrices": 42703,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 47886,
+   "residentialDwellingsCurrentPrices": 61768,
+   "totalGfcfCurrentPrices": 152357,
+   "implicitTotalGfcfDeflator": 81.01682477559876,
+   "totalGfcfConstant1913Prices": 188056
+  },
+  {
+   "year": 1891,
+   "machineryAndTransportEquipmentCurrentPrices": 50052,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 48034,
+   "residentialDwellingsCurrentPrices": 58904,
+   "totalGfcfCurrentPrices": 156990,
+   "implicitTotalGfcfDeflator": 82.77749363310889,
+   "totalGfcfConstant1913Prices": 189653
+  },
+  {
+   "year": 1892,
+   "machineryAndTransportEquipmentCurrentPrices": 40853,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 48017,
+   "residentialDwellingsCurrentPrices": 58985,
+   "totalGfcfCurrentPrices": 147856,
+   "implicitTotalGfcfDeflator": 81.24848884492802,
+   "totalGfcfConstant1913Prices": 181980
+  },
+  {
+   "year": 1893,
+   "machineryAndTransportEquipmentCurrentPrices": 33065,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 43268,
+   "residentialDwellingsCurrentPrices": 57954,
+   "totalGfcfCurrentPrices": 134287,
+   "implicitTotalGfcfDeflator": 76.56610809238997,
+   "totalGfcfConstant1913Prices": 175387
+  },
+  {
+   "year": 1894,
+   "machineryAndTransportEquipmentCurrentPrices": 34442,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 45035,
+   "residentialDwellingsCurrentPrices": 59066,
+   "totalGfcfCurrentPrices": 138543,
+   "implicitTotalGfcfDeflator": 75.32212641490969,
+   "totalGfcfConstant1913Prices": 183934
+  },
+  {
+   "year": 1895,
+   "machineryAndTransportEquipmentCurrentPrices": 35970,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 47091,
+   "residentialDwellingsCurrentPrices": 58901,
+   "totalGfcfCurrentPrices": 141962,
+   "implicitTotalGfcfDeflator": 76.79017688105155,
+   "totalGfcfConstant1913Prices": 184870
+  },
+  {
+   "year": 1896,
+   "machineryAndTransportEquipmentCurrentPrices": 42968,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 47857,
+   "residentialDwellingsCurrentPrices": 64626,
+   "totalGfcfCurrentPrices": 155451,
+   "implicitTotalGfcfDeflator": 83.76630724712652,
+   "totalGfcfConstant1913Prices": 185577
+  },
+  {
+   "year": 1897,
+   "machineryAndTransportEquipmentCurrentPrices": 47078,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 48887,
+   "residentialDwellingsCurrentPrices": 68148,
+   "totalGfcfCurrentPrices": 164113,
+   "implicitTotalGfcfDeflator": 88.47061994609165,
+   "totalGfcfConstant1913Prices": 185500
+  },
+  {
+   "year": 1898,
+   "machineryAndTransportEquipmentCurrentPrices": 51069,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 50132,
+   "residentialDwellingsCurrentPrices": 63288,
+   "totalGfcfCurrentPrices": 164490,
+   "implicitTotalGfcfDeflator": 87.7373586515895,
+   "totalGfcfConstant1913Prices": 187480
+  },
+  {
+   "year": 1899,
+   "machineryAndTransportEquipmentCurrentPrices": 77984,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 53500,
+   "residentialDwellingsCurrentPrices": 72810,
+   "totalGfcfCurrentPrices": 204295,
+   "implicitTotalGfcfDeflator": 92.19005243634986,
+   "totalGfcfConstant1913Prices": 221602
+  },
+  {
+   "year": 1900,
+   "machineryAndTransportEquipmentCurrentPrices": 78046,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 60987,
+   "residentialDwellingsCurrentPrices": 78194,
+   "totalGfcfCurrentPrices": 217227,
+   "implicitTotalGfcfDeflator": 94.87013752713202,
+   "totalGfcfConstant1913Prices": 228973
+  },
+  {
+   "year": 1901,
+   "machineryAndTransportEquipmentCurrentPrices": 84375,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 61233,
+   "residentialDwellingsCurrentPrices": 76043,
+   "totalGfcfCurrentPrices": 221651,
+   "implicitTotalGfcfDeflator": 89.60845748013988,
+   "totalGfcfConstant1913Prices": 247355
+  },
+  {
+   "year": 1902,
+   "machineryAndTransportEquipmentCurrentPrices": 70719,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 64167,
+   "residentialDwellingsCurrentPrices": 79507,
+   "totalGfcfCurrentPrices": 214392,
+   "implicitTotalGfcfDeflator": 88.48898592956112,
+   "totalGfcfConstant1913Prices": 242281
+  },
+  {
+   "year": 1903,
+   "machineryAndTransportEquipmentCurrentPrices": 72376,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 71522,
+   "residentialDwellingsCurrentPrices": 87952,
+   "totalGfcfCurrentPrices": 231850,
+   "implicitTotalGfcfDeflator": 89.44347141743887,
+   "totalGfcfConstant1913Prices": 259214
+  },
+  {
+   "year": 1904,
+   "machineryAndTransportEquipmentCurrentPrices": 66102,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 74453,
+   "residentialDwellingsCurrentPrices": 90293,
+   "totalGfcfCurrentPrices": 230847,
+   "implicitTotalGfcfDeflator": 87.07428851630425,
+   "totalGfcfConstant1913Prices": 265115
+  },
+  {
+   "year": 1905,
+   "machineryAndTransportEquipmentCurrentPrices": 70790,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 75642,
+   "residentialDwellingsCurrentPrices": 89371,
+   "totalGfcfCurrentPrices": 235803,
+   "implicitTotalGfcfDeflator": 88.19978230865043,
+   "totalGfcfConstant1913Prices": 267351
+  },
+  {
+   "year": 1906,
+   "machineryAndTransportEquipmentCurrentPrices": 89251,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 86082,
+   "residentialDwellingsCurrentPrices": 95471,
+   "totalGfcfCurrentPrices": 270803,
+   "implicitTotalGfcfDeflator": 92.0992130161818,
+   "totalGfcfConstant1913Prices": 294034
+  },
+  {
+   "year": 1907,
+   "machineryAndTransportEquipmentCurrentPrices": 106891,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 76199,
+   "residentialDwellingsCurrentPrices": 78073,
+   "totalGfcfCurrentPrices": 261162,
+   "implicitTotalGfcfDeflator": 93.9989562150197,
+   "totalGfcfConstant1913Prices": 277835
+  },
+  {
+   "year": 1908,
+   "machineryAndTransportEquipmentCurrentPrices": 97135,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 78687,
+   "residentialDwellingsCurrentPrices": 81093,
+   "totalGfcfCurrentPrices": 256915,
+   "implicitTotalGfcfDeflator": 90.44583072232744,
+   "totalGfcfConstant1913Prices": 284054
+  },
+  {
+   "year": 1909,
+   "machineryAndTransportEquipmentCurrentPrices": 91169,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 74892,
+   "residentialDwellingsCurrentPrices": 91202,
+   "totalGfcfCurrentPrices": 257263,
+   "implicitTotalGfcfDeflator": 87.359120374615,
+   "totalGfcfConstant1913Prices": 294489
+  },
+  {
+   "year": 1910,
+   "machineryAndTransportEquipmentCurrentPrices": 90052,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 84682,
+   "residentialDwellingsCurrentPrices": 100540,
+   "totalGfcfCurrentPrices": 275275,
+   "implicitTotalGfcfDeflator": 88.51058493672188,
+   "totalGfcfConstant1913Prices": 311008
+  },
+  {
+   "year": 1911,
+   "machineryAndTransportEquipmentCurrentPrices": 101661,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 84875,
+   "residentialDwellingsCurrentPrices": 104831,
+   "totalGfcfCurrentPrices": 291366,
+   "implicitTotalGfcfDeflator": 90.2316132408821,
+   "totalGfcfConstant1913Prices": 322909
+  },
+  {
+   "year": 1912,
+   "machineryAndTransportEquipmentCurrentPrices": 139897,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 91578,
+   "residentialDwellingsCurrentPrices": 112291,
+   "totalGfcfCurrentPrices": 343765,
+   "implicitTotalGfcfDeflator": 95.36788898691124,
+   "totalGfcfConstant1913Prices": 360462
+  },
+  {
+   "year": 1913,
+   "machineryAndTransportEquipmentCurrentPrices": 182884,
+   "otherNonResidentialCapitalGoodsCurrentPrices": 112867,
+   "residentialDwellingsCurrentPrices": 124073,
+   "totalGfcfCurrentPrices": 419825,
+   "implicitTotalGfcfDeflator": 100,
+   "totalGfcfConstant1913Prices": 419825
+  }
+ ]
+}

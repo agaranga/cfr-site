@@ -1,0 +1,66 @@
+{
+ "id": "dataset:gb-population-boundaries-1770-1800",
+ "title": {
+  "ru": "Население Великобритании: реконструкции 1770 и",
+  "en": "Great Britain population: 1770 and 1800 reconstructions"
+ },
+ "source": [
+  "A Millennium of Macroeconomic Data for the UK"
+ ],
+ "sourceOf": "Data/demography/great-britain-population-boundaries-1770-1800.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Лицензия: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор gb-population-boundaries-1770-1800, версия 1.0.0, загружено 2026-07-17. https://cfrproject.com/ru/datasets/gb-population-boundaries-1770-1800",
+   "author": "CFR Project (2026). Население Великобритании: реконструкции 1770 и 1800 годов. Cliometric Figures Repository, инженерный набор gb-population-boundaries-1770-1800, версия 1.0.0. https://cfrproject.com/ru/datasets/gb-population-boundaries-1770-1800"
+  },
+  "en": {
+   "source": "Bank of England. A Millennium of Macroeconomic Data for the UK (2017). Bank of England. https://www.bankofengland.co.uk/statistics/research-datasets. Licence: Bank of England website terms: internal non-commercial use; further reuse requires authorization",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset gb-population-boundaries-1770-1800, version 1.0.0, retrieved 2026-07-17. https://cfrproject.com/en/datasets/gb-population-boundaries-1770-1800",
+   "author": "CFR Project (2026). Great Britain population: 1770 and 1800 reconstructions. Cliometric Figures Repository, engineering dataset gb-population-boundaries-1770-1800, version 1.0.0. https://cfrproject.com/en/datasets/gb-population-boundaries-1770-1800"
+  }
+ },
+ "columns": [
+  "series",
+  "year",
+  "persons",
+  "geography",
+  "source_worksheet",
+  "role"
+ ],
+ "rows": [
+  {
+   "series": "broadberry-2015",
+   "year": "1770",
+   "persons": "7983549.164019807",
+   "geography": "Great Britain",
+   "source_worksheet": "A2",
+   "role": "active-boundary"
+  },
+  {
+   "series": "broadberry-2015",
+   "year": "1800",
+   "persons": "10614056.38657113",
+   "geography": "Great Britain",
+   "source_worksheet": "A2",
+   "role": "active-boundary"
+  },
+  {
+   "series": "bottom-up",
+   "year": "1770",
+   "persons": "8398252.614550664",
+   "geography": "Great Britain",
+   "source_worksheet": "A18",
+   "role": "competing-reconstruction"
+  },
+  {
+   "series": "bottom-up",
+   "year": "1800",
+   "persons": "10819429.158864543",
+   "geography": "Great Britain",
+   "source_worksheet": "A18",
+   "role": "competing-reconstruction"
+  }
+ ]
+}

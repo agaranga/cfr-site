@@ -1,0 +1,166 @@
+{
+ "id": "dataset:dg1c-nl-cbs-table2-1831-1839-statistical",
+ "title": {
+  "ru": "Нидерланды: Таблица 2 CBS: 1831-1839 (без Бельгии, до договора)",
+  "en": "Netherlands: CBS Table 2: 1831-1839 (without Belgium, before the treaty)"
+ },
+ "source": [
+  "200 jaar statistiek in tijdreeksen 1800-1999"
+ ],
+ "sourceOf": "package:dg1c-source-native-demography",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "200 jaar statistiek in tijdreeksen 1800-1999. https://www.cbs.nl/nl-nl/publicatie/2000/51/200-jaar-statistiek-in-tijdreeksen",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор dg1c-nl-cbs-table2-1831-1839-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-nl-cbs-table2-1831-1839-statistical",
+   "author": "CFR Project (2026). Нидерланды: Таблица 2 CBS: 1831-1839 (без Бельгии, до договора). Cliometric Figures Repository, справочный набор dg1c-nl-cbs-table2-1831-1839-statistical, версия 1.0.0. https://cfrproject.com/ru/datasets/dg1c-nl-cbs-table2-1831-1839-statistical"
+  },
+  "en": {
+   "source": "200 jaar statistiek in tijdreeksen 1800-1999. https://www.cbs.nl/nl-nl/publicatie/2000/51/200-jaar-statistiek-in-tijdreeksen",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset dg1c-nl-cbs-table2-1831-1839-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-nl-cbs-table2-1831-1839-statistical",
+   "author": "CFR Project (2026). Netherlands: CBS Table 2: 1831-1839 (without Belgium, before the treaty). Cliometric Figures Repository, reference dataset dg1c-nl-cbs-table2-1831-1839-statistical, version 1.0.0. https://cfrproject.com/en/datasets/dg1c-nl-cbs-table2-1831-1839-statistical"
+  }
+ },
+ "columns": [
+  "observation",
+  "period_start",
+  "period_end",
+  "concept",
+  "value",
+  "unit",
+  "literal_state",
+  "territory_version",
+  "population_universe",
+  "reference_time",
+  "source",
+  "locator"
+ ],
+ "rows": [
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1831",
+   "period_start": "1831-01-01",
+   "period_end": "1831-01-01",
+   "concept": "population",
+   "value": 2721000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1831, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1832",
+   "period_start": "1832-01-01",
+   "period_end": "1832-01-01",
+   "concept": "population",
+   "value": 2813000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1832, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1833",
+   "period_start": "1833-01-01",
+   "period_end": "1833-01-01",
+   "concept": "population",
+   "value": 2899000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1833, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1834",
+   "period_start": "1834-01-01",
+   "period_end": "1834-01-01",
+   "concept": "population",
+   "value": 2996000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1834, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1835",
+   "period_start": "1835-01-01",
+   "period_end": "1835-01-01",
+   "concept": "population",
+   "value": 3092000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1835, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1836",
+   "period_start": "1836-01-01",
+   "period_end": "1836-01-01",
+   "concept": "population",
+   "value": 3191000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1836, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1837",
+   "period_start": "1837-01-01",
+   "period_end": "1837-01-01",
+   "concept": "population",
+   "value": 3292000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1837, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1838",
+   "period_start": "1838-01-01",
+   "period_end": "1838-01-01",
+   "concept": "population",
+   "value": 3394000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1838, column 1 Inwoners"
+  },
+  {
+   "observation": "observation:dg1c:nl-cbs-population-1839",
+   "period_start": "1839-01-01",
+   "period_end": "1839-01-01",
+   "concept": "population",
+   "value": 3500000,
+   "unit": "persons",
+   "literal_state": "",
+   "territory_version": "territory-version:netherlands:cbs-table2:1831-1839:statistical",
+   "population_universe": "source-defined-unresolved",
+   "reference_time": "",
+   "source": "source:nl-cbs-200-years-1800-1999",
+   "locator": "Table 2, physical PDF p.14, column 1 Inwoners; definition note physical p.16; exact row/cell: Table 2 physical p.14, row 1839, column 1 Inwoners"
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "id": "dataset:hansard-1833-raw-cotton-stocks-1823-1826",
+ "title": {
+  "ru": "",
+  "en": "Broker-reported raw-cotton stocks"
+ },
+ "source": [
+  "State of the Country - Monetary System"
+ ],
+ "sourceOf": "Data/cotton/hansard-1833-raw-cotton-stocks.csv",
+ "version": "1.2.0",
+ "citation": {
+  "ru": {
+   "source": "UK Parliament, George Grote. State of the Country - Monetary System (1833). House of Commons Hansard. https://api.parliament.uk/historic-hansard/commons/1833/apr/22/state-of-the-country-monetary-system. Лицензия: UK Parliamentary material; public historic-Hansard access",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор hansard-1833-raw-cotton-stocks-1823-1826, версия 1.2.0, загружено 2026-08-10. https://cfrproject.com/ru/datasets/hansard-1833-raw-cotton-stocks-1823-1826",
+   "author": "CFR Project (2026). Broker-reported raw-cotton stocks, 1823–1826. Cliometric Figures Repository, инженерный набор hansard-1833-raw-cotton-stocks-1823-1826, версия 1.2.0. https://cfrproject.com/ru/datasets/hansard-1833-raw-cotton-stocks-1823-1826"
+  },
+  "en": {
+   "source": "UK Parliament, George Grote. State of the Country - Monetary System (1833). House of Commons Hansard. https://api.parliament.uk/historic-hansard/commons/1833/apr/22/state-of-the-country-monetary-system. Licence: UK Parliamentary material; public historic-Hansard access",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset hansard-1833-raw-cotton-stocks-1823-1826, version 1.2.0, retrieved 2026-08-10. https://cfrproject.com/en/datasets/hansard-1833-raw-cotton-stocks-1823-1826",
+   "author": "CFR Project (2026). Broker-reported raw-cotton stocks, 1823–1826. Cliometric Figures Repository, engineering dataset hansard-1833-raw-cotton-stocks-1823-1826, version 1.2.0. https://cfrproject.com/en/datasets/hansard-1833-raw-cotton-stocks-1823-1826"
+  }
+ },
+ "columns": [
+  "record_id",
+  "source_id",
+  "period_start",
+  "period_end",
+  "geography",
+  "quantity_definition",
+  "value",
+  "unit",
+  "status",
+  "calculation",
+  "source_locator",
+  "notes"
+ ],
+ "rows": [
+  {
+   "record_id": "raw-closing-stock-packages-1823",
+   "source_id": "source:hansard-1833-raw-cotton-stocks",
+   "period_start": "1823",
+   "period_end": "1823",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton closing stock",
+   "value": "385800",
+   "unit": "packages",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 22 April 1833 vol 17 c423 table",
+   "notes": "opening comparator for 1824; package mass and cotton mix not supplied"
+  },
+  {
+   "record_id": "raw-home-packages-1824",
+   "source_id": "source:hansard-1833-raw-cotton-stocks",
+   "period_start": "1824",
+   "period_end": "1824",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton packages taken for home consumption",
+   "value": "639100",
+   "unit": "packages-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 22 April 1833 vol 17 c423 table",
+   "notes": "package mass and cotton mix not supplied"
+  },
+  {
+   "record_id": "raw-closing-stock-packages-1824",
+   "source_id": "source:hansard-1833-raw-cotton-stocks",
+   "period_start": "1824",
+   "period_end": "1824",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton closing stock",
+   "value": "235360",
+   "unit": "packages",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 22 April 1833 vol 17 c423 table",
+   "notes": "package mass and cotton mix not supplied"
+  },
+  {
+   "record_id": "raw-home-packages-1825",
+   "source_id": "source:hansard-1833-raw-cotton-stocks",
+   "period_start": "1825",
+   "period_end": "1825",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton packages taken for home consumption",
+   "value": "565430",
+   "unit": "packages-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 22 April 1833 vol 17 c423 table",
+   "notes": "package mass and cotton mix not supplied"
+  },
+  {
+   "record_id": "raw-closing-stock-packages-1825",
+   "source_id": "source:hansard-1833-raw-cotton-stocks",
+   "period_start": "1825",
+   "period_end": "1825",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton closing stock",
+   "value": "415660",
+   "unit": "packages",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 22 April 1833 vol 17 c423 table",
+   "notes": "package mass and cotton mix not supplied"
+  },
+  {
+   "record_id": "raw-home-packages-1826",
+   "source_id": "source:hansard-1833-raw-cotton-stocks",
+   "period_start": "1826",
+   "period_end": "1826",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton packages taken for home consumption",
+   "value": "559660",
+   "unit": "packages-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 22 April 1833 vol 17 c423 table",
+   "notes": "package mass and cotton mix not supplied"
+  },
+  {
+   "record_id": "raw-closing-stock-packages-1826",
+   "source_id": "source:hansard-1833-raw-cotton-stocks",
+   "period_start": "1826",
+   "period_end": "1826",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton closing stock",
+   "value": "342500",
+   "unit": "packages",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 22 April 1833 vol 17 c423 table",
+   "notes": "package mass and cotton mix not supplied"
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+{
+ "id": "dataset:hansard-1830-cotton-disposition-1824-1828",
+ "title": {
+  "ru": "",
+  "en": "Parliamentary cotton disposition calculation"
+ },
+ "source": [
+  "Distress of the Country - Adjourned Debate"
+ ],
+ "sourceOf": "Data/cotton/hansard-1830-cotton-disposition.csv",
+ "version": "1.2.0",
+ "citation": {
+  "ru": {
+   "source": "UK Parliament, William Huskisson. Distress of the Country - Adjourned Debate (1830). House of Commons Hansard. https://api.parliament.uk/historic-hansard/commons/1830/mar/18/distress-of-the-country-adjourned-debate. Лицензия: UK Parliamentary material; public historic-Hansard access",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор hansard-1830-cotton-disposition-1824-1828, версия 1.2.0, загружено 2026-08-10. https://cfrproject.com/ru/datasets/hansard-1830-cotton-disposition-1824-1828",
+   "author": "CFR Project (2026). Parliamentary cotton disposition calculation, 1824–1828. Cliometric Figures Repository, инженерный набор hansard-1830-cotton-disposition-1824-1828, версия 1.2.0. https://cfrproject.com/ru/datasets/hansard-1830-cotton-disposition-1824-1828"
+  },
+  "en": {
+   "source": "UK Parliament, William Huskisson. Distress of the Country - Adjourned Debate (1830). House of Commons Hansard. https://api.parliament.uk/historic-hansard/commons/1830/mar/18/distress-of-the-country-adjourned-debate. Licence: UK Parliamentary material; public historic-Hansard access",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset hansard-1830-cotton-disposition-1824-1828, version 1.2.0, retrieved 2026-08-10. https://cfrproject.com/en/datasets/hansard-1830-cotton-disposition-1824-1828",
+   "author": "CFR Project (2026). Parliamentary cotton disposition calculation, 1824–1828. Cliometric Figures Repository, engineering dataset hansard-1830-cotton-disposition-1824-1828, version 1.2.0. https://cfrproject.com/en/datasets/hansard-1830-cotton-disposition-1824-1828"
+  }
+ },
+ "columns": [
+  "record_id",
+  "source_id",
+  "period_start",
+  "period_end",
+  "geography",
+  "quantity_definition",
+  "value",
+  "unit",
+  "status",
+  "calculation",
+  "source_locator",
+  "notes"
+ ],
+ "rows": [
+  {
+   "record_id": "raw-imports-five-year-mean",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton imported annual mean",
+   "value": "210886992",
+   "unit": "pounds-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "five-year annual average"
+  },
+  {
+   "record_id": "raw-reexports-five-year-mean",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton exported annual mean",
+   "value": "21298800",
+   "unit": "pounds-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "five-year annual average"
+  },
+  {
+   "record_id": "retained-raw-five-year-mean",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton left for manufacture annual mean",
+   "value": "189588192",
+   "unit": "pounds-per-year",
+   "status": "source-reported",
+   "calculation": "imports minus raw exports",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "not adjusted for raw stock change or non-spinning use"
+  },
+  {
+   "record_id": "yarn-export-raw-equivalent-reported",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "direct cotton yarn export expressed as raw-cotton equivalent",
+   "value": "48472202",
+   "unit": "pounds-raw-equivalent-per-year",
+   "status": "source-reported",
+   "calculation": "one-eighth added for waste",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "not actual yarn weight; implied actual weight requires reversing the reported uplift"
+  },
+  {
+   "record_id": "export-cloth-five-year-mean",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "exported cotton cloth annual mean",
+   "value": "360265256",
+   "unit": "yards-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "all cotton cloth kinds pooled"
+  },
+  {
+   "record_id": "home-cloth-five-year-mean",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "cotton cloth retained for home consumption annual mean",
+   "value": "399678923",
+   "unit": "yards-per-year",
+   "status": "source-reported",
+   "calculation": "none",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "route of underlying home-consumption estimate not stated"
+  },
+  {
+   "record_id": "yarn-waste-uplift",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "raw-equivalent uplift applied to exported yarn",
+   "value": "0.125",
+   "unit": "fraction-of-yarn-weight",
+   "status": "source-reported",
+   "calculation": "one eighth",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "assumption rather than measured national process loss"
+  },
+  {
+   "record_id": "export-cloth-yield",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "export cotton cloth conversion",
+   "value": "6",
+   "unit": "yards-per-pound-raw-equivalent",
+   "status": "source-reported",
+   "calculation": "assumed yield",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "practical approximation across all cloth kinds"
+  },
+  {
+   "record_id": "home-cloth-yield",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "home cotton cloth conversion",
+   "value": "5",
+   "unit": "yards-per-pound-raw-equivalent",
+   "status": "source-reported",
+   "calculation": "assumed yield",
+   "source_locator": "HC Deb 18 March 1830 vol 23 cols 589-590",
+   "notes": "practical approximation across all cloth kinds"
+  },
+  {
+   "record_id": "export-cloth-raw-equivalent",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton embodied in exported cloth",
+   "value": "60044209.333333333333333333333",
+   "unit": "pounds-raw-equivalent-per-year",
+   "status": "curator-derived",
+   "calculation": "export cloth yards divided by six",
+   "source_locator": "derived from cols 589-590",
+   "notes": "conditional on the reported conversion"
+  },
+  {
+   "record_id": "home-cloth-raw-equivalent",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton embodied in home-consumed cloth",
+   "value": "79935784.6",
+   "unit": "pounds-raw-equivalent-per-year",
+   "status": "curator-derived",
+   "calculation": "home cloth yards divided by five",
+   "source_locator": "derived from cols 589-590",
+   "notes": "conditional on the reported conversion"
+  },
+  {
+   "record_id": "cloth-raw-equivalent-total",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "raw cotton embodied in exported and home-consumed cloth",
+   "value": "139979993.93333333333333333333",
+   "unit": "pounds-raw-equivalent-per-year",
+   "status": "curator-derived",
+   "calculation": "export plus home cloth raw equivalents",
+   "source_locator": "derived from cols 589-590",
+   "notes": "downstream cloth disposition not direct yarn delivery"
+  },
+  {
+   "record_id": "reported-branch-residual",
+   "source_id": "source:hansard-1830-cotton-disposition",
+   "period_start": "1824",
+   "period_end": "1828",
+   "geography": "Great Britain",
+   "quantity_definition": "unassigned retained raw under reported yarn raw-equivalent branch",
+   "value": "1135996.06666666666666666667",
+   "unit": "pounds-raw-equivalent-per-year",
+   "status": "curator-derived",
+   "calculation": "retained raw minus reported yarn raw equivalent minus cloth raw equivalent",
+   "source_locator": "derived from cols 589-590",
+   "notes": "0.5992 percent of retained availability but stock change remains absent"
+  }
+ ]
+}

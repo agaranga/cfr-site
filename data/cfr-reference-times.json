@@ -1,0 +1,86 @@
+{
+ "id": "dataset:cfr-reference-times",
+ "title": {
+  "ru": "Моменты учёта (словарь)",
+  "en": "Reference times (vocabulary)"
+ },
+ "source": [
+  "CFR Project: эпистемический реестр (DG1B, DG1D)"
+ ],
+ "sourceOf": "CFR epistemic registry",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор cfr-reference-times, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-reference-times",
+   "author": "CFR Project (2026). Моменты учёта (словарь). Cliometric Figures Repository, справочный набор cfr-reference-times, версия 1.0.0. https://cfrproject.com/ru/datasets/cfr-reference-times"
+  },
+  "en": {
+   "source": "",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset cfr-reference-times, version 1.0.0. https://cfrproject.com/en/datasets/cfr-reference-times",
+   "author": "CFR Project (2026). Reference times (vocabulary). Cliometric Figures Repository, reference dataset cfr-reference-times, version 1.0.0. https://cfrproject.com/en/datasets/cfr-reference-times"
+  }
+ },
+ "columns": [
+  "id",
+  "label_en",
+  "label_ru",
+  "appliesTo"
+ ],
+ "rows": [
+  {
+   "id": "reference-time:census-moment",
+   "label_en": "Census moment",
+   "label_ru": "Момент переписи",
+   "appliesTo": "stock"
+  },
+  {
+   "id": "reference-time:end-of-period",
+   "label_en": "End of period",
+   "label_ru": "Конец периода",
+   "appliesTo": "stock"
+  },
+  {
+   "id": "reference-time:event-interval-total",
+   "label_en": "Event total over an interval",
+   "label_ru": "Сумма событий за интервал",
+   "appliesTo": "flow"
+  },
+  {
+   "id": "reference-time:event-period-average",
+   "label_en": "Average annual events",
+   "label_ru": "Среднегодовое число событий",
+   "appliesTo": "flow"
+  },
+  {
+   "id": "reference-time:mid-period",
+   "label_en": "Mid-period",
+   "label_ru": "Середина периода",
+   "appliesTo": "stock"
+  },
+  {
+   "id": "reference-time:period-average",
+   "label_en": "Period average",
+   "label_ru": "Среднее за период",
+   "appliesTo": "exposure"
+  },
+  {
+   "id": "reference-time:source-year-event-interval-unresolved",
+   "label_en": "Event year, endpoints unresolved",
+   "label_ru": "Год событий без точных границ",
+   "appliesTo": "flow"
+  },
+  {
+   "id": "reference-time:start-of-period",
+   "label_en": "Start of period",
+   "label_ru": "Начало периода",
+   "appliesTo": "stock"
+  },
+  {
+   "id": "reference-time:year-only-unresolved",
+   "label_en": "Year only (instant unresolved)",
+   "label_ru": "Только год (момент не установлен)",
+   "appliesTo": "mixed"
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "id": "dataset:cotton-spinning-technology-1760-1835",
+ "title": {
+  "ru": "Технологии хлопкопрядения",
+  "en": "Cotton-spinning technologies"
+ },
+ "source": [
+  "After the great inventions: technological change in UK cotton spinning, 1780-1835"
+ ],
+ "sourceOf": "Data/cotton/gb-uk-cotton-spinning-technology-1760-1835.csv",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Peter Maw, Peter Solar, Aidan Kane, John S. Lyons. After the great inventions: technological change in UK cotton spinning, 1780-1835 (2022). The Economic History Review / Wiley. https://eprints.whiterose.ac.uk/id/eprint/175067/. Лицензия: CC-BY-NC-ND-4.0",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор cotton-spinning-technology-1760-1835, версия 1.0.0, загружено 2026-07-17. https://cfrproject.com/ru/datasets/cotton-spinning-technology-1760-1835",
+   "author": "CFR Project (2026). Технологии хлопкопрядения, 1760–1835. Cliometric Figures Repository, инженерный набор cotton-spinning-technology-1760-1835, версия 1.0.0. https://cfrproject.com/ru/datasets/cotton-spinning-technology-1760-1835"
+  },
+  "en": {
+   "source": "Peter Maw, Peter Solar, Aidan Kane, John S. Lyons. After the great inventions: technological change in UK cotton spinning, 1780-1835 (2022). The Economic History Review / Wiley. https://eprints.whiterose.ac.uk/id/eprint/175067/. Licence: CC-BY-NC-ND-4.0",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset cotton-spinning-technology-1760-1835, version 1.0.0, retrieved 2026-07-17. https://cfrproject.com/en/datasets/cotton-spinning-technology-1760-1835",
+   "author": "CFR Project (2026). Cotton-spinning technologies, 1760–1835. Cliometric Figures Repository, engineering dataset cotton-spinning-technology-1760-1835, version 1.0.0. https://cfrproject.com/en/datasets/cotton-spinning-technology-1760-1835"
+  }
+ },
+ "columns": [
+  "technology_id",
+  "era",
+  "spindles_per_machine",
+  "spinners_per_machine",
+  "spindles_per_spinner",
+  "operatives_per_machine",
+  "hanks_per_spindle_day",
+  "yarn_count",
+  "output_machine_hanks_day",
+  "output_machine_lb_day",
+  "output_operative_hanks_day",
+  "change_factor_since_1760",
+  "source_table"
+ ],
+ "rows": [
+  {
+   "technology_id": "hand-spinning",
+   "era": "1760s",
+   "spindles_per_machine": "1",
+   "spinners_per_machine": "1",
+   "spindles_per_spinner": "1",
+   "operatives_per_machine": "1",
+   "hanks_per_spindle_day": "8",
+   "yarn_count": "16",
+   "output_machine_hanks_day": "8",
+   "output_machine_lb_day": "0.5",
+   "output_operative_hanks_day": "8",
+   "change_factor_since_1760": "",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "spinning-jenny",
+   "era": "1770s",
+   "spindles_per_machine": "16",
+   "spinners_per_machine": "1",
+   "spindles_per_spinner": "16",
+   "operatives_per_machine": "1",
+   "hanks_per_spindle_day": "1.6",
+   "yarn_count": "16",
+   "output_machine_hanks_day": "25.6",
+   "output_machine_lb_day": "1.6",
+   "output_operative_hanks_day": "25.6",
+   "change_factor_since_1760": "3.2",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "water-frame",
+   "era": "1770s",
+   "spindles_per_machine": "48",
+   "spinners_per_machine": "1",
+   "spindles_per_spinner": "48",
+   "operatives_per_machine": "1.5",
+   "hanks_per_spindle_day": "1.6",
+   "yarn_count": "24",
+   "output_machine_hanks_day": "76.8",
+   "output_machine_lb_day": "3.2",
+   "output_operative_hanks_day": "51.2",
+   "change_factor_since_1760": "6.4",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "hand-mule",
+   "era": "1770s",
+   "spindles_per_machine": "48",
+   "spinners_per_machine": "1",
+   "spindles_per_spinner": "48",
+   "operatives_per_machine": "1.5",
+   "hanks_per_spindle_day": "1.25",
+   "yarn_count": "40",
+   "output_machine_hanks_day": "60",
+   "output_machine_lb_day": "1.5",
+   "output_operative_hanks_day": "40",
+   "change_factor_since_1760": "5",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "spinning-jenny",
+   "era": "1790s",
+   "spindles_per_machine": "93",
+   "spinners_per_machine": "1",
+   "spindles_per_spinner": "93",
+   "operatives_per_machine": "1.5",
+   "hanks_per_spindle_day": "1.2",
+   "yarn_count": "16",
+   "output_machine_hanks_day": "111.6",
+   "output_machine_lb_day": "7",
+   "output_operative_hanks_day": "74.4",
+   "change_factor_since_1760": "9.3",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "water-frame",
+   "era": "1790s",
+   "spindles_per_machine": "69",
+   "spinners_per_machine": "1",
+   "spindles_per_spinner": "69",
+   "operatives_per_machine": "1.5",
+   "hanks_per_spindle_day": "2",
+   "yarn_count": "24",
+   "output_machine_hanks_day": "138",
+   "output_machine_lb_day": "5.8",
+   "output_operative_hanks_day": "92",
+   "change_factor_since_1760": "11.5",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "hand-mule",
+   "era": "1790s",
+   "spindles_per_machine": "169",
+   "spinners_per_machine": "1",
+   "spindles_per_spinner": "169",
+   "operatives_per_machine": "1.5",
+   "hanks_per_spindle_day": "1.25",
+   "yarn_count": "40",
+   "output_machine_hanks_day": "211.25",
+   "output_machine_lb_day": "5.3",
+   "output_operative_hanks_day": "140.8",
+   "change_factor_since_1760": "17.6",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "throstle",
+   "era": "early-1830s",
+   "spindles_per_machine": "142",
+   "spinners_per_machine": "0.67",
+   "spindles_per_spinner": "213",
+   "operatives_per_machine": "0.84",
+   "hanks_per_spindle_day": "4.5",
+   "yarn_count": "24",
+   "output_machine_hanks_day": "639",
+   "output_machine_lb_day": "26.6",
+   "output_operative_hanks_day": "760.7",
+   "change_factor_since_1760": "95.1",
+   "source_table": "Table 3"
+  },
+  {
+   "technology_id": "power-assisted-mule",
+   "era": "early-1830s",
+   "spindles_per_machine": "298",
+   "spinners_per_machine": "0.5",
+   "spindles_per_spinner": "596",
+   "operatives_per_machine": "1.08",
+   "hanks_per_spindle_day": "3",
+   "yarn_count": "40",
+   "output_machine_hanks_day": "894",
+   "output_machine_lb_day": "22.4",
+   "output_operative_hanks_day": "827.8",
+   "change_factor_since_1760": "103.5",
+   "source_table": "Table 3"
+  }
+ ]
+}

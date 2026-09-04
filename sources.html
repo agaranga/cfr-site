@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFR Project - Источники</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .head { padding: 44px 0 14px 0; }
+  .head .over { font: 700 10px/1 Inter, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .head h1 { font: 500 34px/1.15 Georgia, serif; margin: 0 0 10px 0; }
+  .head p { font-size: 15px; color: #566059; max-width: 46em; line-height: 1.6; margin: 0; }
+
+  .filters { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px 14px 18px; margin: 18px 0 14px 0; }
+  .bar { position: sticky; top: 56px; z-index: 20; display: none; grid-template-columns: 1fr auto auto; gap: 12px; align-items: center; margin: 0 0 10px 0; padding: 8px 12px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 18px -14px rgba(24,35,31,.5); }
+  .bar.show { display: grid; }
+  .bar .search { padding: 7px 10px; font-size: 13.5px; }
+  .bar .n { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  .bar .n b { color: var(--ink); font-weight: 600; }
+  .bar button { background: none; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 12.5px; font-weight: 700; color: var(--forest-soft); cursor: pointer; white-space: nowrap; }
+  .filters .row1 { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; }
+  .search { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); font-size: 14px; font-family: inherit; }
+  .search:focus { outline: 2px solid rgba(23,61,50,.25); border-color: var(--forest); }
+  .filters .sort { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  .filters .sort select { padding: 7px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); font-family: inherit; font-size: 13px; color: var(--ink); }
+  .facets { display: flex; flex-direction: column; gap: 7px; margin-top: 12px; }
+  .facet { display: grid; grid-template-columns: 72px 1fr; gap: 10px; align-items: baseline; position: relative; }
+  .facet .lbl { font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding-top: 4px; }
+  .facet .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .chip { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 12px; font-weight: 600; color: #3c453f; cursor: pointer; user-select: none; }
+  .chip small { display: inline-block; min-width: 3ch; text-align: right; font-weight: 500; color: var(--muted); margin-left: 4px; font-variant-numeric: tabular-nums; }
+  .chip.on { background: var(--forest); color: var(--white); border-color: var(--forest); }
+  .chip.on small { color: rgba(255,253,248,.7); }
+  .chip.zero { opacity: .45; }
+  .chip.more { background: transparent; border-style: dashed; color: var(--forest-soft); }
+  .chip.more.open { border-style: solid; }
+
+  /* Пикер для длинных списков: поиск, группы, счётчики. Тот же приём, что в конструкторе. */
+  .pop { position: absolute; left: 82px; top: calc(100% + 6px); z-index: 30; width: min(560px, calc(100% - 82px)); background: var(--white); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 14px 34px -18px rgba(24,35,31,.55); padding: 12px; }
+  .pop[hidden] { display: none; }
+  .pop .search { padding: 7px 10px; font-size: 13px; }
+  .pop .groups { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; margin-top: 10px; max-height: 300px; overflow: auto; }
+  .pop .group h4 { margin: 0 0 4px 0; font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; align-items: baseline; }
+  .pop .group h4 span { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--forest-soft); cursor: pointer; font-size: 11px; }
+  .pop label { display: flex; align-items: center; gap: 8px; padding: 4px 4px; border-radius: 4px; font-size: 13px; cursor: pointer; }
+  .pop label:hover { background: var(--paper); }
+  .pop label small { margin-left: auto; min-width: 3ch; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .pop label.zero { opacity: .5; }
+  .pop label.hide { display: none; }
+  .pop .foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--line); font-size: 12.5px; color: var(--muted); }
+  .pop .foot button { background: var(--forest); color: var(--white); border: 0; border-radius: 6px; padding: 6px 12px; font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer; }
+
+  .tokens { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+  .tokens:empty { display: none; }
+  .token { display: inline-flex; align-items: center; gap: 7px; padding: 5px 10px; border-radius: 5px; background: var(--paper-deep); font-size: 12.5px; font-weight: 600; }
+  .token i { font-style: normal; font-weight: 500; color: var(--muted); }
+  .token b { font-weight: 400; color: var(--muted); cursor: pointer; }
+  .token.reset { background: transparent; border: 1px dashed var(--line); cursor: pointer; font-weight: 500; color: var(--muted); }
+  .count { margin-top: 10px; font-size: 12.5px; color: var(--muted); display: flex; gap: 18px; }
+  .count b { color: var(--ink); font-weight: 600; }
+
+  .list { display: flex; flex-direction: column; gap: 10px; padding-bottom: 60px; }
+  .src { display: grid; grid-template-columns: 5px 1fr 190px; gap: 0 18px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .src .mark { background: var(--paper-deep); }
+  .src.st-admitted .mark { background: #3e8a5e; }
+  .src.st-on-request .mark { background: var(--gold); }
+  .src.st-not-found-open .mark { background: #c9a89a; }
+  .src .body { padding: 14px 0 14px 4px; min-width: 0; }
+  .src h3 { font: 500 18px/1.25 Georgia, serif; margin: 0; }
+  .src h3 a { color: var(--ink); text-decoration: none; }
+  .src h3 a:hover { text-decoration: underline; }
+  .src .meta { margin-top: 5px; font-size: 13px; color: var(--muted); }
+  .src .meta b { font-weight: 600; color: #3c453f; }
+  .src .desc { margin: 8px 0 0 0; font-size: 13.5px; line-height: 1.55; color: #2f3834; }
+  .src .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+  .tag { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .05em; text-transform: uppercase; padding: 5px 8px; border-radius: 4px; background: var(--paper-deep); color: #3c453f; }
+  .tag.more-tags { cursor: pointer; background: transparent; border: 1px dashed var(--line); color: var(--muted); }
+  .tag-rest { display: contents; }
+  .src .details { margin-top: 12px; border-top: 1px dashed var(--line); padding-top: 10px; }
+  .src .field { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 4px 0; font-size: 13px; line-height: 1.5; }
+  .src .field b { font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .src .field .kw { color: var(--muted); }
+  .src .acts { display: flex; gap: 16px; margin-top: 10px; font-size: 13px; align-items: center; }
+  .src .acts button { background: none; border: 0; padding: 0; font: inherit; font-weight: 700; color: var(--forest-soft); cursor: pointer; }
+  .src .acts a { font-weight: 700; }
+  .src .side { padding: 14px 16px 14px 16px; border-left: 1px dashed var(--line); font-size: 12.5px; color: var(--muted); line-height: 1.5; display: flex; flex-direction: column; gap: 8px; }
+  .badge { display: inline-block; font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; padding: 6px 9px; border-radius: 4px; background: var(--paper-deep); color: #3c453f; align-self: flex-start; }
+  .badge.ok { background: #e2efe6; color: #22593c; }
+  .badge.ask { background: #f6ecd7; color: #7a5b16; }
+  .badge.no { background: #eee7e2; color: #74473a; }
+  .side .have { color: var(--ink); }
+  .side .have strong { display: block; font-size: 15px; font-weight: 600; font-family: Georgia, serif; }
+  .side .have a { font-weight: 700; font-size: 12.5px; }
+  .side .kv { display: grid; grid-template-columns: auto 1fr; gap: 2px 8px; }
+  .side .kv span:nth-child(odd) { color: var(--muted); }
+  .empty { padding: 40px 0; text-align: center; color: var(--muted); font-size: 14px; }
+  .empty a { font-weight: 700; }
+  @media (max-width: 800px) { .src { grid-template-columns: 5px 1fr; } .src .side { border-left: 0; border-top: 1px dashed var(--line); padding: 10px 16px 14px 4px; grid-column: 2; } .facet { grid-template-columns: 1fr; } .pop { left: 0; width: 100%; } .pop .groups { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./"><span class="mark">CFR</span><span class="word">CFR Project</span></a>
+  <nav class="topnav">
+    <a href="./">Обзор</a>
+    <a href="showcase.html">Витрина</a>
+    <a href="coverage.html">Покрытие</a>
+    <a href="constructor.html">Конструктор</a>
+    <a href="datasets.html">Исходные данные</a>
+    <a class="on" href="sources.html">Источники</a>
+    <a href="territory.html">Территории</a>
+  </nav>
+  <a class="account" href="mailto:cfr@cfrproject.com?subject=CFR%20Project" title="Личный кабинет появится позже; пока пишите нам"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="5" r="2.8"/><path d="M2.5 14c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/></svg>Личный кабинет</a>
+  <span class="lang"><span class="on">RU</span><span>EN</span></span>
+</header>
+
+<div class="wrap">
+  <div class="head">
+    <div class="over">Каталог источников данных</div>
+    <h1>Источники</h1>
+    <p>Источники исторических данных, проверенные вручную: где лежат, что внутри, в каком виде и на каких условиях. Зелёным отмечено то, что уже перенесено в базу. Остальное скачаем и обработаем по запросу.</p>
+  </div>
+
+  <section class="filters">
+    <div class="row1">
+      <input class="search" id="q" type="search" placeholder="Название, организация, описание: Bank of England, INSEE, census, wages…" autocomplete="off">
+      <label class="sort">Сортировка
+        <select id="sort">
+          <option value="title">по названию</option>
+          <option value="start">по началу периода</option>
+          <option value="corpus">сначала в базе</option>
+          <option value="reviewed">по дате проверки</option>
+        </select>
+      </label>
+    </div>
+    <div class="facets">
+      <div class="facet"><span class="lbl">Страна</span><div class="chips" data-facet="countries"></div><div class="pop" data-pop="countries" hidden></div></div>
+      <div class="facet"><span class="lbl">Тема</span><div class="chips" data-facet="topics"></div><div class="pop" data-pop="topics" hidden></div></div>
+      <div class="facet"><span class="lbl">Статус</span><div class="chips" data-facet="status"></div></div>
+      <div class="facet"><span class="lbl">Доступ</span><div class="chips" data-facet="access"></div></div>
+      <div class="facet"><span class="lbl">Форма</span><div class="chips" data-facet="form"></div></div>
+    </div>
+    <div class="tokens" id="tokens"></div>
+    <div class="count" id="count"></div>
+  </section>
+
+  <div class="bar" id="bar"><input class="search" id="q2" type="search" placeholder="Поиск по источникам…" autocomplete="off"><span class="n" id="count2"></span><button type="button" id="tofilters">Фильтры ↑</button></div>
+  <div class="list" id="list"></div>
+</div>
+
+<footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
+
+<script src="assets/sources-data.js"></script>
+<script src="assets/sources-ru.js"></script>
+<script src="assets/sources-ru-fields.js"></script>
+<script>
+(function () {
+  const S = window.SOURCES, L = window.SOURCE_LABELS, RU = window.SOURCES_RU || {};
+  const RUF = window.SOURCES_RU_FIELDS || {};
+  for (const з of S) { з.descriptionRu = RU[з.id] || ""; const f = RUF[з.id] || {}; з.geographyRu = f.geography || ""; з.periodRu = f.period || ""; з.limitationsRu = f.limitations || ""; }
+  // Страны и темы будут расти, поэтому у них два уровня: инлайн-чипы самых частых и пикер с поиском и группами.
+  const ГРУППЫ = {
+    countries: [
+      ["Европа", ["gb", "ie", "fr", "nl", "be", "de"]],
+      ["Америка", ["us"]],
+      ["Сравнительные", ["ww", "xx"]],
+    ],
+    topics: [
+      ["Люди и труд", ["population-vital-statistics", "labor-occupations-hours-wages", "factor-income-consumption-saving"]],
+      ["Хозяйство", ["gdp-output-productivity", "agriculture-land-rent", "industry-services", "capital-investment-depreciation-asset-prices", "prices-currencies", "money-credit", "external-trade-finance-migration"]],
+      ["Государство и территория", ["fiscal-flows", "territory-institutions-classifications", "archives-catalogs", "other"]],
+    ],
+  };
+  const ФАСЕТЫ = {
+    countries: { подписи: L.страны, порядок: ["gb", "fr", "nl", "be", "ie", "de", "us", "ww", "xx"], инлайн: 5, пикер: "Страны" },
+    topics: { подписи: L.классы, порядок: Object.keys(L.классы), инлайн: 5, пикер: "Темы" },
+    status: { подписи: L.статус, порядок: ["admitted", "on-request", "not-found-open"] },
+    access: { подписи: L.доступ, порядок: Object.keys(L.доступ) },
+    form: { подписи: L.форма, порядок: Object.keys(L.форма) },
+  };
+  const ФИЛЬТР_ИМЯ = { countries: "Страна", topics: "Тема", status: "Статус", access: "Доступ", form: "Форма" };
+  const состояние = { q: "", sort: "title", countries: new Set(), topics: new Set(), status: new Set(), access: new Set(), form: new Set() };
+  const открыт = { countries: false, topics: false };
+  const поискПикера = { countries: "", topics: "" };
+
+  function изАдреса() {
+    const h = location.hash.replace(/^#/, "");
+    if (!h) return;
+    for (const часть of h.split("&")) {
+      const [k, v = ""] = часть.split("=");
+      const знач = decodeURIComponent(v);
+      if (k === "q") состояние.q = знач;
+      else if (k === "sort") состояние.sort = знач;
+      else if (состояние[k] instanceof Set) состояние[k] = new Set(знач.split(",").filter(Boolean));
+    }
+  }
+  function вАдрес() {
+    const части = [];
+    if (состояние.q) части.push("q=" + encodeURIComponent(состояние.q));
+    if (состояние.sort !== "title") части.push("sort=" + состояние.sort);
+    for (const k of Object.keys(ФАСЕТЫ)) if (состояние[k].size) части.push(k + "=" + [...состояние[k]].join(","));
+    history.replaceState(null, "", части.length ? "#" + части.join("&") : location.pathname);
+  }
+
+  const значения = (з, k) => k === "countries" || k === "topics" ? з[k] : [з[k]];
+  function подходит(з, кроме) {
+    for (const k of Object.keys(ФАСЕТЫ)) {
+      if (k === кроме || состояние[k].size === 0) continue;
+      if (!значения(з, k).some((v) => состояние[k].has(v))) return false;
+    }
+    if (состояние.q) {
+      const стог = [з.title, з.provider, з.description, з.descriptionRu, з.geography, з.geographyRu, з.period, з.periodRu, з.tags.join(" "), з.annotation].join(" ").toLowerCase();
+      for (const слово of состояние.q.toLowerCase().split(/\s+/).filter(Boolean)) if (!стог.includes(слово)) return false;
+    }
+    return true;
+  }
+  function сравнение(a, b) {
+    switch (состояние.sort) {
+      case "start": return (a.start ?? 9999) - (b.start ?? 9999) || a.title.localeCompare(b.title, "en");
+      case "corpus": { const р = { admitted: 0, "on-request": 1, "not-found-open": 2 }; return р[a.status] - р[b.status] || a.title.localeCompare(b.title, "en"); }
+      case "reviewed": return (b.reviewed || "").localeCompare(a.reviewed || "") || a.title.localeCompare(b.title, "en");
+      default: return a.title.localeCompare(b.title, "en");
+    }
+  }
+  const число = (n) => n.toLocaleString("ru-RU");
+  const экр = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const склон = (n, а, б, в) => { const m = n % 100, d = n % 10; return n + " " + (m > 10 && m < 20 ? в : d === 1 ? а : d > 1 && d < 5 ? б : в); };
+
+  // Счётчики фасета при прочих текущих фильтрах (сам фасет не считается, чтобы многовыбор был честным).
+  function счётчики(k) {
+    const счёт = {};
+    for (const з of S) if (подходит(з, k)) for (const v of значения(з, k)) счёт[v] = (счёт[v] ?? 0) + 1;
+    return счёт;
+  }
+  const всего = {};
+  for (const k of Object.keys(ФАСЕТЫ)) { всего[k] = {}; for (const з of S) for (const v of значения(з, k)) всего[k][v] = (всего[k][v] ?? 0) + 1; }
+  // Порядок значений задаётся один раз по общему количеству в базе (слева те, кого больше) и больше не меняется.
+  for (const [k, ф] of Object.entries(ФАСЕТЫ)) ф.порядок = ф.порядок.filter((v) => ф.подписи[v]).sort((a, b) => (всего[k][b] ?? 0) - (всего[k][a] ?? 0) || ф.порядок.indexOf(a) - ф.порядок.indexOf(b));
+  for (const k of Object.keys(ГРУППЫ)) ГРУППЫ[k] = ГРУППЫ[k].map(([имя, зн]) => [имя, [...зн].sort((a, b) => (всего[k][b] ?? 0) - (всего[k][a] ?? 0))]);
+
+  function чип(k, v, счёт) {
+    const ф = ФАСЕТЫ[k];
+    return `<span class="chip${состояние[k].has(v) ? " on" : ""}${(счёт[v] ?? 0) === 0 ? " zero" : ""}" data-k="${k}" data-v="${v}">${экр(ф.подписи[v])}<small>${счёт[v] ?? 0}</small></span>`;
+  }
+  function фасеты() {
+    for (const [k, ф] of Object.entries(ФАСЕТЫ)) {
+      const счёт = счётчики(k);
+      const узел = document.querySelector(`.chips[data-facet="${k}"]`);
+      if (!ф.инлайн) { узел.innerHTML = ф.порядок.filter((v) => ф.подписи[v]).map((v) => чип(k, v, счёт)).join(""); continue; }
+      // Инлайн: самые частые по всей базе плюс всё выбранное; остальное в пикере.
+      const частые = ф.порядок.slice(0, ф.инлайн);
+      const показать = ф.порядок.filter((v) => частые.includes(v) || состояние[k].has(v));
+      const скрыто = ф.порядок.filter((v) => ф.подписи[v] && !показать.includes(v)).length;
+      узел.innerHTML = показать.map((v) => чип(k, v, счёт)).join("")
+        + `<span class="chip more${открыт[k] ? " open" : ""}" data-pop-toggle="${k}">${скрыто > 0 ? `Ещё ${скрыто} ▾` : `Все ${ф.пикер.toLowerCase()} ▾`}</span>`;
+      пикер(k, счёт);
+    }
+  }
+  function пикер(k, счёт) {
+    const ф = ФАСЕТЫ[k];
+    const узел = document.querySelector(`.pop[data-pop="${k}"]`);
+    узел.hidden = !открыт[k];
+    if (!открыт[k]) return;
+    const иск = поискПикера[k].toLowerCase();
+    const группы = ГРУППЫ[k].map(([имя, значенияГруппы]) => {
+      const пункты = значенияГруппы.filter((v) => ф.подписи[v]).map((v) => {
+        const скрыть = иск && !ф.подписи[v].toLowerCase().includes(иск);
+        return `<label class="${(счёт[v] ?? 0) === 0 ? "zero" : ""}${скрыть ? " hide" : ""}"><input type="checkbox" data-k="${k}" data-v="${v}"${состояние[k].has(v) ? " checked" : ""}> ${экр(ф.подписи[v])}<small>${счёт[v] ?? 0}</small></label>`;
+      }).join("");
+      const всеВыбраны = значенияГруппы.every((v) => состояние[k].has(v));
+      return `<div class="group"><h4>${экр(имя)}<span data-group="${k}" data-values="${значенияГруппы.join(",")}" data-mode="${всеВыбраны ? "off" : "on"}">${всеВыбраны ? "снять все" : "выбрать все"}</span></h4>${пункты}</div>`;
+    }).join("");
+    const выбрано = состояние[k].size;
+    узел.innerHTML = `<input class="search" data-pop-search="${k}" placeholder="Найти: ${ф.пикер.toLowerCase()}…" value="${экр(поискПикера[k])}" autocomplete="off">
+      <div class="groups">${группы}</div>
+      <div class="foot"><span>${выбрано ? `Выбрано: ${выбрано}` : "Ничего не выбрано: показываем все"}</span><button type="button" data-pop-close="${k}">Готово</button></div>`;
+  }
+  function токены() {
+    const узел = document.getElementById("tokens");
+    const части = [];
+    if (состояние.q) части.push({ k: "q", v: "", текст: `«${состояние.q}»` });
+    for (const k of Object.keys(ФАСЕТЫ)) for (const v of состояние[k]) части.push({ k, v, текст: ФАСЕТЫ[k].подписи[v] });
+    узел.innerHTML = части.map((т) => `<span class="token"><i>${т.k === "q" ? "поиск" : ФИЛЬТР_ИМЯ[т.k]}:</i> ${экр(т.текст)} <b data-k="${т.k}" data-v="${экр(т.v)}" title="убрать">×</b></span>`).join("")
+      + (части.length ? `<span class="token reset" id="reset">Сбросить всё</span>` : "");
+  }
+  function карточка(з) {
+    const страны = з.countries.map((c) => L.страны[c]).join(", ");
+    const классы = з.topics.filter((t) => t !== "other");
+    const темы = классы.slice(0, 4).map((t) => `<span class="tag">${экр(L.классы[t])}</span>`).join("")
+      + (классы.length > 4 ? `<span class="tag more-tags" title="${экр(классы.slice(4).map((t) => L.классы[t]).join(", "))}">+${классы.length - 4}</span><span class="tag-rest" hidden>${классы.slice(4).map((t) => `<span class="tag">${экр(L.классы[t])}</span>`).join("")}</span>` : "");
+    const период = з.start ? (з.end && з.end !== з.start ? `${з.start}-${з.end}` : String(з.start)) : экр(з.period || "период не указан");
+    const бейдж = з.status === "admitted" ? `<span class="badge ok">В базе</span>` : з.status === "on-request" ? `<span class="badge ask">По запросу</span>` : `<span class="badge no">Открытой копии нет</span>`;
+    const корпус = з.corpus ? `<div class="have"><strong>${склон(з.corpus.наборов, "набор", "набора", "наборов")}</strong>${з.corpus.наблюдений ? число(з.corpus.наблюдений) + " наблюдений<br>" : ""}<a href="${з.corpus.ссылка}">Смотреть данные →</a></div>`
+      : з.status === "admitted" ? `<div class="have">Материалы источника перенесены в базу.</div>`
+      : з.status === "on-request" ? `<div>Нужны таблицы отсюда? <a href="mailto:hello@cfrproject.com?subject=${encodeURIComponent("Источник: " + з.title)}">Напишите</a>, скачаем и обработаем в первую очередь.</div>`
+      : `<div>Открытой машиночитаемой копии не нашли. Если знаете, где она есть, <a href="mailto:hello@cfrproject.com?subject=${encodeURIComponent("Источник: " + з.title)}">подскажите</a>.</div>`;
+    return `<article class="src st-${з.status}" data-id="${экр(з.id)}">
+      <div class="mark"></div>
+      <div class="body">
+        <h3>${з.link ? `<a href="${экр(з.link)}" target="_blank" rel="noopener">${экр(з.title)}</a>` : экр(з.title)}</h3>
+        <div class="meta">${з.provider ? `<b>${экр(з.provider)}</b> · ` : ""}${экр(страны)} · ${период}</div>
+        ${(з.descriptionRu || з.description) ? `<p class="desc">${экр(з.descriptionRu || з.description)}</p>` : ""}
+        ${темы ? `<div class="tags">${темы}</div>` : ""}
+        <div class="details" hidden>
+          <div class="field"><b>География</b><span>${экр(з.geographyRu || з.geography || "не указана")}</span></div>
+          <div class="field"><b>Период</b><span>${экр(з.periodRu || з.period || "не указан")}</span></div>
+          ${(з.limitationsRu || з.limitations) ? `<div class="field"><b>Ограничения</b><span>${экр(з.limitationsRu || з.limitations)}</span></div>` : ""}
+          ${з.annotation ? `<div class="field"><b>Организация</b><span>${экр(з.annotation)}</span></div>` : ""}
+          ${з.tags.length ? `<div class="field"><b>Ключевые слова</b><span class="kw">${экр(з.tags.join(", "))}</span></div>` : ""}
+          ${з.reviewed ? `<div class="field"><b>Проверено</b><span>${экр(з.reviewed)}</span></div>` : ""}
+        </div>
+        <div class="acts"><button class="more" type="button">Подробнее</button>${з.link ? `<a href="${экр(з.link)}" target="_blank" rel="noopener">Открыть источник ↗</a>` : ""}</div>
+      </div>
+      <aside class="side">
+        ${бейдж}
+        ${корпус}
+        <div class="kv"><span>Доступ</span><span>${экр(L.доступ[з.access] ?? з.access)}</span><span>Форма</span><span>${экр(L.форма[з.form] ?? з.form)}</span></div>
+      </aside>
+    </article>`;
+  }
+  function список() {
+    const найдено = S.filter((з) => подходит(з, null)).sort(сравнение);
+    const вБазе = найдено.filter((з) => з.status === "admitted").length;
+    document.getElementById("count").innerHTML = `<span>Показано <b>${найдено.length}</b> из ${S.length}</span><span>в базе <b>${вБазе}</b></span>`;
+    document.getElementById("count2").innerHTML = `<b>${найдено.length}</b> из ${S.length}`;
+    const узел = document.getElementById("list");
+    узел.innerHTML = найдено.length ? найдено.map(карточка).join("")
+      : `<div class="empty">По этим условиям ничего не нашли. <a href="mailto:hello@cfrproject.com?subject=${encodeURIComponent("Нужен источник")}">Напишите, что ищете</a>: найдём и добавим.</div>`;
+  }
+  function всё() { фасеты(); токены(); список(); вАдрес(); }
+
+  document.querySelector(".facets").addEventListener("click", (e) => {
+    const кнопка = e.target.closest("[data-pop-toggle]");
+    if (кнопка) { const k = кнопка.dataset.popToggle; открыт[k] = !открыт[k]; for (const другой of Object.keys(открыт)) if (другой !== k) открыт[другой] = false; фасеты(); if (открыт[k]) document.querySelector(`.pop[data-pop="${k}"] .search`).focus(); return; }
+    if (e.target.closest("[data-pop-close]")) { открыт[e.target.closest("[data-pop-close]").dataset.popClose] = false; фасеты(); return; }
+    const группа = e.target.closest("[data-group]");
+    if (группа) { const k = группа.dataset.group; for (const v of группа.dataset.values.split(",")) { if (группа.dataset.mode === "on") состояние[k].add(v); else состояние[k].delete(v); } всё(); return; }
+    const ч = e.target.closest(".chip[data-k]"); if (!ч) return;
+    const { k, v } = ч.dataset;
+    if (состояние[k].has(v)) состояние[k].delete(v); else состояние[k].add(v);
+    всё();
+  });
+  document.querySelector(".facets").addEventListener("change", (e) => {
+    const ф = e.target.closest("input[type=checkbox][data-k]"); if (!ф) return;
+    const { k, v } = ф.dataset;
+    if (ф.checked) состояние[k].add(v); else состояние[k].delete(v);
+    всё();
+  });
+  document.querySelector(".facets").addEventListener("input", (e) => {
+    const и = e.target.closest("[data-pop-search]"); if (!и) return;
+    поискПикера[и.dataset.popSearch] = и.value.trim();
+    const pop = и.closest(".pop");
+    for (const метка of pop.querySelectorAll("label")) метка.classList.toggle("hide", Boolean(поискПикера[и.dataset.popSearch]) && !метка.textContent.toLowerCase().includes(поискПикера[и.dataset.popSearch].toLowerCase()));
+  });
+  document.addEventListener("click", (e) => {
+    if (e.target.closest(".pop") || e.target.closest("[data-pop-toggle]")) return;
+    let закрыл = false;
+    for (const k of Object.keys(открыт)) if (открыт[k]) { открыт[k] = false; закрыл = true; }
+    if (закрыл) фасеты();
+  });
+  document.getElementById("tokens").addEventListener("click", (e) => {
+    if (e.target.id === "reset") { for (const k of Object.keys(ФАСЕТЫ)) состояние[k].clear(); состояние.q = ""; document.getElementById("q").value = ""; document.getElementById("q2").value = ""; всё(); return; }
+    const b = e.target.closest("b[data-k]"); if (!b) return;
+    if (b.dataset.k === "q") { состояние.q = ""; document.getElementById("q").value = ""; document.getElementById("q2").value = ""; } else состояние[b.dataset.k].delete(b.dataset.v);
+    всё();
+  });
+  document.getElementById("q").addEventListener("input", (e) => { состояние.q = e.target.value.trim(); document.getElementById("q2").value = e.target.value; всё(); });
+  document.getElementById("q2").addEventListener("input", (e) => { состояние.q = e.target.value.trim(); document.getElementById("q").value = e.target.value; всё(); });
+  document.getElementById("sort").addEventListener("change", (e) => { состояние.sort = e.target.value; всё(); });
+  document.getElementById("tofilters").addEventListener("click", () => { document.querySelector(".filters").scrollIntoView({ behavior: "smooth", block: "start" }); });
+  new IntersectionObserver(([з]) => { document.getElementById("bar").classList.toggle("show", !з.isIntersecting && з.boundingClientRect.top < 0); }, { rootMargin: "-56px 0px 0px 0px" }).observe(document.querySelector(".filters"));
+  document.getElementById("list").addEventListener("click", (e) => {
+    const ещё = e.target.closest(".more-tags"); if (ещё) { ещё.nextElementSibling.hidden = false; ещё.remove(); return; }
+    const кнопка = e.target.closest("button.more"); if (!кнопка) return;
+    const д = кнопка.closest(".body").querySelector(".details");
+    д.hidden = !д.hidden; кнопка.textContent = д.hidden ? "Подробнее" : "Свернуть";
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { let закрыл = false; for (const k of Object.keys(открыт)) if (открыт[k]) { открыт[k] = false; закрыл = true; } if (закрыл) фасеты(); }
+    if (e.key === "/" && document.activeElement.tagName !== "INPUT") { e.preventDefault(); document.getElementById("q").focus(); }
+  });
+
+  изАдреса();
+  document.getElementById("q").value = состояние.q;
+  document.getElementById("sort").value = состояние.sort;
+  всё();
+})();
+</script>
+
+</body>
+</html>
