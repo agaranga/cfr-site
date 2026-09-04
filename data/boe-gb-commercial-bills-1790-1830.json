@@ -32,73 +32,73 @@
  ],
  "rows": [
   {
-   "year": "1790",
+   "year": 1790,
    "geography": "Great Britain",
    "bill_scope": "inland-commercial-bills",
-   "stock_gbp_millions": "100",
+   "stock_gbp_millions": 100,
    "source_series": "newmarch-combined",
    "source_cell": "B6",
    "source_value_kind": "literal-source-estimate"
   },
   {
-   "year": "1815",
+   "year": 1815,
    "geography": "Great Britain",
    "bill_scope": "inland-commercial-bills",
-   "stock_gbp_millions": "119.25",
+   "stock_gbp_millions": 119.25,
    "source_series": "newmarch-combined",
    "source_cell": "B31",
    "source_value_kind": "exact-source-formula"
   },
   {
-   "year": "1828",
+   "year": 1828,
    "geography": "Great Britain",
    "bill_scope": "inland-commercial-bills",
-   "stock_gbp_millions": "80.9",
+   "stock_gbp_millions": 80.9,
    "source_series": "newmarch-combined",
    "source_cell": "B44",
    "source_value_kind": "literal-source-estimate"
   },
   {
-   "year": "1828",
+   "year": 1828,
    "geography": "Great Britain",
    "bill_scope": "foreign-commercial-bills",
-   "stock_gbp_millions": "13.5",
+   "stock_gbp_millions": 13.5,
    "source_series": "newmarch-combined",
    "source_cell": "C44",
    "source_value_kind": "literal-source-estimate"
   },
   {
-   "year": "1829",
+   "year": 1829,
    "geography": "Great Britain",
    "bill_scope": "inland-commercial-bills",
-   "stock_gbp_millions": "78.9",
+   "stock_gbp_millions": 78.9,
    "source_series": "newmarch-combined",
    "source_cell": "B45",
    "source_value_kind": "literal-source-estimate"
   },
   {
-   "year": "1829",
+   "year": 1829,
    "geography": "Great Britain",
    "bill_scope": "foreign-commercial-bills",
-   "stock_gbp_millions": "13.2",
+   "stock_gbp_millions": 13.2,
    "source_series": "newmarch-combined",
    "source_cell": "C45",
    "source_value_kind": "literal-source-estimate"
   },
   {
-   "year": "1830",
+   "year": 1830,
    "geography": "Great Britain",
    "bill_scope": "inland-commercial-bills",
-   "stock_gbp_millions": "74",
+   "stock_gbp_millions": 74,
    "source_series": "newmarch-combined",
    "source_cell": "B46",
    "source_value_kind": "literal-source-estimate"
   },
   {
-   "year": "1830",
+   "year": 1830,
    "geography": "Great Britain",
    "bill_scope": "foreign-commercial-bills",
-   "stock_gbp_millions": "12.3",
+   "stock_gbp_millions": 12.3,
    "source_series": "newmarch-combined",
    "source_cell": "C46",
    "source_value_kind": "literal-source-estimate"

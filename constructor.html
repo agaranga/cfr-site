@@ -3,25 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CFR Project - Конструктор данных</title>
+<title>CFR Project - Конструктор</title>
 <link rel="stylesheet" href="assets/site.css">
 <style>
   .head { padding: 44px 0 18px 0; }
   .head h1 { font: 500 34px/1.15 Georgia, serif; margin: 0 0 8px 0; }
-  .head p { font-size: 15px; color: #566059; max-width: 46em; line-height: 1.6; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .cell { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
-  .cell h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px 0; }
-  .cell label { display: flex; gap: 8px; align-items: center; padding: 5px 0; font-size: 13.5px; }
-  .range { display: flex; gap: 14px; align-items: center; margin-bottom: 10px; }
-  .range label { display: flex; align-items: center; gap: 7px; font-size: 13.5px; padding: 0; }
-  .range input { width: 62px; padding: 7px 8px; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); font-size: 13.5px; text-align: center; font-family: inherit; }
-  .give { margin: 22px 0 10px 0; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; }
-  .give h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px 0; }
-  .give label { display: flex; gap: 9px; align-items: flex-start; padding: 6px 0; font-size: 14px; line-height: 1.45; }
-  .mail { margin: 18px 0 60px 0; display: flex; align-items: center; gap: 14px; }
-  .btn { display: inline-block; padding: 13px 26px; background: var(--gold); color: var(--forest); border-radius: 4px; font-size: 14px; font-weight: 700; border: 0; }
-  .note { font-size: 13px; color: var(--muted); max-width: 34em; line-height: 1.5; }
+  .head p { font-size: 15px; color: #566059; max-width: 46em; line-height: 1.6; margin: 0; }
+  .lang span { cursor: pointer; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .cell { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; }
+  .cell h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px 0; display: flex; justify-content: space-between; }
+  .cell h4 span { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--forest-soft); cursor: pointer; }
+  .search { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); font-size: 13.5px; font-family: inherit; margin-bottom: 8px; }
+  .groups { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .chip { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 12px; font-weight: 600; color: #3c453f; cursor: pointer; }
+  .chip small { font-weight: 500; color: var(--muted); margin-left: 4px; }
+  .chip.on { background: var(--forest); color: var(--white); border-color: var(--forest); } .chip.on small { color: rgba(255,253,248,.7); }
+  .list { max-height: 190px; overflow: auto; display: flex; flex-direction: column; gap: 2px; }
+  .list label { display: flex; gap: 8px; align-items: center; padding: 4px 4px; border-radius: 4px; cursor: pointer; font-size: 13px; }
+  .list label:hover { background: var(--paper); } .list label small { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; } .list label.zero { opacity: .45; } .list label.hide { display: none; }
+  .tokens { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; } .tokens:empty { display: none; }
+  .token { display: inline-flex; align-items: center; gap: 7px; padding: 4px 9px; border-radius: 5px; background: var(--paper-deep); font-size: 12px; font-weight: 600; }
+  .token b { font-weight: 400; color: var(--muted); cursor: pointer; }
+  .count { font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.5; } .count b { color: var(--ink); font-weight: 600; }
+  .range { display: flex; gap: 12px; align-items: center; margin-bottom: 8px; font-size: 13.5px; }
+  .range input { width: 84px; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); font-family: inherit; font-size: 14px; font-variant-numeric: tabular-nums; }
+  .cell label.opt { display: flex; gap: 8px; align-items: center; padding: 5px 0; font-size: 13.5px; }
+  .result { margin-top: 18px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; }
+  .result h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px 0; }
+  .result .sum { font-size: 14px; margin-bottom: 10px; } .result .sum b { font-weight: 600; }
+  .row { display: grid; grid-template-columns: 1fr auto auto auto; gap: 12px; align-items: center; padding: 7px 0; border-top: 1px solid var(--line); font-size: 13px; }
+  .row .t a { color: var(--ink); text-decoration: none; font-weight: 600; } .row .t small { display: block; color: var(--muted); font-size: 11.5px; }
+  .row .m { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .row .dl a { color: var(--forest-soft); text-decoration: none; font-weight: 600; margin-left: 8px; }
+  .give { margin-top: 16px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; }
+  .give h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px 0; }
+  .give label { display: flex; gap: 8px; align-items: center; padding: 5px 0; font-size: 13.5px; }
+  .mail { margin: 18px 0 60px 0; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 13px 26px; background: var(--gold); color: var(--forest); border-radius: 4px; font-size: 14px; font-weight: 700; border: 0; cursor: pointer; text-decoration: none; }
+  .btn.ghost { background: transparent; border: 1px solid var(--forest); }
+  .note { font-size: 12.5px; color: var(--muted); max-width: 44em; line-height: 1.5; }
+  @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
 </style>
 <meta name="robots" content="noindex, nofollow">
 </head>
@@ -38,90 +60,160 @@
     <a href="sources.html">Источники</a>
     <a href="territory.html">Территории</a>
   </nav>
-  <a class="account" href="mailto:cfr@cfrproject.com?subject=CFR%20Project" title="Личный кабинет появится позже; пока пишите нам"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="5" r="2.8"/><path d="M2.5 14c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/></svg>Личный кабинет</a>
-  <span class="lang"><span class="on">RU</span><span>EN</span></span>
+  <a class="account" href="mailto:cfr@cfrproject.com?subject=CFR%20Project" title="Личный кабинет появится позже; пока пишите нам"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="5" r="2.8"/><path d="M2.5 14c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/></svg><span>Личный кабинет</span></a>
+  <span class="lang" id="lang"><span class="on" data-lang="ru">RU</span><span data-lang="en">EN</span></span>
 </header>
 
 <div class="wrap">
   <div class="head">
-    <h1>Конструктор данных</h1>
-    <p>Соберите набор под свою задачу: страны, периоды, показатели. Готовая выгрузка придёт на вашу электронную почту ссылкой для скачивания.</p>
+    <h1 id="h1">Конструктор данных</h1>
+    <p id="intro"></p>
   </div>
 
   <div class="grid">
-    <div class="cell picker"><h4>Страны</h4>
-      <input class="search" placeholder="Начните вводить: Фран.., Нидер..">
-      <div class="groups">
-        <span class="chip on">Западная Европа</span><span class="chip">Бенилюкс</span>
-        <span class="chip">Скандинавия</span><span class="chip">Средиземноморье</span><span class="chip">Все страны</span>
-      </div>
-      <div class="tokens">
-        <span class="token">Британия <b>×</b></span>
-        <span class="token">Франция <b>×</b></span>
-        <span class="token">Нидерланды <b>×</b></span>
-        <span class="token">Бельгия <b>×</b></span>
-      </div>
-      <div class="count">Выбрано 4 из 47. Группа добавляет свои страны разом; страна может входить в несколько групп и учитывается один раз.</div>
+    <div class="cell"><h4><span class="l-c">Страны</span><span id="rc">сбросить</span></h4>
+      <input class="search" id="qc" placeholder="Начните вводить: Фран.., Нидер..">
+      <div class="groups" id="gc"></div>
+      <div class="list" id="lc"></div>
+      <div class="tokens" id="tc"></div>
+      <div class="count" id="cc"></div>
     </div>
-    <div class="cell picker"><h4>Показатели</h4>
-      <input class="search" placeholder="Начните вводить: насел.., зарп..">
-      <div class="groups">
-        <span class="chip on">Население</span><span class="chip">Цены и зарплаты</span>
-        <span class="chip">Производство</span><span class="chip">Торговля</span><span class="chip">Все показатели</span>
-      </div>
-      <div class="tokens">
-        <span class="token">Численность населения <b>×</b></span>
-        <span class="token">Рождения, смерти, браки <b>×</b></span>
-        <span class="token">Дома и домохозяйства <b>×</b></span>
-      </div>
-      <div class="count">Выбрано 3 из 31. Население и движение населения - по странам и годам, как в источниках.</div>
+    <div class="cell"><h4><span class="l-i">Показатели</span><span id="ri">сбросить</span></h4>
+      <input class="search" id="qi" placeholder="Начните вводить: насел.., зарп..">
+      <div class="list" id="li"></div>
+      <div class="tokens" id="ti"></div>
+      <div class="count" id="ci"></div>
     </div>
-    <div class="cell picker"><h4>Период</h4>
-      <div class="range">
-        <label>с <input value="1801"></label>
-        <label>по <input value="1871"></label>
-        <span style="font-size:12px;color:var(--muted)">данные есть с 1086 по 2016</span>
-      </div>
-      <svg viewBox="0 0 420 30" width="100%" role="img" aria-label="шкала периода">
-        <line x1="10" y1="15" x2="410" y2="15" stroke="#d8d2c4" stroke-width="4" stroke-linecap="round"/>
-        <line x1="318" y1="15" x2="348" y2="15" stroke="#173d32" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="318" cy="15" r="7" fill="#fffdf8" stroke="#173d32" stroke-width="2.2"/>
-        <circle cx="348" cy="15" r="7" fill="#fffdf8" stroke="#173d32" stroke-width="2.2"/>
-        <text x="10" y="29" font-size="9" fill="#68716b">1086</text>
-        <text x="392" y="29" font-size="9" fill="#68716b">2016</text>
-      </svg>
-      <div class="groups">
-        <span class="chip">Средневековье</span><span class="chip">XVI-XVIII века</span>
-        <span class="chip on">XIX век</span><span class="chip">Межвоенье</span><span class="chip">Всё время</span>
-      </div>
+    <div class="cell"><h4><span class="l-p">Период</span><span id="rp">сбросить</span></h4>
+      <div class="range"><label><span class="l-from">с</span> <input id="from" inputmode="numeric"></label><label><span class="l-to">по</span> <input id="to" inputmode="numeric"></label><span class="note" id="span"></span></div>
+      <div class="groups" id="gp"></div>
+      <div class="count" id="cp"></div>
     </div>
-    <div class="cell"><h4>Территория и состав населения</h4>
-      <label><input type="radio" name="terr" checked> Как в источнике: у каждой строки своя версия территории, состав и момент учёта</label>
-      <label><input type="radio" name="terr" disabled> В границах 1900 года: недоступно, переходы описаны без чисел</label>
-      <label><input type="checkbox" checked> Добавить колонки территории, состава и момента учёта в выгрузку</label>
-      <div class="count"><a href="territory.html" style="color:var(--forest-soft)">Что такое версии территории и составы населения →</a></div>
+    <div class="cell"><h4><span class="l-l">Слой данных</span></h4>
+      <label class="opt"><input type="checkbox" data-layer="historical" checked> <span class="l-lh">Историческое: как в источнике</span></label>
+      <label class="opt"><input type="checkbox" data-layer="engineering" checked> <span class="l-le">Инженерное: наши оценки с точностью</span></label>
+      <label class="opt"><input type="checkbox" data-layer="reference" checked> <span class="l-lr">Справочное CFR: территории и словари</span></label>
+      <h4 style="margin-top:14px"><span class="l-t">Территория и состав населения</span></h4>
+      <label class="opt"><input type="radio" name="terr" value="source" checked> <span class="l-ts">Как в источнике: у каждой строки своя версия территории, состав и момент учёта</span></label>
+      <label class="opt"><input type="radio" name="terr" value="1900" disabled> <span class="l-t1900">В границах 1900 года: недоступно, переходы описаны без чисел</span></label>
+      <label class="opt"><input type="checkbox" id="terrcols" checked> <span class="l-tc">Добавить колонки территории, состава и момента учёта в выгрузку</span></label>
+      <div class="count"><a href="territory.html" style="color:var(--forest-soft)" id="l-tlink">Что такое версии территории и составы населения →</a></div>
     </div>
-    <div class="cell"><h4>Тип данных</h4>
-      <label><input type="radio" name="t" checked> Историческое и инженерное</label>
-      <label><input type="radio" name="t"> Только историческое</label>
-      <label><input type="radio" name="t"> Только инженерное</label>
-    </div>
+  </div>
+
+  <div class="result">
+    <h4 id="l-res">Что войдёт в выгрузку</h4>
+    <div class="sum" id="sum"></div>
+    <div id="rows"></div>
   </div>
 
   <div class="give">
-    <h4>Что получить</h4>
-    <label><input type="checkbox" checked> Перечень источников - где опубликован оригинальный материал</label>
-    <label><input type="checkbox"> Файлы оригинальных данных (только источники с разрешающим правовым режимом)</label>
-    <label><input type="checkbox" checked> Наши обработанные данные (единый вид, с ярлыком слоя и точностью)</label>
+    <h4 id="l-give">Что получить</h4>
+    <label><input type="checkbox" id="g1" checked> <span class="l-g1">Перечень источников - где опубликован оригинальный материал</span></label>
+    <label><input type="checkbox" id="g2"> <span class="l-g2">Файлы оригинальных данных (только источники с разрешающим правовым режимом)</span></label>
+    <label><input type="checkbox" id="g3" checked> <span class="l-g3">Наши обработанные данные (единый вид, с ярлыком слоя и точностью)</span></label>
   </div>
 
   <div class="mail">
-    <a class="btn" href="mailto:cfr@cfrproject.com?subject=CFR%20Project%3A%20заявка%20на%20выгрузку&body=Страны%2C%20показатели%2C%20период%3A%20" style="display:inline-block;text-decoration:none">Сформировать выгрузку</a>
-    <span class="note">Ссылка на готовый пакет будет отправлена на вашу электронную почту. Для отправки требуется вход в личный кабинет.</span>
+    <a class="btn" id="send" href="#">Сформировать выгрузку</a>
+    <a class="btn ghost" id="csvall" href="#">Скачать всё выбранное сейчас (CSV по одному)</a>
+    <span class="note" id="l-note">Заявка уходит письмом с точным составом выбора; готовый пакет одним архивом придёт на вашу почту. Каждый набор из списка можно скачать сразу по ссылке CSV или JSON.</span>
   </div>
 </div>
 
 <footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
 
+<script src="assets/datasets-data.js"></script>
+<script>
+  const D = window.DATASETS, L = window.DATASET_LABELS;
+  const ГРУППЫ = { ru: { "Западная Европа": ["gb", "fr", "nl", "be"], "Бенилюкс": ["nl", "be"], "Британия и Ирландия": ["gb"], "Все страны": null }, en: { "Western Europe": ["gb", "fr", "nl", "be"], "Benelux": ["nl", "be"], "Britain and Ireland": ["gb"], "All countries": null } };
+  const ЭПОХИ = { ru: [["Средневековье", 1000, 1500], ["XVI-XVIII века", 1500, 1800], ["XIX век", 1800, 1900], ["Межвоенье", 1914, 1939], ["Всё время", null, null]], en: [["Middle Ages", 1000, 1500], ["16th-18th centuries", 1500, 1800], ["19th century", 1800, 1900], ["Interwar", 1914, 1939], ["All time", null, null]] };
+  const состояние = { lang: "ru", countries: new Set(), topics: new Set(), from: "", to: "", layers: new Set(["historical", "engineering", "reference"]) };
+  const T = {
+    ru: { h1: "Конструктор данных", intro: "Соберите набор под свою задачу: страны, показатели, период, слой данных. Список внизу пересчитывается сразу; каждый набор можно скачать тут же, а весь состав отправить заявкой одним письмом.",
+      c: "Страны", i: "Показатели", p: "Период", l: "Слой данных", t: "Территория и состав населения", reset: "сбросить", from: "с", to: "по", lh: "Историческое: как в источнике", le: "Инженерное: наши оценки с точностью", lr: "Справочное CFR: территории и словари",
+      ts: "Как в источнике: у каждой строки своя версия территории, состав и момент учёта", t1900: "В границах 1900 года: недоступно, переходы описаны без чисел", tc: "Добавить колонки территории, состава и момента учёта в выгрузку", tlink: "Что такое версии территории и составы населения →",
+      res: "Что войдёт в выгрузку", give: "Что получить", g1: "Перечень источников - где опубликован оригинальный материал", g2: "Файлы оригинальных данных (только источники с разрешающим правовым режимом)", g3: "Наши обработанные данные (единый вид, с ярлыком слоя и точностью)",
+      send: "Сформировать выгрузку", csvall: "Скачать всё выбранное сейчас (CSV по одному)", note: "Заявка уходит письмом с точным составом выбора; готовый пакет одним архивом придёт на вашу почту. Каждый набор из списка можно скачать сразу по ссылке CSV или JSON.",
+      qc: "Начните вводить: Фран.., Нидер..", qi: "Начните вводить: насел.., зарп..", span: (a, b) => `данные есть с ${a} по ${b}`, cc: (n, m) => `Выбрано ${n} из ${m}. Группа добавляет свои страны разом; страна учитывается один раз.`, ci: (n, m) => `Выбрано ${n} из ${m}.`, cp: (a, b) => a || b ? `Период: ${a || "…"}-${b || "…"}. Набор попадает, если его годы пересекаются с периодом.` : "Период не ограничен.",
+      sum: (n, rows, src) => `Наборов: <b>${n}</b>, строк: <b>${rows.toLocaleString("ru")}</b>, источников: <b>${src}</b>`, empty: "Под такой выбор наборов нет. Снимите часть условий.", rows: (n) => `${n} строк`, countries: (n) => `${n} стран`, nav: ["Обзор", "Витрина", "Покрытие", "Конструктор", "Исходные данные", "Источники", "Территории"], acc: "Личный кабинет",
+      mailSubject: "CFR Project: заявка на выгрузку", mailBody: (s) => `Заявка на выгрузку CFR Project\n\nСтраны: ${s.countries}\nПоказатели: ${s.topics}\nПериод: ${s.period}\nСлои: ${s.layers}\nТерритория: ${s.terr}\nПолучить: ${s.give}\n\nНаборы (${s.n}):\n${s.list}\n\nСсылка на выбор: ${s.url}\n` },
+    en: { h1: "Data builder", intro: "Assemble a bundle for your task: countries, indicators, period, data layer. The list below updates at once; every dataset can be downloaded right here, and the whole selection can be requested in one e-mail.",
+      c: "Countries", i: "Indicators", p: "Period", l: "Data layer", t: "Territory and population universe", reset: "reset", from: "from", to: "to", lh: "Historical: as in the source", le: "Engineering: our estimates with accuracy", lr: "CFR reference: territories and vocabularies",
+      ts: "As in the source: every row keeps its own territory version, universe and reference time", t1900: "Within 1900 borders: unavailable, crosswalks are described without numbers", tc: "Add territory, universe and reference-time columns to the export", tlink: "What territory versions and population universes are →",
+      res: "What goes into the bundle", give: "What to receive", g1: "List of sources - where the original material is published", g2: "Original data files (only sources with a permissive legal regime)", g3: "Our processed data (uniform layout, with layer label and accuracy)",
+      send: "Request the bundle", csvall: "Download everything selected now (CSV one by one)", note: "The request goes by e-mail with the exact selection; the bundle arrives as one archive. Every dataset in the list can be downloaded at once as CSV or JSON.",
+      qc: "Start typing: Fran.., Nether..", qi: "Start typing: popul.., wage..", span: (a, b) => `data exist from ${a} to ${b}`, cc: (n, m) => `${n} of ${m} selected. A group adds its countries at once; a country counts once.`, ci: (n, m) => `${n} of ${m} selected.`, cp: (a, b) => a || b ? `Period: ${a || "…"}-${b || "…"}. A dataset qualifies if its years overlap the period.` : "Period not limited.",
+      sum: (n, rows, src) => `Datasets: <b>${n}</b>, rows: <b>${rows.toLocaleString("en")}</b>, sources: <b>${src}</b>`, empty: "No datasets for this selection. Relax some conditions.", rows: (n) => `${n} rows`, countries: (n) => `${n} countries`, nav: ["Overview", "Showcase", "Coverage", "Builder", "Source data", "Sources", "Territories"], acc: "Account",
+      mailSubject: "CFR Project: bundle request", mailBody: (s) => `CFR Project bundle request\n\nCountries: ${s.countries}\nIndicators: ${s.topics}\nPeriod: ${s.period}\nLayers: ${s.layers}\nTerritory: ${s.terr}\nReceive: ${s.give}\n\nDatasets (${s.n}):\n${s.list}\n\nSelection link: ${s.url}\n` },
+  };
+  const t = () => T[состояние.lang];
+  const экр = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const заголовок = (з) => (состояние.lang === "en" ? (з.titleEn || з.titleRu) : (з.titleRu || з.titleEn)) || з.id;
+  const страна = (з) => з.countries.includes("ww") ? t().countries(з.countryCount ?? 0) : з.countries.map((c) => L.страны[состояние.lang][c] ?? c).join(", ");
+  const пересекается = (з) => { const a = Number(состояние.from) || null, b = Number(состояние.to) || null; if (!a && !b) return true; if (!з.start && !з.end) return false; return (!b || з.start <= b) && (!a || (з.end ?? з.start) >= a); };
+  const подходит = (з, без) => (без === "countries" || !состояние.countries.size || з.countries.some((c) => состояние.countries.has(c)))
+    && (без === "topics" || !состояние.topics.size || состояние.topics.has(з.topic)) && (без === "layers" || состояние.layers.has(з.layer)) && (без === "period" || пересекается(з));
+  const файл = (з) => encodeURIComponent(з.id.replace(/^dataset:/, "").replace(/[^A-Za-z0-9._-]+/g, "-"));
+
+  function список(id, ключи, подписи, набор, q, счёт) {
+    const el = document.getElementById(id);
+    el.innerHTML = ключи.map((k) => { const n = счёт(k); const скрыт = q && !подписи[k].toLowerCase().includes(q.toLowerCase()); return `<label class="${n ? "" : "zero"} ${скрыт ? "hide" : ""}"><input type="checkbox" data-k="${k}" ${набор.has(k) ? "checked" : ""}> ${экр(подписи[k])}<small>${n}</small></label>`; }).join("");
+    el.querySelectorAll("input").forEach((i) => i.addEventListener("change", () => { if (i.checked) набор.add(i.dataset.k); else набор.delete(i.dataset.k); пишиХэш(); рисуй(); }));
+  }
+  function жетоны(id, набор, подписи) {
+    const el = document.getElementById(id);
+    el.innerHTML = [...набор].map((k) => `<span class="token">${экр(подписи[k] ?? k)}<b data-k="${k}">×</b></span>`).join("");
+    el.querySelectorAll("b").forEach((b) => b.addEventListener("click", () => { набор.delete(b.dataset.k); пишиХэш(); рисуй(); }));
+  }
+  function рисуй() {
+    document.documentElement.lang = состояние.lang;
+    document.title = состояние.lang === "en" ? "CFR Project - Builder" : "CFR Project - Конструктор";
+    for (const s of document.querySelectorAll("#lang span")) s.classList.toggle("on", s.dataset.lang === состояние.lang);
+    document.querySelectorAll(".topnav a").forEach((a, i) => { a.textContent = t().nav[i]; });
+    document.querySelector(".account span").textContent = t().acc;
+    for (const [cls, key] of [["l-c", "c"], ["l-i", "i"], ["l-p", "p"], ["l-l", "l"], ["l-t", "t"], ["l-from", "from"], ["l-to", "to"], ["l-lh", "lh"], ["l-le", "le"], ["l-lr", "lr"], ["l-ts", "ts"], ["l-t1900", "t1900"], ["l-tc", "tc"], ["l-g1", "g1"], ["l-g2", "g2"], ["l-g3", "g3"]]) document.querySelector("." + cls).textContent = t()[key];
+    for (const [id, key] of [["h1", "h1"], ["intro", "intro"], ["rc", "reset"], ["ri", "reset"], ["rp", "reset"], ["l-res", "res"], ["l-give", "give"], ["send", "send"], ["csvall", "csvall"], ["l-note", "note"], ["l-tlink", "tlink"]]) document.getElementById(id).textContent = t()[key];
+    document.getElementById("qc").placeholder = t().qc; document.getElementById("qi").placeholder = t().qi;
+    const страны = L.страны[состояние.lang], темы = L.темы[состояние.lang];
+    const все = Object.keys(L.страны.ru).filter((c) => c !== "xx" && c !== "ww");
+    const годы = D.flatMap((з) => [з.start, з.end].filter(Number.isInteger));
+    document.getElementById("span").textContent = t().span(Math.min(...годы), Math.max(...годы));
+    document.getElementById("gc").innerHTML = Object.entries(ГРУППЫ[состояние.lang]).map(([имя, коды]) => { const набор = коды ?? все; const on = набор.every((c) => состояние.countries.has(c)); return `<span class="chip ${on ? "on" : ""}" data-g="${экр(имя)}">${экр(имя)}<small>${набор.length}</small></span>`; }).join("");
+    document.querySelectorAll("#gc .chip").forEach((el) => el.addEventListener("click", () => { const коды = ГРУППЫ[состояние.lang][el.dataset.g] ?? все; const on = коды.every((c) => состояние.countries.has(c)); for (const c of коды) on ? состояние.countries.delete(c) : состояние.countries.add(c); пишиХэш(); рисуй(); }));
+    const порядокС = Object.keys(L.страны.ru).sort((a, b) => D.filter((з) => з.countries.includes(b)).length - D.filter((з) => з.countries.includes(a)).length);
+    список("lc", порядокС, страны, состояние.countries, document.getElementById("qc").value, (k) => D.filter((з) => подходит(з, "countries") && з.countries.includes(k)).length);
+    список("li", Object.keys(L.темы.ru), темы, состояние.topics, document.getElementById("qi").value, (k) => D.filter((з) => подходит(з, "topics") && з.topic === k).length);
+    жетоны("tc", состояние.countries, страны); жетоны("ti", состояние.topics, темы);
+    document.getElementById("cc").textContent = t().cc(состояние.countries.size, Object.keys(L.страны.ru).length);
+    document.getElementById("ci").textContent = t().ci(состояние.topics.size, Object.keys(L.темы.ru).length);
+    if (document.getElementById("from").value !== состояние.from) document.getElementById("from").value = состояние.from;
+    if (document.getElementById("to").value !== состояние.to) document.getElementById("to").value = состояние.to;
+    document.getElementById("gp").innerHTML = ЭПОХИ[состояние.lang].map(([имя, a, b]) => { const on = (a ?? "") == (состояние.from) && (b ?? "") == (состояние.to); return `<span class="chip ${on ? "on" : ""}" data-a="${a ?? ""}" data-b="${b ?? ""}">${экр(имя)}</span>`; }).join("");
+    document.querySelectorAll("#gp .chip").forEach((el) => el.addEventListener("click", () => { состояние.from = el.dataset.a; состояние.to = el.dataset.b; пишиХэш(); рисуй(); }));
+    document.getElementById("cp").textContent = t().cp(состояние.from, состояние.to);
+    document.querySelectorAll("[data-layer]").forEach((i) => { i.checked = состояние.layers.has(i.dataset.layer); });
+    const ряды = D.filter((з) => подходит(з)).sort((a, b) => заголовок(a).localeCompare(заголовок(b), состояние.lang));
+    const строк = ряды.reduce((a, з) => a + (з.rows ?? 0), 0), источников = new Set(ряды.flatMap((з) => з.sources)).size;
+    document.getElementById("sum").innerHTML = ряды.length ? t().sum(ряды.length, строк, источников) : t().empty;
+    document.getElementById("rows").innerHTML = ряды.map((з) => `<div class="row"><div class="t"><a href="dataset.html#${encodeURIComponent(з.id)}${состояние.lang === "en" ? "&lang=en" : ""}">${экр(заголовок(з))}</a><small>${экр(з.sources[0] ?? "")} · ${экр(L.слой[состояние.lang][з.layer] ?? з.layer)}</small></div><div class="m">${экр(страна(з))}</div><div class="m">${з.start ? `${з.start}-${з.end}` : ""} · ${t().rows(з.rows ?? 0)}</div><div class="dl"><a href="data/${файл(з)}.csv">CSV</a><a href="data/${файл(з)}.json">JSON</a></div></div>`).join("");
+    // Заявка письмом: точный состав выбора и ссылка на него.
+    const s = { countries: [...состояние.countries].map((c) => страны[c]).join(", ") || (состояние.lang === "en" ? "all" : "все"), topics: [...состояние.topics].map((k) => темы[k]).join(", ") || (состояние.lang === "en" ? "all" : "все"), period: (состояние.from || "…") + "-" + (состояние.to || "…"), layers: [...состояние.layers].map((k) => L.слой[состояние.lang][k]).join(", "), terr: document.querySelector('input[name="terr"]:checked')?.value === "1900" ? "1900" : t().ts + (document.getElementById("terrcols").checked ? " (+" + t().tc.toLowerCase() + ")" : ""), give: ["g1", "g2", "g3"].filter((id) => document.getElementById(id).checked).map((id) => t()[id]).join("; "), n: ряды.length, list: ряды.map((з) => `- ${заголовок(з)} (${з.id})`).join("\n"), url: location.href };
+    document.getElementById("send").href = `mailto:cfr@cfrproject.com?subject=${encodeURIComponent(t().mailSubject)}&body=${encodeURIComponent(t().mailBody(s)).slice(0, 6000)}`;
+    document.getElementById("csvall").onclick = (e) => { e.preventDefault(); for (const з of ряды.slice(0, 20)) window.open(`data/${файл(з)}.csv`, "_blank"); };
+  }
+  function пишиХэш() { const ч = []; if (состояние.countries.size) ч.push("countries=" + [...состояние.countries].join(",")); if (состояние.topics.size) ч.push("topic=" + [...состояние.topics].join(",")); if (состояние.from) ч.push("from=" + состояние.from); if (состояние.to) ч.push("to=" + состояние.to); if (состояние.layers.size !== 3) ч.push("layers=" + [...состояние.layers].join(",")); if (состояние.lang === "en") ч.push("lang=en"); history.replaceState(null, "", "#" + ч.join("&")); }
+  function читайХэш() { const h = location.hash.slice(1); for (const п of h.split("&")) { const [k, v = ""] = п.split("="); if (k === "countries") состояние.countries = new Set(v.split(",").filter(Boolean)); else if (k === "topic") состояние.topics = new Set(v.split(",").filter(Boolean)); else if (k === "from") состояние.from = v; else if (k === "to") состояние.to = v; else if (k === "layers") состояние.layers = new Set(v.split(",").filter(Boolean)); else if (k === "lang") состояние.lang = v === "en" ? "en" : "ru"; } }
+  document.getElementById("lang").addEventListener("click", (e) => { const s = e.target.closest("[data-lang]"); if (!s) return; состояние.lang = s.dataset.lang; пишиХэш(); рисуй(); });
+  document.getElementById("rc").addEventListener("click", () => { состояние.countries.clear(); пишиХэш(); рисуй(); });
+  document.getElementById("ri").addEventListener("click", () => { состояние.topics.clear(); пишиХэш(); рисуй(); });
+  document.getElementById("rp").addEventListener("click", () => { состояние.from = ""; состояние.to = ""; пишиХэш(); рисуй(); });
+  document.getElementById("qc").addEventListener("input", рисуй); document.getElementById("qi").addEventListener("input", рисуй);
+  for (const id of ["from", "to"]) document.getElementById(id).addEventListener("change", (e) => { состояние[id] = e.target.value.replace(/[^\d]/g, "").slice(0, 4); пишиХэш(); рисуй(); });
+  document.querySelectorAll("[data-layer]").forEach((i) => i.addEventListener("change", () => { if (i.checked) состояние.layers.add(i.dataset.layer); else состояние.layers.delete(i.dataset.layer); пишиХэш(); рисуй(); }));
+  for (const id of ["terrcols", "g1", "g2", "g3"]) document.getElementById(id).addEventListener("change", рисуй);
+  window.addEventListener("hashchange", () => { читайХэш(); рисуй(); });
+  читайХэш(); рисуй();
+</script>
 </body>
 </html>

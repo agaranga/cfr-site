@@ -29,54 +29,54 @@
  ],
  "rows": [
   {
-   "year": "1760",
-   "total_net_fixed_capital_per_head_index": "63.4",
-   "plant_equipment_machinery_per_head_index": "36.3"
+   "year": 1760,
+   "total_net_fixed_capital_per_head_index": 63.4,
+   "plant_equipment_machinery_per_head_index": 36.3
   },
   {
-   "year": "1770",
-   "total_net_fixed_capital_per_head_index": "62.6",
-   "plant_equipment_machinery_per_head_index": "36.6"
+   "year": 1770,
+   "total_net_fixed_capital_per_head_index": 62.6,
+   "plant_equipment_machinery_per_head_index": 36.6
   },
   {
-   "year": "1780",
-   "total_net_fixed_capital_per_head_index": "62.9",
-   "plant_equipment_machinery_per_head_index": "39.0"
+   "year": 1780,
+   "total_net_fixed_capital_per_head_index": 62.9,
+   "plant_equipment_machinery_per_head_index": 39
   },
   {
-   "year": "1790",
-   "total_net_fixed_capital_per_head_index": "64.8",
-   "plant_equipment_machinery_per_head_index": "43.9"
+   "year": 1790,
+   "total_net_fixed_capital_per_head_index": 64.8,
+   "plant_equipment_machinery_per_head_index": 43.9
   },
   {
-   "year": "1800",
-   "total_net_fixed_capital_per_head_index": "67.8",
-   "plant_equipment_machinery_per_head_index": "47.1"
+   "year": 1800,
+   "total_net_fixed_capital_per_head_index": 67.8,
+   "plant_equipment_machinery_per_head_index": 47.1
   },
   {
-   "year": "1810",
-   "total_net_fixed_capital_per_head_index": "69.1",
-   "plant_equipment_machinery_per_head_index": "50.6"
+   "year": 1810,
+   "total_net_fixed_capital_per_head_index": 69.1,
+   "plant_equipment_machinery_per_head_index": 50.6
   },
   {
-   "year": "1820",
-   "total_net_fixed_capital_per_head_index": "69.9",
-   "plant_equipment_machinery_per_head_index": "52.4"
+   "year": 1820,
+   "total_net_fixed_capital_per_head_index": 69.9,
+   "plant_equipment_machinery_per_head_index": 52.4
   },
   {
-   "year": "1830",
-   "total_net_fixed_capital_per_head_index": "74.1",
-   "plant_equipment_machinery_per_head_index": "64.5"
+   "year": 1830,
+   "total_net_fixed_capital_per_head_index": 74.1,
+   "plant_equipment_machinery_per_head_index": 64.5
   },
   {
-   "year": "1840",
-   "total_net_fixed_capital_per_head_index": "85.2",
-   "plant_equipment_machinery_per_head_index": "82.1"
+   "year": 1840,
+   "total_net_fixed_capital_per_head_index": 85.2,
+   "plant_equipment_machinery_per_head_index": 82.1
   },
   {
-   "year": "1850",
-   "total_net_fixed_capital_per_head_index": "100.0",
-   "plant_equipment_machinery_per_head_index": "100.0"
+   "year": 1850,
+   "total_net_fixed_capital_per_head_index": 100,
+   "plant_equipment_machinery_per_head_index": 100
   }
  ]
 }

@@ -32,32 +32,32 @@
  "rows": [
   {
    "series": "broadberry-2015",
-   "year": "1770",
-   "persons": "7983549.164019807",
+   "year": 1770,
+   "persons": 7983549.164019807,
    "geography": "Great Britain",
    "source_worksheet": "A2",
    "role": "active-boundary"
   },
   {
    "series": "broadberry-2015",
-   "year": "1800",
-   "persons": "10614056.38657113",
+   "year": 1800,
+   "persons": 10614056.38657113,
    "geography": "Great Britain",
    "source_worksheet": "A2",
    "role": "active-boundary"
   },
   {
    "series": "bottom-up",
-   "year": "1770",
-   "persons": "8398252.614550664",
+   "year": 1770,
+   "persons": 8398252.614550663,
    "geography": "Great Britain",
    "source_worksheet": "A18",
    "role": "competing-reconstruction"
   },
   {
    "series": "bottom-up",
-   "year": "1800",
-   "persons": "10819429.158864543",
+   "year": 1800,
+   "persons": 10819429.158864543,
    "geography": "Great Britain",
    "source_worksheet": "A18",
    "role": "competing-reconstruction"

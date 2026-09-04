@@ -229,11 +229,22 @@
 <footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
 
 <script>
+  // Состояние свёрнуто/развёрнуто живёт в localStorage браузера: переживает F5 и новые вкладки.
+  const КЛЮЧ = "cfr.coverage.open";
+  const читай = () => { try { const v = JSON.parse(localStorage.getItem(КЛЮЧ) || "null"); return Array.isArray(v) ? v : null; } catch { return null; } };
+  const пиши = () => { try { localStorage.setItem(КЛЮЧ, JSON.stringify([...document.querySelectorAll("tr.section.open")].map((r) => r.dataset.sec))); } catch { /* хранилище недоступно */ } };
+  const сохранённые = читай();
+  if (сохранённые) for (const row of document.querySelectorAll("tr.section:not(.nosub)")) {
+    const open = сохранённые.includes(row.dataset.sec);
+    row.classList.toggle("open", open);
+    for (const sub of document.querySelectorAll('tr.sub[data-of="' + row.dataset.sec + '"]')) sub.classList.toggle("shown", open);
+  }
   for (const row of document.querySelectorAll("tr.section:not(.nosub)")) {
     row.addEventListener("click", () => {
       const open = row.classList.toggle("open");
       for (const sub of document.querySelectorAll('tr.sub[data-of="' + row.dataset.sec + '"]'))
         sub.classList.toggle("shown", open);
+      пиши();
     });
   }
 </script>

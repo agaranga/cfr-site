@@ -23,28 +23,35 @@
   .list label small { margin-left: auto; min-width: 3ch; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
   .list label.zero { opacity: .45; }
   .list label.hide { display: none; }
-  .list .grp-h { font: 700 10.5px/1.6 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 6px 0 2px 0; }
   .tokens { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0 0; }
   .tokens:empty { display: none; }
   .token { display: inline-flex; align-items: center; gap: 7px; padding: 4px 9px; border-radius: 5px; background: var(--paper-deep); font-size: 12px; font-weight: 600; }
   .token b { font-weight: 400; color: var(--muted); cursor: pointer; }
   .count { font-size: 12px; color: var(--muted); margin-top: 6px; }
   .count b { color: var(--ink); font-weight: 600; }
-  .chart { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
-  .chart h3 { font: 500 19px/1.2 Georgia, serif; margin: 0 0 4px 0; }
-  .chart .sub { font-size: 12.5px; color: var(--muted); margin-bottom: 14px; }
-  .legend { display: flex; gap: 16px; font-size: 12.5px; margin-top: 10px; flex-wrap: wrap; }
+  .charts { display: flex; flex-direction: column; gap: 14px; }
+  .chart { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; position: relative; }
+  .chart h3 { font: 500 18px/1.2 Georgia, serif; margin: 0 26px 4px 0; }
+  .chart .sub { font-size: 12.5px; color: var(--muted); margin-bottom: 12px; }
+  .chart .x { position: absolute; right: 12px; top: 12px; border: 0; background: none; font-size: 18px; color: var(--muted); cursor: pointer; }
+  .chart .x:hover { color: var(--ink); }
+  .legend { display: flex; gap: 14px; font-size: 12.5px; margin-top: 10px; flex-wrap: wrap; }
   .legend i { display: inline-block; width: 18px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+  .empty { padding: 34px 20px; text-align: center; color: var(--muted); font-size: 14px; border: 1px dashed var(--line); border-radius: 8px; }
   .series { margin-top: 16px; }
   .series h4 { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px 0; }
-  .ser { display: grid; grid-template-columns: 1fr auto auto auto; gap: 12px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--white); margin-bottom: 6px; font-size: 13px; cursor: pointer; }
+  .ser { display: grid; grid-template-columns: 22px 1fr auto auto auto; gap: 12px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--white); margin-bottom: 6px; font-size: 13px; cursor: pointer; }
   .ser:hover { background: var(--paper); } .ser.on { border-color: var(--forest); background: #eaf0ec; }
+  .ser.dead { cursor: default; opacity: .55; } .ser.dead:hover { background: var(--white); }
+  .ser .box { width: 16px; height: 16px; border: 1.5px solid var(--muted); border-radius: 4px; display: inline-block; position: relative; }
+  .ser.on .box { background: var(--forest); border-color: var(--forest); } .ser.on .box::after { content: ""; position: absolute; left: 4px; top: 1px; width: 5px; height: 9px; border: solid var(--white); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+  .ser.dead .box { border-style: dashed; }
   .ser .t { font-weight: 600; } .ser .t small { display: block; font-weight: 400; color: var(--muted); font-size: 11.5px; }
   .ser .m { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
   .ser .lay { font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
   .ser .lay.engineering { color: var(--clay); border-color: var(--clay); } .ser .lay.reference { color: var(--forest-soft); border-color: var(--forest-soft); }
-  .empty { padding: 30px; text-align: center; color: var(--muted); font-size: 14px; }
   .chart svg text { font-family: Inter, sans-serif; }
+  .chart svg .dot:hover { r: 5; }
   @media (max-width: 800px) { .panel { grid-template-columns: 1fr; } .side { position: static; } }
 </style>
 <meta name="robots" content="noindex, nofollow">
@@ -69,7 +76,7 @@
 <div class="wrap">
   <div class="head">
     <h1 id="h1">Витрина</h1>
-    <p id="intro">Временные ряды корпуса на интерактивных графиках. Каждая линия несёт слой происхождения: историческое наблюдение как в источнике, инженерная оценка с точностью или справочная таблица CFR. Выберите страны и показатели слева: список рядов справа сужается, график показывает выбранный ряд.</p>
+    <p id="intro"></p>
   </div>
 
   <div class="panel">
@@ -93,7 +100,7 @@
     </aside>
 
     <div>
-      <div class="chart" id="chart"></div>
+      <div class="charts" id="charts"></div>
       <div class="series"><h4 id="sh">Ряды по выбору</h4><div id="list"></div></div>
     </div>
   </div>
@@ -102,18 +109,20 @@
 <footer class="site"><div class="wrap">© CFR Project · Cliometric Figures Repository</div></footer>
 
 <script src="assets/datasets-data.js"></script>
+<script src="assets/chart-index.js"></script>
 <script>
-  const D = window.DATASETS, L = window.DATASET_LABELS;
-  const состояние = { lang: "ru", countries: new Set(), topics: new Set(), layers: new Set(["historical", "engineering", "reference"]), pick: "" };
+  const D = window.DATASETS, L = window.DATASET_LABELS, C = window.CHARTS || {};
+  const состояние = { lang: "ru", countries: new Set(), topics: new Set(), layers: new Set(["historical", "engineering", "reference"]), picks: [] };
+  const кэш = {};
   const T = {
-    ru: { h1: "Витрина", intro: "Временные ряды корпуса на интерактивных графиках. Каждая линия несёт слой происхождения: историческое наблюдение как в источнике, инженерная оценка с точностью или справочная таблица CFR. Выберите страны и показатели слева: список рядов справа сужается, график показывает выбранный ряд.",
+    ru: { h1: "Витрина", intro: "Временные ряды корпуса на графиках, ровно по строкам наборов. Отметьте ряды в списке: на каждый отмеченный - свой график; график строится только у наборов с осью времени и числами, остальные в списке погашены.",
       c: "Страны", i: "Показатель", l: "Слой", reset: "сбросить", lh: "Историческое", le: "Инженерное (с точностью)", lr: "Справочное CFR", sh: "Ряды по выбору", qc: "Страна", qi: "Начните вводить: насел.., зарп..",
-      count: (n, m) => `Рядов по выбору: <b>${n}</b> из ${m}`, empty: "По этому выбору рядов нет. Снимите часть фильтров.", rows: (n) => `${n} строк`, open: "Открыть набор →", sub: (з) => `${з.sources[0] ?? "паспорт"} · ${L.слой.ru[з.layer] ?? з.layer}`,
-      chartHint: "Выберите ряд в списке ниже: график построится по его строкам.", nav: ["Обзор", "Витрина", "Покрытие", "Конструктор", "Исходные данные", "Источники", "Территории"], acc: "Личный кабинет", countries: (n) => `${n} стран` },
-    en: { h1: "Showcase", intro: "Time series of the corpus on interactive charts. Every line carries its provenance layer: a historical observation as in the source, an engineering estimate with its accuracy, or a CFR reference table. Pick countries and indicators on the left: the list of series narrows, the chart shows the selected series.",
+      count: (n, m, k) => `Рядов по выбору: <b>${n}</b> из ${m}, с графиком ${k}`, empty: "По этому выбору рядов нет. Снимите часть фильтров.", noChart: "нет графика: у набора нет оси времени или чисел", rows: (n) => `${n} строк`, open: "Открыть набор →", sub: (з) => `${з.sources[0] ?? "паспорт"} · ${L.слой.ru[з.layer] ?? з.layer}`,
+      choose: "Отметьте ряды в списке ниже: на каждый будет свой график.", loading: "загрузка строк…", all: "всё", nav: ["Обзор", "Витрина", "Покрытие", "Конструктор", "Исходные данные", "Источники", "Территории"], acc: "Личный кабинет", countries: (n) => `${n} стран`, close: "убрать график", points: (n) => `${n} точек` },
+    en: { h1: "Showcase", intro: "Time series of the corpus, exactly as in the dataset rows. Tick series in the list: each ticked one gets its own chart; charts exist only for datasets with a time axis and numbers, the rest are dimmed.",
       c: "Countries", i: "Indicator", l: "Layer", reset: "reset", lh: "Historical", le: "Engineering (with accuracy)", lr: "CFR reference", sh: "Series for this selection", qc: "Country", qi: "Start typing: popul.., wage..",
-      count: (n, m) => `Series for this selection: <b>${n}</b> of ${m}`, empty: "No series for this selection. Remove some filters.", rows: (n) => `${n} rows`, open: "Open dataset →", sub: (з) => `${з.sources[0] ?? "passport"} · ${L.слой.en[з.layer] ?? з.layer}`,
-      chartHint: "Pick a series in the list below: the chart is drawn from its rows.", nav: ["Overview", "Showcase", "Coverage", "Builder", "Source data", "Sources", "Territories"], acc: "Account", countries: (n) => `${n} countries` },
+      count: (n, m, k) => `Series for this selection: <b>${n}</b> of ${m}, chartable ${k}`, empty: "No series for this selection. Remove some filters.", noChart: "no chart: the dataset has no time axis or numbers", rows: (n) => `${n} rows`, open: "Open dataset →", sub: (з) => `${з.sources[0] ?? "passport"} · ${L.слой.en[з.layer] ?? з.layer}`,
+      choose: "Tick series in the list below: each gets its own chart.", loading: "loading rows…", all: "all", nav: ["Overview", "Showcase", "Coverage", "Builder", "Source data", "Sources", "Territories"], acc: "Account", countries: (n) => `${n} countries`, close: "remove chart", points: (n) => `${n} points` },
   };
   const t = () => T[состояние.lang];
   const экр = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -121,6 +130,9 @@
   const страна = (з) => з.countries.includes("ww") ? t().countries(з.countryCount ?? 0) : з.countries.map((c) => L.страны[состояние.lang][c] ?? c).join(", ");
   const подходит = (з, без) => (без === "countries" || !состояние.countries.size || з.countries.some((c) => состояние.countries.has(c)))
     && (без === "topics" || !состояние.topics.size || состояние.topics.has(з.topic)) && (без === "layers" || состояние.layers.has(з.layer));
+  const ЦВЕТА = ["#173d32", "#c76743", "#d3a841", "#275949", "#9a8bb8", "#5b8a6e", "#8a5a44", "#68716b"];
+  const число = (v) => typeof v === "number" ? v : (typeof v === "string" && /^-?\d+(\.\d+)?$/.test(v.trim()) ? Number(v) : null);
+  const год = (v) => { const m = String(v ?? "").match(/(\d{4})/); return m ? Number(m[1]) : null; };
 
   function список(id, ключи, подписи, набор, q, счёт) {
     const el = document.getElementById(id);
@@ -133,32 +145,44 @@
     el.querySelectorAll("b").forEach((b) => b.addEventListener("click", () => { набор.delete(b.dataset.k); пишиХэш(); рисуй(); }));
   }
 
-  function график(з) {
-    const el = document.getElementById("chart");
-    if (!з) { el.innerHTML = `<h3>${t().h1}</h3><div class="sub">${t().chartHint}</div>`; return; }
-    // Числовая колонка с наибольшим числом значений в превью, по годам.
-    const колонки = з.columns.map((c, i) => ({ i, key: c.key, label: c.label, unit: c.unit }));
-    const yearIdx = колонки.findIndex((c) => /^(year|год|annee|année|period)$/i.test(c.key));
-    const числовые = колонки.filter((c) => c.i !== yearIdx && з.preview.some((r) => typeof r[c.i] === "number" || /^-?\d+([.,]\d+)?$/.test(String(r[c.i] ?? ""))));
-    const col = числовые[0];
-    const точки = col ? з.preview.map((r) => ({ x: yearIdx >= 0 ? Number(String(r[yearIdx]).slice(0, 4)) : null, y: Number(String(r[col.i]).replace(",", ".")) })).filter((p) => Number.isFinite(p.y)) : [];
-    const sub = `${экр(з.sources[0] ?? "")} · ${экр(L.слой[состояние.lang][з.layer] ?? з.layer)}${col ? " · " + экр(col.label) + (col.unit ? ", " + экр(col.unit) : "") : ""}`;
-    if (точки.length < 2) { el.innerHTML = `<h3>${экр(заголовок(з))}</h3><div class="sub">${sub}</div><div class="empty">${состояние.lang === "en" ? "Preview rows are not enough for a chart; open the dataset for the full table." : "Строк превью мало для графика; полная таблица на странице набора."} <a href="dataset.html#${encodeURIComponent(з.id)}${состояние.lang === "en" ? "&lang=en" : ""}">${t().open}</a></div>`; return; }
-    const W = 640, H = 300, x0 = 46, x1 = 620, y0 = 260, y1 = 24;
-    const xs = точки.map((p, i) => p.x ?? i), ys = точки.map((p) => p.y);
-    const xmin = Math.min(...xs), xmax = Math.max(...xs), ymin = Math.min(...ys), ymax = Math.max(...ys);
+  async function строки(з) {
+    if (кэш[з.id]) return кэш[з.id];
+    const r = await fetch("data/" + C[з.id].file);
+    const j = await r.json();
+    кэш[з.id] = j.rows ?? [];
+    return кэш[з.id];
+  }
+  function svgГрафик(линии) {
+    // линии: [{name, points: [{x, y}]}]
+    const W = 640, H = 300, x0 = 52, x1 = 624, y0 = 262, y1 = 22;
+    const все = линии.flatMap((l) => l.points);
+    const xmin = Math.min(...все.map((p) => p.x)), xmax = Math.max(...все.map((p) => p.x));
+    const ymin = Math.min(0, ...все.map((p) => p.y)), ymax = Math.max(...все.map((p) => p.y));
     const X = (x) => xmax === xmin ? (x0 + x1) / 2 : x0 + (x - xmin) / (xmax - xmin) * (x1 - x0);
     const Y = (y) => ymax === ymin ? (y0 + y1) / 2 : y0 - (y - ymin) / (ymax - ymin) * (y0 - y1);
-    const фмт = (v) => Math.abs(v) >= 1e6 ? (v / 1e6).toFixed(1) + "M" : Math.abs(v) >= 1e3 ? (v / 1e3).toFixed(0) + "k" : String(Math.round(v * 100) / 100);
-    const pts = точки.map((p, i) => `${X(xs[i]).toFixed(1)},${Y(p.y).toFixed(1)}`).join(" ");
-    const цвет = з.layer === "engineering" ? "#c76743" : з.layer === "reference" ? "#275949" : "#173d32";
-    el.innerHTML = `<h3>${экр(заголовок(з))}</h3><div class="sub">${sub}</div>
-      <svg viewBox="0 0 ${W} ${H}" width="100%" role="img"><line x1="${x0}" y1="${y0}" x2="${x1}" y2="${y0}" stroke="#8a918c"/><line x1="${x0}" y1="${y1}" x2="${x0}" y2="${y0}" stroke="#8a918c"/>
-        <text x="${x0 - 6}" y="${y0 + 4}" font-size="10" fill="#68716b" text-anchor="end">${фмт(ymin)}</text><text x="${x0 - 6}" y="${y1 + 4}" font-size="10" fill="#68716b" text-anchor="end">${фмт(ymax)}</text>
-        <text x="${x0}" y="${y0 + 18}" font-size="10" fill="#68716b">${xmin}</text><text x="${x1}" y="${y0 + 18}" font-size="10" fill="#68716b" text-anchor="end">${xmax}</text>
-        <polyline fill="none" stroke="${цвет}" stroke-width="2.5" ${з.layer === "engineering" ? 'stroke-dasharray="6 4"' : ""} points="${pts}"/>
-        <g fill="${цвет}">${точки.map((p, i) => `<circle cx="${X(xs[i]).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="3.2"><title>${xs[i]}: ${p.y}</title></circle>`).join("")}</g></svg>
-      <div class="legend"><span><i style="background:${цвет}"></i>${экр(L.слой[состояние.lang][з.layer] ?? з.layer)}</span><span style="color:var(--muted)">${состояние.lang === "en" ? "first rows of the dataset preview" : "по первым строкам превью набора"} · <a href="dataset.html#${encodeURIComponent(з.id)}${состояние.lang === "en" ? "&lang=en" : ""}">${t().open}</a></span></div>`;
+    const фмт = (v) => Math.abs(v) >= 1e6 ? (v / 1e6).toFixed(1) + "M" : Math.abs(v) >= 1e4 ? (v / 1e3).toFixed(0) + "k" : String(Math.round(v * 100) / 100);
+    const деления = [0, .25, .5, .75, 1].map((f) => ymin + (ymax - ymin) * f);
+    const сетка = деления.map((v) => `<line x1="${x0}" y1="${Y(v).toFixed(1)}" x2="${x1}" y2="${Y(v).toFixed(1)}" stroke="#e7e1d5"/><text x="${x0 - 6}" y="${(Y(v) + 4).toFixed(1)}" font-size="10" fill="#68716b" text-anchor="end">${фмт(v)}</text>`).join("");
+    const годы = xmax - xmin >= 4 ? [0, .25, .5, .75, 1].map((f) => Math.round(xmin + (xmax - xmin) * f)) : [...new Set(все.map((p) => p.x))];
+    const осьX = годы.map((v) => `<text x="${X(v).toFixed(1)}" y="${y0 + 16}" font-size="10" fill="#68716b" text-anchor="middle">${v}</text>`).join("");
+    const кривые = линии.map((l, i) => { const c = ЦВЕТА[i % ЦВЕТА.length]; const pts = l.points.map((p) => `${X(p.x).toFixed(1)},${Y(p.y).toFixed(1)}`).join(" "); const точки = l.points.length <= 400 ? l.points.map((p) => `<circle class="dot" cx="${X(p.x).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="${l.points.length > 120 ? 1.5 : 3}" fill="${c}"><title>${экр(l.name)}: ${p.x} = ${p.y}</title></circle>`).join("") : ""; return `<polyline fill="none" stroke="${c}" stroke-width="2" points="${pts}"/>${точки}`; }).join("");
+    return `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img"><line x1="${x0}" y1="${y0}" x2="${x1}" y2="${y0}" stroke="#8a918c"/>${сетка}${осьX}${кривые}</svg>`;
+  }
+  async function график(з, el) {
+    const spec = C[з.id];
+    el.innerHTML = `<button class="x" title="${t().close}" data-x="${экр(з.id)}">×</button><h3>${экр(заголовок(з))}</h3><div class="sub">${t().loading}</div>`;
+    el.querySelector(".x").addEventListener("click", () => { состояние.picks = состояние.picks.filter((id) => id !== з.id); пишиХэш(); рисуй(); });
+    let rows; try { rows = await строки(з); } catch (e) { el.querySelector(".sub").textContent = "не удалось загрузить строки"; return; }
+    let линии;
+    const подпись = (l, зап) => (l.label && (l.label[состояние.lang] ?? l.label.ru ?? l.label.en)) || зап;
+    if (spec.by) линии = spec.lines.map((l) => ({ name: подпись(l, l.group), points: rows.filter((r) => String(r[spec.by]) === l.group).map((r) => ({ x: год(r[spec.x]), y: число(r[l.key]) })).filter((p) => p.x !== null && p.y !== null) }));
+    else линии = spec.lines.map((l) => ({ name: подпись(l, l.key), points: rows.map((r) => ({ x: год(r[spec.x]), y: число(r[l.key]) })).filter((p) => p.x !== null && p.y !== null) }));
+    линии = линии.filter((l) => l.points.length >= 2).map((l) => ({ ...l, points: l.points.sort((a, b) => a.x - b.x) }));
+    if (!линии.length) { el.querySelector(".sub").textContent = t().noChart; return; }
+    const n = линии.reduce((a, l) => a + l.points.length, 0);
+    el.innerHTML = `<button class="x" title="${t().close}" data-x="${экр(з.id)}">×</button><h3>${экр(заголовок(з))}</h3><div class="sub">${экр(з.sources[0] ?? "")} · ${экр(L.слой[состояние.lang][з.layer] ?? з.layer)} · ${t().points(n)} · <a href="dataset.html#${encodeURIComponent(з.id)}${состояние.lang === "en" ? "&lang=en" : ""}">${t().open}</a></div>
+      ${svgГрафик(линии)}<div class="legend">${линии.map((l, i) => `<span><i style="background:${ЦВЕТА[i % ЦВЕТА.length]}"></i>${экр(l.name)}</span>`).join("")}</div>`;
+    el.querySelector(".x").addEventListener("click", () => { состояние.picks = состояние.picks.filter((id) => id !== з.id); пишиХэш(); рисуй(); });
   }
 
   function рисуй() {
@@ -178,15 +202,19 @@
     список("li", Object.keys(L.темы.ru), темы, состояние.topics, document.getElementById("qi").value, (k) => D.filter((з) => подходит(з, "topics") && з.topic === k).length);
     жетоны("tc", состояние.countries, страны); жетоны("ti", состояние.topics, темы);
     document.querySelectorAll("[data-layer]").forEach((i) => { i.checked = состояние.layers.has(i.dataset.layer); });
-    const ряды = D.filter((з) => подходит(з)).sort((a, b) => заголовок(a).localeCompare(заголовок(b), состояние.lang));
-    document.getElementById("cnt").innerHTML = t().count(ряды.length, D.length);
-    if (!ряды.some((з) => з.id === состояние.pick)) состояние.pick = (ряды.find((з) => з.preview.length >= 2) ?? ряды[0])?.id ?? "";
-    document.getElementById("list").innerHTML = ряды.length ? ряды.map((з) => `<div class="ser ${з.id === состояние.pick ? "on" : ""}" data-id="${экр(з.id)}"><div class="t">${экр(заголовок(з))}<small>${экр(t().sub(з))}</small></div><div class="m">${экр(страна(з))}</div><div class="m">${з.start ? `${з.start}-${з.end}` : ""} · ${t().rows(з.rows ?? 0)}</div><span class="lay ${з.layer}">${экр(L.слой[состояние.lang][з.layer] ?? з.layer)}</span></div>`).join("") : `<div class="empty">${t().empty}</div>`;
-    document.querySelectorAll(".ser").forEach((el) => el.addEventListener("click", () => { состояние.pick = el.dataset.id; пишиХэш(); рисуй(); }));
-    график(ряды.find((з) => з.id === состояние.pick));
+    const ряды = D.filter((з) => подходит(з)).sort((a, b) => (C[b.id] ? 1 : 0) - (C[a.id] ? 1 : 0) || заголовок(a).localeCompare(заголовок(b), состояние.lang));
+    document.getElementById("cnt").innerHTML = t().count(ряды.length, D.length, ряды.filter((з) => C[з.id]).length);
+    // Отмеченные ряды: только те, что есть в текущем списке и рисуемы.
+    состояние.picks = состояние.picks.filter((id) => C[id] && ряды.some((з) => з.id === id));
+    document.getElementById("list").innerHTML = ряды.length ? ряды.map((з) => { const ok = !!C[з.id]; const on = состояние.picks.includes(з.id); return `<div class="ser ${on ? "on" : ""} ${ok ? "" : "dead"}" data-id="${экр(з.id)}" ${ok ? "" : `title="${t().noChart}"`}><span class="box"></span><div class="t">${экр(заголовок(з))}<small>${экр(t().sub(з))}${ok ? "" : " · " + t().noChart}</small></div><div class="m">${экр(страна(з))}</div><div class="m">${з.start ? `${з.start}-${з.end}` : ""} · ${t().rows(з.rows ?? 0)}</div><span class="lay ${з.layer}">${экр(L.слой[состояние.lang][з.layer] ?? з.layer)}</span></div>`; }).join("") : `<div class="empty">${t().empty}</div>`;
+    document.querySelectorAll(".ser:not(.dead)").forEach((el) => el.addEventListener("click", () => { const id = el.dataset.id; состояние.picks = состояние.picks.includes(id) ? состояние.picks.filter((x) => x !== id) : [...состояние.picks, id]; пишиХэш(); рисуй(); }));
+    const charts = document.getElementById("charts");
+    if (!состояние.picks.length) { charts.innerHTML = `<div class="empty">${t().choose}</div>`; return; }
+    charts.innerHTML = состояние.picks.map((id) => `<div class="chart" data-chart="${экр(id)}"></div>`).join("");
+    for (const id of состояние.picks) график(D.find((з) => з.id === id), charts.querySelector(`[data-chart="${CSS.escape(id)}"]`));
   }
-  function пишиХэш() { const ч = []; if (состояние.countries.size) ч.push("countries=" + [...состояние.countries].join(",")); if (состояние.topics.size) ч.push("topic=" + [...состояние.topics].join(",")); if (состояние.layers.size !== 3) ч.push("layers=" + [...состояние.layers].join(",")); if (состояние.pick) ч.push("pick=" + encodeURIComponent(состояние.pick)); if (состояние.lang === "en") ч.push("lang=en"); history.replaceState(null, "", "#" + ч.join("&")); }
-  function читайХэш() { const h = location.hash.slice(1); for (const п of h.split("&")) { const [k, v = ""] = п.split("="); if (k === "countries") состояние.countries = new Set(v.split(",").filter(Boolean)); else if (k === "topic") состояние.topics = new Set(v.split(",").filter(Boolean)); else if (k === "layers") состояние.layers = new Set(v.split(",").filter(Boolean)); else if (k === "pick") состояние.pick = decodeURIComponent(v); else if (k === "lang") состояние.lang = v === "en" ? "en" : "ru"; } }
+  function пишиХэш() { const ч = []; if (состояние.countries.size) ч.push("countries=" + [...состояние.countries].join(",")); if (состояние.topics.size) ч.push("topic=" + [...состояние.topics].join(",")); if (состояние.layers.size !== 3) ч.push("layers=" + [...состояние.layers].join(",")); if (состояние.picks.length) ч.push("pick=" + состояние.picks.map(encodeURIComponent).join(",")); if (состояние.lang === "en") ч.push("lang=en"); history.replaceState(null, "", "#" + ч.join("&")); }
+  function читайХэш() { const h = location.hash.slice(1); for (const п of h.split("&")) { const [k, v = ""] = п.split("="); if (k === "countries") состояние.countries = new Set(v.split(",").filter(Boolean)); else if (k === "topic") состояние.topics = new Set(v.split(",").filter(Boolean)); else if (k === "layers") состояние.layers = new Set(v.split(",").filter(Boolean)); else if (k === "pick") состояние.picks = v.split(",").filter(Boolean).map(decodeURIComponent); else if (k === "lang") состояние.lang = v === "en" ? "en" : "ru"; } }
   document.getElementById("lang").addEventListener("click", (e) => { const s = e.target.closest("[data-lang]"); if (!s) return; состояние.lang = s.dataset.lang; пишиХэш(); рисуй(); });
   document.getElementById("rc").addEventListener("click", () => { состояние.countries.clear(); пишиХэш(); рисуй(); });
   document.getElementById("ri").addEventListener("click", () => { состояние.topics.clear(); пишиХэш(); рисуй(); });
