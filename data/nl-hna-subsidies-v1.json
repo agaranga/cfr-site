@@ -1,0 +1,926 @@
+{
+ "id": "dataset:nl-hna-subsidies-v1",
+ "title": {
+  "ru": "Субсидии Нидерландов",
+  "en": "Netherlands subsidies"
+ },
+ "source": [
+  "Historical National Accounts of the Netherlands: spreadsheet table suite"
+ ],
+ "sourceOf": "EconEvidence/Generated/netherlands/hna-subsidies.v1.json",
+ "version": "1.0.0",
+ "citation": {
+  "ru": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Лицензия: Public scholarly download; reuse status not asserted.",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор nl-hna-subsidies-v1, версия 1.0.0, загружено 2026-09-04. https://cfrproject.com/ru/datasets/nl-hna-subsidies-v1",
+   "author": "CFR Project (2026). Субсидии Нидерландов, 1815-1913. Cliometric Figures Repository, инженерный набор nl-hna-subsidies-v1, версия 1.0.0. https://cfrproject.com/ru/datasets/nl-hna-subsidies-v1"
+  },
+  "en": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Licence: Public scholarly download; reuse status not asserted.",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset nl-hna-subsidies-v1, version 1.0.0, retrieved 2026-09-04. https://cfrproject.com/en/datasets/nl-hna-subsidies-v1",
+   "author": "CFR Project (2026). Netherlands subsidies, 1815-1913. Cliometric Figures Repository, engineering dataset nl-hna-subsidies-v1, version 1.0.0. https://cfrproject.com/en/datasets/nl-hna-subsidies-v1"
+  }
+ },
+ "columns": [
+  "year",
+  "creditBalanceImproperExpenditure",
+  "creditBalanceImproperExpenditure_state",
+  "internationalServices",
+  "internationalServices_state",
+  "totalSubsidies",
+  "totalSubsidies_state"
+ ],
+ "rows": [
+  {
+   "year": 1815,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1816,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1817,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1818,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1819,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1820,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1821,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1822,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1823,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1824,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1825,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": 0.35114436005772126,
+   "internationalServices_state": "",
+   "totalSubsidies": 0.35114436005772126,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1826,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 0.9843741735005729,
+   "internationalServices_state": "",
+   "totalSubsidies": 0.9843741735005729,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1827,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.3434813432803006,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.3434813432803006,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1828,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.8953509438044112,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.8953509438044112,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1829,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 2.0700389763776386,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.0700389763776386,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1830,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.473517383955079,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.473517383955079,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1831,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.6500597992224604,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.6500597992224604,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1832,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.441109086290163,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.441109086290163,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1833,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.4438310989616594,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.4438310989616594,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1834,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 2.488722031141704,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.488722031141704,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1835,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": 2.98167443836354,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.98167443836354,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1836,
+   "creditBalanceImproperExpenditure": 0.214,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 3.282874523846763,
+   "internationalServices_state": "",
+   "totalSubsidies": 3.496874523846763,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1837,
+   "creditBalanceImproperExpenditure": 0.284,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 3.7760652905435816,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.060065290543582,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1838,
+   "creditBalanceImproperExpenditure": 0.088,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.294941193749839,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.382941193749839,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1839,
+   "creditBalanceImproperExpenditure": 1.694,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.863674192400499,
+   "internationalServices_state": "",
+   "totalSubsidies": 6.557674192400499,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1840,
+   "creditBalanceImproperExpenditure": 0.902,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 5.428693546446779,
+   "internationalServices_state": "",
+   "totalSubsidies": 6.3306935464467795,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1841,
+   "creditBalanceImproperExpenditure": 0.936,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 5.526245954328047,
+   "internationalServices_state": "",
+   "totalSubsidies": 6.462245954328047,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1842,
+   "creditBalanceImproperExpenditure": 0.233,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.783694227298268,
+   "internationalServices_state": "",
+   "totalSubsidies": 5.0166942272982675,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1843,
+   "creditBalanceImproperExpenditure": 0.1,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.816179286567674,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.916179286567673,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1844,
+   "creditBalanceImproperExpenditure": 0.085,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.8133713630181525,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.8983713630181525,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1845,
+   "creditBalanceImproperExpenditure": 0.049,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.616769263883199,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.6657692638832,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1846,
+   "creditBalanceImproperExpenditure": 0.021,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.509950211410315,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.530950211410315,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1847,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.01306917999537,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.01306917999537,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1848,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.176713352213941,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.176713352213941,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1849,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 4.121102616847818,
+   "internationalServices_state": "",
+   "totalSubsidies": 4.121102616847818,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1850,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 3.59023351698705,
+   "internationalServices_state": "",
+   "totalSubsidies": 3.59023351698705,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1851,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 3.1577524031445,
+   "internationalServices_state": "",
+   "totalSubsidies": 3.1577524031445,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1852,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 3.3589880863256663,
+   "internationalServices_state": "",
+   "totalSubsidies": 3.3589880863256663,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1853,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 2.887703859721531,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.887703859721531,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1854,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 2.3829367687434053,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.3829367687434053,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1855,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 2.3023312294744427,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.3023312294744427,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1856,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 2.4557347009322803,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.4557347009322803,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1857,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.9853573150994934,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.9853573150994934,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1858,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 2.09294986697026,
+   "internationalServices_state": "",
+   "totalSubsidies": 2.09294986697026,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1859,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.7594016140988784,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.7594016140988784,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1860,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.6026044473951673,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.6026044473951673,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1861,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.5458030781468506,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.5458030781468506,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1862,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.2386516655545672,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.2386516655545672,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1863,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.1202548907713181,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.1202548907713181,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1864,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 1.20459754339319,
+   "internationalServices_state": "",
+   "totalSubsidies": 1.20459754339319,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1865,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 0.9581942186979469,
+   "internationalServices_state": "",
+   "totalSubsidies": 0.9581942186979469,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1866,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 0.8296541520285912,
+   "internationalServices_state": "",
+   "totalSubsidies": 0.8296541520285912,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1867,
+   "creditBalanceImproperExpenditure": 0,
+   "creditBalanceImproperExpenditure_state": "",
+   "internationalServices": 0.7314377288895388,
+   "internationalServices_state": "",
+   "totalSubsidies": 0.7314377288895388,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1868,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": 0.5492583336890879,
+   "internationalServices_state": "",
+   "totalSubsidies": 0.5492583336890879,
+   "totalSubsidies_state": ""
+  },
+  {
+   "year": 1869,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1870,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1871,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1872,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1873,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1874,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1875,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1876,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1877,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1878,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1879,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1880,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1881,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1882,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1883,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1884,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1885,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1886,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1887,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1888,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1889,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1890,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1891,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1892,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1893,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1894,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1895,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1896,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1897,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1898,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1899,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1900,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1901,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1902,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1903,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1904,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1905,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1906,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1907,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1908,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1909,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1910,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1911,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1912,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  },
+  {
+   "year": 1913,
+   "creditBalanceImproperExpenditure": null,
+   "creditBalanceImproperExpenditure_state": "blank",
+   "internationalServices": null,
+   "internationalServices_state": "blank",
+   "totalSubsidies": null,
+   "totalSubsidies_state": "blank"
+  }
+ ]
+}

@@ -1,4 +1,4 @@
-// Сгенерировано из каталога EconEvidence (46 наборов). Страны и форма выведены по префиксу id и ключевым словам - для макета.
+// Сгенерировано из каталога EconEvidence (48 наборов). Страны и форма выведены по префиксу id и ключевым словам - для макета.
 window.DATASETS = [
  {
   "id": "dataset:dg1c-be-quetelet-marriages-1803-1829-statistical",
@@ -7358,6 +7358,229 @@ window.DATASETS = [
    "author": "CFR Project (2026). Population universes (vocabulary). Cliometric Figures Repository, reference dataset cfr-population-universes, version 1.0.0. https://cfrproject.com/en/datasets/cfr-population-universes"
   },
   "synthetic": "reference"
+ },
+ {
+  "id": "dataset:nl-hna-subsidies-v1",
+  "titleRu": "Субсидии Нидерландов",
+  "titleEn": "Netherlands subsidies",
+  "topic": "macro-history",
+  "countries": [
+   "nl"
+  ],
+  "countryCount": null,
+  "start": 1815,
+  "end": 1913,
+  "rows": 99,
+  "cols": 4,
+  "columns": [
+   {
+    "key": "year",
+    "label": "year",
+    "unit": ""
+   },
+   {
+    "key": "creditBalanceImproperExpenditure",
+    "label": "credit balance / improper / expenditure / mlnƒ",
+    "unit": "millions of guilders"
+   },
+   {
+    "key": "internationalServices",
+    "label": " / internat. / services / mlnƒ",
+    "unit": "millions of guilders"
+   },
+   {
+    "key": "totalSubsidies",
+    "label": "total / amount of / subsidies / mlnƒ",
+    "unit": "millions of guilders"
+   }
+  ],
+  "preview": [
+   [
+    "1815",
+    "· blank",
+    "· blank",
+    "· blank"
+   ],
+   [
+    "1816",
+    "· blank",
+    "· blank",
+    "· blank"
+   ],
+   [
+    "1817",
+    "· blank",
+    "· blank",
+    "· blank"
+   ],
+   [
+    "1818",
+    "· blank",
+    "· blank",
+    "· blank"
+   ],
+   [
+    "1819",
+    "· blank",
+    "· blank",
+    "· blank"
+   ],
+   [
+    "1820",
+    "· blank",
+    "· blank",
+    "· blank"
+   ]
+  ],
+  "layer": "historical",
+  "form": "annual",
+  "sources": [
+   "Historical National Accounts of the Netherlands: spreadsheet table suite"
+  ],
+  "sourceIds": [
+   "source:nl-hna-spreadsheet-suite-2000"
+  ],
+  "canonical": "https://nationalaccounts.niwi.knaw.nl/tables.htm",
+  "license": "Public scholarly download; reuse status not asserted.",
+  "access": "local",
+  "artifact": {
+   "path": "EconEvidence/Generated/netherlands/hna-subsidies.v1.json",
+   "bytes": 34200,
+   "checksum": "crc32:7284ee4c",
+   "retrievedOn": "2026-09-04"
+  },
+  "method": "Deterministic read-only BIFF cell transcription from subsidies!A1:D107. The complete 1815-1913 labelled annual frame is retained. BIFF null cells, empty-string cells and numeric zero cells are distinct states. The three literal source blanks B19, B29 and B62 are value null with literalState blank; the other published zero-suppressed credit-balance entries remain numeric zero. The 297-cell audit has 129 numeric cells, 168 blanks, no empty-string cells and an empty discrepancy table.",
+  "version": "1.0.0",
+  "code": "EconEvidence/Extraction/HnaSubsidiesGenerator.cs",
+  "package": "package:nl-hna-subsidies-transcription",
+  "review": "reviewed-current-catalog",
+  "citeRu": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Лицензия: Public scholarly download; reuse status not asserted.",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор nl-hna-subsidies-v1, версия 1.0.0, загружено 2026-09-04. https://cfrproject.com/ru/datasets/nl-hna-subsidies-v1",
+   "author": "CFR Project (2026). Субсидии Нидерландов, 1815-1913. Cliometric Figures Repository, инженерный набор nl-hna-subsidies-v1, версия 1.0.0. https://cfrproject.com/ru/datasets/nl-hna-subsidies-v1"
+  },
+  "citeEn": {
+   "source": "Jan-Pieter Smits, Edwin Horlings, Jan Luiten van Zanden, Historical National Accounts project contributors. Historical National Accounts of the Netherlands: spreadsheet table suite (2000). Groningen Growth and Development Centre. https://nationalaccounts.niwi.knaw.nl/tables.htm. Licence: Public scholarly download; reuse status not asserted.",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset nl-hna-subsidies-v1, version 1.0.0, retrieved 2026-09-04. https://cfrproject.com/en/datasets/nl-hna-subsidies-v1",
+   "author": "CFR Project (2026). Netherlands subsidies, 1815-1913. Cliometric Figures Repository, engineering dataset nl-hna-subsidies-v1, version 1.0.0. https://cfrproject.com/en/datasets/nl-hna-subsidies-v1"
+  }
+ },
+ {
+  "id": "dataset:be-gadisseur-plantes-industrielles-v1",
+  "titleRu": "Технические культуры Бельгии: стоимость и индекс",
+  "titleEn": "Belgium industrial-crop output value and index",
+  "topic": "macro-history",
+  "countries": [
+   "be"
+  ],
+  "countryCount": null,
+  "start": 1846,
+  "end": 1913,
+  "rows": 68,
+  "cols": 5,
+  "columns": [
+   {
+    "key": "year",
+    "label": "year",
+    "unit": ""
+   },
+   {
+    "key": "sourcePanel",
+    "label": "sourcePanel",
+    "unit": ""
+   },
+   {
+    "key": "annees",
+    "label": "annees",
+    "unit": "printed calendar-year label"
+   },
+   {
+    "key": "valeur1000F43",
+    "label": "valeur1000F43",
+    "unit": "1.000 F (43)"
+   },
+   {
+    "key": "indice1880",
+    "label": "indice1880",
+    "unit": "index; 1880 = 100"
+   }
+  ],
+  "preview": [
+   [
+    "1846",
+    "left",
+    "1846",
+    "34089",
+    "62.38"
+   ],
+   [
+    "1847",
+    "left",
+    "1847",
+    "33793",
+    "61.84"
+   ],
+   [
+    "1848",
+    "left",
+    "1848",
+    "34264",
+    "62.7"
+   ],
+   [
+    "1849",
+    "left",
+    "1849",
+    "34678",
+    "63.46"
+   ],
+   [
+    "1850",
+    "left",
+    "1850",
+    "34666",
+    "63.44"
+   ],
+   [
+    "1851",
+    "left",
+    "1851",
+    "36949",
+    "67.62"
+   ]
+  ],
+  "layer": "historical",
+  "form": "annual",
+  "sources": [
+   "Contribution à l'étude de la production agricole en Belgique de 1846 à 1913"
+  ],
+  "sourceIds": [
+   "source:gadisseur-1973-belgian-agriculture"
+  ],
+  "canonical": "https://www.journalbelgianhistory.be/en/system/files/article_pdf/BTNG-RBHC%2C%204%2C%201973%2C%201-2%2C%20pp%201-52.pdf",
+  "license": "journal open access; reuse terms not stated",
+  "access": "local",
+  "artifact": {
+   "path": "EconEvidence/Generated/belgium/gadisseur-plantes-industrielles.v1.json",
+   "bytes": 25540,
+   "checksum": "crc32:ad3a2c6b",
+   "retrievedOn": "2026-09-04"
+  },
+  "method": "Manual visual transcription of TABLEAU III — Plantes industrielles, PDF/printed p. 44. The left 1846-1879 and right 1880-1913 panels were read as separate source blocks and merged only by their printed annual labels. The header prints (43) while the literal note prints (44); neither marker is renumbered. No OCR-order repair, interpolation, arithmetic replacement, price conversion, or index rebasing is performed.",
+  "version": "1.0.0",
+  "code": "EconEvidence/Core/GadisseurPlantesIndustriellesBuilder.cs",
+  "package": "package:be-gadisseur-plantes-industrielles-transcription",
+  "review": "reviewed-current-catalog",
+  "citeRu": {
+   "source": "J. Gadisseur. Contribution à l'étude de la production agricole en Belgique de 1846 à 1913 (1973). Revue belge d'histoire contemporaine. https://www.journalbelgianhistory.be/en/system/files/article_pdf/BTNG-RBHC%2C%204%2C%201973%2C%201-2%2C%20pp%201-52.pdf. Лицензия: journal open access; reuse terms not stated",
+   "via": "Получено через CFR Project, Cliometric Figures Repository, набор be-gadisseur-plantes-industrielles-v1, версия 1.0.0, загружено 2026-09-04. https://cfrproject.com/ru/datasets/be-gadisseur-plantes-industrielles-v1",
+   "author": "CFR Project (2026). Технические культуры Бельгии: стоимость и индекс, 1846-1913. Cliometric Figures Repository, инженерный набор be-gadisseur-plantes-industrielles-v1, версия 1.0.0. https://cfrproject.com/ru/datasets/be-gadisseur-plantes-industrielles-v1"
+  },
+  "citeEn": {
+   "source": "J. Gadisseur. Contribution à l'étude de la production agricole en Belgique de 1846 à 1913 (1973). Revue belge d'histoire contemporaine. https://www.journalbelgianhistory.be/en/system/files/article_pdf/BTNG-RBHC%2C%204%2C%201973%2C%201-2%2C%20pp%201-52.pdf. Licence: journal open access; reuse terms not stated",
+   "via": "Obtained via CFR Project, Cliometric Figures Repository, dataset be-gadisseur-plantes-industrielles-v1, version 1.0.0, retrieved 2026-09-04. https://cfrproject.com/en/datasets/be-gadisseur-plantes-industrielles-v1",
+   "author": "CFR Project (2026). Belgium industrial-crop output value and index, 1846-1913. Cliometric Figures Repository, engineering dataset be-gadisseur-plantes-industrielles-v1, version 1.0.0. https://cfrproject.com/en/datasets/be-gadisseur-plantes-industrielles-v1"
+  }
  },
  {
   "id": "dataset:cotton-spinning-technology-1760-1835",
